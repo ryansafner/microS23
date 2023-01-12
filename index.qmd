@@ -1,0 +1,40 @@
+---
+title: "<strong>Microeconomic Analysis</strong>"
+subtitle: "<strong>ECON 306 • Spring 2023 • Hood College</strong>"
+details:  "<strong>Learn the common tools and techniques that economists use to model the world around you</strong><br><br>By the end of this course, you will:<ol><li>apply the models of microeconomics (constrained optimization and equilibrium) towards explaining real world behavior of individuals, firms, & governments</li><li> explore the effects of economic and political processes on market performance (competition, market prices, profits and losses, property rights, entrepreneurship, market power, market failures, public policy, government failures)</li><li>apply the economic way of thinking to real world issues in writing</li></ol>"
+toc: false
+sidebar: false
+page-layout: full
+course-logo: /images/micro_hex.png
+format:
+  html:
+    template-partials:
+      - html/home/title-block.html
+---
+
+::: home
+
+::: {.grid .course-details}
+::: {.g-col-6}
+### Instructor
+
+- {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
+-   {{< fa university >}} &nbsp; {{< var instructor.office >}}
+-   {{< fa clock >}} &nbsp; {{< var instructor.officehours >}}
+- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
+:::
+
+::: {.g-col-6}
+### Course details
+
+- {{< fa clock >}} &nbsp; {{< var course.time >}}
+- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
+- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
+-   {{< fa brands slack >}} &nbsp; [Slack](%7B%7B%3C%20var%20course.slack%20%3E%7D%7D)
+:::
+
+:::
+```{r echo=FALSE}
+knitr::include_graphics(here::here("images", "micro_flowchart_blankbg.png"), error = FALSE)
+```
+:::

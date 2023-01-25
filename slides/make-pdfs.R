@@ -12,5 +12,3 @@ pagedown::chrome_print(input = "https://micros23.classes.ryansafner.com/slides/1
                        selector = "div.remark-slide",
                        format = "png",
                        timeout = 300)
-
-

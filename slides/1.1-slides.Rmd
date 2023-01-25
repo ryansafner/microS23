@@ -98,6 +98,7 @@ Edinburgh, 2019
 - Research interests
   - modeling innovation & economic growth
   - political economy & economic history of intellectual property
+  - my Substack: [Increasing Returns](https://increasingreturns.substack.com)
 
 ]
 ]
@@ -107,7 +108,7 @@ Edinburgh, 2019
 # What's Keeping Me Busy
 
 .center[
-![:scale 100%](../images/miles_2023.png)
+![:scale 90%](../images/miles_2023.png)
 ]
 
 ---
@@ -148,7 +149,7 @@ Edinburgh, 2019
 
 - .hi-purple[Modeling] markets, individuals (consumers & firms), economies
     - ECON 306: Microeconomic Analysis
-    - ECON 305: Macroeconomic Analysis<sup>†</sup>
+    - ECON 305: Macroeconomic Analysis<sup>.magenta[†]</sup>
 ]
 
 .pull-right[
@@ -819,24 +820,6 @@ class: inverse, center, middle
 
 .center[
 ![:scale 60%](../images/opengatemath3.jpg)
-]
-
----
-
-# Real Talk
-
-.pull-left[
-.center[
-![](../images/mathsurvey.png)
-]
-]
-
-.pull-right[
-
-- Complete the [.hi-purple[preliminary math survey]](https://microS23.classes.ryansafner.com/assignments/00-preliminary-survey)
-
-- Help me help you with the math!
-
 ]
 
 ---

@@ -1,7 +1,8 @@
 ---
 title: "<strong>Microeconomic Analysis</strong>"
 subtitle: "<strong>ECON 306 • Spring 2023 • Hood College</strong>"
-details:  "<strong>Learn the common tools and techniques that economists use to model the world around you</strong><br><br>By the end of this course, you will:<ol><li>apply the models of microeconomics (constrained optimization and equilibrium) towards explaining real world behavior of individuals, firms, & governments</li><li> explore the effects of economic and political processes on market performance (competition, market prices, profits and losses, property rights, entrepreneurship, market power, market failures, public policy, government failures)</li><li>apply the economic way of thinking to real world issues in writing</li></ol>"
+details:  >
+  <strong>Learn the common tools and techniques that economists use to model the world around you</strong><br><br>By the end of this course, you will:<ol><li>apply the models of microeconomics (constrained optimization and equilibrium) towards explaining real world behavior of individuals, firms, & governments</li><li> explore the effects of economic and political processes on market performance (competition, market prices, profits and losses, property rights, entrepreneurship, market power, market failures, public policy, government failures)</li><li>apply the economic way of thinking to real world issues in writing</li></ol>
 toc: false
 sidebar: false
 page-layout: full

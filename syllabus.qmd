@@ -33,7 +33,7 @@ library(kableExtra)
 
 :::
 
-<p style="text-align:center"><a target="_blank" href="/files/syllabus/syllabus-s1-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF (section 1)</a></span> <a target="_blank" href="/files/syllabus/syllabus-s2-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF (section 2)</a></span></p>
+<p style="text-align:center"><a target="_blank" href="/files/syllabus/syllabus-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span></p>
 
 > "The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design." <br> [— F.A. Hayek (1974 Economics Nobel Laureate)]{style="float:right"}
 
@@ -63,7 +63,7 @@ See my [tips for success in this course](/resources).
 
 # Required Course materials 
 
-You can find all course materials at my **dedicated website** for this course: [microF22.classes.ryansafner.com](https://microF22.classes.ryansafner.com). Links to the website are posted on our Blackboard course page. Please familiarize yourself with the website, see that it contains this [syllabus](syllabus/), [resources](resources/) to help you, and our [schedule](schedule/). On the schedule page, you can find each module with its own class page (**start there!**) along with all related readings, lecture slides, practice problems, and assignments.
+You can find all course materials at my **dedicated website** for this course: [microS23.classes.ryansafner.com](https://microS23.classes.ryansafner.com). Links to the website are posted on our Blackboard course page. Please familiarize yourself with the website, see that it contains this [syllabus](syllabus/), [resources](resources/) to help you, and our [schedule](schedule/). On the schedule page, you can find each module with its own class page (**start there!**) along with all related readings, lecture slides, practice problems, and assignments.
 
 My lecture slides will be shared with you, and serve as your primary resource, but our main "textbook" below is **recommended** as the next best resource and will be available from the campus bookstore. I will discuss more about textbooks and materials in the first module.
 
@@ -148,8 +148,6 @@ All assignmnents are able to be completed **asynchronously** during the week, an
 
 Your day-to-day classroom attendance is not graded. My philosophy is that you are all adults and must take ownership of your own learning or else you will not succeed. Some assignments may require in-class participation for credit, and an (unexcused) absence may be detrimental to your grade. Attending class is one of the strongest predictors of success.
 
-However, as required under Hood College's “Promise of Fall Plan,” (Ch. 2-C) **your classroom attendance will be recorded at every class meeting.** This is primarily to facilitate contact tracing. 
-
 If you know you will be absent, you are not *required* to let me know, but it is polite to give notice (Note if I do not reply to an email of yours letting me know, I am probably busy but will still see it and appreciate your email). Your absence will be noted and recorded for the purposes stated above. If, however, we have an assignment due in class, you *must* notify me ahead of time in order to make alternate arrangements to still receive credit. Hasty ex-post attempts to notify me will generate little sympathy. 
 
 ## Late Assignments 
@@ -166,7 +164,7 @@ I reserve the right to re-weight assignments for students whom I believe are leg
 
 ## Grading 
 
-I will try my best to post grades on Blackboard's Grading Center and return graded assignments to you within about one week of you turning them in. There will be exceptions. Where applicable, I will post answer keys once I know most homeworks are turned in (see Late Assignments above for penalties). Blackboard's Grading Center is the place to look for your most up-to-date grades. See also my [<i class="fas fa-calculator"></i> `Grade Calculator`](https://ryansafner.shinyapps.io/480_grade_calculator/) app where you can calculate your overall grade using existing assignment grades and forecast "what if" scenarios.
+I will try my best to post grades on Blackboard's Grading Center and return graded assignments to you within about one week of you turning them in. There will be exceptions. Where applicable, I will post answer keys once I know most homeworks are turned in (see Late Assignments above for penalties). Blackboard's Grading Center is the place to look for your most up-to-date grades. See also my [<i class="fas fa-calculator"></i> `Grade Calculator`](https://ryansafner.shinyapps.io/306_grade_calculator/) app where you can calculate your overall grade using existing assignment grades and forecast "what if" scenarios.
 
 ## Communication: Email, Slack, and Virtual Office Hours 
 
@@ -231,7 +229,6 @@ This course is intended to be accessible for all students, including those with 
 Hood College is an accredited member of the Accreditation Council for Business Schools and Programs (ACBSP), an organization devoted to enhancing business education. In receiving and maintaining this accreditation, the faculty has made a commitment to the continuous improvement, innovation, and scholarship of the Department of Economics and Management. For you, this means that your educational experience undergoes ongoing validation to ensure it meets the most rigorous international standards of business education. Only a select group of institutions have received this status and it is an attribute of Hood for which you should take great pride. 
 
 Pragmatically, our accreditation means that we will engage in the ongoing use of measures, both quantitative and qualitative in nature, to assess the performance of our students and the program. We ask that you take very seriously the surveys and other measurement devices we will use – your best work and honest response will help us best assess and improve our program.
-
 
 # Tentative Schedule
 

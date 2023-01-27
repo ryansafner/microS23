@@ -1,0 +1,78 @@
+---
+title: "1.2 — Budget Constraint — Class Content"
+execute:
+  freeze: auto
+
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Monday, January 30, 2023*
+:::
+
+::: callout-warning
+# Upcoming Assignment
+Please complete the [preliminary survey](/assignments/00-preliminary-survey.qmd).
+:::
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+We are diving right into what is commonly called ["Consumer Theory"](https://en.wikipedia.org/wiki/Consumer_choice) in textbooks. While our paradigmatic example will indeed be a consumer deciding what goods and services to purchase, please recognize that this model can be applied to just about *any* decision made by an individual. We should more appropriately describe it as ["Rational Choice Theory"](https://en.wikipedia.org/wiki/Rational_choice_theory). This will take several classes to fully unpack as our formal model of **constrained optimization**, so today we are only focusing on the *constraints* using the tool known as the "budget constraint."
+
+While budget constraints are fairly straightforward, consumer theory often the most "alien" material to students of economics: preferences, indifference curves, and utility functions derived from behavioral axioms. The model we put together—constrained optimization—is borrowed from calculus and engineering. In my opinion, a good chunk of consumer theory, particularly about preferences (next class), is a waste of your time and will give you unnecessary anxiety. It's perhaps neat for you to see how economists ground all of their models in utility-maximization, but our time is better spent on more productive things. If, however, you plan on going to graduate school for economics or social science, **read this chapter, and my online appendices, in great detail.**^[And see [this tweet](https://twitter.com/graykimbrough/status/1291017699481575424) for an 100% accurate example of what you can expect in a common Ph.D textbook discussing preferences.]
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Ch. 4.3 in Goolsbee, Levitt, and Syverson, 2019
+- <i class="fas fa-external-link-square-alt"></i> Bastiat, 1848 [“What is Seen and Not Seen”](https://www.econlib.org/library/Bastiat/basEss.html?chapter_num=4#book-reader), (Section 1)
+- <i class="fas fa-external-link-square-alt"></i> [Math Review Guide](/resources/math_guide)
+
+Now that we are picking up the intensity and working with some models (many will be new to you at first), I recommend looking at the textbook readings *before* each class.
+
+If you are following the textbook, we are going a bit out of order in two ways. It goes straight into (a review of principles, really) supply & demand in Chapters 1-3. We will ultimately get to supply and demand, but if you trust me, by the time we do later this semester, you will have a *much* richer understanding and appreciation for them, having understood **how they represent the decisions by optimizing individuals as buyers and sellers.**
+
+It begins "Consumer Theory" as chapter 4. It also stars with the "newer" and "weirder" stuff first — indifference curves and utility functions, and then teaches budget constraints second. I will go in the *opposite* order to slowly acclimate you from familiar territory (linear equations) into newer tools and concepts (nonlinear functions, multivariate functions, optimization, etc). This is also a good time to review my [Math Review Guide](/files/math_review_guide.pdf) for next week.
+
+The Bastiat reading is perhaps one of the greatest economic parables ever written, and demonstrates the importance of opportunity cost in clear thinking (especially about policy).
+
+### Optional/Referenced Readings
+
+- [<i class="fas fa-external-link-square-alt"></i> Safner, 2019, "Econometrics, Data Science, and Causal Inference" (blog post)](https://ryansafner.com/post/econometrics-data-science-and-causal-inference/)
+
+## <i class="fas fa-dumbbell"></i> Practice
+
+Today we will be working on [practice problems](/practice/1.2-practice). Answers will be posted later on that page.
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Preliminary Math Survey Due
+
+Please take the [preliminary survey](/assignment/00-preliminary-survey) on your math background. This will help us all have a productive semester together.
+
+## <i class="fas fa-sigma"></i> Appendix
+
+See the online appendix for today's content:
+
+- [Budget Constraint for $n$ goods](/resources/appendices/1.2-appendix.html#budget-constraint-for-n-goods)
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("1.2-slides")
+```
+

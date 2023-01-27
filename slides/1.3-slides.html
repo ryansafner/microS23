@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>1.3 — Preferences</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/plotly-binding/plotly.js"></script>
+    <script src="libs/typedarray/typedarray.min.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
+    <link href="libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+    <script src="libs/plotly-main/plotly-latest.min.js"></script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide
+
+# 1.3 — Preferences
+
+## ECON 306 • Microeconomic Analysis • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/microS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/microS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://microS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;microS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+
+---
+
+class: inverse
+
+# Outline
+
+### [Preferences](#3)
+### [Indifference Curves](#10)
+### [Marginal Rate of Substitution](#26)
+### [Utility](#32)
+### [Marginal Utility](#43)
+
+---
+
+class: inverse, center, middle
+
+# Preferences
+
+---
+
+# Preferences I
+
+.pull-left[
+
+- Which bundles are **preferred** over others?
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**:] Between two bundles of `\((x,y)\)`: 
+
+`$$a=(4,12) \text{ or } b=(6,12)$$`
+]
+
+]
+
+.pull-right[
+.center[
+![](../images/choices.jpg)
+]
+]
+
+---
+
+# Preferences II
+
+.pull-left[
+
+- We will allow **three possible answers**:
+
+]
+
+.pull-right[
+.center[
+![](../images/choices.jpg)
+]
+]
+
+---
+
+# Preferences II
+
+.pull-left[
+
+- We will allow **three possible answers**:
+
+.content-box-blue[
+
+1. .blue[`\\(a \succ b\\)`: (Strictly) prefer `\\(a\\)` over `\\(b\\)`]
+]
+
+]
+
+.pull-right[
+.center[
+![](../images/choices.jpg)
+]
+]
+
+---
+
+# Preferences II
+
+.pull-left[
+
+- We will allow **three possible answers**:
+
+.content-box-blue[
+
+1. .blue[`\\(a \succ b\\)`: (Strictly) prefer `\\(a\\)` over `\\(b\\)`]
+
+2. .blue[`\\(a \prec b\\)`: (Strictly) prefer `\\(b\\)` over `\\(a\\)`]
+
+]
+
+]
+
+.pull-right[
+.center[
+![](../images/choices.jpg)
+]
+]
+
+---
+
+# Preferences II
+
+.pull-left[
+
+- We will allow **three possible answers**:
+
+.content-box-blue[
+
+1. .blue[`\\(a \succ b\\)`: (Strictly) prefer `\\(a\\)` over `\\(b\\)`]
+
+2. .blue[`\\(a \prec b\\)`: (Strictly) prefer `\\(b\\)` over `\\(a\\)`]
+
+3. .blue[`\\(a \sim b\\)`: Indifferent between `\\(a\\)` and `\\(b\\)`]
+]
+]
+
+.pull-right[
+.center[
+![](../images/choices.jpg)
+]
+]
+
+---
+
+# Preferences II
+
+.pull-left[
+
+- We will allow **three possible answers**:
+
+.content-box-blue[
+
+1. .blue[`\\(a \succ b\\)`: (Strictly) prefer `\\(a\\)` over `\\(b\\)`]
+
+2. .blue[`\\(a \prec b\\)`: (Strictly) prefer `\\(b\\)` over `\\(a\\)`]
+
+3. .blue[`\\(a \sim b\\)`: Indifferent between `\\(a\\)` and `\\(b\\)`]
+]
+
+- .hi[*Preferences*] **are a list of all such comparisons between all bundles**
+
+See appendix in [today's class page](/resources/appendices/1.3-appendix) for more.
+]
+
+.pull-right[
+.center[
+![](../images/choices.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+# Indifference Curves
+
+---
+
+# Mapping Preferences Graphically I
+
+.pull-left[
+- For each bundle, we now have 3 pieces of information: 
+    - amount of `\(x\)`
+    - amount of `\(y\)`
+    - preference compared to other bundles
+    
+- How to represent this information graphically? 
+]
+
+.pull-right[
+.center[
+![](../images/choices.jpg)
+]
+]
+
+---
+
+# Mapping Preferences Graphically II
+
+.pull-left[
+
+- Cartographers have the answer for us
+
+- On a map, **contour lines** link areas of **equal height**
+
+- We will use .hi[“indifference curves”] to link bundles of **equal preference**
+
+]
+
+.pull-right[
+
+.center[
+![](../images/contourmap.jpg)
+]
+]
+
+---
+
+# Mapping Preferences Graphically III
+
+.pull-left[
+
+.center[
+
+3-D “Mount Utility”
+<div id="htmlwidget-617b2c236e2a1e314dbe" style="width:504px;height:396px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-617b2c236e2a1e314dbe">{"x":{"visdat":{"197a18c31391":["function () ","plotlyVisDat"]},"cur_data":"197a18c31391","attrs":{"197a18c31391":{"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,1.4142135623731,1.73205080756888,2,2.23606797749979,2.44948974278318,2.64575131106459,2.82842712474619,3],[0,1.4142135623731,2,2.44948974278318,2.82842712474619,3.16227766016838,3.46410161513775,3.74165738677394,4,4.24264068711928],[0,1.73205080756888,2.44948974278318,3,3.46410161513775,3.87298334620742,4.24264068711928,4.58257569495584,4.89897948556636,5.19615242270663],[0,2,2.82842712474619,3.46410161513775,4,4.47213595499958,4.89897948556636,5.29150262212918,5.65685424949238,6],[0,2.23606797749979,3.16227766016838,3.87298334620742,4.47213595499958,5,5.47722557505166,5.91607978309962,6.32455532033676,6.70820393249937],[0,2.44948974278318,3.46410161513775,4.24264068711928,4.89897948556636,5.47722557505166,6,6.48074069840786,6.92820323027551,7.34846922834953],[0,2.64575131106459,3.74165738677394,4.58257569495584,5.29150262212918,5.91607978309962,6.48074069840786,7,7.48331477354788,7.93725393319377],[0,2.82842712474619,4,4.89897948556636,5.65685424949238,6.32455532033676,6.92820323027551,7.48331477354788,8,8.48528137423857],[0,3,4.24264068711928,5.19615242270663,6,6.70820393249937,7.34846922834953,7.93725393319377,8.48528137423857,9]],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"surface","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"X"},"yaxis":{"title":"Y"},"zaxis":{"title":"Utility"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"colorbar":{"title":"","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":true,"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,1.4142135623731,1.73205080756888,2,2.23606797749979,2.44948974278318,2.64575131106459,2.82842712474619,3],[0,1.4142135623731,2,2.44948974278318,2.82842712474619,3.16227766016838,3.46410161513775,3.74165738677394,4,4.24264068711928],[0,1.73205080756888,2.44948974278318,3,3.46410161513775,3.87298334620742,4.24264068711928,4.58257569495584,4.89897948556636,5.19615242270663],[0,2,2.82842712474619,3.46410161513775,4,4.47213595499958,4.89897948556636,5.29150262212918,5.65685424949238,6],[0,2.23606797749979,3.16227766016838,3.87298334620742,4.47213595499958,5,5.47722557505166,5.91607978309962,6.32455532033676,6.70820393249937],[0,2.44948974278318,3.46410161513775,4.24264068711928,4.89897948556636,5.47722557505166,6,6.48074069840786,6.92820323027551,7.34846922834953],[0,2.64575131106459,3.74165738677394,4.58257569495584,5.29150262212918,5.91607978309962,6.48074069840786,7,7.48331477354788,7.93725393319377],[0,2.82842712474619,4,4.89897948556636,5.65685424949238,6.32455532033676,6.92820323027551,7.48331477354788,8,8.48528137423857],[0,3,4.24264068711928,5.19615242270663,6,6.70820393249937,7.34846922834953,7.93725393319377,8.48528137423857,9]],"type":"surface","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+]
+]
+.pull-right[
+.center[
+2-D Indifference Curve Contours
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+]
+---
+
+# Indifference Curves: Example
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Suppose you are hunting for an apartment. You value *both* the size of the apartment and the number of friends that live nearby. 
+]
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-ex-0-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Indifference Curves: Example
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Suppose you are hunting for an apartment. You value *both* the size of the apartment and the number of friends that live nearby. 
+
+- Apt. *A* has 1 friend nearby and is 1,200 `\(ft^2\)`
+]
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-ex-1-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Indifference Curves: Example
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Suppose you are hunting for an apartment. You value *both* the size of the apartment and the number of friends that live nearby. 
+
+- Apt. *A* has 1 friend nearby and is 1,200 `\(ft^2\)`
+    - Apts that are larger and/or have more friends `\(\succ A\)`
+]
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-ex-2-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Indifference Curves: Example
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Suppose you are hunting for an apartment. You value *both* the size of the apartment and the number of friends that live nearby. 
+
+- Apt. *A* has 1 friend nearby and is 1,200 `\(ft^2\)`
+    - Apts that are larger and/or have more friends `\(\succ A\)`
+    - Apts that are smaller and/or have fewer friends `\(\prec A\)`
+]
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-ex-3-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Indifference Curves: Example
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]:
+.smaller[
+- Apt. *A* has 1 friend nearby and is 1,200 `\(ft^2\)`
+
+- *B* has *more* friends but *less* `\(ft^2\)`
+]
+]
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-ex-4-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Indifference Curves: Example
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]:
+.smaller[
+- Apt. *A* has 1 friend nearby and is 1,200 `\(ft^2\)`
+
+- *B* has *more* friends but *less* `\(ft^2\)`
+
+- *C* has *still more* friends but *less* `\(ft^2\)`
+]
+]
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-ex-5-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Indifference Curves: Example
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]:
+
+.smaller[
+- Apt. *A* has 1 friend nearby and is 1,200 `\(ft^2\)`
+
+- *B* has *more* friends but *less* `\(ft^2\)`
+
+- *C* has *still more* friends but *less* `\(ft^2\)`
+
+- `\(A \sim B \sim C\)`: on same .hi[indifference curve]
+]
+]
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-ex-6-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Indifference Curves: Example
+
+.pull-left[
+
+- .hi-blue[Indifferent] between all apartments on the **same** curve
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-ex-8-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Indifference Curves: Example
+
+.pull-left[
+
+- .hi-blue[Indifferent] between all apartments on the **same** curve
+
+- Apts **above** curve are .hi-green[preferred over] apts on curve
+  - `\(D \succ A \sim B \sim C\)`
+  - On a .hi-green[higher curve]
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-ex-10-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Indifference Curves: Example
+
+.pull-left[
+
+- .hi-blue[Indifferent] between all apartments on the **same** curve
+
+- Apts **above** curve are .hi-green[preferred over] apts on curve
+  - `\(D \succ A \sim B \sim C\)`
+  - On a .hi-green[higher curve]
+- Apts **below** curve are .hi-red[less preferred] than apts on curve
+  - `\(E \prec A \sim B \sim C\)`
+  - On a .hi-red[lower curve]
+]
+
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-ex-11-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Curves Never Cross!
+
+.pull-left[
+
+- .hi-purple[Indifference curves can never cross]: preferences are .hi[transitive]
+  - If I prefer `\(A \succ B\)`, and `\(B \succ C\)`, I must prefer `\(A \succ C\)`
+
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-as-4-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Curves Never Cross!
+
+.pull-left[
+
+- .hi-purple[Indifference curves can never cross]: preferences are .hi[transitive]
+  - If I prefer `\(A \succ B\)`, and `\(B \succ C\)`, I must prefer `\(A \succ C\)`
+
+- Suppose two curves crossed:
+  - .blue[`\\(A \sim B\\)`]
+  - .orange[`\\(B \sim C\\)`]
+  - But .orange[`\\(C\\)`] `\(\succ\)` .blue[`\\(B\\)`]!
+  - Doesn't make sense (not transitive)!
+
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/IC-as-41-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+class: inverse, center, middle
+# Marginal Rate of Substitution
+
+---
+
+# Marginal Rate of Substitution I
+
+.pull-left[
+- If I find another apt with *1 fewer friend* nearby, how many *more `\(ft^2\)`* would you need to keep you *satisfied?*
+
+]
+
+.pull-right[
+.center[
+![:scale 80%](../images/scale.png)
+]
+]
+
+---
+
+# Marginal Rate of Substitution I
+
+.pull-left[
+- If I find another apt with *1 fewer friend* nearby, how many *more `\(ft^2\)`* would you need to keep you *satisfied?*
+
+- .hi[Marginal Rate of Substitution (MRS)]: rate at which you trade away one good for more of the other and remain *indifferent*
+
+- Think of this as the .hi-purple[relative value] you place on good `\(x\)`:
+
+&gt; “I am willing to give up `\((MRS)\)` units of `\(y\)` to consume 1 more unit of `\(x\)` and stay satisfied.”
+
+]
+
+.pull-right[
+.center[
+![:scale 80%](../images/scale.png)
+]
+]
+
+---
+
+# Marginal Rate of Substitution II
+
+.center[
+![](../images/mrsmeme.jpg)
+]
+
+---
+
+# Marginal Rate of Substitution II
+
+.pull-left[
+
+- MRS `\(=\)` .hi[slope of the indifference curve]
+
+`$$MRS_{x,y}=-\frac{\Delta y}{\Delta x} = \frac{rise}{run}$$`
+
+- Amount of `\(y\)` given up for 1 more `\(x\)`
+
+- Note: slope (MRS) changes along the curve!
+
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/MRS-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# MRS vs. Budget Constraint Slope
+
+.pull-left[
+
+- [Budget constraint](/content/1.2-content) (slope) from before measured the **market’s** tradeoff between `\(x\)` and `\(y\)` based on market prices
+
+- **MRS** here measures your **personal** evaluation of `\(x\)` vs. `\(y\)` based on your preferences
+
+- [.hi-turquoise[Foreshadowing]](/content/1.4-content): what if these two rates are *different*? Are you truly optimizing?
+]
+
+.pull-right[
+.center[
+![:scale 80%](../images/scale.png)
+]
+]
+
+---
+
+class: inverse, center, middle
+# Utility
+
+---
+
+# So Where are the Numbers?
+
+.pull-left[
+- Long ago (1890s), utility considered a real, measurable, cardinal scale&lt;sup&gt;.hi[†]&lt;/sup&gt;
+
+- Utility thought to be lurking in people's brains
+    - Could be understood from first principles: calories, water, warmth, etc
+    
+- Obvious problems
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/madlaboratory.jpg)
+]
+]
+
+.footnote[&lt;sup&gt;.hi[†]&lt;/sup&gt; [“Neuroeconomics”](https://en.wikipedia.org/wiki/Neuroeconomics) &amp; cognitive scientists are re-attempting a scientific approach to measure utility]
+
+---
+
+# Utility Functions?
+
+.pull-left[
+
+- More plausibly .hi-turquoise[infer people's preferences from their actions]!
+  - “Actions speak louder than words”
+
+- .hi-purple[Principle of Revealed Preference]: if a person chooses `\(x\)` over `\(y\)`, and both are affordable, then they must prefer `\(x \succeq y\)`
+	
+- Flawless? Of course not. But extremely useful approximation!
+  - People tend not to leave money on the table
+]
+
+.pull-right[
+
+.center[
+![](../images/choices.jpg)
+]
+]
+
+---
+
+# Utility Functions!
+
+.pull-left[
+
+- A .hi[utility function] `\(u(\cdot)\)`&lt;sup&gt;.hi[†]&lt;/sup&gt; *represents* preference relations `\((\succ , \prec , \sim)\)`
+
+- Assign utility numbers to bundles, such that, for any bundles `\(a\)` and `\(b\)`:
+`$$a \succ b \iff u(a)&gt;u(b)$$`
+]
+
+.pull-right[
+
+.center[
+![](../images/choices.jpg)
+]
+]
+
+.footnote[&lt;sup&gt;.hi[†]&lt;/sup&gt; The `\\(\cdot\\)` is a placeholder for whatever goods we are considering (e.g. `\\(x\\)`, `\\(y\\)`, burritos, lattes, etc)]
+
+---
+
+# Utility Functions, Pural I
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[Example]: Imagine three alternative bundles of `\((x, y)\)`:
+`$$\begin{aligned}
+a&amp;=(1,2)\\
+b&amp;=(2,2)\\
+c&amp;=(4,3)\\
+\end{aligned}$$`
+]
+]
+
+--
+
+.pull-right[
+- Let `\(u(\cdot)\)` assign each bundle a utility of:
+
+| `\(u(\cdot)\)` |
+|------------|
+| `\(u(a)=1\)`   | 
+| `\(u(b)=2\)`   |
+| `\(u(c)=3\)`   |
+
+]
+
+--
+
+- .hi-turquoise[Does this mean that bundle `\\(c\\)` is 3 times the utility of `\\(a\\)`?]
+
+---
+
+# Utility Functions, Pural II
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[Example]: Imagine three alternative bundles of `\((x, y)\)`:
+`$$\begin{aligned}
+a&amp;=(1,2)\\
+b&amp;=(2,2)\\
+c&amp;=(4,3)\\
+\end{aligned}$$`
+]
+]
+
+
+.pull-left[
+- Now consider a *2*&lt;sup&gt;*nd*&lt;/sup&gt; function `\(v(\cdot)\)`:
+
+| `\(u(\cdot)\)` | `\(v(\cdot)\)` |
+|------------|------------|
+| `\(u(a)=1\)`   | `\(v(a)=3\)`   |
+| `\(u(b)=2\)`   | `\(v(b)=5\)`   |
+| `\(u(c)=3\)`   | `\(v(c)=7\)`   |
+
+]
+
+---
+
+# Utility Functions, Pural III
+
+.pull-left[
+- Utility numbers have an .hi-purple[ordinal] meaning only, **not cardinal**
+
+- Both are valid utility functions:&lt;sup&gt;.hi[†]&lt;/sup&gt;
+    - `\(u(c)&gt;u(b)&gt;u(a)\)` ✅
+    - `\(v(c)&gt;v(b)&gt;v(a)\)` ✅
+    - because `\(c \succ b \succ a\)`
+
+- .hi-purple[Only the .ul[ranking] of utility numbers matters!]
+
+]
+
+.pull-right[
+
+.center[
+![](../images/choices.jpg)
+]
+]
+
+.footnote[&lt;sup&gt;.hi[†]&lt;/sup&gt; See the Mathematical Appendix in [Today's Class Page](resources/appendices/1.3-appendix/#utility-functions-and-pmts) for why.]
+
+---
+
+# Utility Functions and Indifference Curves I
+
+.pull-left[
+- Two tools to represent preferences: .hi[indifference curves] and .hi[utility functions]
+
+- Indifference curve: all **equally preferred** bundles `\(\iff\)` **same utility level**
+
+- Each indifference curve represents one level (or contour) of utility surface (function)
+
+]
+
+.pull-right[
+
+.center[
+![](../images/choices.jpg)
+]
+]
+
+---
+
+# Utility Functions and Indifference Curves II
+
+.pull-left[
+
+.center[
+
+3-D Utility Function: `\(u(x,y)=\sqrt{xy}\)`
+<div id="htmlwidget-20887fdd4a5cc6357cba" style="width:504px;height:396px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-20887fdd4a5cc6357cba">{"x":{"visdat":{"197a72896393":["function () ","plotlyVisDat"]},"cur_data":"197a72896393","attrs":{"197a72896393":{"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,1.4142135623731,1.73205080756888,2,2.23606797749979,2.44948974278318,2.64575131106459,2.82842712474619,3],[0,1.4142135623731,2,2.44948974278318,2.82842712474619,3.16227766016838,3.46410161513775,3.74165738677394,4,4.24264068711928],[0,1.73205080756888,2.44948974278318,3,3.46410161513775,3.87298334620742,4.24264068711928,4.58257569495584,4.89897948556636,5.19615242270663],[0,2,2.82842712474619,3.46410161513775,4,4.47213595499958,4.89897948556636,5.29150262212918,5.65685424949238,6],[0,2.23606797749979,3.16227766016838,3.87298334620742,4.47213595499958,5,5.47722557505166,5.91607978309962,6.32455532033676,6.70820393249937],[0,2.44948974278318,3.46410161513775,4.24264068711928,4.89897948556636,5.47722557505166,6,6.48074069840786,6.92820323027551,7.34846922834953],[0,2.64575131106459,3.74165738677394,4.58257569495584,5.29150262212918,5.91607978309962,6.48074069840786,7,7.48331477354788,7.93725393319377],[0,2.82842712474619,4,4.89897948556636,5.65685424949238,6.32455532033676,6.92820323027551,7.48331477354788,8,8.48528137423857],[0,3,4.24264068711928,5.19615242270663,6,6.70820393249937,7.34846922834953,7.93725393319377,8.48528137423857,9]],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"surface","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"X"},"yaxis":{"title":"Y"},"zaxis":{"title":"Utility"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"colorbar":{"title":"","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":true,"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,1.4142135623731,1.73205080756888,2,2.23606797749979,2.44948974278318,2.64575131106459,2.82842712474619,3],[0,1.4142135623731,2,2.44948974278318,2.82842712474619,3.16227766016838,3.46410161513775,3.74165738677394,4,4.24264068711928],[0,1.73205080756888,2.44948974278318,3,3.46410161513775,3.87298334620742,4.24264068711928,4.58257569495584,4.89897948556636,5.19615242270663],[0,2,2.82842712474619,3.46410161513775,4,4.47213595499958,4.89897948556636,5.29150262212918,5.65685424949238,6],[0,2.23606797749979,3.16227766016838,3.87298334620742,4.47213595499958,5,5.47722557505166,5.91607978309962,6.32455532033676,6.70820393249937],[0,2.44948974278318,3.46410161513775,4.24264068711928,4.89897948556636,5.47722557505166,6,6.48074069840786,6.92820323027551,7.34846922834953],[0,2.64575131106459,3.74165738677394,4.58257569495584,5.29150262212918,5.91607978309962,6.48074069840786,7,7.48331477354788,7.93725393319377],[0,2.82842712474619,4,4.89897948556636,5.65685424949238,6.32455532033676,6.92820323027551,7.48331477354788,8,8.48528137423857],[0,3,4.24264068711928,5.19615242270663,6,6.70820393249937,7.34846922834953,7.93725393319377,8.48528137423857,9]],"type":"surface","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+]
+]
+.pull-right[
+.center[
+2-D Indifference Curve Contours: `\(y=\frac{u^2}{x}\)`
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+]
+
+---
+
+class: inverse, center, middle
+# Marginal Utility
+
+---
+
+# MRS and Marginal Utility I
+
+.pull-left[
+
+- Recall: .hi[marginal rate of substitution `\\(MRS_{x,y}\\)`] is slope of the indifference curve
+  - Amount of `\(y\)` given up for 1 more `\(x\)`
+
+- How to calculate MRS?
+  - Recall it changes (not a straight line)!
+  - We can calculate it using something from the **utility function**
+
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# MRS and Marginal Utility II
+
+.pull-left[
+
+- .hi[Marginal utility]: change in utility from a marginal increase in consumption
+
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# MRS and Marginal Utility II
+
+.pull-left[
+
+- .hi[Marginal utility]: change in utility from a marginal increase in consumption
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Marginal utility of `\\(x\\)`**]: `\(MU_x = \frac{\Delta u(x,y)}{\Delta x}\)`
+]
+
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# MRS and Marginal Utility II
+
+.pull-left[
+
+- .hi[Marginal utility]: change in utility from a marginal increase in consumption
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Marginal utility of `\\(x\\)`**]: `\(MU_x = \frac{\Delta u(x,y)}{\Delta x}\)`
+]
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Marginal utility of `\\(y\\)`**]: `\(MU_y = \frac{\Delta u(x,y)}{\Delta y}\)`
+]
+
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# MRS and Marginal Utility II
+
+.pull-left[
+
+- .hi[Marginal utility]: change in utility from a marginal increase in consumption
+
+.bg-washed-red.b--dark-red.ba.bw2.br3.shadow-5.ph4.mt5[
+
+- .hi-red[Math (calculus)]: “*marginal*” `\(\iff\)` “*derivative with respect to*”
+
+`$$MU_x = \frac{\partial \, u(x,y)}{\partial \, x}$$`
+
+]
+
+- I will always derive marginal utility functions for you
+
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# MRS and Marginal Utility: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**:] For an example utility function:
+
+`$$u(x,y) = x^2+y^3$$`
+
+- Marginal utility of `\(x\)`: `\(\quad MU_x = 2x\)`
+- Marginal utility of `\(y\)`: `\(\quad MU_y = 3y^2\)`
+
+]
+
+- Again, I will always derive marginal utility functions for you
+
+
+---
+
+# MRS Equation and Marginal Utility
+
+.pull-left[
+
+- Relationship between `\(MU\)` and `\(MRS\)`:
+
+`$$\underbrace{\frac{\Delta y}{\Delta x}}_{MRS} = -\frac{MU_{x}}{MU_{y}}$$`
+
+- See proof in [today's class notes](/content/1.3-content/#derivation-of-mrs-equation-as-ratio-of-marginal-utilities)
+
+&gt; “I am willing to give up `\(\frac{MU_x}{MU_y}\)` units of `\(y\)` to consume 1 more unit of `\(x\)` and stay satisfied.”
+
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Important Insights About Value
+
+.pull-left[
+
+&gt; “I am willing to give up `\(\frac{MU_x}{MU_y}\)` units of `\(y\)` to consume 1 more unit of `\(x\)` and stay satisfied.”
+
+- We can't measure `\(MU\)`'s, but we *can* measure `\(MRS_{x,y}\)` and infer the **ratio** of `\(MU\)`'s!
+  - .hi-green[Example]: if `\(MRS_{x,y} = 5\)`, a unit of good `\(x\)` gives 5 times the marginal utility of good `\(y\)` at the margin
+
+]
+.pull-right[
+
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+# Important Insights About Value
+
+.pull-left[
+
+- Value is .hi-purple[subjective]
+  - Each of us has our own preferences that determine our ends or objectives
+  - Choice is .hi-turquoise[forward looking]: a comparison of your .hi-turquoise[expectations] about opportunities
+  
+- .hi[Preferences are not comparable across individuals]
+  - Only individuals know what they give up at the moment of choice
+]
+
+.pull-right[
+.center[
+![](../images/value2.png)
+]
+]
+
+---
+
+# Important Insights About Value
+
+.pull-left[
+
+- Value inherently comes from the fact that we must make .hi-purple[tradeoffs]
+    - Making one choice means *having to give up* pursuing others!
+    - The choice we pursue at the moment must be worth the sacrifice of others! (i.e. highest marginal utility)
+]
+
+.pull-right[
+.center[
+![](../images/value2.png)
+]
+]
+
+---
+
+# Diminishing Marginal Utility
+
+.pull-left[
+
+.hi-purple[The Law of Diminishing Marginal Utility]: each marginal unit of a good consumed tends to provide less marginal utility than the previous unit, all else equal
+
+- As you consume more `\(x\)`: 
+  - `\(\downarrow MU_x\)`
+  - `\(\downarrow MRS_{x,y}\)`: willing to give up *fewer* units of `\(y\)` for `\(x\)`
+]
+
+.pull-right[
+
+.center[
+![:scale 50%](../images/icecreams.jpg)
+]
+]
+
+---
+
+# Special Case: Substitutes
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Consider 1-Liter bottles of coke and 2-Liter bottles of coke 
+]
+
+- Always willing to substitute between Two 1-L bottles for One 2-L bottle
+
+- .hi[Perfect substitutes]: goods that can be substituted at same fixed rate and yield same utility
+
+- `\\(MRS_{1L,2L}=-0.5\\)` (a constant!)
+
+]
+
+.pull-right[
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Special Case: Complements
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Consider hot dogs and hot dog buns 
+]
+
+- Always consume together in fixed proportions (in this case, 1 for 1)
+
+- .hi[Perfect complements]: goods that can be consumed together in same fixed proportion and yield same utility
+
+- `\\(MRS_{H,B}=\\)` ?
+
+]
+
+.pull-right[
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Cobb-Douglas Utility Functions
+
+.pull-left[
+
+- A very common functional form in economics is .hi[Cobb-Douglas]
+
+`$$u(x,y)=x^ay^b$$`
+
+- Extremely useful, you will see it often!
+    - Lots of nice, useful properties (we'll see later)
+    - See the appendix in [today's class page](resources/appendices/1.3-appendix/#cobb-douglas-functions)
+]
+
+.pull-right[
+&lt;img src="1.3-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Practice
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.smallest[
+.green[**Example**]: Suppose you can consume apples `\((a)\)` and broccoli `\((b)\)`, and earn utility according to:
+
+`$$\begin{align*}
+u(a,b)&amp;=2ab\\
+MU_a&amp;=2b\\
+MU_b&amp;=2a\\
+\end{align*}$$`
+
+1. Put `\(a\)` on the horizontal axis and `\(b\)` on the vertical axis. Write an equation for `\(MRS_{a,b}\)`.
+
+2. Would you prefer a bundle of `\((1, 4)\)` or `\((2, 2)\)`?
+
+3. Suppose you are currently consuming 1 apple and 4 broccoli.
+      a. How many units of broccoli are you willing to give up to eat 1 more apple and remain indifferent?
+      b. How much *more* utility would you get if you were to eat 1 more apple?
+
+4. Repeat question 3, but for when you are consuming 2 of each good.
+]
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "ocean",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

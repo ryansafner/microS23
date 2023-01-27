@@ -1,0 +1,29 @@
+---
+title: "1.2 — Budget Constraint — Practice"
+execute:
+  freeze: auto
+---
+
+<p style="text-align:center"><a target="_blank" href="/files/practice/1.2-practice-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span> <a target="_blank" href="/files/practice/1.2-practice-answers.html"><span class="btn btn-primary btn-lg"><i class="far fa-life-ring"></i> Answer Key</a></span></p>
+
+You can get music via downloads ($d$) or concert tickets ($t$). You have <span>&#36;</span>60 to spend each week, and the price of a download is <span>&#36;</span>3 and the price of a concert ticket is <span>&#36;</span>10. Put $d$ on the horizontal axis and $t$ on the vertical axis.
+
+## Question 1
+
+Write the equation for your budget constraint.
+
+## Question 2 
+
+Solve this equation for $t$, to express the equation of the line.
+
+## Question 3
+
+If you spent all of your money on only Downloads, how many could you buy? If you spent all of your money only on Tickets, how many could you buy? What is the slope of your budget constraint? Graph your budget constraint.
+
+## Question 4
+
+Now suppose your income temporarily decreases to <span>&#36;</span>30. Find the new equation of the budget constraint and graph it.
+
+## Question 5
+
+Now return to your original income (<span>&#36;</span>60) but suppose the price of downloads increases to <span>&#36;</span>6. Find the new equation of the budget constraint and graph it.

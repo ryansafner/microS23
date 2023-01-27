@@ -1,0 +1,24 @@
+---
+title: "1.2 — Budget Constraint — Appendix"
+execute:
+  freeze: auto
+---
+
+## Budget Constraint for $n$ Goods
+
+While we can derive a lot of useful propositions and testable claims using a simple model with just 2 goods, obviously there are many orders of magnitude more goods in an economy. Economics at the graduate and professional level begins with abstract models of $n$ number of goods in an economy. Naturally, we cannot graph this, so we must deal in abstract equations and set theory:
+
+Let $\{x_1, x_2, \cdots, x_n\}$ denote the set of $n$ goods in an economy. Let $\{p_1,p_2, \cdots, p_n\}$ denote the set of market prices affiliated with each good. Let $m$ again denote an individual's income.
+
+For $n$ goods, the budget set is defined as:
+
+$$p_1x_1 + p_2x_2 + \cdots + p_n x_n \leq m$$
+
+Which we can simplify, using [summation notation](https://metricsf21.classes.ryansafner.com/class/2.1-class/#the-summation-operator), as:
+
+$$\sum^{n}_{i=1}p_ix_i \leq m$$
+
+To get the limit of this set, the budget constraint, make it an equality:
+
+$$\sum^{n}_{i=1}p_ix_i = m$$
+As usual, this simply says that one's total expenditures (on all goods) on the left-hand side, must be equal to one's income on the right-hand side.

@@ -1,0 +1,82 @@
+---
+title: "1.3 — Preferences — Class Content"
+execute:
+  freeze: auto
+
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Wednesday, February 1, 2023*
+:::
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+From last class, we know what constraints individuals face in the market (represented by the budget constraint), but how do people make the choices they do? We must now enter the more controversial — though still the overwhelming consensus view in economics — realm of modeling preferences.
+
+As I mentioned in [last class' page](/content/1.2-content), a lot of the "in the weeds" details about preference assumptions, indifference curves, and utility functions are a waste of your time. If you look at the textbook chapter, I am skipping a lot of "the fat," and relegating it to an appendix at the bottom of this page. I used to spend an entire week just teaching about preferences. Again, I reiterate that if you are interested in more advanced economics training, it is *essential* that you master all of these details. But not for this course.
+
+Today we focus on the essential tools for fitting preferences into our optimization model:
+
+- **indifference curves**: each of which is the set of all bundles that one is *indifferent between* (and that give the same amount utility)
+- **utility functions**: which measure the *ordinal* (but not cardinal!) utility level of any given bundle; for comparisons only!
+- **marginal rate of substitution**: the slope of the indifference curve, representing an individual's subjective tradeoff between goods; measured by the ratio of marginal utilities: $MRS_{x,y}=-\frac{MU_x}{MU_y}$
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Ch. 4.1-4.2 in Goolsbee, Levitt, and Syverson, 2019
+
+### Recommended
+
+- [<i class="fas fa-external-link-square-alt"></i> Munger, “What Preferences Do You Want?”](https://www.aier.org/article/what-preferences-do-you-want/)
+- [<i class="fas fa-podcast"></i> Econtalk Podcast: Michael Munger on Desires, Morality, and Self-Interest](https://www.econtalk.org/michael-munger-on-desires-morality-and-self-interest/)
+- [<i class="fas fa-external-link-square-alt"></i> SMBC — Economist 2](https://www.smbc-comics.com/comic/economist-2)
+
+Now that we are picking up the intensity and working with some models (many will be new to you at first), I recommend looking at the textbook readings *before* each class.
+
+## <i class="fas fa-dumbbell"></i> Practice
+
+Answers from last class' [practice problems](/practice/1.2-practice) are posted on that page.
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Preliminary Math Survey Answers
+
+Answers to the [preliminary survey](/assignment/00-preliminary-survey) are posted on that page, along with survey results.
+
+## <i class="fas fa-sigma"></i> Appendix
+
+See the online appendix for today's content:
+
+- [Strict vs. Weak Preferences](/resources/appendices/1.3-appendix.html#strict-vs.-weak-preferences)
+- [Assumptions of "Well-Behaved" Preferences](/resources/appendices/1.3-appendix.html#assumptions-of-well-behaved-preferences)
+- [Assumptions of "Well-Behaved" Indifference Curves](/resources/appendices/1.3-appendix.html#assumptions-of-well-behaved-indifference-curves)
+- [Steepness & Indifference Curves for Neutrals](/resources/appendices/1.3-appendix.html#steepness-indifference-curves-for-neutrals)
+- [Derivation of MRS Equation (as ratio of marginal utilities)](/resources/appendices/1.3-appendix.html#derivation-of-mrs-equation-as-ratio-of-marginal-utilities)
+- [Utility Functions and PMTs](/resources/appendices/1.3-appendix.html#utility-functions-and-pmts)
+- [Graphing Indifference Curves](/resources/appendices/1.3-appendix.html#graphing-indifference-curves)
+- [Utility Functions for Perfect Substitutes](/resources/appendices/1.3-appendix.html#utility-functions-for-perfect-substitutes)
+- [Utility Functions for Perfect Complements](/resources/appendices/1.3-appendix.html#utility-functions-for-perfect-complements)
+- [Cobb-Douglas Functions](/resources/appendices/1.3-appendix.html#cobb-douglas-functions)
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("1.3-slides")
+```
+

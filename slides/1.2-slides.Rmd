@@ -210,10 +210,11 @@ class: inverse, center, middle
 
 - How do people decide:
   - which products to buy
-  - which activities to dedicate their time to
-  - how to save or invest/plan for the future
+  - which activities to dedicate time to
+  - how much to save or invest
+  - how to plan for the future
 
-- .hi[Rational choice theory]: assume that they .hi[optimize] within constraints
+- .hi[Rational choice theory]: assume that people .hi-purple[optimize within constraints]
 
 - A model of behavior we can extend to most scenarios
 ]
@@ -234,7 +235,7 @@ class: inverse, center, middle
 - Often called .hi[“Consumer Theory”] in textbooks, but realize:
 
 - .hi-turquoise[*Everyone* is “a consumer”]
-  - "Goods and services" aren't just food, clothing, etc, but *anything* that you value! (free time, friendship, reputation, etc.)
+  - "Goods and services" are *anything* that you value!
   - Producers demand productive inputs
 
 - We are really modeling how **individuals** make choices in almost *any* context!
@@ -305,7 +306,7 @@ ggplot(df, aes(x = x,
 ```
 ]
 
-.footnote[<sup>.magenta[†]</sup> See [appendix](resources/appendices/1.2-appendix) in today's class page to extend to *n* goods!]
+.footnote[<sup>.magenta[†]</sup> See [appendix](https://micros23.classes.ryansafner.com/resources/appendices/1.2-appendix) in today's class page to extend to *n* goods!]
 
 ---
 
@@ -601,13 +602,13 @@ Let $l$ be on the horizontal axis and $b$ be on the vertical axis.
 # Interpreting the Budget Constraint
 
 .pull-left[
-
+.smaller[
 - Points .hi-blue[on the line] spend all income
   - A: \\($5(0x)+$10(5y) = $50\\) 
   - B: \\($5(10x)+$10(0y) = $50\\)
   - C: \\($5(2x)+$10(4y) = $50\\) 
   - D: \\($5(6x)+$10(2y) = $50\\)
-
+]
 
 ]
 
@@ -665,16 +666,17 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
+.smaller[
 - Points .hi-blue[on the line] spend all income
   - A: \\($5(0x)+$10(5y) = $50\\) 
   - B: \\($5(10x)+$10(0y) = $50\\)
   - C: \\($5(2x)+$10(4y) = $50\\) 
   - D: \\($5(6x)+$10(2y) = $50\\)
 
-- Points .hi-green[beneath] the line are .hi-green[affordable] but don't use all income
+- Points .hi-green[beneath] line are .hi-green[affordable] but don't use all income
   - E: \\($5(3x)+$10(2y) = $35\\) 
 
-
+]
 ]
 
 .pull-right[
@@ -716,18 +718,19 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
+.smaller[
 - Points .hi-blue[on the line] spend all income
   - A: \\($5(0x)+$10(5y) = $50\\) 
   - B: \\($5(10x)+$10(0y) = $50\\)
   - C: \\($5(2x)+$10(4y) = $50\\) 
   - D: \\($5(6x)+$10(2y) = $50\\)
 
-- Points .hi-green[beneath] the line are .hi-green[affordable] but don't use all income
+- Points .hi-green[beneath] line are .hi-green[affordable] but don't use all income
   - E: \\($5(3x)+$10(2y) = $35\\) 
 
-- Points .hi-red[above] the line are .hi-red[unaffordable] (at current income and prices)
+- Points .hi-red[above] line are .hi-red[unaffordable] (now)
   - F: \\($5(6x)+$10(4y) = $70\\) 
-
+]
 ]
 
 .pull-right[
@@ -781,7 +784,7 @@ class: inverse, center, middle
 .pull-left[
 
 - **Slope**: .hi-purple[tradeoff] between $x$ and $y$ at market prices
-  - Market .hi-purple[“exchange rate”] between $x$ and $y$: $\frac{p_x}{p_y}y:1x$
+  - Market .hi-purple[“exchange rate”]: $\frac{p_x}{p_y}y:1x$
 
 - .hi-purple[*Relative* price] of $x$, or the .hi-purple[opportunity cost] of $x$:
 

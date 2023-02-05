@@ -1,0 +1,44 @@
+---
+title: "1.4 — Utility Maximization — Practice"
+execute:
+  freeze: auto
+---
+
+<p style="text-align:center"><a target="_blank" href="/files/practice/1.4-practice-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span> <a target="_blank" href="/files/practice/1.4-practice-answers.html"><span class="btn btn-primary btn-lg"><i class="far fa-life-ring"></i> Answer Key</a></span></p>
+
+# Question 1
+Suppose you can watch movies in the theater ($t$) and streaming at home ($s$), and earn utility according to the utility function: 
+$$u(t,s)=4ts$$
+
+Where your marginal utilities are: 
+$$\begin{align*}
+MU_t&=4s\\
+MU_s&=4t\\ \end{align*}$$
+
+## Part A 
+Put $t$ on the horizontal axis and $s$ on the vertical axis. Write an equation for $MRS_{t,s}$ 
+
+## Part B 
+Would bundles of $(2,2)$ and $(1,4)$ be on the same indifference curve?
+
+## Part C
+Sketch this indifference curve. 
+
+## Question 2
+You can get utility from consuming Soda $(s)$ and Hot dogs $(h)$, according to the utility function:
+
+$$u(s,h)=\sqrt{sh}$$
+
+The marginal utilities are:
+
+$$\begin{align*}
+MU_s&=0.5s^{-0.5}h^{0.5}	\\
+MU_h&=0.5s^{0.5}h^{-0.5} \\ \end{align*}$$
+
+You have an income of $12, the price of Soda is $2, and the price of a Hot dog is $3. Put Soda on the horizontal axis and Hot dogs on the vertical axis.
+
+## Part A 
+What is your utility-maximizing bundle of Soda and Hot dogs?
+
+## Part B
+How much utility does this provide?

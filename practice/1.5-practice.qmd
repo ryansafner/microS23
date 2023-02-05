@@ -1,0 +1,23 @@
+---
+title: "1.5 — Demand — Practice"
+execute:
+  freeze: auto
+---
+
+<p style="text-align:center"><a target="_blank" href="/files/practice/1.5-practice-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span> <a target="_blank" href="/files/practice/1.5-practice-answers.html"><span class="btn btn-primary btn-lg"><i class="far fa-life-ring"></i> Answer Key</a></span></p>
+
+You can spend your income on apples and oranges. Apples currently cost <span>&#36;</span>0.25 and oranges cost <span>&#36;</span>0.50. When your income is <span>&#36;</span>40, you buy 10 apples and 8 oranges. When your income increases to <span>&#36;</span>80, you buy 12 apples and 6 oranges
+
+### Question 1
+What type of good are apples (inferior, necessity, luxury)? Calculate the income elasticity of demand.
+
+### Question 2
+What type of good are oranges (inferior, necessity, or luxury)? Calculate the income elasticity of demand.
+
+You can can have cereal and milk for breakfast. When milk is <span>&#36;</span>2/gallon, you consume 5 bowls of cereal per week. When milk increases to <span>&#36;</span>4/gallon, you consume 4 bowls of cereal per week.
+
+#### Question 3
+What is the relationship between these two goods?
+
+#### Question 4
+Calculate the cross-price elasticity of demand. 

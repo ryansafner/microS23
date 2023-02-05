@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>1.4 — Utility Maximization</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide
+
+# 1.4 — Utility Maximization
+
+## ECON 306 • Microeconomic Analysis • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/microS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/microS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://microS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;microS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+
+---
+
+class: inverse, center, middle
+
+# Constrained Optimization
+
+---
+
+# Constrained Optimization I
+
+.pull-left[
+
+- We model most situations as a .hi[constrained optimization problem]:
+
+- People .hi[optimize]: make tradeoffs to achieve their .hi-purple[objective] *as best as they can*
+
+- Subject to .hi-turquoise[constraints]: limited resources (income, time, attention, etc) 
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Constrained Optimization II
+
+.pull-left[
+
+- One of the most generally useful mathematical models
+
+- *Endless applications*: how we model nearly every decision-maker
+
+&gt; consumer, business firm, politician, judge, bureaucrat, voter, dictator, pirate, drug cartel, drug addict, parent, child, etc
+
+- .hi-purple[Key economic skill: recognizing how to apply the model to a situation]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Remember!
+
+.center[
+![:scale 82%](../images/cooleconbooks.png)
+]
+
+---
+
+# Constrained Optimization III
+
+.pull-left[
+
+- All constrained optimization models have three moving parts: 
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Constrained Optimization III
+
+.pull-left[
+
+- All constrained optimization models have three moving parts: 
+
+1. **Choose:** .hi-purple[ &lt; some alternative &gt;]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Constrained Optimization III
+
+.pull-left[
+
+- All constrained optimization models have three moving parts: 
+
+1. **Choose:** .hi-purple[ &lt; some alternative &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; some objective &gt;]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Constrained Optimization III
+
+.pull-left[
+
+- All constrained optimization models have three moving parts: 
+
+1. **Choose:** .hi-purple[ &lt; some alternative &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; some objective &gt;]
+
+3. **Subject to:** .hi-red[&lt; some constraints &gt;]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Constrained Optimization: Example I
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[**Example**:] A Hood student picking courses hoping to achieve the highest GPA while getting an Econ major.
+
+1. **Choose:**
+
+2. **In order to maximize:**
+
+3. **Subject to:**
+
+]
+]
+.pull-right[
+.center[
+![](../images/education.png)
+]
+]
+
+---
+
+# Constrained Optimization: Example II
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[**Example**:] How should FedEx plan its delivery route?
+
+1. **Choose:**
+
+2. **In order to maximize:**
+
+3. **Subject to:**
+
+]
+]
+.pull-right[
+.center[
+![](../images/routeoptimization.png)
+]
+]
+
+---
+
+# Constrained Optimization: Example III
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[**Example**:] The U.S. government wants to remain economically competitive but reduce emissions by 25%. 
+
+1. **Choose:**
+
+2. **In order to maximize:**
+
+3. **Subject to:**
+
+]
+]
+.pull-right[
+.center[
+![:scale 100%](../images/pollution.png)
+]
+]
+
+---
+
+# Constrained Optimization: Example IV
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[**Example**:] How do elected officials make decisions in politics? 
+
+1. **Choose:**
+
+2. **In order to maximize:**
+
+3. **Subject to:**
+
+]
+]
+.pull-right[
+.center[
+![](../images/veep.jpeg)
+]
+]
+
+---
+
+# The Utility Maximization Problem
+
+.pull-left[
+
+- The individual's .hi[utility maximization problem] we've been modeling, finally, is:
+
+1. **Choose:** .hi-purple[ &lt; a consumption bundle &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; utility &gt;]
+
+3. **Subject to:** .hi-red[&lt; income and market prices &gt;]
+
+]
+
+.pull-right[
+.center[
+![](../images/choices.jpg)
+]
+]
+
+---
+
+# The Utility Maximization Problem: Tools
+
+.pull-left[
+.smallest[
+- We now have the tools to understand individual choices:
+
+- .hi-red[Budget constraint]: individual’s **constraints** of income and market prices
+  - How .red[market] trades off between goods
+  - .red[Marginal cost] (of good `\(x\)`, in terms of `\(y)\)`
+  
+- .hi-green[Utility function]: individual’s **objective** to maximize, based on their preferences
+  - How .green[individual] trades off between goods
+  - .green[Marginal benefit] (of good `\(x\)`, in terms of `\(y)\)`
+]
+]
+.pull-right[
+.center[
+![:scale 80%](../images/beerdecision.PNG)
+]
+]
+
+---
+
+# The Utility Maximization Problem: Verbally
+
+.pull-left[
+
+- The .hi[individual's constrained optimization problem]: 
+
+&gt; choose a bundle of goods to maximize utility, subject to income and market prices
+]
+
+.pull-right[
+.center[
+![:scale 80%](../images/beerdecision.PNG)
+]
+]
+
+---
+
+# The Utility Maximization Problem: Mathematically
+
+.pull-left[
+
+`$$\max_{x,y \geq0} u(x,y)$$`
+`$$s.t. p_xx+p_yy=m$$`
+
+- This requires calculus to solve.&lt;sup&gt;.magenta[†]&lt;/sup&gt; We will look at **graphs** instead!
+]
+
+.pull-right[
+.center[
+![](../images/choices.jpg)
+]
+]
+
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; See the [mathematical appendix](/content/1.4-content/#solving-the-constrained-optimization-problem-with-calculus) in today's class notes on how to solve it with calculus, and an example.]
+
+---
+
+# The Individual's Optimum: Graphically
+
+.pull-left[
+
+- .hi[Graphical solution]: **Highest indifference curve _tangent_ to budget constraint**
+  - Bundle A!
+]
+
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Graphically
+
+.pull-left[
+
+- .hi[Graphical solution]: **Highest indifference curve _tangent_ to budget constraint**
+  - Bundle A!
+
+- B or C spend all income, but a better combination exists
+
+]
+
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Graphically
+
+.pull-left[
+
+- .hi[Graphical solution]: **Highest indifference curve _tangent_ to budget constraint**
+  - Bundle A!
+
+- B or C spend all income, but a better combination exists
+
+- D is higher utility, but *not affordable* at current income &amp; prices
+]
+
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Why Not B? 
+
+.pull-left[
+.smallest[
+`$$\begin{align*}
+\color{#7CAE96}{\text{indiff. curve slope}} &amp;&gt; \color{#D7250E}{\text{budget constr. slope}} \\
+\end{align*}$$`
+]
+]
+
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Why Not B? 
+
+.pull-left[
+
+.smallest[
+`$$\begin{align*}
+\color{#7CAE96}{\text{indiff. curve slope}} &amp;&gt; \color{#D7250E}{\text{budget constr. slope}} \\
+\color{#7CAE96}{\frac{MU_x}{MU_y}} &amp;&gt; \color{#D7250E}{\frac{p_x}{p_y}} \\
+\color{#7CAE96}{2} &amp;&gt; \color{#D7250E}{0.5} \\\end{align*}$$`
+
+- .hi-green[Consumer] views MB of `\(x\)` is 2 units of `\(y\)`
+  - Consumer’s “exchange rate:” .hi-green[2Y:1X]
+
+- .hi-red[Market]-determined MC of `\(x\)` is 0.5 units of `\(y\)`
+  - Market exchange rate is .hi-red[0.5Y:1X]
+]
+]
+
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Why Not B? 
+
+.pull-left[
+.smallest[
+`$$\begin{align*}
+\color{#7CAE96}{\text{indiff. curve slope}} &amp;&gt; \color{D7250E}{\text{budget constr. slope}} \\
+\color{#7CAE96}{\frac{MU_x}{MU_y}} &amp;&gt; \color{#D7250E}{\frac{p_x}{p_y}} \\
+\color{#7CAE96}{2} &amp;&gt; \color{#D7250E}{0.5} \\\end{align*}$$`
+
+- .hi-green[Consumer] views MB of `\(x\)` is 2 units of `\(y\)`
+  - Consumer’s “exchange rate:” .hi-green[2Y:1X]
+
+- .hi-red[Market]-determined MC of `\(x\)` is 0.5 units of `\(y\)`
+  - Market exchange rate is .hi-red[0.5Y:1X]
+
+- Can .hi-purple[spend less on y, more on x] for .hi-purple[more utility!]
+
+]
+]
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Why Not C? 
+
+.pull-left[
+
+.smallest[
+`$$\begin{align*}
+\color{#7CAE96}{\text{indiff. curve slope}} &amp;&lt; \color{#D7250E}{\text{budget constr. slope}} \\
+ \\\end{align*}$$`
+]
+]
+
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Why Not C? 
+
+.pull-left[
+
+.smallest[
+`$$\begin{align*}
+\color{#7CAE96}{\text{indiff. curve slope}} &amp;&lt; \color{#D7250E}{\text{budget constr. slope}} \\
+\color{#7CAE96}{\frac{MU_x}{MU_y}} &amp;&lt; \color{#D7250E}{\frac{p_x}{p_y}} \\
+\color{#7CAE96}{0.125} &amp;&lt; \color{#D7250E}{0.5} \\\end{align*}$$`
+
+- .hi-green[Consumer] views MB of `\(x\)` is 0.125 units of `\(y\)`
+  - Consumer’s “exchange rate:” .hi-green[0.125Y:1X]
+
+- .hi-red[Market]-determined MC of `\(x\)` is 0.5 units of `\(y\)`
+  - Market exchange rate is .hi-red[0.5Y:1X]
+]
+]
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Why Not C? 
+
+.pull-left[
+
+.smallest[
+`$$\begin{align*}
+\color{#7CAE96}{\text{indiff. curve slope}} &amp;&lt; \color{#D7250E}{\text{budget constr. slope}} \\
+\color{#7CAE96}{\frac{MU_x}{MU_y}} &amp;&lt; \color{#D7250E}{\frac{p_x}{p_y}} \\
+\color{#7CAE96}{0.125} &amp;&lt; \color{#D7250E}{0.5} \\\end{align*}$$`
+
+- .hi-green[Consumer] views MB of `\(x\)` is 0.125 units of `\(y\)`
+  - Consumer’s “exchange rate:” .hi-green[0.125Y:1X]
+
+- .hi-red[Market]-determined MC of `\(x\)` is 0.5 units of `\(y\)`
+  - Market exchange rate is .hi-red[0.5Y:1X]
+
+- Can .hi-purple[spend less on y, more on x] for .hi-purple[more utility!]
+
+]
+]
+
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Why A?
+
+.pull-left[
+.smallest[
+`$$\begin{align*}
+\color{#7CAE96}{\text{indiff. curve slope}} &amp;= \color{#D7250E}{\text{budget constr. slope}} \\\end{align*}$$`
+]
+
+]
+
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Why A?
+
+.pull-left[
+
+.smallest[
+`$$\begin{align*}
+\color{#7CAE96}{\text{indiff. curve slope}} &amp;= \color{#D7250E}{\text{budget constr. slope}} \\
+\color{#7CAE96}{\frac{MU_x}{MU_y}} &amp;= \color{#D7250E}{\frac{p_x}{p_y}} \\
+\color{#7CAE96}{0.5} &amp;= \color{#D7250E}{0.5} \\\end{align*}$$`
+
+- .hi-green[Marginal benefit] = .hi-red[Marginal cost]
+  - .hi-green[Consumer] exchanges at same rate as .hi-red[market]
+
+- .hi-purple[*No other combination* of (x,y) *exists* that could increase utility!]&lt;sup&gt;.magenta[†]&lt;/sup&gt;
+
+]
+
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; At *current* income and market prices!]
+]
+
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Two Equivalent Rules
+
+.pull-left[
+
+## Rule 1
+
+`$$\frac{MU_x}{MU_y}  =  \frac{p_x}{p_y}$$`
+
+- Easier for calculation (slopes)
+
+]
+
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: Two Equivalent Rules
+
+.pull-left[
+
+## Rule 1
+
+`$$\frac{MU_x}{MU_y}  =  \frac{p_x}{p_y}$$`
+
+- Easier for calculation (slopes)
+
+## Rule 2
+
+`$$\frac{MU_x}{p_x}  =  \frac{MU_y}{p_y}$$`
+
+- Easier for intuition (next slide)
+
+]
+
+.pull-right[
+
+&lt;img src="1.4-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Individual's Optimum: The Equimarginal Rule
+
+`$$\frac{MU_x}{p_x}  =  \frac{MU_y}{p_y} = \cdots = \frac{MU_n}{p_n}$$`
+
+- .hi[Equimarginal Rule]: consumption is optimized where the **marginal utility per dollar spent** is **equalized** across all `\(n\)` possible goods/decisions
+
+- Always choose an option that gives higher marginal utility (e.g. if `\(MU_x &lt; MU_y)\)`, consume more `\(y\)`!
+  - But each option has a different price, so weight each option by its price, hence `\(\frac{MU_x}{p_x}\)`
+    
+
+---
+
+# An Optimum, By Definition
+
+.pull-left[
+
+- Any .hi[optimum] in economics: no better alternatives exist under current constraints
+
+- No possible change in your consumption that would increase your utility
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/optimize.jpeg)
+]
+]
+
+---
+
+# Practice I
+
+.smaller[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: 	You can get utility from consuming bags of Almonds `\((a)\)` and bunches of Bananas `\((b)\)`, according to the utility function:
+
+`$$\begin{align*}
+u(a,b)&amp;=ab\\
+MU_a&amp;=b	\\
+MU_b&amp;=a \\ \end{align*}$$`
+
+You have an income of $50, the price of Almonds is $10, and the price of Bananas is $2. Put Almonds on the horizontal axis and Bananas on the vertical axis.
+
+1. What is your utility-maximizing bundle of Almonds and Bananas?
+2. How much utility does this provide? [Does the answer to this matter?]
+]
+]
+---
+
+# Practice II, Cobb-Douglas!
+
+.smaller[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: 	You can get utility from consuming Burgers `\((b)\)` and Fries `\((f)\)`, according to the utility function:
+
+`$$\begin{align*}
+u(b,f)&amp;=\sqrt{bf} \\
+MU_b&amp;=0.5b^{-0.5}f^{0.5}	\\
+MU_f&amp;=0.5b^{0.5}f^{-0.5} \\ \end{align*}$$`
+
+You have an income of $20, the price of Burgers is $5, and the price of Fries is $2. Put Burgers on the horizontal axis and Fries on the vertical axis.
+
+1. What is your utility-maximizing bundle of Burgers and Fries?
+2. How much utility does this provide?
+]
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "ocean",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

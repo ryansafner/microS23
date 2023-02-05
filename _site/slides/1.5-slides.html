@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>1.5 — Demand</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide
+
+# 1.5 — Demand
+
+## ECON 306 • Microeconomic Analysis • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/microS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/microS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://microS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;microS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+
+---
+
+class: inverse, center, middle
+
+# Outline
+
+### [Income Effect](#8)
+### [Digression: Measuring Change](#17)
+### [Cross-Price Effects](#36)
+
+---
+
+# The Consumer's Problem: Review
+
+.pull-left[
+
+- We now can explore the .hi-purple[dynamics] of how individuals .hi-purple[optimally respond to changes] in their constraints
+
+- We know the problem is: 
+
+1. **Choose:** .hi-blue[ &lt; a consumption bundle &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; utility &gt;]
+
+3. **Subject to:** .hi-red[&lt; income and market prices &gt;]
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/nw0v6bsho0ab4zq/choices.jpg?raw=1)
+]
+]
+
+---
+
+# A Demand Function (for Good X)
+
+.pull-left[
+.smallest[
+- A consumer's .hi[demand] (for good x) depends on current prices &amp; income:
+
+`$$q_x^D = q_x^D(m, p_x, p_y)$$`
+
+- How does **demand for x** change?
+]
+]
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/nw0v6bsho0ab4zq/choices.jpg?raw=1)
+]
+]
+
+---
+
+# A Demand Function (for Good X)
+
+.pull-left[
+.smallest[
+- A consumer's .hi[demand] (for good x) depends on current prices &amp; income:
+
+`$$q_x^D = q_x^D(m, p_x, p_y)$$`
+
+- How does **demand for x** change?
+
+1. .hi-purple[Income effects] `\(\left(\frac{\Delta q_x^D}{\Delta m}\right)\)`: how `\(q_x^D\)` changes with changes in income
+]
+]
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/nw0v6bsho0ab4zq/choices.jpg?raw=1)
+]
+]
+
+---
+
+# A Demand Function (for Good X)
+
+.pull-left[
+.smallest[
+- A consumer's .hi[demand] (for good x) depends on current prices &amp; income:
+
+`$$q_x^D = q_x^D(m, p_x, p_y)$$`
+
+- How does **demand for x** change?
+
+1. .hi-purple[Income effects] `\(\left(\frac{\Delta q_x^D}{\Delta m}\right)\)`: how `\(q_x^D\)` changes with changes in income
+2. .hi-purple[Cross-price effects] `\(\left(\frac{\Delta q_x^D}{\Delta p_y}\right)\)`: how `\(q_x^D\)` changes with changes in prices of *other* goods (e.g. `\(y)\)`
+]
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/nw0v6bsho0ab4zq/choices.jpg?raw=1)
+]
+]
+
+---
+
+# A Demand Function (for Good X)
+
+.pull-left[
+.smallest[
+- A consumer's .hi[demand] (for good x) depends on current prices &amp; income:
+
+`$$q_x^D = q_x^D(m, p_x, p_y)$$`
+
+- How does **demand for x** change?
+
+1. .hi-purple[Income effects] `\(\left(\frac{\Delta q_x^D}{\Delta m}\right)\)`: how `\(q_x^D\)` changes with changes in income
+2. .hi-purple[Cross-price effects] `\(\left(\frac{\Delta q_x^D}{\Delta p_y}\right)\)`: how `\(q_x^D\)` changes with changes in prices of *other* goods (e.g. `\(y)\)`
+3. .hi-purple[(Own) Price effects] `\(\left(\frac{\Delta q_x^D}{\Delta p_x}\right)\)`: how `\(q_x^D\)` changes with changes in price (of `\(x)\)`
+]
+]
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/nw0v6bsho0ab4zq/choices.jpg?raw=1)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Income Effect
+
+---
+
+# Income Effect
+
+.pull-left[
+
+- .hi[Income effect]: change in optimal consumption of a good associated with a change in (nominal) income, holding relative prices constant
+
+`$$\frac{\Delta q_D}{\Delta m} &gt;^{?}&lt; 0$$`
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/o3xue15ltcrg9ni/income.png?raw=1)
+]
+]
+
+---
+
+# Income Effect (Normal)
+
+.pull-left[
+
+- Consider football tickets and vacation days
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+
+# Income Effect (Normal)
+
+.pull-left[
+
+- Consider football tickets and vacation days
+
+- Suppose income `\((m)\)` increases
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Income Effect (Normal)
+
+.pull-left[
+
+- Consider football tickets and vacation days
+
+- Suppose income `\((m)\)` increases
+
+- At new optimum `\((B)\)`, consumes more of both
+
+- Then both goods are .hi[normal goods]
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Income Effect (Inferior)
+
+.pull-left[
+
+- Consider ramen and steak
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Income Effect (Inferior)
+
+.pull-left[
+
+- Consider ramen and steak
+
+- Suppose income `\((m)\)` increases
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Income Effect (Inferior)
+
+.pull-left[
+
+- Consider ramen and steak
+
+- Suppose income `\((m)\)` increases
+
+- At new optimum `\((B)\)`, consumes more steak, less ramen
+
+- Steak is a .hi[normal good], ramen is an .hi[inferior good]
+
+]
+
+.pull-right[
+
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Income Effect
+
+.pull-left[
+
+`$$\frac{\Delta q_D}{\Delta m} &gt;^{?}&lt; 0$$`
+
+- .hi-purple[Normal goods]: consumption increases with more income (and vice versa)
+
+- .hi-purple[Inferior goods]: consumption decreases with more income (and vice versa)
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/o3xue15ltcrg9ni/income.png?raw=1)
+]
+]
+
+---
+
+class: inverse, center, middle
+# Digression: Measuring Change
+
+---
+
+# Quantifying Changes I
+
+- Several ways we can talk about how a measure **changes** over time, from time `\(t_1 \rightarrow t_2\)`
+
+- .hi-purple[Difference `\\((\Delta)\\)`:] the difference between the value at time `\(t_1\)` and time `\(t_2\)`
+`$$\Delta t=t_2-t_1$$`
+---
+
+# Quantifying Changes II
+
+- Several ways we can talk about how a measure **changes** over time, from time `\(t_1 \rightarrow t_2\)`
+
+- .hi-purple[Difference `\\((\Delta)\\)`:] the difference between the value at time `\(t_1\)` and time `\(t_2\)`
+`$$\Delta t=t_2-t_1$$`
+
+- .hi-purple[Relative Difference]: the difference expressed **in terms of the original value**
+`$$\frac{\Delta t}{t_1} = \frac{t_2-t_1}{t_1}$$`
+ this becomes a proportion (a decimal)
+
+---
+
+# Quantifying Changes III
+
+- .hi-purple[Percentage Change (Growth Rate)]: **relative** difference expressed as a **percentage**
+
+`$$\begin{align*}
+\% \Delta &amp;= \frac{\Delta t}{t_1} \times 100\%\\
+&amp;=\frac{t_2-t_1}{t_1} \times 100\% \\ 
+\end{align*}$$`
+
+---
+
+# A Simple Example Growth Rate 
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**:]
+A country's GDP is $100bn in 2019, and $120bn in 2020. Calculate the country's GDP growth rate for 2020:
+]
+
+---
+
+# Elasticity, in General 
+
+.left-column[
+
+`$$\epsilon_{y,x} = \frac{\% \Delta y}{\% \Delta x}=\cfrac{\frac{\Delta y}{y}}{\frac{\Delta x}{x}}$$`
+
+]
+
+.right-column[
+
+- An .hi[elasticity] between any two variables `\(y\)` and `\(x\)` describes the .hi-purple[responsiveness] of a variable `\((y)\)` to a change in another `\((x)\)`.
+    - (relative change in `\(y\)`) over (relative change in `\(x\)`)
+
+
+]
+
+---
+# Elasticity, in General 
+
+.left-column[
+
+`$$\epsilon_{y,x} = \frac{\% \Delta y}{\% \Delta x}=\cfrac{\frac{\Delta y}{y}}{\frac{\Delta x}{x}}$$`
+
+]
+
+.right-column[
+
+- An .hi[elasticity] between any two variables `\(y\)` and `\(x\)` describes the .hi-purple[responsiveness] of a variable `\((y)\)` to a change in another `\((x)\)`.
+    - (relative change in `\(y\)`) over (relative change in `\(x\)`)
+
+- .hi-purple[Interpretation: `\\(\epsilon_{y,x}=\\)` the *percentage change* in `\\(y\\)` from a *1%* change in `\\(x\\)`]
+
+]
+
+---
+
+# Elasticity, in General 
+
+.left-column[
+
+`$$\epsilon_{y,x} = \frac{\% \Delta y}{\% \Delta x}=\cfrac{\frac{\Delta y}{y}}{\frac{\Delta x}{x}}$$`
+
+]
+
+.right-column[
+
+- An .hi[elasticity] between any two variables `\(y\)` and `\(x\)` describes the .hi-purple[responsiveness] of a variable `\((y)\)` to a change in another `\((x)\)`.
+    - (relative change in `\(y\)`) over (relative change in `\(x\)`)
+
+- .hi-purple[Interpretation: `\\(\epsilon_{y,x}=\\)` the *percentage change* in `\\(y\\)` from a *1%* change in `\\(x\\)`]
+
+- **Unitless**: easy comparisons between **any 2 variables**
+    - e.g. crime rates and police, GDP and gov't spending, inequality and corruption
+
+]
+
+---
+
+# Income Elasticity of Demand I
+
+- The .hi[income elasticity of demand] measures how much quantity demanded `\((q_D)\)` changes in response to a change in income `\((m)\)`
+
+`$$\epsilon_{q,m}= \frac{\% \Delta q_D}{\% \Delta m}$$`
+
+---
+
+# Income Elasticity of Demand I
+
+- The .hi[income elasticity of demand] measures how much quantity demanded `\((q_D)\)` changes in response to a change in income `\((m)\)`
+
+`$$\epsilon_{q,m}= \frac{\% \Delta q_D}{\% \Delta m}$$`
+
+- If `\(\epsilon_{q,m}\)` is **negative**: an .hi-purple[inferior] good
+
+---
+
+# Income Elasticity of Demand I
+
+- The .hi[income elasticity of demand] measures how much quantity demanded `\((q_D)\)` changes in response to a change in income `\((m)\)`
+
+`$$\epsilon_{q,m}= \frac{\% \Delta q_D}{\% \Delta m}$$`
+
+- If `\(\epsilon_{q,m}\)` is **negative**: an .hi-purple[inferior] good
+- If `\(\epsilon_{q,m}\)` is **positive**: a .hi-purple[normal] good
+
+---
+
+# Income Elasticity of Demand I
+
+- The .hi[income elasticity of demand] measures how much quantity demanded `\((q_D)\)` changes in response to a change in income `\((m)\)`
+
+`$$\epsilon_{q,m}= \frac{\% \Delta q_D}{\% \Delta m}$$`
+
+- If `\(\epsilon_{q,m}\)` is **negative**: an .hi-purple[inferior] good
+- If `\(\epsilon_{q,m}\)` is **positive**: a .hi-purple[normal] good
+- Two subtypes of normal goods:
+  - .hi[Necessity]: `\(0 \leq \epsilon_{q,m} \leq 1\)`
+      - `\(\uparrow\)` quantity demanded as `\(\uparrow \uparrow\)` income (water, clothing)
+
+---
+
+# Income Elasticity of Demand I
+
+- The .hi[income elasticity of demand] measures how much quantity demanded `\((q_D)\)` changes in response to a change in income `\((m)\)`
+
+`$$\epsilon_{q,m}= \frac{\% \Delta q_D}{\% \Delta m}$$`
+
+- If `\(\epsilon_{q,m}\)` is **negative**: an .hi-purple[inferior] good
+- If `\(\epsilon_{q,m}\)` is **positive**: a .hi-purple[normal] good
+- Two subtypes of normal goods:
+  - .hi[Necessity]: `\(0 \leq \epsilon_{q,m} \leq 1\)`
+      - `\(\uparrow\)` quantity demanded as `\(\uparrow \uparrow\)` income (water, clothing)
+  - .hi[Luxury]: `\(\epsilon_{q,m} &gt; 1\)`
+      - `\(\uparrow \uparrow\)` quantity demanded as `\(\uparrow\)` income (jewelry, vacations)
+
+---
+
+# Income Elasticity of Demand II
+
+- For now, we can **calculate** the income elasticity of demand simply by calculating the **relative changes**: 
+
+`$$\frac{\% \Delta q}{\% \Delta m}= \cfrac{\left(\frac{\Delta q}{q_1}\right)}{\left(\frac{\Delta m}{m_1}\right)}$$`
+
+- We'll use some fancier methods when we talk about the only elasticity you've probably seen before: *price* elasticity of demand
+
+---
+
+# Income Elasticity of Demand: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: You can spend your income on golf and pancakes. Green fees at a local golf course are $10 per round and pancake mix is $2 per box. When your income is $100, you buy 5 boxes of pancake mix and 9 rounds of golf. When your income increases to $120, you buy 10 boxes of pancake mix and 10 rounds of golf. 	
+
+1. What type of good is golf (inferior, necessity, luxury)?
+
+2. What type of good are pancakes (inferior, necessity, or luxury)?
+]
+
+---
+
+# Income Effects: Example
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Is the environment a normal good?
+
+]
+]
+
+--
+
+.pull-right[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Income Effects: Example
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Is the environment a normal good?
+
+]
+]
+
+.pull-right[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Engel Curves
+
+.pull-left[
+
+- .hi[Engel curve] visualizes income effects: shows how consumption of *one* good changes when income increases
+
+- When positively sloped: .hi-purple[normal good]
+
+- When negatively sloped: .hi-purple[inferior good]
+
+]
+
+.pull-right[
+&lt;img src="1.5-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+class: inverse, center, middle
+# Cross-Price Effects
+
+---
+
+# Cross-Price Effects
+
+.pull-left[
+
+- .hi[Cross-price effect]: change in optimal consumption of a good associated with a change in price of *another* good income, holding the good's *own* price (and income) constant
+
+`$$\frac{\Delta q_x}{\Delta p_y}	&gt;^?&lt; 0$$`
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/rzp2d2x8qqulk9h/appleorange.jpg?raw=1)
+]
+]
+
+---
+
+# Cross-Price Elasticity of Demand I
+
+.pull-left[
+
+- The .hi[cross-price elasticity of demand] measures how much quantity demanded of one good `\((q_x)\)` changes in response to a change in price of *another* good `\((p_y)\)`
+
+`$$\epsilon_{q_x,p_y}= \frac{\% \Delta q_x}{\% \Delta p_y}$$`
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/rzp2d2x8qqulk9h/appleorange.jpg?raw=1)
+]
+]
+
+
+---
+
+# Cross-Price Elasticity of Demand I
+
+.pull-left[
+- The .hi[cross-price elasticity of demand] measures how much quantity demanded of one good `\((q_x)\)` changes in response to a change in price of *another* good `\((p_y)\)`
+
+`$$\epsilon_{q_x,p_y}= \frac{\% \Delta q_x}{\% \Delta p_y} = \cfrac{\frac{\Delta q_x}{q_x}}{\frac{\Delta p_y}{p_y}}$$`
+]
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/rzp2d2x8qqulk9h/appleorange.jpg?raw=1)
+]
+]
+
+---
+
+# Cross-Price Elasticity of Demand II 
+
+.pull-left[
+
+`$$\epsilon_{q_x,p_y}= \frac{\% \Delta q_x}{\% \Delta p_y}$$`
+
+- If `\(\epsilon_{q_x,p_y}\)` is *positive*: goods `\(x\)` and `\(y\)` are .hi[substitutes]
+
+- An rise (fall) in price of `\(y\)` causes more (less) consumption of `\(x\)`
+    - Consumption of `\(x\)` moves in **same direction** as price of `\(y\)`
+
+]
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/zotlo62afrp7q8m/pepsicoke.jpg?raw=1)
+]
+]
+
+---
+
+# Cross-Price Elasticity of Demand III
+
+.pull-left[
+
+`$$\epsilon_{q_x,p_y}= \frac{\% \Delta q_x}{\% \Delta p_y}$$`
+
+- If `\(\epsilon_{q_x,p_y}\)` is *negative*: goods `\(x\)` and `\(y\)` are .hi[complements]
+
+- Goods `\(x\)` and `\(y\)` consumed in a *bundle*, concern about overall price of *bundle*
+
+- A rise (fall) in price of `\(y\)` causes less (more) consumption of `\(x\)`
+  - Consumption of `\(x\)` moves in **opposite direction** as price of `\(y\)`
+
+]
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/2w0btbgwo37hrtq/cerealmilk.png?raw=1)
+]
+]
+
+---
+
+# Cross-Price Elasticity: Example I
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: You can travel into the city every week on Lyft rides and Uber rides. When Lyft is $20/ride, you ride 10 Uber rides. When Lyft raises prices to $25/ride, you ride 15 Uber rides.
+
+1. What is the relationship between these two goods?
+
+2. What is the cross-price elasticity? 
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "ocean",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

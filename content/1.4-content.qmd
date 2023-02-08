@@ -48,6 +48,7 @@ Today we will be working on [practice problems](/practice/1.4-practice). Answers
 
 ## <i class="fas fa-laptop-code"></i> Assignments
 
+### Problem Set 1 Due Monday February 13
 [Problem Set 1](/assignments/01-problem-set) (on classes 1.1-1.4) is due by 11:59 PM Monday February 13 on Blackboard Assignments.
 
 ## <i class="fas fa-sigma"></i> Appendix

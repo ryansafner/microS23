@@ -1,0 +1,59 @@
+---
+title: "1.7 — Price Elasticity — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Dates
+*Wednesday, February 15, 2023* and
+*Monday, February 20, 2023*
+:::
+
+::: callout-warning
+# Upcoming Assignment
+[Problem Set 2](/assignments/02-problem-set) (on classes 1.5-1.7) is due by 11:59 PM Monday February 20 on Blackboard Assignments.
+:::
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we wrap up Unit 1 by talking more extensively about demand curves and simple demand functions (relating price and quantity demanded of a good, *ceterus paribus*). We also (re-)introduce the idea of **price elasticity of demand** that measures a person's responsiveness in consumption to a change in that good's price. However, unlike what you learned in principles^[Arc-price elasticity using the midpoint between two points on the demand curve: $$\cfrac{\frac{q_{2}-q_{1}}{\left(\frac{q_{1}+q_{2}}{2}\right)}}{\frac{p_{2}-p_{1}}{\left(\frac{p_{1}+p_{2}}{2}\right)}}$$
+This actually calculates the elasticity of a single point, the one midway between $(q_1,p_1)$ and $(q_2,p_2)$.] we look at the elasticity of *any point on the demand curve* using a more useful formula:
+$$\epsilon_{q,p}=\frac{1}{slope} \times \frac{p}{q}$$
+where slope refers to the slope of the *inverse* demand curve (the one that we graph).
+
+We will look at the key relationship between price elasticity of demand and total revenue, (Total expenditure, from the perspective of the buyer.) and work on some [practice problems](/practice/1.7-practice).
+
+Next class will be a review session for [Exam 1](/assignments/01-exam), and you can mind more information about on the exam that page.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Ch. 2.2, 2.5, 5.5, in Goolsbee, Levitt, and Syverson, 2019
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Problem Set 2 Due Monday February 20
+
+[Problem Set 2](/assignments/02-problem-set) (on classes 1.5-1.7) is due by 11:59 PM Monday February 20 on Blackboard Assignments.
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("1.7-slides")
+```
+

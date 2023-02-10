@@ -11,7 +11,7 @@
     "href": "assignments/01-problem-set.html",
     "title": "Problem Set 1",
     "section": "",
-    "text": "Due by 11:59 PM Monday February 13 via by Blackboard Assignments\nPlease read the instructions for completing homeworks.\nDownload as PDF"
+    "text": "Due by 11:59 PM Monday February 13 via by Blackboard Assignments\nPlease read the instructions for completing homeworks.\nDownload as PDF  Download as .docx"
   },
   {
     "objectID": "assignments/01-problem-set.html#question-1",
@@ -315,6 +315,69 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/1.6-content.html#overview",
+    "href": "content/1.6-content.html#overview",
+    "title": "1.6 — Income & Substitution Effects — Class Content",
+    "section": " Overview",
+    "text": "Overview\nToday we cover the third effect in the individual demand function: the (own) price effect, aka the law of demand: how changes in a good’s (own) price affect quantity demanded for that good.\nWe introduce the idea of (simplified, own-price) demand functions, inverse demand functions, and a demand curve. I will also show you examples of how we derive demand functions and curves.\nThe other major concept today is breaking apart the law of demand into two effects: the (real) income effect, and the substitution effect. We considering them conceptually and graphically. These can be a difficult concept for students to grasp."
+  },
+  {
+    "objectID": "content/1.6-content.html#readings",
+    "href": "content/1.6-content.html#readings",
+    "title": "1.6 — Income & Substitution Effects — Class Content",
+    "section": " Readings",
+    "text": "Readings\n\n Ch. 2.2, 5.3, in Goolsbee, Levitt, and Syverson, 2019"
+  },
+  {
+    "objectID": "content/1.6-content.html#interactive-examples",
+    "href": "content/1.6-content.html#interactive-examples",
+    "title": "1.6 — Income & Substitution Effects — Class Content",
+    "section": "Interactive Examples",
+    "text": "Interactive Examples\n\nVisualizing the Consumer’s Problem\nVisualizing Changes in the Consumer’s Problem\nVisualizing Demand Shifters\n\nThese are examples that I wrote in R/Shiny in the past, to visualize what it is we are looking at. As I find more time, I will update these and integrate them into our slides, but until then, I will just post links.\nThe first is a visual example of the static (one-time) Consumer’s problem. You can adjust things about the (Cobb-Douglas) utility function, income, and prices, and see how it would affect the graph and the optimum.\nThe second is a visual example of dynamic changes in the Consumer’s problem. The consumer starts at a pre-defined optimum. You can adjust any of the budget constraint parameters \\((m, p_x, p_y)\\), and see how it would affect a new optimum, which you can compare the the original optimum.\nThe third is a visual example of a hypothetical demand function for beer, with preference intensity, income, price of nachos (a complement), and price of wine (a substitute) as inputs to the function. Based on some pre-defined functions (in the background), you can change any of the inputs and see how it would affect the (inverse) demand function, expressed as a simple demand curve.\nI hope some time to clean these up and make a few more, such as “Visualizing the Income and Substitution Effects” and “Estimating a Demand Function from Real World Data.”"
+  },
+  {
+    "objectID": "content/1.6-content.html#assignments",
+    "href": "content/1.6-content.html#assignments",
+    "title": "1.6 — Income & Substitution Effects — Class Content",
+    "section": " Assignments",
+    "text": "Assignments\n\nProblem Set 1 Due Monday February 13\nProblem Set 1 (on classes 1.1-1.4) is due by 11:59 PM Monday February 13 on Blackboard Assignments."
+  },
+  {
+    "objectID": "content/1.6-content.html#slides",
+    "href": "content/1.6-content.html#slides",
+    "title": "1.6 — Income & Substitution Effects — Class Content",
+    "section": " Slides",
+    "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/1.7-content.html#overview",
+    "href": "content/1.7-content.html#overview",
+    "title": "1.7 — Price Elasticity — Class Content",
+    "section": " Overview",
+    "text": "Overview\nToday we wrap up Unit 1 by talking more extensively about demand curves and simple demand functions (relating price and quantity demanded of a good, ceterus paribus). We also (re-)introduce the idea of price elasticity of demand that measures a person’s responsiveness in consumption to a change in that good’s price. However, unlike what you learned in principles1 we look at the elasticity of any point on the demand curve using a more useful formula: \\[\\epsilon_{q,p}=\\frac{1}{slope} \\times \\frac{p}{q}\\] where slope refers to the slope of the inverse demand curve (the one that we graph).\nWe will look at the key relationship between price elasticity of demand and total revenue, (Total expenditure, from the perspective of the buyer.) and work on some practice problems.\nNext class will be a review session for Exam 1, and you can mind more information about on the exam that page."
+  },
+  {
+    "objectID": "content/1.7-content.html#readings",
+    "href": "content/1.7-content.html#readings",
+    "title": "1.7 — Price Elasticity — Class Content",
+    "section": " Readings",
+    "text": "Readings\n\n Ch. 2.2, 2.5, 5.5, in Goolsbee, Levitt, and Syverson, 2019"
+  },
+  {
+    "objectID": "content/1.7-content.html#assignments",
+    "href": "content/1.7-content.html#assignments",
+    "title": "1.7 — Price Elasticity — Class Content",
+    "section": " Assignments",
+    "text": "Assignments\n\nProblem Set 2 Due Monday February 20\nProblem Set 2 (on classes 1.5-1.7) is due by 11:59 PM Monday February 20 on Blackboard Assignments."
+  },
+  {
+    "objectID": "content/1.7-content.html#slides",
+    "href": "content/1.7-content.html#slides",
+    "title": "1.7 — Price Elasticity — Class Content",
+    "section": " Slides",
+    "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
     "objectID": "content/index.html",
     "href": "content/index.html",
     "title": "Overview",
@@ -432,6 +495,62 @@
     "title": "1.5 — Demand — Practice",
     "section": "",
     "text": "Download PDF  Answer Key\n\nYou can spend your income on apples and oranges. Apples currently cost $0.25 and oranges cost $0.50. When your income is $40, you buy 10 apples and 8 oranges. When your income increases to $80, you buy 12 apples and 6 oranges\n\nQuestion 1\nWhat type of good are apples (inferior, necessity, luxury)? Calculate the income elasticity of demand.\n\n\nQuestion 2\nWhat type of good are oranges (inferior, necessity, or luxury)? Calculate the income elasticity of demand.\nYou can can have cereal and milk for breakfast. When milk is $2/gallon, you consume 5 bowls of cereal per week. When milk increases to $4/gallon, you consume 4 bowls of cereal per week.\n\nQuestion 3\nWhat is the relationship between these two goods?\n\n\nQuestion 4\nCalculate the cross-price elasticity of demand."
+  },
+  {
+    "objectID": "practice/1.7-practice.html",
+    "href": "practice/1.7-practice.html",
+    "title": "1.7 — Price Elasticity — Practice",
+    "section": "",
+    "text": "Download PDF  Answer Key\nThe demand for monthly cell phone plans is given by:\n\\[q_D =  50-0.5p\\]"
+  },
+  {
+    "objectID": "practice/1.7-practice.html#question-1",
+    "href": "practice/1.7-practice.html#question-1",
+    "title": "1.7 — Price Elasticity — Practice",
+    "section": "Question 1",
+    "text": "Question 1\nWrite the inverse demand function."
+  },
+  {
+    "objectID": "practice/1.7-practice.html#question-2",
+    "href": "practice/1.7-practice.html#question-2",
+    "title": "1.7 — Price Elasticity — Practice",
+    "section": "Question 2",
+    "text": "Question 2\nCalculate the price elasticity of demand when the price is $10. Is this relatively elastic or inelastic?"
+  },
+  {
+    "objectID": "practice/1.7-practice.html#question-3",
+    "href": "practice/1.7-practice.html#question-3",
+    "title": "1.7 — Price Elasticity — Practice",
+    "section": "Question 3",
+    "text": "Question 3\nCalculate the price elasticity of demand when the price is $70. Is this relatively elastic or inelastic?"
+  },
+  {
+    "objectID": "practice/1.7-practice.html#question-4",
+    "href": "practice/1.7-practice.html#question-4",
+    "title": "1.7 — Price Elasticity — Practice",
+    "section": "Question 4",
+    "text": "Question 4\nAt what price is demand unit elastic \\((\\epsilon=-1)\\)?"
+  },
+  {
+    "objectID": "practice/1.7-practice.html#question-5",
+    "href": "practice/1.7-practice.html#question-5",
+    "title": "1.7 — Price Elasticity — Practice",
+    "section": "Question 5",
+    "text": "Question 5\nCalculate the total revenue at $10."
+  },
+  {
+    "objectID": "practice/1.7-practice.html#question-6",
+    "href": "practice/1.7-practice.html#question-6",
+    "title": "1.7 — Price Elasticity — Practice",
+    "section": "Question 6",
+    "text": "Question 6\nCalculate the total revenue at $70."
+  },
+  {
+    "objectID": "practice/1.7-practice.html#question-7",
+    "href": "practice/1.7-practice.html#question-7",
+    "title": "1.7 — Price Elasticity — Practice",
+    "section": "Question 7",
+    "text": "Question 7\nCalculate the total revenue at the price you found for question 4."
   },
   {
     "objectID": "resources/appendices/1.2-appendix.html",

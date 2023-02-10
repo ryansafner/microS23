@@ -1,0 +1,72 @@
+---
+title: "1.6 — Income & Substitution Effects — Class Content"
+execute:
+  freeze: auto
+
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Monday, February 14, 2023*
+:::
+
+::: callout-warning
+# Upcoming Assignment
+[Problem Set 1](/assignments/01-problem-set) (on classes 1.1-1.4) is due by 11:59 PM Monday February 13 on Blackboard Assignments.
+:::
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we cover the third effect in the individual demand function: the (own) price effect, aka the **law of demand**: how changes in a good's (own) price affect quantity demanded for that good. 
+
+We introduce the idea of (simplified, own-price) demand functions, inverse demand functions, and a demand curve. I will also show you examples of how we derive demand functions and curves.
+
+The other major concept today is breaking apart the law of demand into two effects: the **(real) income effect**, and the **substitution effect**. We considering them conceptually and graphically. These can be a difficult concept for students to grasp.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Ch. 2.2, 5.3, in Goolsbee, Levitt, and Syverson, 2019
+
+## Interactive Examples
+
+- [Visualizing the Consumer's Problem](https://ryansafner.shinyapps.io/Consumer/)
+- [Visualizing Changes in the Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/)
+- [Visualizing Demand Shifters](https://ryansafner.shinyapps.io/Demand/)
+
+These are examples that I wrote in R/Shiny in the past, to visualize what it is we are looking at. As I find more time, I will update these and integrate them into our slides, but until then, I will just post links. 
+
+The first is a visual example of the static (one-time) Consumer's problem. You can adjust things about the (Cobb-Douglas) utility function, income, and prices, and see how it would affect the graph and the optimum.
+
+The second is a visual example of dynamic changes in the Consumer's problem. The consumer starts at a pre-defined optimum. You can adjust any of the budget constraint parameters $(m, p_x, p_y)$, and see how it would affect a new optimum, which you can *compare* the the original optimum.
+
+The third is a visual example of a hypothetical demand function for beer, with preference intensity, income, price of nachos (a complement), and price of wine (a substitute) as inputs to the function. Based on some pre-defined functions (in the background), you can change any of the inputs and see how it would affect the (inverse) demand function, expressed as a simple demand curve. 
+
+I hope some time to clean these up and make a few more, such as "Visualizing the Income and Substitution Effects" and "Estimating a Demand Function from Real World Data."
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Problem Set 1 Due Monday February 13
+
+[Problem Set 1](/assignments/01-problem-set) (on classes 1.1-1.4) is due by 11:59 PM Monday February 13 on Blackboard Assignments.
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("1.6-slides")
+```
+

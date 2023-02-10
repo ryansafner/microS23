@@ -48,6 +48,10 @@ website:
               href: content/1.4-content.qmd
             - text: "1.5 — Demand"
               href: content/1.5-content.qmd
+            - text: "1.6 — Income and Substitution Effects"
+              href: content/1.6-content.qmd
+            - text: "1.7 — Price Elasticity of Demand"
+              href: content/1.7-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false

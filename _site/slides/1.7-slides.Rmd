@@ -1,0 +1,907 @@
+---
+title: "1.7 — Price Elasticity"
+author: 'Ryan Safner'
+#date:
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: ocean #rainbow #monokai rainbow solarized-light #tomorrow-night -blue -eighties zenburn
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("mosaic")
+library("ggrepel")
+library("fontawesome")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_progress_bar()
+
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+set.seed(256)
+```
+
+class: title-slide
+
+# 1.7 — Price Elasticity
+
+## ECON 306 • Microeconomic Analysis • Spring 2023
+
+### Ryan Safner<br> Associate Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microS23"><i class="fa fa-github fa-fw"></i>ryansafner/microS23</a><br> <a href="https://microS23.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microS23.classes.ryansafner.com</a><br>
+
+---
+
+class: inverse
+
+# Outline
+
+### [Price Elasticity of Demand](#3)
+### [Price Elasticity of Demand and Revenues](#16)
+### [Summing Up Unit 1](#32)
+
+---
+
+```{r, fig.retina=3}
+demand=function(x){10-x}
+d<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=8,y=demand(8)), color = "blue", label="Demand", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  coord_cartesian(clip="off")+
+  labs(x = "Quantity of x",
+       y = "Price of x")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+```
+
+class: inverse, center, middle
+
+# Price Elasticity of Demand
+
+---
+
+# Price Elasticity of Demand
+
+.pull-left[
+
+- .hi[Price elasticity of demand] measures *how much* (in %) quantity demanded changes in response to a (1%) change in price
+
+$$\epsilon_{q_D,p} = \frac{\% \Delta q_D}{\% \Delta p}$$
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/uuajn64cnex5uru/elastic.jpg?raw=1)
+]
+
+]
+
+---
+
+# Price Elasticity of Demand: Elastic vs. Inelastic
+
+$$\epsilon_{q_D,p} = \frac{\% \Delta q_D}{\% \Delta p}$$
+
+.smallest[
+|                 | .hi[“Elastic”] | “Unit Elastic” | .hi[“Inelastic”] |
+|-----------------|-----------|----------------|------------|
+| **Intuitively**:    | **Large** response | Proportionate response | **Little** response |
+| **Mathematically**: | $\vert \epsilon_{q_D,p}\vert > 1$ | $\vert \epsilon_{q_D,p}\vert = 1$ | $\vert \epsilon_{q_D,p} \vert < 1$ |
+|                 | Numerator $>$ Denominator | Numerator $=$ Denominator | Numerator $<$ Denominator |
+| **1% change in $p$ causes** | **More than 1%** change in $q_D$ | **Exactly 1%** change in $q_D$ | **Less than 1%** change in $q_D$ | 
+
+]
+
+---
+
+# Visualizing Price Elasticity of Demand
+
+.center[
+An identical 50% price cut on an: 
+]
+
+.pull-left[
+
+.center[
+.smallest[
+“Inelastic” Demand Curve
+]
+]
+
+```{r, fig.align="center", fig.height=5.5}
+demand_i=function(x){10-2*x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_i, geom="line", size=2, color = "blue")+
+  #geom_label(aes(x=1,y=demand(1)), color = "blue", label="'Elastic' Demand", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  # line at 2,6 
+  geom_segment(aes(x=0,xend=2, y=6, yend=6), linetype="dashed")+
+  geom_segment(aes(x=2,xend=2, y=6, yend=0), linetype="dashed")+
+  
+  # line at 3.5,3
+  geom_segment(aes(x=0,xend=3.5, y=3, yend=3), linetype="dashed")+
+  geom_segment(aes(x=3.5,xend=3.5, y=3, yend=0), linetype="dashed")+
+  
+  #arrow down
+  annotate("segment", x = 1, xend = 1, y = 6, yend = 3, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  geom_label(aes(x=1, y=4.5), color="purple", label=expression(paste("-50%", Delta, "p")))+
+  
+  #arrow right
+  annotate("segment", x = 2, xend = 3.5, y = 1.5, yend = 1.5, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  geom_label(aes(x=2.5, y=1.5), color="purple", label=expression(paste("<50%", Delta, "q")))+
+  coord_cartesian(clip="off")+
+  labs(x = "Quantity of x",
+       y = "Price of x")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.pull-right[
+
+.center[
+.smallest[
+“Elastic” Demand Curve
+]
+]
+```{r, fig.align="center", fig.height=5.5}
+demand_e=function(x){8-0.5*x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_e, geom="line", size=2, color = "blue")+
+  #geom_label(aes(x=1,y=demand(1)), color = "blue", label="'Elastic' Demand", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  # line at 4,6 
+  geom_segment(aes(x=0,xend=4, y=6, yend=6), linetype="dashed")+
+  geom_segment(aes(x=4,xend=4, y=6, yend=0), linetype="dashed")+
+  
+  # line at 10,3
+  geom_segment(aes(x=0,xend=10, y=3, yend=3), linetype="dashed")+
+  geom_segment(aes(x=10,xend=10, y=3, yend=0), linetype="dashed")+
+  
+  #arrow down
+  annotate("segment", x = 2, xend = 2, y = 6, yend = 3, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  geom_label(aes(x=2, y=4.5), color="purple", label=expression(paste("-50%", Delta, "p")))+
+  
+  #arrow right
+  annotate("segment", x = 4, xend = 10, y = 1.5, yend = 1.5, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  geom_label(aes(x=7, y=1.5), color="purple", label=expression(paste(">50%", Delta, "q")))+
+  coord_cartesian(clip="off")+
+  labs(x = "Quantity of x",
+       y = "Price of x")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Price Elasticity of Demand Formula
+
+.pull-left[
+
+$$\epsilon_{q_D,p} = \frac{\% \Delta q_D}{\% \Delta p}$$
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/uuajn64cnex5uru/elastic.jpg?raw=1)
+]
+
+]
+
+---
+
+# Price Elasticity of Demand Formula
+
+.pull-left[
+
+$$\epsilon_{q,p} = \frac{\% \Delta q}{\% \Delta p} = \cfrac{\left(\frac{\Delta q}{q}\right)}{\left(\frac{\Delta p}{p}\right)}$$
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/uuajn64cnex5uru/elastic.jpg?raw=1)
+]
+
+]
+
+---
+
+# Price Elasticity of Demand Formula
+
+.pull-left[
+
+$$\epsilon_{q,p} = \frac{\% \Delta q}{\% \Delta p} = \cfrac{\left(\frac{\Delta q}{q}\right)}{\left(\frac{\Delta p}{p}\right)} = \frac{\Delta q}{\Delta p} \times \frac{p}{q}$$
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/uuajn64cnex5uru/elastic.jpg?raw=1)
+]
+
+]
+
+---
+
+# Price Elasticity of Demand Formula
+
+.pull-left[
+
+$$\epsilon_{q,p} = \color{#e64173}{\frac{\Delta q}{\Delta p}} \times \color{#44C1C4}{\frac{p}{q}}$$
+
+- .pink[First term]: *direction* of the effect
+  - This is the .hi[price effect]!
+  - Always *negative*!
+
+- .turquoise[Second term]: *magnitude* of the effect
+  - Will change depending on $p$ and $q$
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/uuajn64cnex5uru/elastic.jpg?raw=1)
+]
+
+]
+
+---
+
+# Price Elasticity of Demand Formula
+
+.pull-left[
+
+$$\epsilon_{q,p} = \frac{\Delta q}{\Delta p} \times \frac{p}{q}$$
+
+- You’ve learned .hi-purple[“arc”]-price elasticity using the .hi-purple[“midpoint formula’] between 2 points
+
+- Here is a more general formula: the .hi-purple[elasticity at any *single* point]!
+
+- We can actually simplify this even more...does the first term remind you of anything?
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/uuajn64cnex5uru/elastic.jpg?raw=1)
+]
+
+]
+
+---
+
+# Price Elasticity of Demand Formula
+
+.pull-left[
+
+$$\color{red}{\mathbf{\epsilon_{q,p}} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}}$$
+- First term is actually the inverse of the slope of the inverse demand curve (that we graph)!
+
+- To find the elasticity at any point, we need 3 things:
+    1. The price
+    2. The associated quantity demanded
+    3. The slope of (inverse) demand
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/uuajn64cnex5uru/elastic.jpg?raw=1)
+]
+
+]
+
+---
+
+# Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: The demand for movie tickets in a small town is given by:
+
+$$q=1000-50p$$
+]
+
+1. Find the inverse demand function.
+
+2. What is the price elasticity of demand at a price of $5.00?
+
+3. What is the price elasticity of demand at a price of $12.00?
+
+4. At what price is demand unit elastic (i.e. $\epsilon_{q,p} = -1)$?
+
+---
+
+# Price Elasticity Changes Along the Demand Curve
+
+.pull-left[
+
+```{r}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=8.5,y=demand(8.5)), color = "blue", label="Demand", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  # line at 5,5 
+  geom_segment(aes(x=0,xend=5, y=5, yend=5), linetype="dashed")+
+  geom_segment(aes(x=5,xend=5, y=5, yend=0), linetype="dashed")+
+  
+  geom_label_repel(data = tibble(x=0, y=10),
+                   aes(x=x, y=y),
+                   segment.size = 2,
+                  color="purple", label=expression(epsilon == infinity))+
+  geom_label_repel(data = tibble(x=2.5, y=7.5),
+                   aes(x=x, y=y),
+                  color="purple",
+                  label=expression(paste(epsilon > 1, ": Elastic")))+
+  geom_label_repel(data = tibble(x=5, y=5),
+                   aes(x=x, y=y),
+                  color="purple",
+                  label=expression(paste(epsilon == 1, ": Unit Elastic")))+
+  geom_label_repel(data = tibble(x=7.5, y=2.5),
+                   aes(x=x, y=y),
+                  color="purple",
+                  label=expression(paste(epsilon < 1, ": Inelastic")))+
+  geom_label_repel(data = tibble(x=10, y=0),
+                   aes(x=x, y=y),
+                   color="purple",
+                   label=expression(epsilon == 0))+
+  labs(x = "Quantity of x",
+       y = "Price of x")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.pull-right[
+
+$$\epsilon_{q,p} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}$$
+
+- **Elasticity $\neq$ slope** (but they are related)!
+
+- .hi-purple[Price elasticity changes along the demand curve]
+
+- Gets *less* elastic as  $\downarrow$ price $(\uparrow$ quantity )
+  - $\frac{1}{slope}$ is constant
+  - $\frac{p}{q}$ gets smaller as $\downarrow p$ and $\uparrow q$
+
+]
+
+---
+
+# Determinants of Price Elasticity of Demand
+
+.pull-left[
+.smallest[
+.hi-purple[What determines how responsive your buying behavior is to a price change?]
+
+- More (fewer) .hi[substitutes] $\implies$ more (less) elastic
+  - Larger categories of products (less elastic) vs. specific brand (more elastic)
+  - .hi[Necessities] (less elastic) vs. .hi[luxuries] (more elastic)
+  - Large (more elastic) vs. small (less elastic) .hi[portion of budget]
+
+- More (less) .hi[time to adjust] $\implies$ more (less) elastic
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/uuajn64cnex5uru/elastic.jpg?raw=1)
+]
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Price Elasticity of Demand and Revenues
+
+---
+
+# Price Elasticity of Demand and Revenues
+
+.pull-left[
+
+.smallest[
+- Price elasticity of demand is closely related to .hi[Revenues `\\((R)\\)`]<sup>.magenta[†]</sup>
+
+$$R(q)=pq$$
+]
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/d95invtrr7ihfu2/revenues.jpg?raw=1)
+]
+.footnote[<sup>.magenta[†]</sup> From the buyer’s side, this is .hi[total expenditures].]
+
+]
+
+---
+
+# Price Elasticity of Demand and Revenues
+
+.pull-left[
+
+.smallest[
+- Price elasticity of demand is closely related to .hi[Revenues `\\((R)\\)`]<sup>.magenta[†]</sup>
+
+$$R(q)=pq$$
+
+| Demand is | $\Delta R$ and $\Delta p$ |
+|-----------------------:|---------------------------|
+| Elastic $\vert \epsilon \vert > 1$ | p & R change **opposite** |
+| Unit Elastic $\vert \epsilon \vert = 1$ | R **maximized** |
+| Inelastic $\vert \epsilon \vert < 1$ | p & R change **together** |
+
+]
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/d95invtrr7ihfu2/revenues.jpg?raw=1)
+]
+.footnote[<sup>.magenta[†]</sup> From the buyer’s side, this is .hi[total expenditures].]
+
+]
+
+---
+
+# Price Elasticity of Demand and Revenues
+
+.pull-left[
+
+.smallest[
+- Price elasticity of demand is closely related to .hi[Revenues `\\((R)\\)`]<sup>.magenta[†]</sup>
+
+$$R(q)=pq$$
+
+| Demand is | $\Delta R$ and $\Delta p$ |
+|-----------------------:|---------------------------|
+| Elastic $\vert \epsilon \vert > 1$ | p & R change **opposite** |
+| Unit Elastic $\vert \epsilon \vert = 1$ | R **maximized** |
+| Inelastic $\vert \epsilon \vert < 1$ | p & R change **together** |
+
+]
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/au0lycfr7cghr9f/badtime.jpg?raw=1)
+]
+]
+
+---
+
+# Revenues: Example I
+
+```{r, fig.retina=3, fig.align="center"}
+r1<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=1,y=demand(1)), color = "blue", label="Demand", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  # line at 5,5 
+  geom_segment(aes(x=0,xend=5, y=5, yend=5), linetype="dashed")+
+  geom_segment(aes(x=5,xend=5, y=5, yend=0), linetype="dashed")+
+  
+  #coord_cartesian(clip="off")+
+  labs(x = "Quantity of x",
+       y = "Price of x")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+r1
+```
+
+
+---
+
+# Revenues: Example I
+
+```{r, fig.retina=3, fig.align="center"}
+r1+geom_rect(xmin=0, xmax=5, ymin=0, ymax=5, fill="blue", alpha=0.35)+
+  geom_text(x=2.5, y=2.5, color="white", label=expression(R==25), size=6)
+```
+
+
+---
+
+# Revenues: Example II
+
+```{r, fig.retina=3, fig.align="center"}
+r2<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=1,y=demand(1)), color = "blue", label="Demand", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  # line at 7,3 
+  geom_segment(aes(x=0,xend=7, y=3, yend=3), linetype="dashed")+
+  geom_segment(aes(x=7,xend=7, y=3, yend=0), linetype="dashed")+
+  
+  #coord_cartesian(clip="off")+
+  labs(x = "Quantity of x",
+       y = "Price of x")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+r2
+```
+
+
+---
+
+# Revenues: Example II
+
+```{r, fig.retina=3, fig.align="center"}
+r2+geom_rect(xmin=0, xmax=7, ymin=0, ymax=3, fill="blue", alpha=0.35)+
+  geom_text(x=3.5, y=1.5, color="white", label=expression(R==21), size=6)
+```
+
+---
+
+# Visualizing Price Elasticity of Demand and Revenues
+
+.pull-left[
+
+.center[
+.smallest[
+“Inelastic” Demand Curve
+
+(Agricultural Products)
+]
+]
+```{r, fig.align="center", fig.height=5.5}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_i, geom="line", size=2, color = "blue")+
+  #geom_label(aes(x=1,y=demand(1)), color = "blue", label="'Elastic' Demand", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                       labels=seq(0,1000,100),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  # line at 2,6 
+  geom_segment(aes(x=0,xend=2, y=6, yend=6), linetype="dashed")+
+  geom_segment(aes(x=2,xend=2, y=6, yend=0), linetype="dashed")+
+  
+  geom_rect(xmin=0, xmax=2, ymin=0, ymax=6, fill="blue", alpha=0.3)+
+  geom_text(x=1, y=4.5, color="white", label=expression(R[p==6]==1200), size=5)+
+
+# line at 3.5,3
+  geom_segment(aes(x=0,xend=3.5, y=3, yend=3), linetype="dashed")+
+  geom_segment(aes(x=3.5,xend=3.5, y=3, yend=0), linetype="dashed")+
+  
+  geom_rect(xmin=0, xmax=3.5, ymin=0, ymax=3, fill="purple", alpha=0.3)+
+  geom_text(x=2, y=2, color="white", label=expression(R[p==3]==1050), size=5)+
+  #arrow down
+  annotate("segment", x = 1, xend = 1, y = 6, yend = 3, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="both", type="closed"))+
+
+  #arrow right
+  annotate("segment", x = 2, xend = 3.5, y = 1.5, yend = 1.5, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="both", type="closed"))+
+  coord_cartesian(clip="off")+
+  labs(x = "Quantity of x",
+       y = "Price of x")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.pull-right[
+
+.center[
+.smallest[
+“Elastic” Demand Curve
+
+(Computer Chips)
+]
+]
+```{r, fig.align="center", fig.height=5.5}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_e, geom="line", size=2, color = "blue")+
+  #geom_label(aes(x=1,y=demand(1)), color = "blue", label="'Elastic' Demand", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                       labels=seq(0,1000,100),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  # line at 4,6 
+  geom_segment(aes(x=0,xend=4, y=6, yend=6), linetype="dashed")+
+  geom_segment(aes(x=4,xend=4, y=6, yend=0), linetype="dashed")+
+  
+  geom_rect(xmin=0, xmax=4, ymin=0, ymax=6, fill="blue", alpha=0.3)+
+  geom_text(x=2, y=4.5, color="white", label=expression(R[p==6]==2400), size=5)+
+
+  
+  # line at 10,3
+  geom_segment(aes(x=0,xend=10, y=3, yend=3), linetype="dashed")+
+  geom_segment(aes(x=10,xend=10, y=3, yend=0), linetype="dashed")+
+  
+  geom_rect(xmin=0, xmax=10, ymin=0, ymax=3, fill="purple", alpha=0.3)+
+  geom_text(x=7, y=2, color="white", label=expression(R[p==3]==3000), size=5)+
+  
+  #arrow down
+  annotate("segment", x = 2, xend = 2, y = 6, yend = 3, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="both", type="closed"))+
+
+  #arrow right
+  annotate("segment", x = 4, xend = 10, y = 1.5, yend = 1.5, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="both", type="closed"))+
+  coord_cartesian(clip="off")+
+  labs(x = "Quantity of x",
+       y = "Price of x")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Price Elasticity and Revenues
+
+.pull-left[
+
+.tiny[
+
+$$R(q)=pq$$
+
+| $q$ | $p$ | $R(q)$ |
+|----:|----:|----:|
+| 0 | 10 | 0 | 
+| 1 | 9 | 9 | 
+| 2 | 8 | 16 | 
+| 3 | 7 | 21 | 
+| 4 | 6 | 24 | 
+| **5** | **5** | **25** | 
+| 6 | 4 | 24 | 
+| 7 | 3 | 21 | 
+| 8 | 2 | 16 |
+| 9 | 1 | 9 |
+| 10 | 0 | 0 |
+
+]
+]
+
+.pull-right[
+
+```{r, fig.retina=3, fig.height=3, fig.align="center"}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=8,y=demand(8)), color = "blue", label="Demand", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  # line at 5,5 
+  geom_segment(aes(x=0,xend=5, y=5, yend=5), linetype="dashed")+
+  geom_segment(aes(x=5,xend=5, y=5, yend=0), linetype="dashed")+
+  
+  geom_label_repel(data=tibble(x=1),aes(x=5, y=5), color="blue", label=expression(paste(epsilon == 1, ": Unit Elastic")))+
+  #coord_cartesian(clip="off")+
+  labs(x = "Quantity of x",
+       y = "Price of x")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)
+```
+
+```{r, fig.retina=3, fig.height=3, fig.align="center"}
+tr=function(x){10*x-x^2}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=tr, geom="line", size=2, color = "green")+
+  geom_label(aes(x=8,y=tr(8)), color = "green", label="Revenues", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,25,5),
+                     limits=c(0,25),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  # line at 5,5 
+  geom_segment(aes(x=0,xend=5, y=25, yend=25), linetype="dashed")+
+  geom_segment(aes(x=5,xend=5, y=25, yend=0), linetype="dashed")+
+  
+  geom_label_repel(data=tibble(x=1),aes(x=5, y=25), color="green", label=expression(paste(R[max])))+
+  #coord_cartesian(clip="off")+
+  labs(x = "Quantity of x",
+       y = "Revenues")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)
+```
+
+.hi-purple[Revenue max'ed at price where `\\(\epsilon = - 1\\)`]
+]
+
+---
+
+# Price Elasticity and Revenues: Example I
+
+.pull-left[
+.center[
+![:scale 80%](https://www.dropbox.com/s/ocf4pojybur3fy6/buildabearelasticity.png?raw=1)
+
+Source: [CNN (July 2, 2018)](https://www.cnn.com/2018/07/12/us/build-a-bear-lines/)
+
+]
+
+]
+
+.pull-right[
+
+> "Build-A-Bear announced its Pay Your Age event earlier this week. Customers who show up to the stores can pay their current age for the popular stuffed animals. On Wednesday, the retailer wrote on its Facebook page that it was 'anticipating potential of long lines and wait times.'"
+
+]
+
+---
+
+# Price Elasticity and Revenues: Example II
+
+
+.pull-left[
+.center[
+![:scale 80%](https://www.dropbox.com/s/wt77kiwckzgcvbx/superbowlelasticity.png?raw=1)
+
+Source: [Wall Street Journal (Feb 3, 2019)](https://www.wsj.com/articles/as-nfl-courts-fans-in-stands-atlanta-is-king-11549201747)
+]
+
+]
+
+.pull-right[
+.smallest[
+"While leaguewide average attendance dropped .43% this season to its lowest level since 2010, Atlanta’s attendance rose for the second season. Mercedes-Benz Stadium and the Falcons have become the model for drawing fans and keeping them happy."
+
+"Instead of charging elevated sums—a long-held industry practice that fans despised—the Falcons would price most of its food at what it sold for on the street...**Prices plunged 50%.** Fans rejoiced. **Although the team made less money on each $2 hot dog it sold, it made more overall.** Average fan spending per game rose 16%. Atlanta’s food services, which ranked 18th in the NFL in the 2016 annual league survey, shot up to No. 1 in 2017 in every metric—and by a wide margin."
+]
+]
+
+---
+
+# Price Elasticity and Revenues: Example III
+
+.center[
+![:scale 58%](https://www.dropbox.com/s/kt3p7xjxjo72hkj/warondrugselasticity.png?raw=1)
+
+Cowen & Tabarrok (2014: p.75)
+]
+
+---
+
+# Price Elasticity and Revenues: Example IV
+
+.center[
+
+<iframe width="980" height="550" src="https://www.youtube.com/embed/mDBq-OU1rHo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+
+class: inverse, center, middle
+
+# Summing Up Unit 1
+
+---
+
+# Models of Individual Choice I
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/0lqg3hlsufnmv72/modelseconomics.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+> "All models are lies. The art is telling useful lies." - George Box
+
+- Remember, we're not modelling the **process** by which people **actually** choose
+
+- We're **predicting consequences** (in people's choices) when **parameters change**
+
+
+]
+
+---
+
+# Models of Individual Choice II
+
+.pull-left[
+
+- Constrained optimization models are the **main** workhorse model in economics
+
+- All constrained optimization models have three moving parts: 
+
+1. **Choose:** .blue[ < some alternative >]
+
+2. **In order to maximize:** .green[< some objective >]
+
+3. **Subject to:** .red[< some constraints >]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/qvr240t5j6t3arm/optimize.jpeg?raw=1)
+]
+]
+
+---
+
+# Models of Individual Choice III
+
+.center[
+![:scale 82%](https://www.dropbox.com/s/bqb48eg20ld6li9/cooleconbooks.png?raw=1)
+]
+
+---
+
+# Applications of Consumer Theory
+
+- See today's [class notes page](/content/1.7-content) for some applications of consumer theory:
+
+1. **Uncertainty**: risky outcomes & insurance
+
+2. **Exchange**: two individuals trading their endowments, general equilibrium, & Pareto efficiency
+
+3. **Taxes**: Which is better for consumers, a consumption tax or a (revenue-equivalent) income tax? 
+
+4. **Intertemporal choice**: saving, borrowing, lending, & interest

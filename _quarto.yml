@@ -67,6 +67,8 @@ website:
               href: assignments/00-preliminary-survey.qmd
             - text: "Problem Set 1"
               href: assignments/01-problem-set.qmd
+            - text: "Problem Set 2"
+              href: assignments/02-problem-set.qmd
         - section: "Exams"
           contents:
         - text: "Opinion-Editorial"

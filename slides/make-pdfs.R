@@ -1,5 +1,5 @@
 # knit Rmd slides to html
-rmarkdown::render("slides/1.2-slides.Rmd")
+rmarkdown::render("slides/1.7-slides.Rmd")
 
 # make-pdfs
 pagedown::chrome_print(input = "https://micros23.classes.ryansafner.com/slides/1.6-slides.html",

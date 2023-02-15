@@ -95,7 +95,7 @@ class: inverse, center, middle
 
 - .hi[Price elasticity of demand] measures *how much* (in %) quantity demanded changes in response to a (1%) change in price
 
-$$\epsilon_{q_D,p} = \frac{\% \Delta q_D}{\% \Delta p}$$
+$$\varepsilon_{q_D,p} = \frac{\% \Delta q_D}{\% \Delta p}$$
 
 ]
 
@@ -110,13 +110,13 @@ $$\epsilon_{q_D,p} = \frac{\% \Delta q_D}{\% \Delta p}$$
 
 # Price Elasticity of Demand: Elastic vs. Inelastic
 
-$$\epsilon_{q_D,p} = \frac{\% \Delta q_D}{\% \Delta p}$$
+$$\varepsilon_{q_D,p} = \frac{\% \Delta q_D}{\% \Delta p}$$
 
 .smallest[
 |                 | .hi[“Elastic”] | “Unit Elastic” | .hi[“Inelastic”] |
 |-----------------|-----------|----------------|------------|
 | **Intuitively**:    | **Large** response | Proportionate response | **Little** response |
-| **Mathematically**: | $\vert \epsilon_{q_D,p}\vert > 1$ | $\vert \epsilon_{q_D,p}\vert = 1$ | $\vert \epsilon_{q_D,p} \vert < 1$ |
+| **Mathematically**: | $\vert \varepsilon_{q_D,p}\vert > 1$ | $\vert \varepsilon_{q_D,p}\vert = 1$ | $\vert \varepsilon_{q_D,p} \vert < 1$ |
 |                 | Numerator $>$ Denominator | Numerator $=$ Denominator | Numerator $<$ Denominator |
 | **1% change in $p$ causes** | **More than 1%** change in $q_D$ | **Exactly 1%** change in $q_D$ | **Less than 1%** change in $q_D$ | 
 
@@ -221,7 +221,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
-$$\epsilon_{q_D,p} = \frac{\% \Delta q_D}{\% \Delta p}$$
+$$\varepsilon_{q_D,p} = \frac{\% \Delta q_D}{\% \Delta p}$$
 
 ]
 
@@ -238,7 +238,7 @@ $$\epsilon_{q_D,p} = \frac{\% \Delta q_D}{\% \Delta p}$$
 
 .pull-left[
 
-$$\epsilon_{q,p} = \frac{\% \Delta q}{\% \Delta p} = \cfrac{\left(\frac{\Delta q}{q}\right)}{\left(\frac{\Delta p}{p}\right)}$$
+$$\varepsilon_{q,p} = \frac{\% \Delta q}{\% \Delta p} = \cfrac{\left(\frac{\Delta q}{q}\right)}{\left(\frac{\Delta p}{p}\right)}$$
 
 ]
 
@@ -255,7 +255,7 @@ $$\epsilon_{q,p} = \frac{\% \Delta q}{\% \Delta p} = \cfrac{\left(\frac{\Delta q
 
 .pull-left[
 
-$$\epsilon_{q,p} = \frac{\% \Delta q}{\% \Delta p} = \cfrac{\left(\frac{\Delta q}{q}\right)}{\left(\frac{\Delta p}{p}\right)} = \frac{\Delta q}{\Delta p} \times \frac{p}{q}$$
+$$\varepsilon_{q,p} = \frac{\% \Delta q}{\% \Delta p} = \cfrac{\left(\frac{\Delta q}{q}\right)}{\left(\frac{\Delta p}{p}\right)} = \frac{\Delta q}{\Delta p} \times \frac{p}{q}$$
 
 ]
 
@@ -272,7 +272,7 @@ $$\epsilon_{q,p} = \frac{\% \Delta q}{\% \Delta p} = \cfrac{\left(\frac{\Delta q
 
 .pull-left[
 
-$$\epsilon_{q,p} = \color{#e64173}{\frac{\Delta q}{\Delta p}} \times \color{#44C1C4}{\frac{p}{q}}$$
+$$\varepsilon_{q,p} = \color{#e64173}{\frac{\Delta q}{\Delta p}} \times \color{#44C1C4}{\frac{p}{q}}$$
 
 - .pink[First term]: *direction* of the effect
   - This is the .hi[price effect]!
@@ -296,7 +296,7 @@ $$\epsilon_{q,p} = \color{#e64173}{\frac{\Delta q}{\Delta p}} \times \color{#44C
 
 .pull-left[
 
-$$\epsilon_{q,p} = \frac{\Delta q}{\Delta p} \times \frac{p}{q}$$
+$$\varepsilon_{q,p} = \frac{\Delta q}{\Delta p} \times \frac{p}{q}$$
 
 - You’ve learned .hi-purple[“arc”]-price elasticity using the .hi-purple[“midpoint formula’] between 2 points
 
@@ -318,7 +318,7 @@ $$\epsilon_{q,p} = \frac{\Delta q}{\Delta p} \times \frac{p}{q}$$
 
 .pull-left[
 
-$$\color{red}{\mathbf{\epsilon_{q,p}} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}}$$
+$$\color{red}{\mathbf{\varepsilon_{q,p}} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}}$$
 - First term is actually the inverse of the slope of the inverse demand curve (that we graph)!
 
 - To find the elasticity at any point, we need 3 things:
@@ -351,7 +351,7 @@ $$q=1000-50p$$
 
 3. What is the price elasticity of demand at a price of $12.00?
 
-4. At what price is demand unit elastic (i.e. $\epsilon_{q,p} = -1)$?
+4. At what price is demand unit elastic (i.e. $\varepsilon_{q,p} = -1)$?
 
 ---
 
@@ -402,7 +402,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-right[
 
-$$\epsilon_{q,p} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}$$
+$$\varepsilon_{q,p} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}$$
 
 - **Elasticity $\neq$ slope** (but they are related)!
 
@@ -480,9 +480,9 @@ $$R(q)=pq$$
 
 | Demand is | $\Delta R$ and $\Delta p$ |
 |-----------------------:|---------------------------|
-| Elastic $\vert \epsilon \vert > 1$ | p & R change **opposite** |
-| Unit Elastic $\vert \epsilon \vert = 1$ | R **maximized** |
-| Inelastic $\vert \epsilon \vert < 1$ | p & R change **together** |
+| Elastic $\vert \varepsilon \vert > 1$ | p & R change **opposite** |
+| Unit Elastic $\vert \varepsilon \vert = 1$ | R **maximized** |
+| Inelastic $\vert \varepsilon \vert < 1$ | p & R change **together** |
 
 ]
 ]
@@ -509,9 +509,9 @@ $$R(q)=pq$$
 
 | Demand is | $\Delta R$ and $\Delta p$ |
 |-----------------------:|---------------------------|
-| Elastic $\vert \epsilon \vert > 1$ | p & R change **opposite** |
-| Unit Elastic $\vert \epsilon \vert = 1$ | R **maximized** |
-| Inelastic $\vert \epsilon \vert < 1$ | p & R change **together** |
+| Elastic $\vert \varepsilon \vert > 1$ | p & R change **opposite** |
+| Unit Elastic $\vert \varepsilon \vert = 1$ | R **maximized** |
+| Inelastic $\vert \varepsilon \vert < 1$ | p & R change **together** |
 
 ]
 ]
@@ -769,7 +769,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   theme_classic(base_family = "Fira Sans Condensed", base_size=16)
 ```
 
-.hi-purple[Revenue max'ed at price where `\\(\epsilon = - 1\\)`]
+.hi-purple[Revenue max'ed at price where `\\(\varepsilon = - 1\\)`]
 ]
 
 ---

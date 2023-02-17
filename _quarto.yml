@@ -71,7 +71,8 @@ website:
               href: assignments/02-problem-set.qmd
         - section: "Exams"
           contents:
-        - text: "Opinion-Editorial"
+            - text: "Exam 1"
+              href: assignments/01-exam.qmd
           href: assignments/op-ed.qmd
 
     - title: "Resources"

@@ -1,6 +1,6 @@
 ---
 title: "Problem Set 1 (Solutions)"
-author: "ECON 306 · Fall 2022"
+author: "ECON 306 · Spring 2023"
 date: ""
 output:
   html_document:
@@ -27,15 +27,13 @@ library("ggrepel")
 
 # Concepts and Critical Thinking
 
-## Question 1 
+## Question 1
 
 #### How can we use utility functions, which have actual numbers that can be measured and compared, to model preferences and still say with a straight face that preferences are subjective? Hint: what does it mean for a utility function to be *ordinal* or *cardinal*? Why can multiple utility functions describe the same preferences?
 
-
 Utility functions represent preferences, which themselves are simply rankings bundles against other bundles--any two bundles must have 1 bundle preferred to the other, or indifference between the two. So, utility functions are ordinal in that the numbers outputted by a utility function $u(x)$ for a particular bundle have no meaning in and of themselves, and there can be no meaningful mathematical operation done on them. Their only interpretation is for comparison: if bundle $x$ is preferred to bundle $y$, then the utility of bundle $x$ is higher than the utility of bundle $y$.
 
-Since we only care about ordinal ranking, that is $u(x)>u(y)$, we can have multiple utility functions (e.g. $v$) that validly represent the same preferences, so long as $v(x)>v(y)$ also. To be technical, this only works for positive monotonic transformations of utility functions, like adding a constant, multiplying by a constant, cubing, taking logs, etc. 
-
+Since we only care about ordinal ranking, that is $u(x)>u(y)$, we can have multiple utility functions (e.g. $v$) that validly represent the same preferences, so long as $v(x)>v(y)$ also. To be technical, this only works for positive monotonic transformations of utility functions, like adding a constant, multiplying by a constant, cubing, taking logs, etc.
 
 ## Question 2
 
@@ -49,26 +47,26 @@ The $MRS=\frac{MU_x}{MU_y}$ is the slope of the *indifference curves*, which exp
 
 #### Describe, in your own words, what happens at the optimum consumption point. Why is it the optimum? What does the equality of the slope of the indifference curve and the slope of the budget constraint *mean*, in English?
 
-At the optimum consumption point, the consumer maximizes their utility (reaches the highest possible indifference curve) subject to their income (they spend all of their money) -- thus their optimum is at a point where the their utility function and budget constraint are tangent. At a tangency, the slopes between the budget constraint and the indifference curve are the same. 
+At the optimum consumption point, the consumer maximizes their utility (reaches the highest possible indifference curve) subject to their income (they spend all of their money) -- thus their optimum is at a point where the their utility function and budget constraint are tangent. At a tangency, the slopes between the budget constraint and the indifference curve are the same.
 
 $$\begin{aligned}
-	|\text{Slope of Indifference Curve}| &= |\text{Slope of Budget Constraint}|\\	
-	\frac{MU_x}{MU_y}&=\frac{p_x}{p_y}\\
+    |\text{Slope of Indifference Curve}| &= |\text{Slope of Budget Constraint}|\\   
+    \frac{MU_x}{MU_y}&=\frac{p_x}{p_y}\\
 \end{aligned}$$
 
-We have seen equivalently that at this point: 
+We have seen equivalently that at this point:
 
 $$\frac{MU_x}{p_x}=\frac{MU_y}{p_y}$$
 
-This means intuitively that at the optimum, the marginal utility (value) earned for every additional dollar spent on either $x$ or $y$ is the same. That is, you can get no more utility by spending a dollar more on $x$, or by spending a dollar more on $y$. This combination is the best that you can possibly do. 
-	
+This means intuitively that at the optimum, the marginal utility (value) earned for every additional dollar spent on either $x$ or $y$ is the same. That is, you can get no more utility by spending a dollar more on $x$, or by spending a dollar more on $y$. This combination is the best that you can possibly do.
+
 If this was not true, for example if you could get more utility by spending more money on $x$, then $\frac{MU_x}{p_x} > \frac{MU_y}{p_y}$ and you would continue to buy more $x$ (it's a better value!) until your utility is maximized and you are at the optimum.
 
 # Problems
 
 ## Question 4
 
-#### Juan enjoys both music and fireworks. His income is $240 per month. Music streaming costs $12 per month, and fireworks cost $8 per bag.
+#### Juan enjoys both music and fireworks. His income is \$240 per month. Music streaming costs \$12 per month, and fireworks cost \$8 per bag.
 
 ### Part A
 
@@ -114,7 +112,6 @@ ggplot(tibble(x=c(0,10)), aes(x=x))+
 
 ```
 
-
 ### Part B
 
 #### If Juan spends all his income on music, how much music can he afford? Plot a point that illustrates this scenario.
@@ -125,13 +122,14 @@ See point A on graph above.
 
 ### Part C
 
-#### If Juan spends all his income on fireworks, how many bags of  reworks can he afford? Plot a point that illustrates this scenario.
+#### If Juan spends all his income on fireworks, how many bags of reworks can he afford? Plot a point that illustrates this scenario.
 
 $$\frac{Income}{P_F}=\frac{\$240}{\$8}=30$$
 
 See point B on graph above.
 
 ### Part D
+
 #### If Juan spends half his income on fireworks and half his income on music, how much of each can he afford? Plot a point that illustrates this scenario.
 
 If Juan spends half of his \$240 on music at \$12 per stream: he buys $\frac{\$120}{\$12}=10$ streams.
@@ -148,7 +146,7 @@ $$Slope=\frac{\Delta M}{\Delta F} = \frac{20}{30} = -\frac{2}{3}$$
 
 ### Part F
 
-#### Suppose that a holiday bonus raises Juan's income temporarily to $360. Draw Juan's new budget constraint.
+#### Suppose that a holiday bonus raises Juan's income temporarily to \$360. Draw Juan's new budget constraint.
 
 ```{r}
 m2<-360
@@ -174,7 +172,7 @@ ggplot(tibble(x=c(0,10)), aes(x=x))+
 
 ### Part G
 
-#### Now suppose that during the holiday, with his holiday bonus, the price of fireworks increases to $12 and the price of music increases to 18. If he spends all of his income on fireworks, how many can Juan buy?  How about music? What happens to his budget constraint, and why?
+#### Now suppose that during the holiday, with his holiday bonus, the price of fireworks increases to \$12 and the price of music increases to 18. If he spends all of his income on fireworks, how many can Juan buy? How about music? What happens to his budget constraint, and why?
 
 $$\frac{m'}{p_F'}=\frac{\$360}{\$12}=30$$
 
@@ -184,7 +182,8 @@ This is the same budget constraint as *before* the income change, since income i
 
 ## Question 5
 
-#### Ashkar has the following utility function for consuming peanut butter $(p)$ and jelly $(j)$: 
+#### Ashkar has the following utility function for consuming peanut butter $(p)$ and jelly $(j)$:
+
 $$u(p,j) = 3pj$$
 
 #### His marginal utilities are:
@@ -201,14 +200,16 @@ MU_j &= 3p\\
 #### Write an equation for $MRS_{p,j}$.
 
 $$\begin{align*}
-	MRS_{p,j}&=\frac{MU_p}{MU_j}\\
-	&=\frac{3j}{3p}\\
-	&=\frac{j}{p}\\
-	\end{align*}$$
+    MRS_{p,j}&=\frac{MU_p}{MU_j}\\
+    &=\frac{3j}{3p}\\
+    &=\frac{j}{p}\\
+    \end{align*}$$
 
 ### Part B
 
-#### Suppose he is currently consuming bundle^[Sandwich, I suppose!] $a = (4,1)$. How much utility is he getting?
+#### Suppose he is currently consuming bundle[^1] $a = (4,1)$. How much utility is he getting?
+
+[^1]: Sandwich, I suppose!
 
 Plug this combination into his utility function:
 
@@ -219,9 +220,10 @@ u(4,1)&=3(4)(1)\\
 \end{align*}$$
 
 ### Part C
+
 #### From his current consumption, how much *more* utility would he get by consuming 1 more $p$? What about 1 more $j$?
 
-This is measuring the marginal utility of $p$ and the marginal utility of $j$, evaluated at his  current consumption bundle of $p=4$ and $j=1$.
+This is measuring the marginal utility of $p$ and the marginal utility of $j$, evaluated at his current consumption bundle of $p=4$ and $j=1$.
 
 $$\begin{align*}
 MU_p&=3j\\
@@ -240,6 +242,7 @@ MU_j&=12\\
 Consuming one additional unit of $j$ will increase his utility by 12.
 
 ### Part D
+
 #### From his current consumption, how many units of $j$ is he willing to give up to get 1 more unit of $p$ and remain indifferent? How many units of $p$ is he willing to give up to get 1 more $j$ and remain indifferent?
 
 This is measuring his marginal rate of substitution (i.e. the slope of the indifference curve) evaluated at his current consumption bundle of $p=4$ and $j=1$. From part A, we found the equation for his $MRS_{p,j}$:
@@ -254,30 +257,31 @@ At his current consumption bundle, he is willing to give up $\frac{1}{4}$ units 
 To obtain one more unit of $j$ and remain indifferent, he is willing to give up 4 units of $p$. This is the inverse of the indifference curve slope at this point. Consider: to go up one unit, we go 4 units to the left.
 
 ### Part E
+
 #### Suppose he can choose between bundles $a = (4,1)$, $b=(2,2)$, and $c=(1,4)$. What are his preferences between them?
 
 Check the utility each bundle provides.
 
 $$\begin{align*}
-		u(p,j)&=3pj\\
-		u(4,1)&=3(4)(1)\\
-		u(4,1)&=12\\	
+        u(p,j)&=3pj\\
+        u(4,1)&=3(4)(1)\\
+        u(4,1)&=12\\    
 \end{align*}$$
 
 Bundle $a$ provides utility of 12.
 
 $$\begin{align*}
-		u(p,j)&=3pj\\
-		u(2,2)&=3(2)(2)\\
-		u(2,2)&=12\\	
+        u(p,j)&=3pj\\
+        u(2,2)&=3(2)(2)\\
+        u(2,2)&=12\\    
 \end{align*}$$
 
 Bundle $b$ provides utility of 12.
 
 $$\begin{align*}
-		u(p,j)&=3pj\\
-		u(1,4)&=3(1)(4)\\
-		u(1,4)&=12\\	
+        u(p,j)&=3pj\\
+        u(1,4)&=3(1)(4)\\
+        u(1,4)&=12\\    
 \end{align*}$$
 
 Bundle $c$ provides utility of 12.
@@ -285,19 +289,21 @@ Bundle $c$ provides utility of 12.
 Since they all provide the same utility, he is indifferent between all three bundles: $a \sim b \sim c$.
 
 ### Part F
+
 #### Would he prefer bundle $d = (2,1)$ over a bundle from part e? Why or why not?
 
 Check the utility this bundle provides.
 
 $$\begin{align*}
-		u(p,j)&=3pj\\
-		u(2,1)&=3(2)(1)\\
-		u(2,1)&=6\\	
+        u(p,j)&=3pj\\
+        u(2,1)&=3(2)(1)\\
+        u(2,1)&=6\\ 
 \end{align*}$$
 
 Bundle $d$ provides utility of 6. Since this is less than bundles $a$, $b$, and $c$, he would prefer all of those over bundle $d$: $d \prec a \sim b \sim c$
 
 ### Part G
+
 #### Sketch a graph, plotting bundles $a, b, c$, and $d$. Indicate any indifference curve(s) they are on, and how much utility each provides.
 
 ```{r}
@@ -341,21 +347,24 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 Kelly's utility function for drinking Coke ($c$) and Pepsi ($p$) is given by:
 
 $$\begin{aligned}
-	u(c,p) &= 5c + 2p\\
-	MU_c &= 5\\
-	MU_p &= 2\\
+    u(c,p) &= 5c + 2p\\
+    MU_c &= 5\\
+    MU_p &= 2\\
 \end{aligned}$$
 
-Put Coke on the horizontal axis and Pepsi on the vertical axis. 
+Put Coke on the horizontal axis and Pepsi on the vertical axis.
 
 ### Part A
+
 #### Can Kelly get utility by consuming *only* Coke or *only* Pepsi?
 
 Yes, because Coke and Pepsi are related by addition in the utility function. If $c$ (or $p$) is 0, she can still get utility by consuming positive amounts of $p$ (or $c$).
 
 ### Part B
 
-#### Write an equation for $MRS_{c,p}$.^[Hint: think about the relationship between these goods. It may not be a "typical" equation.]
+#### Write an equation for $MRS_{c,p}$.[^2]
+
+[^2]: Hint: think about the relationship between these goods. It may not be a "typical" equation.
 
 $$MRS_{C,P} = -\frac{MU_C}{MU_P} = -\frac{5}{2} = -2.5$$
 
@@ -367,13 +376,13 @@ Check by plugging in each point into the utility function:
 
 $$u(c,p)=5c+2p$$
 
-For (2,5): 
+For (2,5):
 
 $$u(c,p)=5(2)+2(5)=20$$
 
 For (2,10)
 
-$$u(c,p)=5(4)+2(0)=	20$$
+$$u(c,p)=5(4)+2(0)= 20$$
 
 Yes, because both bundles give the same utility (20).
 
@@ -392,7 +401,6 @@ Since MRS, the slope, is constant and unchanging, this is a straight line betwee
 ### Part F
 
 #### Sketch a few indifference curves.
-
 
 ```{r}
 IC_cp1=function(x){2.5-2.5*x}
@@ -441,7 +449,6 @@ tribble(
 
 The idea is for you to see that there are multiple combinations of $x$ and $y$ that yield the same utility. These points are therefore on the same indifference curve.
 
-
 ### Part B
 
 #### Graph three indifference curves on the same graph below: the first showing the bundle(s) that yield a utility level of 1; the second showing the bundle(s) that yield a utility level of 2; the third showing the bundle(s) that yield a utility level of 3.
@@ -477,7 +484,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   theme_bw(base_size=16)
 ```
 
-The idea is to plot the values (whole numbers, 1, 2, 3) that have multiple $(x,y)$ combinations, and connect those values on the same curve. 
+The idea is to plot the values (whole numbers, 1, 2, 3) that have multiple $(x,y)$ combinations, and connect those values on the same curve.
 
 ### Part C
 
@@ -490,10 +497,9 @@ MU_y&=0.5x^{0.5}y^{-0.5}\\
 
 #### write an equation for $MRS_{x,y}$.
 
-We are given $MU_X$ and $MU_Y$, so: 
+We are given $MU_X$ and $MU_Y$, so:
 
 $$MRS_{X,Y}=\frac{MU_X}{MU_Y}=\frac{0.5X^{-0.5}Y^{0.5}}{0.5X^{0.5}Y^{-0.5}}$$
-
 
 Simplifying by exponent rules for division and for negative exponents:
 
@@ -501,13 +507,13 @@ $$\frac{0.5X^{-0.5}Y^{0.5}}{0.5X^{0.5}Y^{-0.5}}=\frac{0.5}{0.5}X^{(-0.5-0.5)}Y^{
 
 ### Part D
 
-#### Suppose this consumer has an income of $10, the price of $x$ is $2.50, and the price of $y$ is also $2.50. Write an equation for the budget constraint (in graphable form, in terms of $y$), and put it on the same graph above.
+#### Suppose this consumer has an income of \$10, the price of $x$ is \$2.50, and the price of $y$ is also \$2.50. Write an equation for the budget constraint (in graphable form, in terms of $y$), and put it on the same graph above.
 
 $$\begin{aligned}
 m &= p_xx+p_yy \\
-10 &= 2.50x + 2.50y	\\
-	10-2.50x &= 2.50y \\
-	4-x &= y \\
+10 &= 2.50x + 2.50y \\
+    10-2.50x &= 2.50y \\
+    4-x &= y \\
 \end{aligned}$$
 
 Budget constraint is graphed in black below.
@@ -537,11 +543,11 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 #### Find the optimal combination of $x$ and $y$ where the consumer maximizes utility subject to income. Label this point $A$ on the graph.
 
-At the optimum: 
+At the optimum:
 
 $$\frac{MU_x}{MU_y}=\frac{p_x}{p_y}$$
 
-We already solved for the lefthand side in part (c), and we know the prices, so: 
+We already solved for the lefthand side in part (c), and we know the prices, so:
 
 $$\begin{aligned}
 \left(\frac{Y}{X}\right)&=\frac{(2.50)}{(2.50)}\\
@@ -557,7 +563,7 @@ m&=p_xx+p_yy\\
 x^*&=2\\
 \end{aligned}$$
 
-Since $y=x$, $y^*=2$ 
+Since $y=x$, $y^*=2$
 
 The optimum is labeled $A$ on the graph above.
 
@@ -566,7 +572,7 @@ The optimum is labeled $A$ on the graph above.
 #### How much utility does the consumer earn at the optimum?
 
 $$\begin{aligned}
-u(x,y)&=\sqrt{xy}\\	
+u(x,y)&=\sqrt{xy}\\ 
 u(2,2)&=\sqrt{2*2}\\
 u(2,2)&=\sqrt{4}\\
 u(2,2)&=2\\

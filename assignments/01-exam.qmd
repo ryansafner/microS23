@@ -35,7 +35,7 @@ Note that we skipped some excess content about preferences this semester, so som
 # “Practice” Exam
 
 - [<i class="fas fa-file-pdf"></i> Download Old Exam 1](/files/examprep/Exam1.pdf)
-<!-- [<i class="far fa-life-ring"></i> Answer Key](/files/examprep/Exam1_Answer_Key.pdf)-->
+- [<i class="far fa-life-ring"></i> Answer Key](/files/examprep/Exam1_Answer_Key.pdf)
 
 Above, you have a previous semester's actual exam. Use it to get a sense of what questions are asked, the format, and how many. **The exact number and type of questions on our exam may be different.** For example, this semester we skipped some things about preferences, so you would not be responsible for questions asking about them. In this old exam, that means questions 5 and 9. Though, you should still be able to deduce the answers from your existing knowledge!
 

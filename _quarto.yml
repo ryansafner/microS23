@@ -73,6 +73,7 @@ website:
           contents:
             - text: "Exam 1"
               href: assignments/01-exam.qmd
+        - text: "Opinion-Editorial"
           href: assignments/op-ed.qmd
 
     - title: "Resources"

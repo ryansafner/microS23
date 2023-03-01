@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>2.2 — Production Technology</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/plotly-binding/plotly.js"></script>
+    <script src="libs/typedarray/typedarray.min.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
+    <link href="libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+    <script src="libs/plotly-main/plotly-latest.min.js"></script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide
+
+# 2.2 — Production Technology
+
+## ECON 306 • Microeconomic Analysis • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/microS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/microS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://microS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;microS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+
+---
+
+class: inverse
+
+# Outline
+
+### [Production in the Short Run](#5)
+### [The Firm's Problem: Long Run](#14)
+### [Isoquants and MRTS](#21)
+### [Isocost Lines](#34)
+
+
+---
+
+# The “Runs” of Production 
+
+.pull-left[
+
+- “Time”-frame usefully divided between short vs. long run analysis
+
+- .hi[Short run]: at least one factor of production is .hi-purple[fixed] (too costly to change)
+`$$q=f(\bar{k},l)$$`
+  - Assume **capital** is fixed (i.e. number of factories, storefronts, etc)
+  - Short-run decisions only about using **labor**
+    
+]
+
+.pull-right[
+.center[
+![:scale 60%](../images/timehourglass.jpg)
+]
+
+]
+
+---
+
+
+# The “Runs” of Production 
+
+.pull-left[
+
+- “Time”-frame usefully divided between short vs. long run analysis
+
+- .hi[Long run]: all factors of production are .hi-purple[variable] (can be changed)
+`$$q=f(k,l)$$`
+
+]
+
+.pull-right[
+.center[
+![:scale 60%](../images/timehourglass.jpg)
+]
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Production in the Short Run
+
+---
+
+# Production in the Short Run: Example
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.smaller[
+.green[**Example**:] Consider a firm with the production function
+`$$q=k^{0.5}l^{0.5}$$`
+
+- Suppose in the short run, the firm has 4 units of capital.
+]
+]
+
+.smallest[
+1. Derive the short run production function.
+2. What is the total product (output) that can be made with 4 workers?
+3. What is the total product (output) that can be made with 5 workers?
+
+]
+]
+--
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Marginal Products
+
+.pull-left[
+- The .hi[marginal product] of an input is the *additional* output produced by *one more unit* of that input (*holding all other inputs constant*)
+
+- Like marginal utility
+
+- Similar to marginal utilities, I will give you the marginal product equations
+
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Marginal Product of Labor
+
+.pull-left[
+
+- .hi[Marginal product of labor `\\((MP_l)\\)`]: additional output produced by adding one more unit of labor (holding `\(k\)` constant)
+`$$MP_l = \frac{\Delta q}{\Delta l}$$`
+
+- `\(MP_l\)` is slope of `\(TP\)` at each value of `\(l\)`! 
+  - Note: via calculus: `\(\frac{\partial q}{\partial l}\)`
+]
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Marginal Product of Capital
+
+.pull-left[
+
+- .hi[Marginal product of capital `\\((MP_k)\\)`]: additional output produced by adding one more unit of capital (holding `\(l\)` constant)
+`$$MP_k = \frac{\Delta q}{\Delta k}$$`
+
+- `\(MP_k\)` is slope of `\(TP\)` at each value of `\(k\)`! 
+  - Note: via calculus: `\(\frac{\partial q}{\partial k}\)`
+
+- Note we don't consider capital in the short run!
+
+]
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Diminishing Returns
+
+.pull-left[
+
+- .hi-purple[Law of Diminishing Returns]: adding more of one factor of production **holding all others constant** will result in successively lower increases in output
+
+- In order to increase output, firm will need to increase *all* factors!
+
+
+]
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Diminishing Returns
+
+.pull-left[
+
+- .hi-purple[Law of Diminishing Returns]: adding more of one factor of production **holding all others constant** will result in successively lower increases in output
+
+- In order to increase output, firm will need to increase *all* factors!
+
+.center[
+![:scale 70%](../images/toomanycooks.jpg)
+]
+
+]
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Average Product of Labor (and Capital)
+
+.pull-left[
+
+- .hi[Average product of labor `\\((AP_l)\\)`]: total output per worker
+`$$AP_l = \frac{q}{l}$$`
+
+- A measure of *labor productivity*
+
+- .hi[Average product of capital `\\((AP_k)\\)`]: total output per unit of capital
+`$$AP_k = \frac{q}{k}$$`
+]
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+class: inverse, center, middle
+
+# The Firm's Problem: Long Run
+
+---
+
+# The Long Run
+
+.pull-left[
+
+- In the long run, *all* factors of production are .hi-purple[variable]
+
+`$$q=f(k,l)$$`
+
+- Can build more factories, open more storefronts, rent more space, invest in machines, etc.
+
+- So the firm can choose both `\(l\)` *and* `\(k\)`
+
+]
+
+.pull-right[
+
+.center[
+![](../images/chooselocations.jpg)
+]
+]
+
+---
+
+# The Firm's Problem
+
+.pull-left[
+.smallest[
+- Based on what we've discussed, we can fill in a constrained optimization model for the firm
+  - .hi-turquoise[But don't write this one down just yet!]
+
+- The **firm's problem** is: 
+
+1. **Choose:** .hi-blue[ &lt; inputs and output &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; profits &gt;]
+
+3. **Subject to:** .hi-red[&lt; technology &gt;]
+
+- It's actually much easier to break this into **2 stages**. See today’s [class notes](/content/2.2-content) page for an example using only one stage.
+]
+]
+
+.pull-right[
+
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+# The Firm's Two Problems
+
+.pull-left[
+.smallest[
+1&lt;sup&gt;st&lt;/sup&gt; Stage: .hi[firm's profit maximization problem]: 
+
+1. **Choose:** .hi-blue[ &lt; output &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; profits &gt;]
+
+- We'll cover this later...first we'll explore: 
+]
+]
+.pull-right[
+
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+# The Firm's Two Problems
+
+.pull-left[
+.smallest[
+1&lt;sup&gt;st&lt;/sup&gt; Stage: .hi[firm's profit maximization problem]: 
+
+1. **Choose:** .hi-blue[ &lt; output &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; profits &gt;]
+
+- We'll cover this later...first we'll explore: 
+
+2&lt;sup&gt;nd&lt;/sup&gt; Stage: .hi[firm's cost minimization problem]: 
+
+1. **Choose:** .hi-blue[ &lt; inputs &gt;]
+
+2. **In order to _minimize_:** .hi-green[&lt; cost &gt;]
+
+3. **Subject to:** .hi-red[&lt; producing the optimal output &gt;]
+
+- Minimizing costs `\(\iff\)` maximizing profits
+]
+]
+
+.pull-right[
+
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+# Long Run Production
+
+.pull-left[
+.green[**Example**]: `\(q=\sqrt{lk}\)`
+
+.center[
+![](../images/l_k_mix_highlighted.png)
+]
+]
+
+.pull-right[
+- Many input-combinations yield the same output!
+
+- So how does the firm choose the *optimal* combination?
+]
+---
+
+# Mapping Input-Combination Choices Graphically
+
+.pull-left[
+
+.center[
+
+3-D Production Function
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-20887fdd4a5cc6357cba" style="width:504px;height:396px;"></div>
+<script type="application/json" data-for="htmlwidget-20887fdd4a5cc6357cba">{"x":{"visdat":{"11e02e71680f":["function () ","plotlyVisDat"]},"cur_data":"11e02e71680f","attrs":{"11e02e71680f":{"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,1.4142135623731,1.73205080756888,2,2.23606797749979,2.44948974278318,2.64575131106459,2.82842712474619,3],[0,1.4142135623731,2,2.44948974278318,2.82842712474619,3.16227766016838,3.46410161513775,3.74165738677394,4,4.24264068711928],[0,1.73205080756888,2.44948974278318,3,3.46410161513775,3.87298334620742,4.24264068711928,4.58257569495584,4.89897948556636,5.19615242270663],[0,2,2.82842712474619,3.46410161513775,4,4.47213595499958,4.89897948556636,5.29150262212918,5.65685424949238,6],[0,2.23606797749979,3.16227766016838,3.87298334620742,4.47213595499958,5,5.47722557505166,5.91607978309962,6.32455532033676,6.70820393249937],[0,2.44948974278318,3.46410161513775,4.24264068711928,4.89897948556636,5.47722557505166,6,6.48074069840786,6.92820323027551,7.34846922834953],[0,2.64575131106459,3.74165738677394,4.58257569495584,5.29150262212918,5.91607978309962,6.48074069840786,7,7.48331477354788,7.93725393319377],[0,2.82842712474619,4,4.89897948556636,5.65685424949238,6.32455532033676,6.92820323027551,7.48331477354788,8,8.48528137423857],[0,3,4.24264068711928,5.19615242270663,6,6.70820393249937,7.34846922834953,7.93725393319377,8.48528137423857,9]],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"surface","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"Labor"},"yaxis":{"title":"Capital"},"zaxis":{"title":"Output"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"colorbar":{"title":"","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[["0","rgba(68,1,84,1)"],["0.0416666666666667","rgba(70,19,97,1)"],["0.0833333333333333","rgba(72,32,111,1)"],["0.125","rgba(71,45,122,1)"],["0.166666666666667","rgba(68,58,128,1)"],["0.208333333333333","rgba(64,70,135,1)"],["0.25","rgba(60,82,138,1)"],["0.291666666666667","rgba(56,93,140,1)"],["0.333333333333333","rgba(49,104,142,1)"],["0.375","rgba(46,114,142,1)"],["0.416666666666667","rgba(42,123,142,1)"],["0.458333333333333","rgba(38,133,141,1)"],["0.5","rgba(37,144,140,1)"],["0.541666666666667","rgba(33,154,138,1)"],["0.583333333333333","rgba(39,164,133,1)"],["0.625","rgba(47,174,127,1)"],["0.666666666666667","rgba(53,183,121,1)"],["0.708333333333333","rgba(79,191,110,1)"],["0.75","rgba(98,199,98,1)"],["0.791666666666667","rgba(119,207,85,1)"],["0.833333333333333","rgba(147,214,70,1)"],["0.875","rgba(172,220,52,1)"],["0.916666666666667","rgba(199,225,42,1)"],["0.958333333333333","rgba(226,228,40,1)"],["1","rgba(253,231,37,1)"]],"showscale":true,"x":[0,1,2,3,4,5,6,7,8,9,10],"y":[0,1,2,3,4,5,6,7,8,9,10],"z":[[0,0,0,0,0,0,0,0,0,0],[0,1,1.4142135623731,1.73205080756888,2,2.23606797749979,2.44948974278318,2.64575131106459,2.82842712474619,3],[0,1.4142135623731,2,2.44948974278318,2.82842712474619,3.16227766016838,3.46410161513775,3.74165738677394,4,4.24264068711928],[0,1.73205080756888,2.44948974278318,3,3.46410161513775,3.87298334620742,4.24264068711928,4.58257569495584,4.89897948556636,5.19615242270663],[0,2,2.82842712474619,3.46410161513775,4,4.47213595499958,4.89897948556636,5.29150262212918,5.65685424949238,6],[0,2.23606797749979,3.16227766016838,3.87298334620742,4.47213595499958,5,5.47722557505166,5.91607978309962,6.32455532033676,6.70820393249937],[0,2.44948974278318,3.46410161513775,4.24264068711928,4.89897948556636,5.47722557505166,6,6.48074069840786,6.92820323027551,7.34846922834953],[0,2.64575131106459,3.74165738677394,4.58257569495584,5.29150262212918,5.91607978309962,6.48074069840786,7,7.48331477354788,7.93725393319377],[0,2.82842712474619,4,4.89897948556636,5.65685424949238,6.32455532033676,6.92820323027551,7.48331477354788,8,8.48528137423857],[0,3,4.24264068711928,5.19615242270663,6,6.70820393249937,7.34846922834953,7.93725393319377,8.48528137423857,9]],"type":"surface","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+]
+]
+.pull-right[
+.center[
+2-D Isoquant Contours
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Isoquants and MRTS
+
+---
+
+# Isoquant Curves
+
+.pull-left[
+
+- We can draw an .hi-blue[isoquant] indicating all combinations of `\(l\)` and `\(k\)` that yield the same `\(q\)`
+
+]
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-15-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+
+# Isoquant Curves
+
+.pull-left[
+
+- We can draw an .hi-blue[isoquant] indicating all combinations of `\(l\)` and `\(k\)` that yield the same `\(q\)`
+
+- Combinations *above* curve yield .hi-green[more output]; on a .hi-green[higher curve]
+  - `\(D &gt; A = B = C\)`
+
+]
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Isoquant Curves
+
+.pull-left[
+
+- We can draw an .hi-blue[isoquant] indicating all combinations of `\(l\)` and `\(k\)` that yield the same `\(q\)`
+
+- Combinations *above* curve yield .hi-green[more output]; on a .hi-green[higher curve]
+  - `\(D &gt; A = B = C\)`
+
+- Combinations *below* the curve yield .hi-red[less output]; on a .hi-red[lower curve]
+  - `\(E &lt; A = B = C\)`
+]
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-17-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Marginal Rate of *Technical* Substitution I
+
+.pull-left[
+- If your firm uses fewer workers, how much more capital would it need to produce the same amount?
+
+]
+
+.pull-right[
+.center[
+![:scale 80%](../images/scale.png)
+]
+]
+
+---
+
+# Marginal Rate of *Technical* Substitution I
+
+.pull-left[
+- If your firm uses fewer workers, how much more capital would it need to produce the same amount?
+
+- .hi[Marginal Rate of Technical Substitution (MRTS)]: rate at which firm trades off one input for another to *yield same output*
+
+- Firm's .hi-purple[relative value] of using `\(l\)` in production based on its tech:
+
+&gt; “We could give up (MRTS) units of k to use 1 more unit of l to produce the same output.”
+
+]
+
+.pull-right[
+.center[
+![:scale 80%](../images/scale.png)
+]
+]
+
+---
+
+# Marginal Rate of *Technical* Substitution II
+
+.center[
+![](../images/mrsmeme.jpg)
+]
+
+---
+
+# Marginal Rate of *Technical* Substitution II
+
+.pull-left[
+
+- MRTS is the slope of the isoquant
+`$$MRTS_{l,k}=-\frac{\Delta k}{\Delta l} = \frac{rise}{run}$$`
+
+- Amount of `\(k\)` given up for 1 more `\(l\)`
+
+- Note: slope (MRTS) changes along the curve!
+
+- .hi-purple[Law of diminishing returns]!
+
+]
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/MRS-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# MRTS and Marginal Products 
+
+.pull-left[
+
+- Relationship between `\(MP\)` and `\(MRTS\)`:
+
+`$$\begin{align*}
+\underbrace{\frac{\Delta k}{\Delta l}}_{MRTS} &amp;= -\frac{MP_l}{MP_k}\\ \end{align*}$$`
+
+- See proof in [today's class notes](/content/2.2-content)
+
+- Sound familiar? 🧐
+
+]
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-18-1.png" width="432" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Special Case I: Perfect Substitutes
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Consider Bank Tellers `\\((l)\\)` and ATMs `\\((k)\\)` 
+]
+- Suppose 1 ATM can do the work of 2 bank tellers
+
+- .hi[Perfect substitutes]: inputs that can be substituted at same fixed rate and yield same output
+
+- `\(MRTS_{l,k}=-0.5\)` (a constant!)
+
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-19-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Special Case II: Perfect Complements
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Consider buses `\\((k)\\)` and bus drivers `\\((l)\\)`
+]
+- Must combine together in fixed proportions (1:1)
+
+- .hi[Perfect complements]: inputs must be used together in same fixed proportion to produce output
+
+- `\(MRTS_{l,k}\)`: ?
+
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-20-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Common Case: Cobb-Douglas Production Functions
+
+.pull-left[
+
+- Again: very common functional form in economics is .hi[Cobb-Douglas]
+
+`$$q=A \, k^al^b$$`
+
+- Where `\(a, b &gt;0\)`
+  - often `\(a+b=1\)`
+
+- `\(A\)` is total factor productivity
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-21-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Practice
+
+.smallest[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Suppose a firm has the following production function:
+`$$q=2lk$$`
+
+Where its marginal products are:
+
+`$$\begin{align*}
+MP_l&amp;=2k\\
+MP_k&amp;=2l\\
+\end{align*}$$`
+
+1. Put `\(l\)` on the horizontal axis and `\(k\)` on the vertical axis. Write an equation for `\(MRTS_{l,k}\)`.
+
+2. Would input combinations of `\((1, 4)\)` and `\((2, 2)\)` be on the same isoquant?
+
+3. Sketch a graph of the isoquant from part 2. 
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Isocost Lines
+
+---
+
+# Isocost Lines
+
+.pull-left[
+.smallest[
+- If your firm can choose among *many* input combinations to produce `\(q\)`, which combinations are optimal?
+
+- Those combination that are .hi-purple[cheapest]
+
+- Denote prices of each input as:
+    - `\(w\)`: price of labor (wage)
+    - `\(r\)`: price of capital
+
+- Let `\(C\)` be .hi[total cost] of using inputs `\((l,k)\)` at market prices `\((w,r)\)` to produce `\(q\)` units of output:
+
+`$$C(w,r,q)=wl+rk$$`
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/priceguarantee.jpg)
+]
+]
+
+---
+
+# The Isocost Line, Graphically
+
+.pull-left[
+
+`$$wl+rk=C$$`
+
+]
+
+---
+
+# The Isocost Line, Graphically
+
+.pull-left[
+
+`$$wl+rk=C$$`
+
+- Solve for `\(k\)` to graph
+
+`$$k=\frac{C}{r}-\frac{w}{r}l$$`
+
+]
+
+.pull-right[
+
+
+&lt;img src="2.2-slides_files/figure-html/BC-plot0-1.png" width="432" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Isocost Line, Graphically
+
+.pull-left[
+
+`$$wl+rk=C$$`
+
+- Solve for `\(k\)` to graph
+
+`$$k=\frac{C}{r}-\frac{w}{r}l$$`
+
+- Vertical-intercept: `\(\frac{C}{r}\)`
+- Horizontal-intercept: `\(\frac{C}{w}\)`
+]
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/BC-plot1-1.png" width="432" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Isocost Line, Graphically
+
+.pull-left[
+
+`$$wl+rk=C$$`
+
+- Solve for `\(k\)` to graph
+
+`$$k=\frac{C}{r}-\frac{w}{r}l$$`
+
+- Vertical-intercept: `\(\frac{C}{r}\)`
+- Horizontal-intercept: `\(\frac{C}{w}\)`
+- slope: `\(-\frac{w}{r}\)`
+
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/BC-plot2-1.png" width="432" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Isocost Line: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Suppose your firm has a purchasing budget of $50. Market wages are $5/worker-hour and the mark rental rate of capital is $10/machine-hour. Let `\(l\)` be on the horizontal axis and `\(k\)` be on the vertical axis.
+
+1. Write an equation for the isocost line (in graphable form).
+
+2. Graph the isocost line.
+]
+
+---
+
+# Interpreting the Isocost Line
+
+.pull-left[
+.smallest[
+- Points .blue[on] the line are same total cost
+  - A: \\($5(0l)+$10(5k) = $50\\) 
+  - B: \\($5(10l)+$10(0k) = $50\\)
+  - C: \\($5(2l)+$10(4k) = $50\\) 
+  - D: \\($5(6l)+$10(2k) = $50\\)
+]
+]
+
+.pull-right[
+
+
+
+&lt;img src="2.2-slides_files/figure-html/BC2-plot1-1.png" width="432" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Interpreting the Isocost Line
+
+.pull-left[
+.smallest[
+- Points .blue[on] the line are same total cost
+  - A: \\($5(0l)+$10(5k) = $50\\) 
+  - B: \\($5(10l)+$10(0k) = $50\\)
+  - C: \\($5(2l)+$10(4k) = $50\\) 
+  - D: \\($5(6l)+$10(2k) = $50\\)
+
+- Points .green[beneath] the line are .green[cheaper] (but may produce less)
+  - E: \\($5(3l)+$10(2k) = $35\\) 
+
+]
+]
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/BC2-plot2-1.png" width="432" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Interpreting the Isocost Line
+
+.pull-left[
+.smallest[
+- Points .blue[on] the line are same total cost
+  - A: \\($5(0l)+$10(5k) = $50\\) 
+  - B: \\($5(10l)+$10(0k) = $50\\)
+  - C: \\($5(2l)+$10(4k) = $50\\) 
+  - D: \\($5(6l)+$10(2k) = $50\\)
+
+- Points .green[beneath] the line are .green[cheaper] (but may produce less)
+  - E: \\($5(3l)+$10(2k) = $35\\) 
+
+- Points .red[above] the line are .red[more expensive] (and may produce more)
+  - F: \\($5(6l)+$10(4k) = $70\\) 
+]
+]
+
+.pull-right[
+
+&lt;img src="2.2-slides_files/figure-html/BC2-plot3-1.png" width="432" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Interpretting the Slope
+
+.pull-left[
+
+- **Slope**: .hi-purple[tradeoff] between `\(l\)` and `\(k\)` at market prices
+  - Market .hi-purple[“exchange rate”] between `\(l\)` and `\(k\)`
+
+- .hi-purple[*Relative* price] of `\(l\)` or the .hi-purple[opportunity cost] of `\(l\)`:
+
+&gt; Hiring 1 more unit of `\(l\)` requires giving up `\(\left(\frac{w}{r}\right)\)` units of `\(k\)`
+
+]
+
+.pull-right[
+&lt;img src="2.2-slides_files/figure-html/BC-slope-plot-1.png" width="432" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Changes in Relative Factor Prices I
+
+.pull-left[
+.smallest[
+- Changes in .hi-purple[relative factor prices]: *rotate* the line
+
+.hi-green[**Example**]: An increase in the price of `\(l\)`
+
+- Slope changes: `\(-\frac{w'}{r}\)`
+]
+
+.center[
+![:scale 75%](../images/minwagerobot.jpg)
+]
+]
+
+
+.pull-right[
+
+
+&lt;img src="2.2-slides_files/figure-html/BC-x-change-plot-1.png" width="432" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Changes in Relative Factor Prices II
+
+.pull-left[
+.smallest[
+- Changes in .hi-purple[relative factor prices]: *rotate* the line
+
+.hi-green[**Example**]: An increase in the price of `\(k\)`
+
+- Slope changes: `\(-\frac{w}{r'}\)`
+]
+
+.center[
+![:scale 45%](../images/shortageofrobots.jpg)
+]
+]
+
+
+.pull-right[
+
+
+&lt;img src="2.2-slides_files/figure-html/BC-y-change-plot-1.png" width="432" style="display: block; margin: auto;" /&gt;
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "ocean",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

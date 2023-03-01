@@ -1,5 +1,5 @@
 ---
-title: "2.1 — Production, Specialization, Firms"
+title: "2.1 — Production and Firms"
 author: 'Ryan Safner'
 output:
   xaringan::moon_reader:
@@ -44,7 +44,7 @@ set.seed(256)
 
 class: title-slide
 
-# 2.1 — Production, Specialization, & Firms
+# 2.1 — Production and Firms
 
 ## ECON 306 • Microeconomic Analysis • Spring 2023
 

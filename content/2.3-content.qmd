@@ -1,0 +1,80 @@
+---
+title: "2.3 — Cost Minimization — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance=minimal}
+# Meeting Date
+*Wednesday, March 8, 2023*
+:::
+
+::: callout-warning
+# Upcoming Assignment
+[Problem Set 3](/assignments/03-problem-set) (on classes 2.1-2.3) is due by 11:59 PM Wednesday March 22 on Blackboard Assignments.
+:::
+
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we put our tools together (production functions/isoquants and isocost lines) to solve the firm's cost minimization problem. Again, we do not solve this constrained optimization problem with calculus, but by looking graphically, and using an algebraic rule that should make intuitive sense. 
+
+Again, these tools and rules are almost *identical* to how we solved the consumer's problem. Compare $\frac{MP_l}{MP_k}=\frac{w}{r}$ to $\frac{MU_x}{MU_y}=\frac{p_x}{p_y}$ or $\frac{MP_l}{w}=\frac{MP_k}{r}$ to $\frac{MU_x}{p_x} = \frac{MU_y}{p_y}$!, with a major exception: 
+
+Consumers:
+
+- choose goods to maximize utility subject to their budget constraint
+- budget constraint (line) is what is fixed
+- get on highest indifference curve tangent to budget constraint
+
+Producers (Firms):
+
+- choose inputs to minimize cost subject to producing the optimal amount (their constraint)
+- isoquant curve is what is fixed (want to produce a specific amount!)
+- get on *lowest* isocost line tangent to isoquant curve
+
+We finally wrap up with a discussion of *returns to scale*.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Ch. 6.4-6.7 in Goolsbee, Levitt, and Syverson, 2019
+
+### Optional/Recommended Reading
+- [Increasing Returns](https://increasingreturns.substack.com) — my newsletter with the theme of increasing returns
+
+## <i class="fas fa-sigma"></i> Appendix
+
+See the online appendix for today's content:
+
+- [A Change in Relative Factor Prices](/resources/appendices/2.3-appendix.html#a-change-in-relative-factor-prices)
+- [Improvements in Technology](/resources/appendices/2.3-appendix.html#improvements-in-technology)
+- [Returns to Scale: Proof of Exponents Trick](/resources/appendices/2.3-appendix.htmll#returns-to-scale-proof-of-exponents-trick)
+
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Problem Set 3 Due Wednesday March 22
+
+[Problem Set 3](/assignments/03-problem-set) (on classes 2.1-2.3) is due by 11:59 PM Wednesday March 22 on Blackboard Assignments.
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. 
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("2.3-slides")
+```
+

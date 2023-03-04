@@ -161,6 +161,69 @@
     "text": "Question 8\nThe demand for gym memberships is given by \\[q_D=500-5p\\]\n\nPart A\nWrite the inverse demand function.\n\n\nPart B\nCalculate the price elasticity of demand at a price of $80. Is this relatively elastic or relatively inelastic?\n\n\nPart C\nWhat is the total revenue at a price of $80?\n\n\nPart D\nCalculate the price elasticity of demand at a price of $10. Is this relatively elastic or relatively inelastic?\n\n\nPart E\nWhat is the total revenue at $10?\n\n\nPart F\nAt what price is demand unit elastic, i.e. \\(\\epsilon_D=-1\\)?\n\n\nPart G\nWhat is the total revenue at the price you find in part (f)?"
   },
   {
+    "objectID": "assignments/03-problem-set.html",
+    "href": "assignments/03-problem-set.html",
+    "title": "Problem Set 3",
+    "section": "",
+    "text": "Due by 11:59 PM Wednesday March 22 via by Blackboard Assignments\nPlease read the instructions for completing homeworks.\nDownload as PDF  Download as .docx"
+  },
+  {
+    "objectID": "assignments/03-problem-set.html#question-1",
+    "href": "assignments/03-problem-set.html#question-1",
+    "title": "Problem Set 3",
+    "section": "Question 1",
+    "text": "Question 1\nDescribe, in your own words, what the marginal rate of technical substitution means. How is it different from the slope of the isocost line?"
+  },
+  {
+    "objectID": "assignments/03-problem-set.html#question-2",
+    "href": "assignments/03-problem-set.html#question-2",
+    "title": "Problem Set 3",
+    "section": "Question 2",
+    "text": "Question 2\nDescribe, in your own words, what is true at the least-cost input combination (the optimum) for a firm. Why is it the optimum? What does the equality of the slope of the isoquant curve and the slope of the isocost line mean, in English?"
+  },
+  {
+    "objectID": "assignments/03-problem-set.html#question-3",
+    "href": "assignments/03-problem-set.html#question-3",
+    "title": "Problem Set 3",
+    "section": "Question 3",
+    "text": "Question 3\nExplain the difference between the short run and the long run in production."
+  },
+  {
+    "objectID": "assignments/03-problem-set.html#question-4",
+    "href": "assignments/03-problem-set.html#question-4",
+    "title": "Problem Set 3",
+    "section": "Question 4",
+    "text": "Question 4\nDescribe, in your own words, what the law of diminishing marginal returns means. How can firms continue to increase output?"
+  },
+  {
+    "objectID": "assignments/03-problem-set.html#question-5",
+    "href": "assignments/03-problem-set.html#question-5",
+    "title": "Problem Set 3",
+    "section": "Question 5",
+    "text": "Question 5\nSuppose a firm can hire labor at $5/hour and rent capital for $20 per hour.\n\nPart A\nWrite an equation for the total cost of the firm.\n\n\nPart B\nSuppose the firm wants to spend exactly $100. With labor on the horizontal axis and capital on the vertical axis, find the equation of the isocost line (in a graphable form), and graph it.\n\n\nPart C\nIf the firm is completely automated (i.e. it uses only capital), how many units of capital can they employ for $100?\n\n\nPart D\nIf the firm uses only labor, how many units of labor can they employ for$100?\n\n\nPart E\nWhat is the slope of the isocost line? What does it represent?\n\n\nPart F\nSuppose a tax on capital makes renting capital raises the price of capital to $25 per hour. What is the new (graphable) equation of the $100 isocost line? Graph the new isocost line on the same graph."
+  },
+  {
+    "objectID": "assignments/03-problem-set.html#question-6",
+    "href": "assignments/03-problem-set.html#question-6",
+    "title": "Problem Set 3",
+    "section": "Question 6",
+    "text": "Question 6\nFor each of the following production functions, identify whether the production process exhibits constant returns to scale, increasing returns to scale, or decreasing returns to scale. Be sure to show your work!\n\nPart A\n\\[q=2L+4K\\]\n\n\nPart B\n\\[q=6L^{0.25}K^{0.75}\\]\n\n\nPart C\n\\[q=2L^{0.8}K^{0.4}\\]\n\n\nPart D\n\\[q=2L^{0.25}K^{0.25}\\]"
+  },
+  {
+    "objectID": "assignments/03-problem-set.html#question-7",
+    "href": "assignments/03-problem-set.html#question-7",
+    "title": "Problem Set 3",
+    "section": "Question 7",
+    "text": "Question 7\nJerry’s Berries is a small farm that has the following production function for strawberries using combinations of labor \\((l)\\) and land \\((t)\\): \\[q = 2lt\\]\nThe marginal products (of labor, \\(l\\); and land, \\(t)\\) are:\n\\[\\begin{align*}\nMP_l &= 2t\\\\\nMP_t &= 2l\\\\\n\\end{align*}\\]\nPut labor, \\(l\\) on the horizontal axis and land, \\(t\\) on the vertical axis.\n\nPart A\nWrite an equation for \\(MRTS_{l,t}\\).\n\n\nPart B\nSuppose the farm is currently using 4 units of labor and 1 unit of land. How much output (tons of strawberries) is the farm producing?\n\n\nPart C\nFrom its current production, how much more output would the farm get by utilizing 1 more unit of labor? What about 1 more unit of land (instead of labor)?\n\n\nPart D\nFrom its current production, how many units of land would the farm be willing to forgo in order to use one more unit of labor and still produce the same output as before? How many units of labor would the farm be willing to forgo in order to use one more unit of land and still produce the same output as before?\n\n\nPart E\nSuppose the farm can choose between input combinations of \\(a = (4,1)\\), \\(b=(2,2)\\), \\(c=(2,1)\\), and \\(d=d(3,2)\\). What outputs does each combination yield?\n\n\nPart F\nSketch a graph, plotting bundles \\(a, b, c\\), and \\(d\\). Indicate any isoquant curve(s) they are on, and how much output each provides."
+  },
+  {
+    "objectID": "assignments/03-problem-set.html#question-8",
+    "href": "assignments/03-problem-set.html#question-8",
+    "title": "Problem Set 3",
+    "section": "Question 8",
+    "text": "Question 8\nDunder Mifflin paper company produces reams of paper each week according to the production function: \\[\\begin{align*}q &=10 l^{0.5} k^{0.5}\\\\\nMP_l& = 5l^{-0.5}k^{0.5}\\\\\nMP_k& = 5l^{0.5}k^{-0.5}\\\\\n\\end{align*}\\]\nThey have determined that they need to ship 1,000 reams of paper this week to Scranton, PA. Using capital costs $20, whereas labor costs $10.\n\nPart A\nWhat is the cost-minimizing combination of labor and capital that will yield 1,000 reams of paper? Round each to the nearest whole number.\n\n\nPart B\nWhat is the total cost of using this combination of inputs?\n\n\nPart C\nNow suppose that they need to double their output this week, and need to produce 2,000 reams of paper. How does their optimal combination of inputs change? [Hint: neither the equation for MRTS nor any prices are changing!]\n\n\nPart D\nWhat is the total cost of this new level of output?\n\n\nPart E\nSuppose management at Dunder Mifflin develops a new program that magically makes everyone at the firm more productive, such that the firm’s new production function becomes:\n\\[\\begin{align*}q &=20 l^{0.5} k^{0.5}\\\\\nMP_l& = 10l^{-0.5}k^{0.5}\\\\\nMP_k& = 10l^{0.5}k^{-0.5}\\\\\n\\end{align*}\\]\nStill needing to supply 2,000 reams of paper this week at the same input prices, what is their new optimal combination of labor and capital?\n\n\nPart F\nHow much does this combination cost? What does this show you about technological improvement (or “total factor productivity”)?"
+  },
+  {
     "objectID": "assignments/index.html",
     "href": "assignments/index.html",
     "title": "Assignment Details",
@@ -560,6 +623,41 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/2.3-content.html#overview",
+    "href": "content/2.3-content.html#overview",
+    "title": "2.3 — Cost Minimization — Class Content",
+    "section": " Overview",
+    "text": "Overview\nToday we put our tools together (production functions/isoquants and isocost lines) to solve the firm’s cost minimization problem. Again, we do not solve this constrained optimization problem with calculus, but by looking graphically, and using an algebraic rule that should make intuitive sense.\nAgain, these tools and rules are almost identical to how we solved the consumer’s problem. Compare \\(\\frac{MP_l}{MP_k}=\\frac{w}{r}\\) to \\(\\frac{MU_x}{MU_y}=\\frac{p_x}{p_y}\\) or \\(\\frac{MP_l}{w}=\\frac{MP_k}{r}\\) to \\(\\frac{MU_x}{p_x} = \\frac{MU_y}{p_y}\\)!, with a major exception:\nConsumers:\n\nchoose goods to maximize utility subject to their budget constraint\nbudget constraint (line) is what is fixed\nget on highest indifference curve tangent to budget constraint\n\nProducers (Firms):\n\nchoose inputs to minimize cost subject to producing the optimal amount (their constraint)\nisoquant curve is what is fixed (want to produce a specific amount!)\nget on lowest isocost line tangent to isoquant curve\n\nWe finally wrap up with a discussion of returns to scale."
+  },
+  {
+    "objectID": "content/2.3-content.html#readings",
+    "href": "content/2.3-content.html#readings",
+    "title": "2.3 — Cost Minimization — Class Content",
+    "section": " Readings",
+    "text": "Readings\n\n Ch. 6.4-6.7 in Goolsbee, Levitt, and Syverson, 2019\n\n\nOptional/Recommended Reading\n\nIncreasing Returns — my newsletter with the theme of increasing returns"
+  },
+  {
+    "objectID": "content/2.3-content.html#appendix",
+    "href": "content/2.3-content.html#appendix",
+    "title": "2.3 — Cost Minimization — Class Content",
+    "section": " Appendix",
+    "text": "Appendix\nSee the online appendix for today’s content:\n\nA Change in Relative Factor Prices\nImprovements in Technology\nReturns to Scale: Proof of Exponents Trick"
+  },
+  {
+    "objectID": "content/2.3-content.html#assignments",
+    "href": "content/2.3-content.html#assignments",
+    "title": "2.3 — Cost Minimization — Class Content",
+    "section": " Assignments",
+    "text": "Assignments\n\nProblem Set 3 Due Wednesday March 22\nProblem Set 3 (on classes 2.1-2.3) is due by 11:59 PM Wednesday March 22 on Blackboard Assignments."
+  },
+  {
+    "objectID": "content/2.3-content.html#slides",
+    "href": "content/2.3-content.html#slides",
+    "title": "2.3 — Cost Minimization — Class Content",
+    "section": " Slides",
+    "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
     "objectID": "content/index.html",
     "href": "content/index.html",
     "title": "Overview",
@@ -735,6 +833,34 @@
     "text": "Question 7\nCalculate the total revenue at the price you found for question 4."
   },
   {
+    "objectID": "practice/2.3-practice.html",
+    "href": "practice/2.3-practice.html",
+    "title": "2.3 — Cost Minimization — Practice",
+    "section": "",
+    "text": "Download PDF  Answer Key\nYour firm can use labor \\(l\\) and capital \\(k\\) to produce output according to the production function: \\[q=4lk\\] The marginal products are:\n\\[\\begin{align*}\nMP_l &=4k \\\\\nMP_k &=4l \\\\ \\end{align*}\\]\nSuppose you need to produce 144 units, the price of labor is $10, and the price of capital is $40."
+  },
+  {
+    "objectID": "practice/2.3-practice.html#section",
+    "href": "practice/2.3-practice.html#section",
+    "title": "2.3 — Cost Minimization — Practice",
+    "section": "1.",
+    "text": "1.\nWhat is the least-cost combination of labor and capital that produces 144 units of output?"
+  },
+  {
+    "objectID": "practice/2.3-practice.html#section-1",
+    "href": "practice/2.3-practice.html#section-1",
+    "title": "2.3 — Cost Minimization — Practice",
+    "section": "2.",
+    "text": "2.\nHow much does this combination cost?"
+  },
+  {
+    "objectID": "practice/2.3-practice.html#section-2",
+    "href": "practice/2.3-practice.html#section-2",
+    "title": "2.3 — Cost Minimization — Practice",
+    "section": "3.",
+    "text": "3.\nDoes this technology experience constant returns, increasing returns, or decreasing returns to scale?"
+  },
+  {
     "objectID": "resources/appendices/1.2-appendix.html",
     "href": "resources/appendices/1.2-appendix.html",
     "title": "1.2 — Budget Constraint — Appendix",
@@ -845,6 +971,27 @@
     "title": "2.2 — Production Technology — Appendix",
     "section": "The Relationship Between Marginal and Average",
     "text": "The Relationship Between Marginal and Average\nThere is a consistent relationship between any marginal magnitude and any average magnitude. We will see this when we talk about production, about costs, revenues, profits, etc.\nWhen the marginal is greater than the average, the average is increasing because the marginal “pulls up” the average. When the marginal is less than the average, the average is decreasing because the marginal “pulls down” the average. Therefore, average is neither increasing nor decreasing (reaches a maximum/minimum) when the marginal equals the average.\nThink of your grades or your GPA. Suppose your average is a B, and you get back a (marginal) grade that is an A. Since the marginal is higher than the average, this pulls up your average. Suppose instead you get back a (marginal) grade that is a C. Since the marginal is lower than the average, this pulls down your average.\n\n\n\nCase\n\\(AP_l\\)\n\n\n\n\n\\(MP_l > AP_l\\)\n\\(\\uparrow\\)\n\n\n\\(MP_l = AP_l\\)\nMaximized\n\n\n\\(MP_l < AP_l\\)\n\\(\\downarrow\\)\n\n\n\nLook at the lower panel of the figure above and you can see, in Stage I, \\(MP_l>AP_l\\) and thus \\(AP_l\\) is increasing. The transition to Stage II occurs where \\(MP_l=AP_l\\) and thus \\(AP_l\\) reaches its maximum. In Stage III, \\(MP_l<AP_l\\) and thus \\(AP_l\\) is falling.\nIf these graphs looks vaguely familiar, cost curves (total cost, marginal cost, average cost) are monetized reciprocals of product curves (total product, marginal product, average product). Here is a proof (that will make sense a few lessons from now):\n\\[MC(q)  = \\frac{ \\partial VC(q)}{\\partial q} = w \\frac{\\partial l}{\\partial q}= w \\frac{1}{MP_l}\\]\n\\[\nAVC(q) = \\frac{ \\partial VC}{\\partial q} = w \\frac{l}{q}= w \\frac{1}{AP_l}\n\\]\n\nElasticity of Substitution\nHow easy is it to substitute between labor and capital (or any inputs)? Along a single isoquant, the rate of technical substitution (MRTS) will diminish as we move to the right (more labor, less capital, i.e. the capital/labor ratio, \\(\\frac{k}{l}\\) decreases). The elasticity of substitution (often written \\(\\sigma)\\), measures the degree of responsiveness: \\[\\sigma=\\cfrac{\\% \\Delta \\left(\\frac{k}{l}\\right)}{\\% \\Delta MRTS}=\\cfrac{\\% \\Delta \\left(\\frac{k}{l}\\right)}{\\% \\Delta \\frac{MP_L}{MP_K}}\\]\nWe can measure the elasticity of substitution \\(\\sigma\\) for four common types of production functions: 1. Linear production functions \\((\\sigma=\\infty)\\) \\[q=f(l,k)=\\alpha k+\\beta l\\] 2. Fixed proportions (i.e. perfect complements, known as “Leontief” production functions): \\(\\sigma=0\\) \\[q=\\min\\{\\alpha k, \\beta l\\} \\quad \\alpha, \\beta >0 \\] 3. Cobb-Douglas (\\(\\sigma = 1)\\) \\[\\begin{align*}\nq=f(k,l)&=Ak^\\alpha l^\\beta \\\\\nf(tk,tl) &= A(tk)^\\alpha (tl)^\\beta \\\\\n&= At^{\\alpha + \\beta}k^\\alpha l ^\\beta \\\\\n&=t^{\\alpha+\\beta}Ak^\\alpha l^\\beta \\\\\n&=t^{\\alpha+\\beta}f(k,l)\\\\\n\\end{align*}\\]\nHence, if \\(\\alpha+\\beta=1\\) (constant returns to scale),\n\nConstant elasticity of substitution (CES) production function: \\[q=f(k,l)=[k^\\rho + l^\\rho]^{\\frac{\\gamma}{\\rho}}\\]\n\nWhere \\(\\sigma=\\frac{1}{1-\\rho}\\) - For \\(\\gamma >1\\): increasing returns - For \\(\\gamma <1\\): decreasing returns\nIncorporates all three previous cases: 1. Linear: \\(\\rho=1\\)\n\\[[k + l]^{\\gamma}\\]\n\nFixed proportions: \\(\\rho = -\\infty\\)\n\n\\[[k^{-\\infty} + l^{-\\infty}]^{\\frac{\\gamma}{-\\infty}}\\]\n\nCobb-Douglas: \\(\\rho=0\\)\n\n\\[[k^{0} + l^{0}]^{\\frac{\\gamma}{0}}\\]"
+  },
+  {
+    "objectID": "resources/appendices/2.3-appendix.html#a-change-in-relative-factor-prices",
+    "href": "resources/appendices/2.3-appendix.html#a-change-in-relative-factor-prices",
+    "title": "2.3 — Cost Minimization — Appendix",
+    "section": "A Change in Relative Factor Prices",
+    "text": "A Change in Relative Factor Prices\nIf an input (labor or capital) changes in price, we saw that it rotated the isocost line by changing the slope, and the intercept for that input. How does it affect the cost-minimizing (optimal) combination of inputs?\nIt turns out, a change in one input’s price relative to the other is likely to change the ratio of inputs, as well as the total cost of production due to the mathematics and geometry of cost minimization. Recall the cost-minimizing combination of inputs occurs where the slope of the isoquant is equal to the slope of the lowest isocost line tangent to the isoquant. In the graph below, this occurs at point \\(A\\).\nThen, suppose the price of labor \\(w\\) increases from $2 to $4. This causes a move along the isoquant from \\(A\\) to \\(B\\), the firm substitutes more capital for labor, and this costs more!\n\n\n\n\n\n\n\n\n\nWhy does the optimal isocost line rotate along both axes (i.e. both axis-endpoints change)? With the budget constraint, we saw a change in one price caused the budget constraint to rotate and change an endpoint only along the axis with the good that changed in price.\nHere, recall that the isoquant is unmovable - this is the set optimal quantity we want to produce. If an input were to change in price, that would rotate the isocost line and change only the intercept of that input that changed in price, as with a budget constraint. However, that new line (dashed darker red line) would not be tangent to our original budget constraint anymore - that is, we could not produce the output we want at the same total cost as before. Thus, it must be on a new isocost line (indicating a different total cost), just with the same slope as the new isocost line after the price change.\nNote you could also go in the other direction. Begin at point \\(B\\) and suppose the price of labor decreases (or perhaps the price of capital increases). Then, the firm will substitute more labor for capital, and this will cost less!"
+  },
+  {
+    "objectID": "resources/appendices/2.3-appendix.html#improvements-in-technology",
+    "href": "resources/appendices/2.3-appendix.html#improvements-in-technology",
+    "title": "2.3 — Cost Minimization — Appendix",
+    "section": "Improvements in Technology",
+    "text": "Improvements in Technology\nWe defined our original production function as including an “input” called “total factor productivity.” In our Cobb-Douglas case, we included it in our function as \\(A\\), as in: \\[q=Ak^\\alpha l^\\beta\\]\nNow let’s see how this affects production. Suppose the firm wants to produce 100 units of output at a particular set of input prices, with the following technology (represented by the production function): \\[q=k^{0.5}l^{0.5}\\]\n\n\n\n\n\n\n\n\n\nThen the firm’s “technology” improves, such that its new production function is\n\\[q=2k^{0.5}l^{0.5}\\]\nNotice total factor productivity \\((A)\\) has doubled, such that, for the same amount of inputs \\(l\\) and \\(k\\), the firm can now produce twice as much output \\((2q)\\). So suppose again the firm still wishes to produce \\(q^*=100\\), the same as before. Under the new technology, the firm can produce the same output with fewer inputs. This is the definition of productivity increases or, for an entire economy, economic growth."
+  },
+  {
+    "objectID": "resources/appendices/2.3-appendix.html#returns-to-scale-proof-of-exponents-trick",
+    "href": "resources/appendices/2.3-appendix.html#returns-to-scale-proof-of-exponents-trick",
+    "title": "2.3 — Cost Minimization — Appendix",
+    "section": "Returns to Scale: Proof of Exponents Trick",
+    "text": "Returns to Scale: Proof of Exponents Trick\nConsider a Cobb-Douglas production function \\[f(k,l) =k^\\alpha l^\\beta\\]\nNow scale this function by some scalar \\(t>0\\), by multiplying both \\(l\\) and \\(k\\), and also output \\(q\\), by \\(t\\): \\[\\begin{align*}\ntq& \\lesseqgtr (tk)^\\alpha (tl)^\\beta \\\\\ntq& \\lesseqgtr t^{\\alpha+\\beta}k^\\alpha l^\\beta \\\\\ntq& \\lesseqgtr t^{\\alpha+\\beta}f(l,k) \\\\\n\\end{align*}\\]\nThis implies that: \\[\\begin{cases}\ntq>t^{\\alpha+\\beta}f(l,k) & \\iff \\alpha+\\beta < 1 & \\text{Decreasing returns to scale}\\\\\ntq=t^{\\alpha+\\beta}f(l,k) & \\iff \\alpha+\\beta = 1 & \\text{Constant returns to scale}\\\\\ntq<t^{\\alpha+\\beta}f(l,k) & \\iff \\alpha+\\beta > 1 & \\text{Increasing returns to scale}\\\\\n\\end{cases}\\]"
   },
   {
     "objectID": "resources/appendices/index.html",
@@ -1005,7 +1152,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This page contains all of the following resources for each class meeting:\n\n Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.\n Slides are “Xaringan” presentations that can be opened in any browser (You can find a downloadable PDF in each content page)\n Practice problems we work on together in class to prepare for homeworks and exams\n Assignments are listed with due dates\n\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!\nRelevant materials, if applicable will be posted before class meets and become colored links.\n\n\n\n\n\n\n\n\n\n\n\n\n\nI. Rational Choice Theory: Consumers\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\n\n\nPreliminary Survey (due Mon Jan 30)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Jan 25\n\n\n1.1 — The Tools of Microeconomics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Jan 30\n\n\n1.2 — Budget Constraint\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 01\n\n\n1.3 — Preferences\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Feb 06\n\n\n1.4 — Utility Maximization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 1 due Mon Feb 13\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 08\n\n\n1.5 — Demand\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Feb 13\n\n\n1.6 — Income and Substitution Effects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 15\n\n\n1.7 — Price Elasticity of Demand\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 2 due Mon Feb 20\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 22\n\n\nExam 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nII. Rational Choice Theory: Producers\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nWed Mar 01\n\n\n2.1 — Production and Firms\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Mar 06\n\n\n2.2 — Production Technology\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Mar 08\n\n\n2.3 — Cost Minimization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Mar 20\n\n\n2.4 — Costs of Production\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Mar 22\n\n\n2.5 — Short Run Profit Maximization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSun Mar 26\n\n\n2.6 — Long Run Industry Equilibrium\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Mar 29\n\n\nExam 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIII. Market Equilibrium\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nMon Apr 03\n\n\n3.1 — The Supply and Demand Model\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Apr 05\n\n\n3.2 — Market Competition and Surpluses\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 10\n\n\n3.3 — The Static Benefits of Markets: Welfare Economics & Market Failure\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Apr 12\n\n\n3.4 — The Dynamic Benefits of Markets: Entrepreneurship, Profits, & Prices\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 17\n\n\n3.5 — Introduction to Political Economy\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 5 due Mon Nov 28\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIV. Imperfect Competition\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nWed Apr 19\n\n\n4.1 — Modeling Firms with Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 24\n\n\n4.2 — Consequences and Sources of Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFri May 26\n\n\n4.3 — Factor Markets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon May 01\n\n\n4.4 — Monopolistic Competition and Oligopoly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed May 03\n\n\n4.5 — Contestable Markets and Wrap Up\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 6 (Ungraded)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOp-Ed due Mon May 8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Exam"
+    "text": "This page contains all of the following resources for each class meeting:\n\n Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.\n Slides are “Xaringan” presentations that can be opened in any browser (You can find a downloadable PDF in each content page)\n Practice problems we work on together in class to prepare for homeworks and exams\n Assignments are listed with due dates\n\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!\nRelevant materials, if applicable will be posted before class meets and become colored links.\n\n\n\n\n\n\n\n\n\n\n\n\n\nI. Rational Choice Theory: Consumers\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\n\n\nPreliminary Survey (due Mon Jan 30)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Jan 25\n\n\n1.1 — The Tools of Microeconomics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Jan 30\n\n\n1.2 — Budget Constraint\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 01\n\n\n1.3 — Preferences\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Feb 06\n\n\n1.4 — Utility Maximization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 1 due Mon Feb 13\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 08\n\n\n1.5 — Demand\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Feb 13\n\n\n1.6 — Income and Substitution Effects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 15\n\n\n1.7 — Price Elasticity of Demand\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 2 due Mon Feb 20\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 22\n\n\nExam 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nII. Rational Choice Theory: Producers\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nWed Mar 01\n\n\n2.1 — Production and Firms\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Mar 06\n\n\n2.2 — Production Technology\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Mar 08\n\n\n2.3 — Cost Minimization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 3 due Wed Mar 22\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Mar 20\n\n\n2.4 — Costs of Production\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Mar 22\n\n\n2.5 — Short Run Profit Maximization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSun Mar 26\n\n\n2.6 — Long Run Industry Equilibrium\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Mar 29\n\n\nExam 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIII. Market Equilibrium\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nMon Apr 03\n\n\n3.1 — The Supply and Demand Model\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Apr 05\n\n\n3.2 — Market Competition and Surpluses\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 10\n\n\n3.3 — The Static Benefits of Markets: Welfare Economics & Market Failure\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Apr 12\n\n\n3.4 — The Dynamic Benefits of Markets: Entrepreneurship, Profits, & Prices\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 17\n\n\n3.5 — Introduction to Political Economy\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 5 due Mon Nov 28\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIV. Imperfect Competition\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nWed Apr 19\n\n\n4.1 — Modeling Firms with Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 24\n\n\n4.2 — Consequences and Sources of Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFri May 26\n\n\n4.3 — Factor Markets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon May 01\n\n\n4.4 — Monopolistic Competition and Oligopoly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed May 03\n\n\n4.5 — Contestable Markets and Wrap Up\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 6 (Ungraded)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOp-Ed due Mon May 8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Exam"
   },
   {
     "objectID": "syllabus.html",

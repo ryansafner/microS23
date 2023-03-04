@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>2.3 — Cost Minimization</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: title-slide
+
+# 2.3 — Cost Minimization
+
+## ECON 306 • Microeconomic Analysis • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/microS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/microS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://microS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;microS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+
+---
+
+# Recall: The Firm's Two Problems
+
+.pull-left[
+.smallest[
+1&lt;sup&gt;st&lt;/sup&gt; Stage: .hi[firm's profit maximization problem]: 
+
+1. **Choose:** .hi-blue[ &lt; output &gt;]
+
+2. **In order to maximize:** .hi-green[&lt; profits &gt;]
+
+- We'll cover this later...first we'll explore: 
+
+2&lt;sup&gt;nd&lt;/sup&gt; Stage: .hi[firm's cost minimization problem]: 
+
+1. **Choose:** .hi-blue[ &lt; inputs &gt;]
+
+2. **In order to _minimize_:** .hi-green[&lt; cost &gt;]
+
+3. **Subject to:** .hi-red[&lt; producing the optimal output &gt;]
+
+- Minimizing costs `\(\iff\)` maximizing profits
+]
+]
+
+.pull-right[
+
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Solving the Cost Minimization Problem
+
+---
+
+# The Firm's Cost Minimization Problem
+
+.pull-left[
+
+- The **firm's cost minimization problem** is: 
+
+1. **Choose:** .blue[ &lt; inputs: `\\(l, k\\)`&gt;]
+
+2. **In order to minimize:** .green[&lt; total cost: `\\(wl+rk\\)` &gt;]
+
+3. **Subject to:** .red[&lt; producing the optimal output: `\\(q^*=f(l,k)\\)` &gt;]
+
+]
+
+.pull-right[
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+# The Cost Minimization Problem: Tools
+
+.pull-left[
+- Our tools for firm's input choices:
+
+- .hi-blue[Choice]: combination of inputs `\((l, k)\)`
+
+- .hi-red[Production function/isoquants]: firm's technological constraints
+    - How the *firm* trades off between inputs
+- .hi-green[Isocost line]: firm's total cost (for given output and input prices)
+    - How the *market* trades off between inputs
+]
+
+.pull-right[
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+# The Cost Minimization Problem: Verbally
+
+.pull-left[
+- The .hi[firms's cost minimization problem]: 
+
+&gt; choose a combination of `\(l\)` and `\(k\)` to minimize total cost that produces the optimal amount of output
+
+]
+
+.pull-right[
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+
+# The Cost Minimization Problem: Math
+
+.pull-left[
+
+`$$\min_{l,k} wl+rk$$`
+`$$s.t. \quad q^*=f(l,k)$$`
+
+- This requires calculus to solve. We will look at **graphs** instead!
+]
+
+.pull-right[
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+# The Firm's Least-Cost Input Combination: Graphically
+
+.pull-left[
+
+- .hi[Graphical solution]: **Lowest** .hi-red[isocost line] **_tangent_ to desired** .hi-green[isoquant] (A)
+
+]
+
+.pull-right[
+
+&lt;img src="2.3-slides_files/figure-html/soln-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Firm's Least-Cost Input Combination: Graphically
+
+.pull-left[
+
+- .hi[Graphical solution]: **Lowest** .hi-red[isocost line] **_tangent_ to desired** .hi-green[isoquant] (A)
+
+- B produces same output as A, but higher cost
+
+- C is same cost as A, but does not produce desired output
+
+- D is cheaper, does not produce desired output
+
+]
+
+.pull-right[
+
+&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Firm's Least-Cost Input Combination: Why A?
+
+.pull-left[
+.smallest[
+`$$\begin{align*}
+\color{green}{\text{Isoquant curve slope}} &amp;= \color{red}{\text{Isocost line slope}} \\ \end{align*}$$`
+]
+]
+
+.pull-right[
+
+&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Firm's Least-Cost Input Combination: Why A?
+
+.pull-left[
+.smallest[
+`$$\begin{align*}
+\color{green}{\text{Isoquant curve slope}} &amp;= \color{red}{\text{Isocost line slope}} \\
+\color{green}{MRTS_{l,k}} &amp;= \color{red}{\frac{w}{r}} \\
+\color{green}{\frac{MP_l}{MP_k}} &amp;= \color{red}{\frac{w}{r}} \\
+\color{green}{0.5} &amp;= \color{red}{0.5 } \\\end{align*}$$`
+
+- .hi-green[Marginal benefit] = .hi-red[Marginal cost]
+  - .hi-green[Firm] would exchange at same rate as .hi-red[market]
+
+- .hi-purple[No other combination of (l,k) exists at current prices &amp; output that could produce `\\(q^\star\\)` at lower cost!]
+]
+]
+
+.pull-right[
+
+&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Two Equivalent Rules
+
+.pull-left[
+
+## Rule 1
+
+`$$\frac{MP_l}{MP_k}  =  \frac{w}{r}$$`
+
+- Easier for calculation (slopes)
+
+]
+
+.pull-right[
+
+&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Two Equivalent Rules
+
+.pull-left[
+
+## Rule 1
+
+`$$\frac{MP_l}{MP_k}  =  \frac{w}{r}$$`
+
+- Easier for calculation (slopes)
+
+## Rule 2
+
+`$$\frac{MP_l}{w}  =  \frac{MP_k}{r}$$`
+
+- Easier for intuition (next slide)
+
+]
+
+.pull-right[
+
+&lt;img src="2.3-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# The Equimarginal Rule Again I
+
+`$$\frac{MP_l}{w}  =  \frac{MP_k}{r} = \cdots = \frac{MP_n}{p_n}$$`
+
+- .hi[Equimarginal Rule]: the cost of production is minimized where the **marginal product per dollar spent** is **equalized** across all `\(n\)` possible inputs
+
+- Firm will always choose an option that gives higher marginal product (e.g. if `\(MP_l &gt; MP_k)\)`
+    - But each option has a different cost, so we weight each option by its price, hence `\(\frac{MP_n}{p_n}\)`
+    
+---
+
+# The Equimarginal Rule Again II
+
+.pull-left[
+
+- Any .hi[optimum] in economics: no better alternatives exist under current constraints
+
+- No possible change in your inputs to produce `\(q^*\)` that would lower cost
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/qvr240t5j6t3arm/optimize.jpeg?raw=1)
+]
+]
+
+---
+
+# The Firm's Least-Cost Input Combination: Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.smallest[
+.green[**Example**]: 
+
+  Your firm can use labor l and capital k to produce output according to the production function:
+`$$q=2lk$$`
+
+
+The marginal products are:
+
+`$$\begin{align*}
+MP_l&amp;=2k\\
+MP_k&amp;=2l\\\end{align*}$$`
+
+]
+]
+
+.smallest[
+You want to produce 100 units, the price of labor is $10, and the price of capital is $5. 
+
+
+1. What is the least-cost combination of labor and capital that produces 100 units of output?
+2. How much does this combination cost? 
+]
+
+---
+
+class: inverse, center, middle
+
+# Returns to Scale
+
+---
+
+# Returns to Scale
+
+.pull-left[
+.quitesmall[
+- The .hi[returns to scale] of production: change in output when **all** inputs are increased .hi-turquoise[at the same rate] (scale)
+]
+]
+
+.pull-right[
+![](../images/scaleup.png)
+]
+
+---
+
+# Returns to Scale
+
+.pull-left[
+.quitesmall[
+- The .hi[returns to scale] of production: change in output when **all** inputs are increased .hi-turquoise[at the same rate] (scale)
+
+- .hi-purple[Constant returns to scale]: output increases at .hi-turquoise[same proportionate rate] to inputs change
+    - e.g. double all inputs, output doubles
+]
+]
+
+.pull-right[
+![](../images/scaleup.png)
+]
+
+---
+
+# Returns to Scale
+
+.pull-left[
+.quitesmall[
+- The .hi[returns to scale] of production: change in output when **all** inputs are increased .hi-turquoise[at the same rate] (scale)
+
+- .hi-purple[Constant returns to scale]: output increases at .hi-turquoise[same proportionate rate] to inputs change
+    - e.g. double all inputs, output doubles
+
+- .hi-purple[Increasing returns to scale]: output increases .hi-turquoise[more than proportionately] to inputs change
+    - e.g. double all inputs, output *more than* doubles
+]
+]
+
+.pull-right[
+![](../images/scaleup.png)
+]
+
+---
+
+# Returns to Scale
+
+.pull-left[
+.quitesmall[
+- The .hi[returns to scale] of production: change in output when **all** inputs are increased .hi-turquoise[at the same rate] (scale)
+
+- .hi-purple[Constant returns to scale]: output increases at .hi-turquoise[same proportionate rate] to inputs change
+    - e.g. double all inputs, output doubles
+
+- .hi-purple[Increasing returns to scale]: output increases .hi-turquoise[more than proportionately] to inputs change&lt;sup&gt;.magenta[†]&lt;/sup&gt;
+    - e.g. double all inputs, output *more than* doubles
+
+- .hi-purple[Decreasing returns to scale]: output increases .hi-turquoise[less than proportionately] to inputs change
+    - e.g. double all inputs, output *less than* doubles
+]
+]
+
+.pull-right[
+![](../images/scaleup.png)
+]
+
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; See my new newsletter [Increasing Returns](https://increasingreturns.substack.com) for more on the importance of this idea
+]
+
+---
+
+# Returns to Scale: Example 
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**:] Do the following production functions exhibit *constant* returns to scale, *increasing* returns to scale, or *decreasing* returns to scale?
+]
+1. `\(q=4l+2k\)`
+
+2. `\(q=2lk\)`
+
+3. `\(q=2l^{0.3}k^{0.3}\)`
+ 
+---
+
+# Returns to Scale: Cobb-Douglas
+
+.pull-left[
+.smallest[
+
+- One reason Cobb-Douglas functions are great: easy to determine returns to scale:     
+`$$q=Ak^\alpha l^\beta$$`
+
+- `\(\alpha + \beta = 1\)`: constant returns to scale
+- `\(\alpha + \beta &gt;1\)`: increasing returns to scale
+- `\(\alpha + \beta &lt;1\)`: decreasing returns to scale
+
+- Note this trick *only* works for Cobb-Douglas functions! 
+]
+]
+
+.pull-right[
+![](../images/scaleup.png)
+]
+
+---
+
+# Cobb-Douglas: Constant Returns Case
+
+.pull-left[
+.smallest[
+- A common case of Cobb-Douglas is often written as:     
+`$$q=Ak^\alpha l^{1-\alpha}$$`
+(i.e., the exponents sum to 1, constant returns)
+
+- `\(\alpha\)` is the .hi-purple[output elasticity of capital]
+    - A 1% increase in `\(k\)` leads to an `\(\alpha\)`% increase in `\(q\)`
+
+- `\(1-\alpha\)` is the .hi-purple[output elasticity of labor]
+    - A 1% increase in `\(l\)` leads to a `\((1-\alpha)\)`% increase in `\(q\)`
+]
+]
+
+.pull-right[
+![](../images/scaleup.png)
+]
+
+---
+
+
+# Output-Expansion Paths &amp; Cost Curves
+
+.center[
+![](https://www.dropbox.com/s/0lccry50i7x8shl/outputexpansion.png?raw=1)
+
+Goolsbee et. al (2011: 246)
+]
+.smallest[
+- **Output Expansion Path**: curve illustrating the changes in the optimal mix of inputs and the total cost to produce an increasing amount of output
+
+- **Total Cost curve**: curve showing the total cost of producing different amounts of output (next class)
+
+- See next class' notes page to see how we go from our least-cost combinations over a range of outputs to derive a total cost function
+
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "ocean",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

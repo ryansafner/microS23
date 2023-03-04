@@ -1,0 +1,155 @@
+---
+title: "Problem Set 3"
+execute: 
+  freeze: auto
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+```
+
+::: {.callout-warning appearance="minimal"}
+Due by 11:59 PM Wednesday March 22 via by Blackboard Assignments
+:::
+
+Please read the [instructions](https://micros23.classes.ryansafner.com/assignments/problem-sets) for completing homeworks.
+
+<p style="text-align:center;"><a class="btn btn-primary btn-lg" target="_blank" href="/files/assignment/03-problem-set-pdf.pdf"><i class="fas fa-file-pdf"></i> Download as PDF</a> <a class="btn btn-primary btn-lg" target="_blank" href="/files/assignment/03-problem-set-docx.docx"><i class="fa-regular fa-file-word"></i> Download as .docx</a></p>
+
+<!--## Answers
+
+<p style="text-align:center"><a target="_blank" href="/files/assignment/03-problem-set-answers.html"><span class="btn btn-primary btn-lg"><i class="far fa-life-ring"></i> Answers</a> <a target="_blank" href="/files/assignment/03-problem-set-answers-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Answers (PDF)</a> </p>-->
+
+# Concepts and Critical Thinking
+
+Please answer the following questions briefly (1-3 sentences). Use examples as necessary. Be sure to label graphs fully, if appropriate.
+
+## Question 1
+
+Describe, in your own words, what the marginal rate of technical substitution means. How is it different from the slope of the isocost line?
+
+## Question 2
+
+Describe, in your own words, what is true at the least-cost input combination (the optimum) for a firm. Why is it the optimum? What does the equality of the slope of the isoquant curve and the slope of the isocost line *mean*, in English?
+
+## Question 3
+
+Explain the difference between the short run and the long run in production.
+
+## Question 4
+
+Describe, in your own words, what the law of diminishing marginal returns means. How can firms continue to increase output?
+
+# Problems
+
+Show all work for calculations. You may lose points, even if correct, for missing work. Be sure to label graphs fully, if appropriate.
+
+## Question 5
+
+Suppose a firm can hire labor at <span>&#36;</span>5/hour and rent capital for <span>&#36;</span>20 per hour.
+
+### Part A
+Write an equation for the total cost of the firm.
+
+### Part B
+Suppose the firm wants to spend exactly <span>&#36;</span>100. With labor on the horizontal axis and capital on the vertical axis, find the equation of the isocost line (in a graphable form), and graph it.
+
+### Part C
+If the firm is completely automated (i.e. it uses *only* capital), how many units of capital can they employ for <span>&#36;</span>100?
+
+### Part D
+If the firm uses only labor, how many units of labor can they employ for<span>&#36;</span>100?
+
+### Part E
+What is the slope of the isocost line? What does it represent? 
+
+### Part F
+Suppose a tax on capital makes renting capital raises the price of capital to <span>&#36;</span>25 per hour. What is the new (graphable) equation of the <span>&#36;</span>100 isocost line? Graph the new isocost line on the same graph.
+
+## Question 6
+
+For each of the following production functions, identify whether the production process exhibits constant returns to scale, increasing returns to scale, or decreasing returns to scale. Be sure to show your work!
+
+### Part A
+$$q=2L+4K$$
+
+### Part B
+$$q=6L^{0.25}K^{0.75}$$
+
+### Part C
+$$q=2L^{0.8}K^{0.4}$$
+
+### Part D
+$$q=2L^{0.25}K^{0.25}$$
+
+## Question 7
+
+Jerry’s Berries is a small farm that has the following production function for strawberries using combinations of labor $(l)$ and land $(t)$:
+$$q = 2lt$$
+
+The marginal products (of labor, $l$; and land, $t)$ are:
+
+\begin{align*}
+MP_l &= 2t\\
+MP_t &= 2l\\
+\end{align*}
+
+Put labor, $l$ on the horizontal axis and land, $t$ on the vertical axis.
+
+### Part A
+
+Write an equation for $MRTS_{l,t}$.
+
+### Part B
+
+Suppose the farm is currently using 4 units of labor and 1 unit of land. How much output (tons of strawberries) is the farm producing?
+
+### Part C
+
+From its current production, how much *more* output would the farm get by utilizing 1 more unit of labor? What about 1 more unit of land (instead of labor)?
+
+### Part D
+
+From its current production, how many units of land would the farm be willing to forgo in order to use one more unit of labor and still produce the same output as before? How many units of labor would the farm be willing to forgo in order to use one more unit of land and still produce the same output as before? 
+
+### Part E
+
+Suppose the farm can choose between input combinations of $a = (4,1)$, $b=(2,2)$, $c=(2,1)$, and $d=d(3,2)$. What outputs does each combination yield?
+
+### Part F
+Sketch a graph, plotting bundles $a, b, c$, and $d$. Indicate any isoquant curve(s) they are on, and how much output each provides.
+
+## Question 8
+Dunder Mifflin paper company produces reams of paper each week according to the production function:
+\begin{align*}q &=10 l^{0.5} k^{0.5}\\
+MP_l& = 5l^{-0.5}k^{0.5}\\
+MP_k& = 5l^{0.5}k^{-0.5}\\
+\end{align*}
+
+They have determined that they need to ship 1,000 reams of paper this week to Scranton, PA. Using capital costs $20, whereas labor costs $10.
+
+### Part A
+
+What is the cost-minimizing combination of labor and capital that will yield 1,000 reams of paper? Round each to the nearest whole number.
+
+### Part B
+What is the total cost of using this combination of inputs?
+
+### Part C
+Now suppose that they need to double their output this week, and need to produce 2,000 reams of paper. How does their optimal combination of inputs change? [Hint: neither the equation for MRTS nor any prices are changing!]
+
+### Part D
+What is the total cost of this new level of output?
+
+### Part E
+Suppose management at Dunder Mifflin develops a new program that magically makes everyone at the firm more productive, such that the firm's new production function becomes:
+
+\begin{align*}q &=20 l^{0.5} k^{0.5}\\
+MP_l& = 10l^{-0.5}k^{0.5}\\
+MP_k& = 10l^{0.5}k^{-0.5}\\
+\end{align*}
+
+Still needing to supply 2,000 reams of paper this week at the same input prices, what is their new optimal combination of labor and capital?
+
+### Part F
+How much does this combination cost? What does this show you about technological improvement (or "total factor productivity")?

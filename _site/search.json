@@ -658,6 +658,83 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/2.4-content.html#overview",
+    "href": "content/2.4-content.html#overview",
+    "title": "2.4 — Costs of Production — Class Content",
+    "section": " Overview",
+    "text": "Overview\nToday we cover costs before we put them together next class with revenues to solve the firm’s (first stage) profit maximization problem. While it seems we are adding quite a bit, and learning some new math problems with calculating costs, we will practice it more next class, when put together with revenues."
+  },
+  {
+    "objectID": "content/2.4-content.html#readings",
+    "href": "content/2.4-content.html#readings",
+    "title": "2.4 — Costs of Production — Class Content",
+    "section": " Readings",
+    "text": "Readings\n\n Ch. 7 in Goolsbee, Levitt, and Syverson, 2019"
+  },
+  {
+    "objectID": "content/2.4-content.html#appendix",
+    "href": "content/2.4-content.html#appendix",
+    "title": "2.4 — Costs of Production — Class Content",
+    "section": " Appendix",
+    "text": "Appendix\nSee the online appendix for today’s content:\n\nFrom Total Product to Total Cost: Output Expansion Paths\nMarginal Cost and Variable Cost\nThe Relationship Between Returns to Scale and Costs\nCobb-Douglas Cost Functions"
+  },
+  {
+    "objectID": "content/2.4-content.html#assignments",
+    "href": "content/2.4-content.html#assignments",
+    "title": "2.4 — Costs of Production — Class Content",
+    "section": " Assignments",
+    "text": "Assignments\n\nProblem Set 3 Due Wednesday March 22\nProblem Set 3 (on classes 2.1-2.3) is due by 11:59 PM Wednesday March 22 on Blackboard Assignments."
+  },
+  {
+    "objectID": "content/2.4-content.html#slides",
+    "href": "content/2.4-content.html#slides",
+    "title": "2.4 — Costs of Production — Class Content",
+    "section": " Slides",
+    "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/2.5-content.html#overview",
+    "href": "content/2.5-content.html#overview",
+    "title": "2.5 — Short Run Profit Maximization — Class Content",
+    "section": " Overview",
+    "text": "Overview\nToday we briefly discuss revenues before we put them together to solve the firm’s profit maximization problem. We focus on the short run, where the firm incurs fixed costs and must stay in the market regardless. We derive the firm’s (inverse) supply curve.\nNext class will be about the long run, and finish up unit 2."
+  },
+  {
+    "objectID": "content/2.5-content.html#readings",
+    "href": "content/2.5-content.html#readings",
+    "title": "2.5 — Short Run Profit Maximization — Class Content",
+    "section": " Readings",
+    "text": "Readings\n\n Ch. 8.1-8.3 in Goolsbee, Levitt, and Syverson, 2019"
+  },
+  {
+    "objectID": "content/2.5-content.html#practice",
+    "href": "content/2.5-content.html#practice",
+    "title": "2.5 — Short Run Profit Maximization — Class Content",
+    "section": " Practice",
+    "text": "Practice\nToday we will be working on practice problems. Answers will be posted later on that page."
+  },
+  {
+    "objectID": "content/2.5-content.html#appendix",
+    "href": "content/2.5-content.html#appendix",
+    "title": "2.5 — Short Run Profit Maximization — Class Content",
+    "section": " Appendix",
+    "text": "Appendix\nSee the online appendix for today’s content:\n\nCommon Cost Assumptions"
+  },
+  {
+    "objectID": "content/2.5-content.html#assignments",
+    "href": "content/2.5-content.html#assignments",
+    "title": "2.5 — Short Run Profit Maximization — Class Content",
+    "section": " Assignments",
+    "text": "Assignments\n\nProblem Set 4 Due Wednesday March 22\nProblem Set 3 (on classes 2.1-2.3) is due by 11:59 PM Wednesday March 22 on Blackboard Assignments."
+  },
+  {
+    "objectID": "content/2.5-content.html#slides",
+    "href": "content/2.5-content.html#slides",
+    "title": "2.5 — Short Run Profit Maximization — Class Content",
+    "section": " Slides",
+    "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
     "objectID": "content/index.html",
     "href": "content/index.html",
     "title": "Overview",
@@ -861,6 +938,83 @@
     "text": "3.\nDoes this technology experience constant returns, increasing returns, or decreasing returns to scale?"
   },
   {
+    "objectID": "practice/2.5-practice.html",
+    "href": "practice/2.5-practice.html",
+    "title": "2.5 — Short Run Profit Maximization — Practice",
+    "section": "",
+    "text": "Download PDF  Answer Key\nA firm has short-run costs given by: \\[\\begin{align*}\nC(q)&=q^2+1\\\\\nMC(q)&=2q\\\\ \\end{align*}\\]"
+  },
+  {
+    "objectID": "practice/2.5-practice.html#section",
+    "href": "practice/2.5-practice.html#section",
+    "title": "2.5 — Short Run Profit Maximization — Practice",
+    "section": "1.",
+    "text": "1.\nWrite an equation for fixed costs, \\(f\\)."
+  },
+  {
+    "objectID": "practice/2.5-practice.html#section-1",
+    "href": "practice/2.5-practice.html#section-1",
+    "title": "2.5 — Short Run Profit Maximization — Practice",
+    "section": "2.",
+    "text": "2.\nWrite an equation for variable costs, \\(VC(q)\\)."
+  },
+  {
+    "objectID": "practice/2.5-practice.html#section-2",
+    "href": "practice/2.5-practice.html#section-2",
+    "title": "2.5 — Short Run Profit Maximization — Practice",
+    "section": "3.",
+    "text": "3.\nWrite an equation for average fixed costs, \\(AFC(q)\\)."
+  },
+  {
+    "objectID": "practice/2.5-practice.html#section-3",
+    "href": "practice/2.5-practice.html#section-3",
+    "title": "2.5 — Short Run Profit Maximization — Practice",
+    "section": "4.",
+    "text": "4.\nWrite an equation for average variable costs, \\(AVC(q)\\)."
+  },
+  {
+    "objectID": "practice/2.5-practice.html#section-4",
+    "href": "practice/2.5-practice.html#section-4",
+    "title": "2.5 — Short Run Profit Maximization — Practice",
+    "section": "5.",
+    "text": "5.\nWrite an equation for average (total) costs, \\(AC(q)\\)."
+  },
+  {
+    "objectID": "practice/2.5-practice.html#section-5",
+    "href": "practice/2.5-practice.html#section-5",
+    "title": "2.5 — Short Run Profit Maximization — Practice",
+    "section": "6.",
+    "text": "6.\nSuppose the firm is in a competitive market, and the current market price is $4, how many units of output maximize profits?"
+  },
+  {
+    "objectID": "practice/2.5-practice.html#section-6",
+    "href": "practice/2.5-practice.html#section-6",
+    "title": "2.5 — Short Run Profit Maximization — Practice",
+    "section": "7.",
+    "text": "7.\nHow much profit will this firm earn?"
+  },
+  {
+    "objectID": "practice/2.5-practice.html#section-7",
+    "href": "practice/2.5-practice.html#section-7",
+    "title": "2.5 — Short Run Profit Maximization — Practice",
+    "section": "8.",
+    "text": "8.\nBelow what market price would the firm shut down in the short run if it were earning losses?"
+  },
+  {
+    "objectID": "practice/2.5-practice.html#section-8",
+    "href": "practice/2.5-practice.html#section-8",
+    "title": "2.5 — Short Run Profit Maximization — Practice",
+    "section": "9.",
+    "text": "9.\nAt what market price would the firm break even \\((\\pi=0)\\)?"
+  },
+  {
+    "objectID": "practice/2.5-practice.html#section-9",
+    "href": "practice/2.5-practice.html#section-9",
+    "title": "2.5 — Short Run Profit Maximization — Practice",
+    "section": "10.",
+    "text": "10.\nWrite out the equation for the firm’s short run supply curve."
+  },
+  {
     "objectID": "resources/appendices/1.2-appendix.html",
     "href": "resources/appendices/1.2-appendix.html",
     "title": "1.2 — Budget Constraint — Appendix",
@@ -992,6 +1146,41 @@
     "title": "2.3 — Cost Minimization — Appendix",
     "section": "Returns to Scale: Proof of Exponents Trick",
     "text": "Returns to Scale: Proof of Exponents Trick\nConsider a Cobb-Douglas production function \\[f(k,l) =k^\\alpha l^\\beta\\]\nNow scale this function by some scalar \\(t>0\\), by multiplying both \\(l\\) and \\(k\\), and also output \\(q\\), by \\(t\\): \\[\\begin{align*}\ntq& \\lesseqgtr (tk)^\\alpha (tl)^\\beta \\\\\ntq& \\lesseqgtr t^{\\alpha+\\beta}k^\\alpha l^\\beta \\\\\ntq& \\lesseqgtr t^{\\alpha+\\beta}f(l,k) \\\\\n\\end{align*}\\]\nThis implies that: \\[\\begin{cases}\ntq>t^{\\alpha+\\beta}f(l,k) & \\iff \\alpha+\\beta < 1 & \\text{Decreasing returns to scale}\\\\\ntq=t^{\\alpha+\\beta}f(l,k) & \\iff \\alpha+\\beta = 1 & \\text{Constant returns to scale}\\\\\ntq<t^{\\alpha+\\beta}f(l,k) & \\iff \\alpha+\\beta > 1 & \\text{Increasing returns to scale}\\\\\n\\end{cases}\\]"
+  },
+  {
+    "objectID": "resources/appendices/2.4-appendix.html#from-total-product-to-total-cost-output-expansion-paths",
+    "href": "resources/appendices/2.4-appendix.html#from-total-product-to-total-cost-output-expansion-paths",
+    "title": "2.4 — Costs of Production — Appendix",
+    "section": "From Total Product to Total Cost: Output Expansion Paths",
+    "text": "From Total Product to Total Cost: Output Expansion Paths\nWe can trace the output expansion path (OEP) of a firm as the set of optimal (cost-minimizing combinations of inputs at constant prices) production points for different levels of output. These will be all of the tangencies for a given isoquant (output level) with the lowest possible isocost line.\nImportantly, we are assuming: (1) firms always minimize total cost at every level of output; and (2) input prices \\(w\\) and \\(r\\) do not change as the firm increases output\nFor a Cobb-Douglas production function, the OEP is a ray from the origin (0,0) through all the optimal combinations. Other production functions may have OEPs that are not straight lines, but curves.\nWe can trace the total cost function \\(C(q)\\) for different levels of output \\(q\\), by identifying the total cost at each optimal (cost-minimizing) combination of \\(L\\) and \\(K\\) for each level of \\(q\\) (again, holding prices constant). I show this in the second graph on the right.\nNote here we can also visualize the differences in returns to scale, and begin to see their connection to economies of scale (how output relates to average cost).\nBelow, I show the output expansion paths and total cost functions for technology with constant returns. Note that as we double the amount of inputs from point \\(A\\) to point \\(B\\), we go from using 10 \\(L\\) and 5 \\(K\\) to produce 7.07 units of output \\((\\sqrt{50})\\) to using 20 \\(L\\) and 10 \\(K\\) to produce 14.14 units of output \\((\\sqrt{200}\\)). This is an exact doubling of output from doubling the scale of production. Notice our total cost will also double, from $40 to $80. Thus, for constant returns, total cost increases proportionate to output.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBelow, I show the output expansion paths and total cost functions for technology with increasing returns. Note that as we double the amount of inputs from point \\(A\\) to point \\(B\\), we go from using 10 \\(L\\) and 5 \\(K\\) to produce 50 units of output to using 20 \\(L\\) and 10 \\(K\\) to produce 200 units of output. Here we quadruple output from doubling the scale of production. Notice also our total cost will also increase as we increase output, but at a decreasing rate!"
+  },
+  {
+    "objectID": "resources/appendices/2.4-appendix.html#marginal-cost-and-variable-cost",
+    "href": "resources/appendices/2.4-appendix.html#marginal-cost-and-variable-cost",
+    "title": "2.4 — Costs of Production — Appendix",
+    "section": "Marginal Cost and Variable Cost",
+    "text": "Marginal Cost and Variable Cost\nMarginal cost is defined as the change in total costs from a change in output: \\[MC(q)=\\frac{\\Delta C(q)}{\\Delta q}\\]\nRecall that total cost is the sum of fixed and variable costs\n\\[C(q)=f+VC(q)\\] However, since fixed costs never change, any change in total cost is a change in variable cost \\[\\Delta C(q) = \\Delta VC(q)\\]\nThus, marginal cost actually measures the change in variable costs from a change in output: \\[MC(q)=\\frac{\\Delta C(q)}{\\Delta q}=\\frac{\\Delta VC(q)}{\\Delta q}\\] Thus, fixed cost has no effect on marginal cost, and marginal cost is always measuring the change in variable costs with additional output.\nFurthermore, because of this relationship with marginal cost measuring the change in variable cost from additional output, for any specific quantity of output, e.g. \\(q_1\\), the variable cost of producing \\(q_1\\) can be seen on the graph below as the total area under the marginal cost curve to the left of \\(q_1\\):"
+  },
+  {
+    "objectID": "resources/appendices/2.4-appendix.html#the-relationship-between-returns-to-scale-and-costs",
+    "href": "resources/appendices/2.4-appendix.html#the-relationship-between-returns-to-scale-and-costs",
+    "title": "2.4 — Costs of Production — Appendix",
+    "section": "The Relationship Between Returns to Scale and Costs",
+    "text": "The Relationship Between Returns to Scale and Costs\nThere is a direct relationship between a technology’s returns to scale1 and its cost structure: the rate at which its total costs increase2 and its marginal costs change3. This is easiest to see for a single input, such as our assumptions of the short run (where firms can change \\(l\\) but not \\(\\bar{k})\\):\n\\[q=f(\\bar{k},l)\\]\n\nConstant Returns to Scale:\n\n\n\n\n\n\n\n\n\n\n\nDecreasing Returns to Scale\n\n\n\n\n\n\n\n\n\n\n\nIncreasing Returns to Scale"
+  },
+  {
+    "objectID": "resources/appendices/2.4-appendix.html#cobb-douglas-cost-functions",
+    "href": "resources/appendices/2.4-appendix.html#cobb-douglas-cost-functions",
+    "title": "2.4 — Costs of Production — Appendix",
+    "section": "Cobb-Douglas Cost Functions",
+    "text": "Cobb-Douglas Cost Functions\nThe total cost function for Cobb-Douglas production functions of the form \\[q=l^{\\alpha}k^{\\beta}\\] can be shown with some very tedious algebra to be:\n\\[C(w,r,q)=\\left[\\left(\\frac{\\alpha}{\\beta}\\right)^{\\frac{\\beta}{\\alpha+\\beta}} + \\left(\\frac{\\alpha}{\\beta}\\right)^{\\frac{-\\alpha}{\\alpha+\\beta}}\\right] w^{\\frac{\\alpha}{\\alpha+\\beta}} r^{\\frac{\\beta}{\\alpha+\\beta}} q^{\\frac{1}{\\alpha+\\beta}}\\]\nIf you take the first derivative of this (to get marginal cost), it is:\n\\[\\frac{\\partial C(w,r,q)}{\\partial q}= MC(q) = \\frac{1}{\\alpha+\\beta} \\left(w^{\\frac{\\alpha}{\\alpha+\\beta}} r^{\\frac{\\beta}{\\alpha+\\beta}}\\right) q^{\\left(\\frac{1}{\\alpha+\\beta}\\right)-1}\\]\nHow does marginal cost change with increased output? Take the second derivative:\n\\[\\frac{\\partial^2 C(w,r,q)}{\\partial q^2}= \\frac{1}{\\alpha+\\beta} \\left(\\frac{1}{\\alpha+\\beta} -1 \\right) \\left(w^{\\frac{\\alpha}{\\alpha+\\beta}} r^{\\frac{\\beta}{\\alpha+\\beta}}\\right) q^{\\left(\\frac{1}{\\alpha+\\beta}\\right)-2}\\]\nThree possible cases:\n\nIf \\(\\frac{1}{\\alpha+\\beta} > 1\\), this is positive \\(\\implies\\) decreasing returns to scale\n\n\nProduction function exponents \\(\\alpha+\\beta < 1\\)\n\n\nIf \\(\\frac{1}{\\alpha+\\beta} < 1\\), this is negative \\(\\implies\\) increasing returns to scale\n\n\nProduction function exponents \\(\\alpha+\\beta > 1\\)\n\n\nIf \\(\\frac{1}{\\alpha+\\beta} = 1\\), this is constant \\(\\implies\\) constant returns to scale\n\n\nProduction function exponents \\(\\alpha+\\beta = 1\\)\n\n\nExample (Constant Returns)\nLet \\(q=l^{0.5}k^{0.5}\\).\n\\[\\begin{align*}\nC(w,r,q)&=\\left[\\left(\\frac{0.5}{0.5}\\right)^{\\frac{0.5}{0.5+0.5}} + \\left(\\frac{0.5}{0.5}\\right)^{\\frac{-0.5}{0.5+0.5}}\\right] w^{\\frac{0.5}{0.5+0.5}} r^{\\frac{0.5}{0.5+0.5}} q^{\\frac{1}{0.5+0.5}}\\\\\nC(w,r,q)&= \\left[1^{0.5}+1^{-0.5} \\right]w^{0.5}r^{0.5}q^{0.5}\\\\\nC(w,r,q)&= w^{0.5}r^{0.5}q^{1}\\\\\n\\end{align*}\\]\nConsider input prices of \\(w=\\$9\\) and \\(r=\\$25\\):\n\\[\\begin{align*}C(w=9,r=25,q)&=9^{0.5}25^{0.5}q \\\\\n& =3*5*q\\\\\n& =15q\\\\\\end{align*}\\]\nThat is, total costs (at those given input prices, and technology) is equal to 15 times the output level, \\(q\\):\n\n\n\n\n\n\n\n\n\nMarginal costs would be\n\\[MC(q) = \\frac{\\partial C(q)}{\\partial q} = 15\\]\nAverage costs would be\n\\[MC(q) = \\frac{C(q)}{q} = \\frac{15q}{q} = 15\\]\n\n\n\n\n\n\n\n\n\n\n\nExample (Decreasing Returns)\nLet \\(q=l^{0.25}k^{0.25}\\).\n\\[\\begin{align*}\nC(w,r,q)&=\\left[\\left(\\frac{0.25}{0.25}\\right)^{\\frac{0.25}{0.25+0.25}} + \\left(\\frac{0.25}{0.25}\\right)^{\\frac{-0.25}{0.25+0.25}}\\right] w^{\\frac{0.25}{0.25+0.25}} r^{\\frac{0.25}{0.25+0.25}} q^{\\frac{1}{0.25+0.25}}\\\\\nC(w,r,q)&= \\left[1^{0.5}+1^{-0.5} \\right]w^{0.5}r^{0.5}q^{2}\\\\\nC(w,r,q)&= w^{0.5}r^{0.5}q^{2}\\\\\n\\end{align*}\\]\nIf \\(w=9\\), \\(r=25\\):\n\\[\\begin{align*}C(w=9,r=25,q)&=9^{0.5}25^{0.5}q^2 \\\\\n& =3*5*q^2\\\\\n& =15q^2\\\\\\end{align*}\\]\n\n\n\n\n\n\n\n\n\nMarginal costs would be\n\\[MC(q) = \\frac{\\partial C(q)}{\\partial q} = 30q\\]\nAverage costs would be\n\\[AC(q) = \\frac{C(q)}{q} = \\frac{15q^2}{q} = 15q\\]"
+  },
+  {
+    "objectID": "resources/appendices/2.5-appendix.html#common-cost-assumptions",
+    "href": "resources/appendices/2.5-appendix.html#common-cost-assumptions",
+    "title": "2.5 — Short Run Profit Maximization — Appendix",
+    "section": "Common Cost Assumptions",
+    "text": "Common Cost Assumptions\nEconomists often make simple assumptions about costs to illustrate key concepts without marring the analysis with unnecessary complexity. This also makes graphs quite easy to point to and calculate key areas, such as profits or deadweight losses.\nOne common set of cost assumptions is the following:\n\nA firm has no fixed costs\nA firm has constant marginal costs, \\(MC(q)=c\\) where \\(c\\geq0\\)\n\nIf this is the case, then we can show that average costs will be equal to marginal costs, i.e. \\(MC=AC=AVC=c\\).\nSince marginal cost is the first derivative of the total cost function, integrating a marginal cost function \\(MC=c\\) leaves with with a total cost function of \\(C(q)=cq\\).1 If this is the case, then we can find the average cost:\n\\[\\begin{align*}\nC(q)&=cq\\\\\nAC(q)=\\frac{C(q)}{q}&=\\frac{cq}{q}\\\\\nAC(q)&=c\\\\\n\\end{align*}\\]\n\n\n\n\n\n\n\n\n\nAnother common set of cost assumptions is the following:\n\nA firm has fixed costs, \\(f\\)\nA firm has constant marginal costs, \\(MC(q)=c\\) where \\(c\\geq0\\)\n\nIf this is the case, then we can show that average costs are strictly decreasing over all output \\(q\\geq0\\).\nAgain, we can integrate marginal cost to the total cost function (but here we need the arbitrary constant from integration, which we shall label \\(f\\), for fixed costs): \\(C(q)=cq+f\\). We can then find the average cost:\n\\[\\begin{align*}\nC(q)&=cq+f\\\\\nAC(q)=\\frac{C(q)}{q}&=\\frac{cq+f}{q}\\\\\nAC(q)&=c+\\frac{f}{q}\\\\\n\\end{align*}\\]\nSince \\(f>0\\), as \\(q \\rightarrow \\infty\\), \\(AC(q) \\rightarrow c\\), that is, average cost is getting asymptotically close to marginal cost, \\(c\\), but will never intersect it. Note, I also included AFC, which again is always decreasing, and asymptotically approaching 0.\nThe importance of this type of cost structure is that it creates economies of scale, and represents a lot of industries that tend towards natural monopoly."
   },
   {
     "objectID": "resources/appendices/index.html",
@@ -1152,7 +1341,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This page contains all of the following resources for each class meeting:\n\n Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.\n Slides are “Xaringan” presentations that can be opened in any browser (You can find a downloadable PDF in each content page)\n Practice problems we work on together in class to prepare for homeworks and exams\n Assignments are listed with due dates\n\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!\nRelevant materials, if applicable will be posted before class meets and become colored links.\n\n\n\n\n\n\n\n\n\n\n\n\n\nI. Rational Choice Theory: Consumers\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\n\n\nPreliminary Survey (due Mon Jan 30)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Jan 25\n\n\n1.1 — The Tools of Microeconomics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Jan 30\n\n\n1.2 — Budget Constraint\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 01\n\n\n1.3 — Preferences\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Feb 06\n\n\n1.4 — Utility Maximization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 1 due Mon Feb 13\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 08\n\n\n1.5 — Demand\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Feb 13\n\n\n1.6 — Income and Substitution Effects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 15\n\n\n1.7 — Price Elasticity of Demand\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 2 due Mon Feb 20\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 22\n\n\nExam 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nII. Rational Choice Theory: Producers\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nWed Mar 01\n\n\n2.1 — Production and Firms\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Mar 06\n\n\n2.2 — Production Technology\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Mar 08\n\n\n2.3 — Cost Minimization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 3 due Wed Mar 22\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Mar 20\n\n\n2.4 — Costs of Production\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Mar 22\n\n\n2.5 — Short Run Profit Maximization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSun Mar 26\n\n\n2.6 — Long Run Industry Equilibrium\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Mar 29\n\n\nExam 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIII. Market Equilibrium\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nMon Apr 03\n\n\n3.1 — The Supply and Demand Model\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Apr 05\n\n\n3.2 — Market Competition and Surpluses\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 10\n\n\n3.3 — The Static Benefits of Markets: Welfare Economics & Market Failure\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Apr 12\n\n\n3.4 — The Dynamic Benefits of Markets: Entrepreneurship, Profits, & Prices\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 17\n\n\n3.5 — Introduction to Political Economy\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 5 due Mon Nov 28\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIV. Imperfect Competition\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nWed Apr 19\n\n\n4.1 — Modeling Firms with Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 24\n\n\n4.2 — Consequences and Sources of Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFri May 26\n\n\n4.3 — Factor Markets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon May 01\n\n\n4.4 — Monopolistic Competition and Oligopoly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed May 03\n\n\n4.5 — Contestable Markets and Wrap Up\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 6 (Ungraded)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOp-Ed due Mon May 8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Exam"
+    "text": "This page contains all of the following resources for each class meeting:\n\n Content materials contains suggested readings, more details about assignments, math appendices, and other helpful resources. I suggest you view these before each class.\n Slides are “Xaringan” presentations that can be opened in any browser (You can find a downloadable PDF in each content page)\n Practice problems we work on together in class to prepare for homeworks and exams\n Assignments are listed with due dates\n\nPlease note that the lesson numbers, topics, and titles (e.g. 1.1) are my design, and do not match up with the textbook!\nRelevant materials, if applicable will be posted before class meets and become colored links.\n\n\n\n\n\n\n\n\n\n\n\n\n\nI. Rational Choice Theory: Consumers\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\n\n\nPreliminary Survey (due Mon Jan 30)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Jan 25\n\n\n1.1 — The Tools of Microeconomics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Jan 30\n\n\n1.2 — Budget Constraint\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 01\n\n\n1.3 — Preferences\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Feb 06\n\n\n1.4 — Utility Maximization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 1 due Mon Feb 13\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 08\n\n\n1.5 — Demand\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Feb 13\n\n\n1.6 — Income and Substitution Effects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 15\n\n\n1.7 — Price Elasticity of Demand\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 2 due Mon Feb 20\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Feb 22\n\n\nExam 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nII. Rational Choice Theory: Producers\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nWed Mar 01\n\n\n2.1 — Production and Firms\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Mar 06\n\n\n2.2 — Production Technology\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Mar 08\n\n\n2.3 — Cost Minimization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 3 due Wed Mar 22\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Mar 20\n\n\n2.4 — Costs of Production\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Mar 22\n\n\n2.5 — Short Run Profit Maximization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Mar 27\n\n\n2.6 — Long Run Industry Equilibrium\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 03\n\n\nExam 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIII. Market Equilibrium\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nWed Apr 05\n\n\n3.1 — The Supply and Demand Model\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 10\n\n\n3.2 — Market Competition and Surpluses\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Apr 12\n\n\n3.3 — The Static Benefits of Markets: Welfare Economics & Market Failure\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon Apr 17\n\n\n3.4 — The Dynamic Benefits of Markets: Entrepreneurship, Profits, & Prices\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Apr 19\n\n\n3.5 — Introduction to Political Economy\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 5 due Mon Nov 28\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIV. Imperfect Competition\n\n\n\n\n\n\n\nTitle\n\n\nContent\n\n\nSlides\n\n\nPractice\n\n\nAssignment\n\n\n\n\n\n\nMon Apr 24\n\n\n4.1 — Modeling Firms with Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed Apr 26\n\n\n4.2 — Consequences and Sources of Market Power\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon May 01\n\n\n4.3 — Factor Markets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWed May 03\n\n\n4.4 — Monopolistic Competition and Oligopoly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMon May 08\n\n\n4.5 — Contestable Markets and Wrap Up\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Set 6 (Ungraded)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOp-Ed due Mon May 8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Exam"
   },
   {
     "objectID": "syllabus.html",

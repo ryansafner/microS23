@@ -1,0 +1,14 @@
+{
+  "hash": "88794506266cbb0be4aea291abb041fd",
+  "result": {
+    "markdown": "---\ntitle: \"2.5 — Short Run Profit Maximization — Class Content\"\nexecute:\n  freeze: auto\n---\n\n::: {.cell}\n\n:::\n\n\n::: {.callout-note appearance=minimal}\n# Meeting Date\n*Wednesday, March 22, 2023*\n:::\n\n::: callout-warning\n# Upcoming Assignment\n[Problem Set 3](/assignments/03-problem-set) (on classes 2.1-2.3) is due by 11:59 PM Wednesday March 22 on Blackboard Assignments.\n:::\n\n## <i class=\"fas fa-info-circle fa-lg\"></i> Overview\n\nToday we briefly discuss revenues before we put them together to solve the firm's *profit maximization problem*. We focus on the *short run*, where the firm incurs fixed costs and must stay in the market regardless. We derive the firm's (inverse) *supply curve*.\n\nNext class will be about the long run, and finish up unit 2.\n\n## <i class=\"fas fa-book-reader fa-lg\"></i> Readings\n\n- <i class=\"fas fa-book\"></i> Ch. 8.1-8.3 in Goolsbee, Levitt, and Syverson, 2019\n\n## <i class=\"fas fa-dumbbell\"></i> Practice\n\nToday we will be working on [practice problems](/practice/2.5-practice). Answers will be posted later on that page.\n\n## <i class=\"fas fa-sigma\"></i> Appendix\n\nSee the online appendix for today's content:\n\n- [Common Cost Assumptions](/resources/appendices/2.5-appendix.html#common-cost-assumptions)\n\n## <i class=\"fas fa-laptop-code\"></i> Assignments\n\n### Problem Set 4 Due Wednesday March 22\n\n[Problem Set 3](/assignments/03-problem-set) (on classes 2.1-2.3) is due by 11:59 PM Wednesday March 22 on Blackboard Assignments.\n\n## <i class=\"fas fa-chalkboard-teacher\"></i> Slides\n\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. \n\n::: callout-tip\nYou can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.\n:::\n\nI suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!\n\n\n<p style=\"text-align:center;\"><a target=\"_blank\" href=\"/slides/2.5-slides.html\"><img src =\"/slides/2.5-slides.png\" alt = \"2.5-slides\"></a></p>\n<p style=\"text-align:center;\"><a class=\"btn btn-primary btn-lg\" target=\"_blank\" href=\"/slides/2.5-slides.pdf\"><i class=\"fas fa-file-pdf\"></i> Download as PDF</a></p>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,748 @@
+---
+title: "2.4 — Costs of Production — Appendix"
+execute:
+  freeze: auto
+page-layout: full
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+library(tidyverse)
+library(ggrepel)
+knitr::opts_chunk$set(message = F,
+                      warning = F,
+                      echo = F,
+                      fig.retina = 3,
+                      fig.align = "center")
+```
+
+## From Total Product to Total Cost: Output Expansion Paths
+
+We can trace the **output expansion path (OEP)** of a firm as the set of optimal (cost-minimizing combinations of inputs at constant prices) production points for different levels of output. These will be all of the tangencies for a given isoquant (output level) with the lowest possible isocost line. 
+
+Importantly, we are assuming: (1) firms always minimize total cost at every level of output; and (2) input prices $w$ and $r$ do not change as the firm increases output
+
+For a Cobb-Douglas production function, the OEP is a ray from the origin (0,0) through all the optimal combinations. Other production functions may have OEPs that are not straight lines, but curves.
+
+We can trace the total cost function $C(q)$ for different levels of output $q$, by identifying the total cost at each optimal (cost-minimizing) combination of $L$ and $K$ for each level of $q$ (again, holding prices constant). I show this in the second graph on the right.
+
+Note here we can also visualize the differences in *returns to scale*, and begin to see their connection to economies of scale (how output relates to average cost). 
+
+Below, I show the output expansion paths and total cost functions for technology with constant returns. Note that as we double the amount of inputs from point $A$ to point $B$, we go from using 10 $L$ and 5 $K$ to produce 7.07 units of output $(\sqrt{50})$ to using 20 $L$ and 10 $K$ to produce 14.14 units of output $(\sqrt{200}$). This is an exact doubling of output from doubling the scale of production. Notice our total cost will also double, from $40 to $80. Thus, for constant returns, total cost increases proportionate to output.
+
+```{r}
+library(geomtextpath)
+points_opt <-tribble(
+  ~letter, ~x, ~y,
+  "A", 10, 5,
+  "B", 20, 10,
+  "C", 30, 15,
+  "D", 40, 20
+)
+
+iq_opt_1=function(x){50/x}
+iq_opt_2=function(x){200/x}
+iq_opt_3=function(x){450/x}
+iq_opt_4=function(x){800/x}
+IC_1=function(x){10-0.5*x}
+IC_2=function(x){20-0.5*x}
+IC_3=function(x){30-0.5*x}
+IC_4=function(x){40-0.5*x}
+
+oep <- ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  
+  # IC 1
+  stat_function(fun=IC_1, geom="line", size=2, color = "red")+
+  
+  # IQ 1
+  stat_function(fun=iq_opt_1, geom="line", size=2, color = "#3CBB75FF")+
+
+  geom_segment(aes(x = 0, xend = 10, y = 5, yend=5), linetype="dotted", size=0.5)+
+  geom_segment(aes(x = 10, xend = 10, y = 5, yend=0), linetype="dotted", size=0.5)+
+
+  # IC 2
+  stat_function(fun=IC_2, geom="line", size=2, color = "red")+
+  
+  # IQ 2
+  stat_function(fun=iq_opt_2, geom="line", size=2, color = "#3CBB75FF")+
+  
+  geom_segment(aes(x = 0, xend = 20, y = 10, yend=10), linetype="dotted", size=0.5)+
+  geom_segment(aes(x = 20, xend = 20, y = 10, yend=0), linetype="dotted", size=0.5)+
+
+  # IC 3
+  stat_function(fun=IC_3, geom="line", size=2, color = "red")+
+
+  # IQ 3
+  stat_function(fun=iq_opt_3, geom="line", size=2, color = "#3CBB75FF")+
+
+  geom_segment(aes(x = 0, xend = 30, y = 15, yend=15), linetype="dotted", size=0.5)+
+  geom_segment(aes(x = 30, xend = 30, y = 15, yend=0), linetype="dotted", size=0.5)+
+  
+  # IC 4
+  stat_function(fun=IC_4, geom="line", size=2, color = "red")+
+
+  # IQ 4
+  stat_function(fun=iq_opt_4, geom="line", size=2, color = "#3CBB75FF")+
+
+  geom_segment(aes(x = 0, xend = 40, y = 20, yend=20), linetype="dotted", size=0.5)+
+  geom_segment(aes(x = 40, xend = 40, y = 20, yend=0), linetype="dotted", size=0.5)+
+
+  # LABELS
+  # 1
+  geom_label(aes(x=7.5,y=iq_opt_1(7.5)), color = "#3CBB75FF", label = expression(q[1]^"*"==7.07), size = 2)+
+  geom_label(aes(x=15,y=IC_1(15)), color = "red", label="C=$40", size = 3)+
+  # 2
+  geom_label(aes(x=35,y=IC_2(35)), color = "red", label="C=$80", size = 3)+
+  geom_label(aes(x=15,y=iq_opt_2(15)), color = "#3CBB75FF", label=expression(q[2]^"*"==14.14), size = 2)+
+  # 3
+  geom_label(aes(x=55,y=IC_3(55)), color = "red", label="C=$120", size = 3)+
+  geom_label(aes(x=25,y=iq_opt_3(25)), color = "#3CBB75FF", label=expression(q[3]^"*"==20.00), size = 2)+
+  
+  # 4
+  geom_label(aes(x=75,y=IC_4(75)), color = "red", label="C=$160", size = 3)+
+  geom_label(aes(x=35,y=iq_opt_4(35)), color = "#3CBB75FF", label=expression(q[4]^"*"==28.28), size = 2)+
+  geom_point(data = points_opt,
+             mapping=aes(x=x, y=y),
+             size = 3)+
+  geom_text_repel(data = points_opt,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             seed = 2,
+             size = 4)+
+    scale_x_continuous(breaks=seq(0,80,10),
+                     limits=c(0,80),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,50,5),
+                     limits=c(0,50),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  geom_abline(intercept = 0, slope = 0.5, linetype = "dotted", alpha = 0.5)+
+  geom_text(x = 60, y = 32, label = "Output Expansion Path", size = 3, angle = 40)+
+  labs(#title = "Output Expansion Path for Cobb-Douglas Production Function",
+       #subtitle = "With Constant Returns to Scale",
+       x = "Labor",
+       y = "Capital"#,
+       #caption = expression(paste(q== l^{0.5}*k^{0.5}, ", w = $2, ", r," = $4", sep=" "))
+       )+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+```
+
+```{r}
+cost_points <- tribble(
+  ~letter, ~x, ~y,
+  "A", sqrt(50), 40,
+  "B", sqrt(200), 80,
+  "C" , sqrt(450), 120,
+  "D", sqrt(800), 160
+)
+
+tc <- ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_smooth(data = cost_points, aes(x = x, y = y ), method = "lm", fullrange = T, color = "red", size = 2)+
+  geom_point(data = cost_points,
+             mapping=aes(x=x, y=y),
+             size = 3)+
+  geom_text_repel(data = cost_points,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             seed = 2,
+             size = 4)+
+  scale_x_continuous(breaks=seq(0,30,2),
+                     limits=c(0,30),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,200,20),
+                     limits=c(0,200),
+                     labels=scales::dollar_format(),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  geom_text(x = 20, y = 100, label = "Total Cost Function", size = 3, angle = 40, color = "red")+
+  labs(x = "Output",
+       y = "Total Cost")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+
+```
+
+```{r}
+library(patchwork)
+
+plots <- oep | tc
+
+plots + 
+  plot_annotation(
+  title = "Output Expansion Path for Cobb-Douglas Production Function",
+  subtitle = "With Constant Returns to Scale",
+  caption = expression(paste(q== l^{0.5}*k^{0.5}, ", w = $2, ", r," = $4", sep=" "))
+  )
+
+```
+
+Below, I show the output expansion paths and total cost functions for technology with *increasing* returns. Note that as we double the amount of inputs from point $A$ to point $B$, we go from using 10 $L$ and 5 $K$ to produce 50 units of output  to using 20 $L$ and 10 $K$ to produce 200 units of output. Here we *quadruple* output from doubling the scale of production. Notice also our total cost will also increase as we increase output, but at a decreasing rate!
+
+```{r}
+library(geomtextpath)
+points_opt <-tribble(
+  ~letter, ~x, ~y,
+  "A", 10, 5,
+  "B", 20, 10,
+  "C", 30, 15,
+  "D", 40, 20
+)
+
+iq_opt_1=function(x){50/x}
+iq_opt_2=function(x){200/x}
+iq_opt_3=function(x){450/x}
+iq_opt_4=function(x){800/x}
+IC_1=function(x){10-0.5*x}
+IC_2=function(x){20-0.5*x}
+IC_3=function(x){30-0.5*x}
+IC_4=function(x){40-0.5*x}
+
+oep_ir <- ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  
+  # IC 1
+  stat_function(fun=IC_1, geom="line", size=2, color = "red")+
+  
+  # IQ 1
+  stat_function(fun=iq_opt_1, geom="line", size=2, color = "#3CBB75FF")+
+
+  geom_segment(aes(x = 0, xend = 10, y = 5, yend=5), linetype="dotted", size=0.5)+
+  geom_segment(aes(x = 10, xend = 10, y = 5, yend=0), linetype="dotted", size=0.5)+
+
+  # IC 2
+  stat_function(fun=IC_2, geom="line", size=2, color = "red")+
+  
+  # IQ 2
+  stat_function(fun=iq_opt_2, geom="line", size=2, color = "#3CBB75FF")+
+  
+  geom_segment(aes(x = 0, xend = 20, y = 10, yend=10), linetype="dotted", size=0.5)+
+  geom_segment(aes(x = 20, xend = 20, y = 10, yend=0), linetype="dotted", size=0.5)+
+
+  # IC 3
+  stat_function(fun=IC_3, geom="line", size=2, color = "red")+
+
+  # IQ 3
+  stat_function(fun=iq_opt_3, geom="line", size=2, color = "#3CBB75FF")+
+
+  geom_segment(aes(x = 0, xend = 30, y = 15, yend=15), linetype="dotted", size=0.5)+
+  geom_segment(aes(x = 30, xend = 30, y = 15, yend=0), linetype="dotted", size=0.5)+
+  
+  # IC 4
+  stat_function(fun=IC_4, geom="line", size=2, color = "red")+
+
+  # IQ 4
+  stat_function(fun=iq_opt_4, geom="line", size=2, color = "#3CBB75FF")+
+
+  geom_segment(aes(x = 0, xend = 40, y = 20, yend=20), linetype="dotted", size=0.5)+
+  geom_segment(aes(x = 40, xend = 40, y = 20, yend=0), linetype="dotted", size=0.5)+
+
+  # LABELS
+  # 1
+  geom_label(aes(x=7.5,y=iq_opt_1(7.5)), color = "#3CBB75FF", label = expression(q[1]^"*"==50), size = 2)+
+  geom_label(aes(x=15,y=IC_1(15)), color = "red", label="C=$40", size = 3)+
+  # 2
+  geom_label(aes(x=35,y=IC_2(35)), color = "red", label="C=$80", size = 3)+
+  geom_label(aes(x=15,y=iq_opt_2(15)), color = "#3CBB75FF", label=expression(q[2]^"*"==200), size = 2)+
+  # 3
+  geom_label(aes(x=55,y=IC_3(55)), color = "red", label="C=$120", size = 3)+
+  geom_label(aes(x=25,y=iq_opt_3(25)), color = "#3CBB75FF", label=expression(q[3]^"*"==400), size = 2)+
+  
+  # 4
+  geom_label(aes(x=75,y=IC_4(75)), color = "red", label="C=$160", size = 3)+
+  geom_label(aes(x=35,y=iq_opt_4(35)), color = "#3CBB75FF", label=expression(q[4]^"*"==800), size = 2)+
+  geom_point(data = points_opt,
+             mapping=aes(x=x, y=y),
+             size = 3)+
+  geom_text_repel(data = points_opt,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             seed = 2,
+             size = 4)+
+    scale_x_continuous(breaks=seq(0,80,10),
+                     limits=c(0,80),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,50,5),
+                     limits=c(0,50),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  geom_abline(intercept = 0, slope = 0.5, linetype = "dotted", alpha = 0.5)+
+  geom_text(x = 60, y = 32, label = "Output Expansion Path", size = 3, angle = 40)+
+  labs(#title = "Output Expansion Path for Cobb-Douglas Production Function",
+       #subtitle = "With Constant Returns to Scale",
+       x = "Labor",
+       y = "Capital"#,
+       #caption = expression(paste(q== l^{0.5}*k^{0.5}, ", w = $2, ", r," = $4", sep=" "))
+       )+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+```
+
+```{r}
+cost_points <- tribble(
+  ~letter, ~x, ~y,
+  "A", 50, 40,
+  "B", 200, 80,
+  "C" , 450, 120,
+  "D", 800, 160
+)
+
+tc_ir <- ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  #geom_smooth(data = cost_points, aes(x = x, y = y ), method = "lm", formula = fullrange = T, color = "red", size = 2)+
+  stat_function(fun = function(x){5.75*sqrt(x)}, color = "red", size = 2)+
+  geom_point(data = cost_points,
+             mapping=aes(x=x, y=y),
+             size = 3)+
+  geom_text_repel(data = cost_points,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             seed = 2,
+             size = 6)+
+  scale_x_continuous(breaks=seq(0,800,100),
+                     limits=c(0,800),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,200,20),
+                     limits=c(0,200),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output",
+       y = "Total Cost")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+```
+
+```{r}
+plots_ir <- oep_ir | tc_ir
+
+plots_ir + 
+  plot_annotation(
+  title = "Output Expansion Path for Cobb-Douglas Production Function",
+  subtitle = "With Increasing Returns to Scale",
+  caption = expression(paste(q== l*k, ", w = $2, ", r," = $4", sep=" "))
+  )
+
+```
+
+## Marginal Cost and Variable Cost
+
+Marginal cost is defined as the change in total costs from a change in output:
+$$MC(q)=\frac{\Delta C(q)}{\Delta q}$$
+
+Recall that total cost is the sum of fixed and variable costs
+
+$$C(q)=f+VC(q)$$
+However, since fixed costs never change, any change in total cost is a change in variable cost
+$$\Delta C(q) = \Delta VC(q)$$
+
+Thus, marginal cost actually measures the change in *variable costs* from a change in output:
+$$MC(q)=\frac{\Delta C(q)}{\Delta q}=\frac{\Delta VC(q)}{\Delta q}$$
+Thus, **fixed cost has no effect on marginal cost**, and **marginal cost is always measuring the change in variable costs** with additional output.
+
+Furthermore, because of this relationship with marginal cost measuring the change in variable cost from additional output, for any specific quantity of output, e.g. $q_1$, the variable cost of producing $q_1$ can be seen on the graph below as the total area under the marginal cost curve to the left of $q_1$:
+
+```{r}
+mc <- function(x){1*x+2}
+vc_area <- tribble(
+  ~x, ~y,
+  0, 0,
+  0, 2,
+  4, 6,
+  4, 0
+)
+
+ggplot(data = tibble(x = c(0,10)))+
+  aes(x=x)+
+  geom_polygon(data = vc_area,
+               aes(x = x, y = y),
+               fill = "brown")+
+  stat_function(fun=mc, geom="line", size=2, color="red")+
+  geom_label(x = 6, y = mc(6), label = "MC(q)", color = "red")+
+  annotate(geom = "text", x = 2, y = 2, label = expression(VC(q[1])), color = "white", size = 5)+
+  scale_x_continuous(breaks=c(0,4),
+                     labels=c(0, expression(q[1])),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=NULL,
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output (q)",
+       y = "$")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+```
+
+
+## The Relationship Between Returns to Scale and Costs
+
+There is a direct relationship between a technology's returns to scale^[Increasing, decreasing, or constant] and its cost structure: the rate at which its total costs increase^[At a decreasing rate, at an increasing rate, or at a constant rate, respectively] and its marginal costs change^[Decreasing, increasing, or constant, respectively]. This is easiest to see for a single input, such as our assumptions of the short run (where firms can change $l$ but not $\bar{k})$:
+
+$$q=f(\bar{k},l)$$
+
+### Constant Returns to Scale: 
+
+```{r, fig.retina=3, fig.height=5.5}
+crs_prod=function(x){x}
+
+crs_q<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=crs_prod, geom="line", size=2, color="red")+
+  geom_label(aes(x=2.5,y=crs_prod(2.5)), color = "red", label="Total Product", size = 5)+
+  # first dotted lines
+  geom_segment(x=1, xend=1, y=0, yend=1, linetype="dotted",size=1)+
+  geom_segment(x=0, xend=1, y=1, yend=1, linetype="dotted",size=1)+
+  # second dotted lines
+  geom_segment(x=2, xend=2, y=0, yend=2, linetype="dotted",size=1)+
+  geom_segment(x=0, xend=2, y=2, yend=2, linetype="dotted",size=1)+
+    scale_x_continuous(breaks=c(0,1,2),
+                       labels=c(0,"l","2l"),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,1,2),
+                     labels=c(0,"f(l)", "f(2l)"),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Input, Labor (l)",
+       y = "Output (q)",
+       title = "Constant Returns")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+
+crs_cost=function(x){x}
+
+crs_tc<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=crs_cost, geom="line", size=2, color="red")+
+  #geom_label(aes(x=2.5,y=crs_prod(2.5)), color = "red", label="Total Product", size = 5)+
+    scale_x_continuous(breaks=c(0),
+                       labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0),
+                     labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Output (q)",
+       y = "Total Costs C(q)",
+       title = "Total Costs")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+
+crs_mc=function(x){2}
+
+crs_mc<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=crs_mc, geom="line", size=2, color="red")+
+  geom_label(aes(x=2.5,y=2), color = "red", label="MC(q)=AC(q)", size = 5)+
+    scale_x_continuous(breaks=c(0),
+                       labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0),
+                     labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Output (q)",
+       y ="Costs per Unit",
+       title = "Per Unit Costs")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+
+library(patchwork)
+crs_q+(crs_tc/crs_mc)
+```
+
+### Decreasing Returns to Scale
+
+```{r, fig.retina=3, fig.height=5.5}
+library(mosaic)
+drs_prod=function(x){sqrt(x)}
+
+drs_q<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=drs_prod, geom="line", size=2, color="red")+
+  geom_abline(intercept=0, slope=1, size=1, linetype="dashed")+
+  geom_label(aes(x=2.5,y=drs_prod(2.5)), color = "red", label="Total Product", size = 5)+
+  geom_label(aes(x=3,y=3), label=expression(45*degree), size = 5)+
+  # first dotted lines
+  geom_segment(x=1, xend=1, y=0, yend=1, linetype="dotted",size=1)+
+  geom_segment(x=0, xend=1, y=1, yend=1, linetype="dotted",size=1)+
+  # second dotted lines
+  geom_segment(x=2, xend=2, y=0, yend=2, linetype="dotted",size=1)+
+  geom_segment(x=0, xend=2, y=2, yend=2, linetype="dotted",size=1)+
+  # function dotted lines
+  geom_segment(x=2, xend=2, y=0, yend=drs_prod(2), linetype="dotted",size=1)+
+  geom_segment(x=0, xend=2, y=drs_prod(2), yend=drs_prod(2), linetype="dotted",size=1)+
+    scale_x_continuous(breaks=c(0,1,2),
+                       labels=c(0,"l","2l"),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,1,drs_prod(2),2),
+                     labels=c(0,"f(l)", "2f(l)", "f(2l)"),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Input, Labor (l)",
+       y = "Output (q)",
+       title = "Decreasing Returns")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+
+drs_cost=function(x){x^{1.5}}
+
+drs_tc<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=drs_cost, geom="line", size=2, color="red")+
+  #geom_label(aes(x=2.5,y=crs_prod(2.5)), color = "red", label="Total Product", size = 5)+
+    scale_x_continuous(breaks=c(0),
+                       labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0),
+                     labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Output (q)",
+       y = "Total Costs C(q)",
+       title = "Total Costs")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+
+drs_mc=function(x){x^{1.5}}
+
+drs_mc2<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=drs_mc, geom="line", size=2, color="red")+
+  geom_label(aes(x=2,y=drs_mc(2)), color = "red", label="MC(q)", size = 5)+
+    scale_x_continuous(breaks=c(0),
+                       labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0),
+                     labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Output (q)",
+       y ="Costs per Unit",
+       title = "Per Unit Costs")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+
+drs_q+(drs_tc/drs_mc2)
+```
+
+### Increasing Returns to Scale
+
+```{r, fig.retina=3, fig.height=5.5}
+library(mosaic)
+irs_prod=function(x){x^{1.5}}
+
+irs_q<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=irs_prod, geom="line", size=2, color="red")+
+  geom_abline(intercept=0, slope=1, size=1, linetype="dashed")+
+  geom_label(aes(x=2.5,y=irs_prod(2.5)), color = "red", label="Total Product", size = 5)+
+  geom_label(aes(x=3,y=3), label=expression(45*degree), size = 5)+
+  # first dotted lines
+  geom_segment(x=1, xend=1, y=0, yend=1, linetype="dotted",size=1)+
+  geom_segment(x=0, xend=1, y=1, yend=1, linetype="dotted",size=1)+
+  # second dotted lines
+  geom_segment(x=2, xend=2, y=0, yend=2, linetype="dotted",size=1)+
+  geom_segment(x=0, xend=2, y=2, yend=2, linetype="dotted",size=1)+
+  # function dotted lines
+  geom_segment(x=2, xend=2, y=0, yend=irs_prod(2), linetype="dotted",size=1)+
+  geom_segment(x=0, xend=2, y=irs_prod(2), yend=irs_prod(2), linetype="dotted",size=1)+
+    scale_x_continuous(breaks=c(0,1,2),
+                       labels=c(0,"l","2l"),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,1,2, irs_prod(2)),
+                     labels=c(0,"f(l)", "2f(l)", "f(2l)"),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Input, Labor (l)",
+       y = "Output (q)",
+       title = "Increasing Returns")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+
+irs_cost=function(x){x^{0.5}}
+
+irs_tc<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=irs_cost, geom="line", size=2, color="red")+
+  #geom_label(aes(x=2.5,y=crs_prod(2.5)), color = "red", label="Total Product", size = 5)+
+    scale_x_continuous(breaks=c(0),
+                       labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0),
+                     labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Output (q)",
+       y = "Total Costs C(q)",
+       title = "Total Costs with Increasing RTS")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+
+irs_mc=function(x){1/x}
+
+irs_mc2<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=irs_mc, geom="line", size=2, color="red")+
+  geom_label(aes(x=2.5,y=irs_mc(2.5)), color = "red", label="MC(q)", size = 5)+
+    scale_x_continuous(breaks=c(0),
+                       labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0),
+                     labels=c(0),
+                     limits=c(0,3),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Output (q)",
+       y ="Costs per Unit",
+       title = "Per Unit Costs")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+
+irs_q+(irs_tc/irs_mc2)
+```
+
+
+## Cobb-Douglas Cost Functions
+
+The total cost function for Cobb-Douglas production functions of the form
+$$q=l^{\alpha}k^{\beta}$$
+can be shown with some *very tedious* algebra to be:
+
+$$C(w,r,q)=\left[\left(\frac{\alpha}{\beta}\right)^{\frac{\beta}{\alpha+\beta}} + \left(\frac{\alpha}{\beta}\right)^{\frac{-\alpha}{\alpha+\beta}}\right] w^{\frac{\alpha}{\alpha+\beta}} r^{\frac{\beta}{\alpha+\beta}} q^{\frac{1}{\alpha+\beta}}$$
+
+If you take the first derivative of this (to get marginal cost), it is:
+
+$$\frac{\partial C(w,r,q)}{\partial q}= MC(q) = \frac{1}{\alpha+\beta} \left(w^{\frac{\alpha}{\alpha+\beta}} r^{\frac{\beta}{\alpha+\beta}}\right) q^{\left(\frac{1}{\alpha+\beta}\right)-1}$$
+
+How does marginal cost change with increased output? Take the second derivative:
+
+$$\frac{\partial^2 C(w,r,q)}{\partial q^2}= \frac{1}{\alpha+\beta} \left(\frac{1}{\alpha+\beta} -1 \right) \left(w^{\frac{\alpha}{\alpha+\beta}} r^{\frac{\beta}{\alpha+\beta}}\right) q^{\left(\frac{1}{\alpha+\beta}\right)-2}$$
+
+Three possible cases:
+
+1. If $\frac{1}{\alpha+\beta} > 1$, this is positive $\implies$ **_decreasing_ returns to scale**
+  - Production function exponents $\alpha+\beta < 1$
+2. If $\frac{1}{\alpha+\beta} < 1$, this is negative $\implies$ **_increasing_ returns to scale**
+  - Production function exponents $\alpha+\beta > 1$
+3. If $\frac{1}{\alpha+\beta} = 1$, this is constant $\implies$ **_constant_ returns to scale**
+  - Production function exponents $\alpha+\beta = 1$
+
+#### Example (Constant Returns)
+
+Let $q=l^{0.5}k^{0.5}$. 
+
+\begin{align*}
+C(w,r,q)&=\left[\left(\frac{0.5}{0.5}\right)^{\frac{0.5}{0.5+0.5}} + \left(\frac{0.5}{0.5}\right)^{\frac{-0.5}{0.5+0.5}}\right] w^{\frac{0.5}{0.5+0.5}} r^{\frac{0.5}{0.5+0.5}} q^{\frac{1}{0.5+0.5}}\\
+C(w,r,q)&= \left[1^{0.5}+1^{-0.5} \right]w^{0.5}r^{0.5}q^{0.5}\\
+C(w,r,q)&= w^{0.5}r^{0.5}q^{1}\\
+\end{align*}
+
+Consider input prices of $w=\$9$ and $r=\$25$: 
+
+\begin{align*}C(w=9,r=25,q)&=9^{0.5}25^{0.5}q \\ 
+& =3*5*q\\
+& =15q\\\end{align*}
+
+That is, total costs (at those given input prices, and technology) is equal to 15 times the output level, $q$:
+
+```{r, fig.retina=3, fig.height=5.5}
+cost_ex=function(x){15*x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=cost_ex, geom="line", size=2, color="red")+
+  geom_label(aes(x=19,y=cost_ex(19)), color = "red", label="C(q) = 15q", size = 5)+
+    scale_x_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,400,50),
+                     limits=c(0,400),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Output (q)",
+       y ="Costs C(q)",
+       title = "Total Costs")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)
+```
+
+Marginal costs would be
+
+$$MC(q) = \frac{\partial C(q)}{\partial q} = 15$$
+
+Average costs would be
+
+$$MC(q) = \frac{C(q)}{q} = \frac{15q}{q} = 15$$
+
+```{r, fig.retina=3, fig.height=5.5}
+mc_ex=function(x){15}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc_ex, geom="line", size=2, color="red")+
+  geom_label(aes(x=17,y=15), color = "red", label="MC(q)=AC(q)", size = 5)+
+    scale_x_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Output (q)",
+       y ="Per Unit Costs",
+       title = "Per Unit Costs")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)
+```
+
+#### Example (Decreasing Returns)
+
+Let $q=l^{0.25}k^{0.25}$. 
+
+\begin{align*}
+C(w,r,q)&=\left[\left(\frac{0.25}{0.25}\right)^{\frac{0.25}{0.25+0.25}} + \left(\frac{0.25}{0.25}\right)^{\frac{-0.25}{0.25+0.25}}\right] w^{\frac{0.25}{0.25+0.25}} r^{\frac{0.25}{0.25+0.25}} q^{\frac{1}{0.25+0.25}}\\
+C(w,r,q)&= \left[1^{0.5}+1^{-0.5} \right]w^{0.5}r^{0.5}q^{2}\\
+C(w,r,q)&= w^{0.5}r^{0.5}q^{2}\\
+\end{align*}
+
+If $w=9$, $r=25$: 
+
+\begin{align*}C(w=9,r=25,q)&=9^{0.5}25^{0.5}q^2 \\ 
+& =3*5*q^2\\
+& =15q^2\\\end{align*}
+
+```{r, fig.retina=3, fig.height=5.5}
+cost_ex=function(x){15*x^2}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=cost_ex, geom="line", size=2, color="red")+
+  geom_label(aes(x=16,y=cost_ex(16)), color = "red", label="C(q)", size = 5)+
+    scale_x_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,5000,500),
+                     limits=c(0,5000),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Output (q)",
+       y ="Costs C(q)",
+       title = "Total Costs")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)
+```
+
+Marginal costs would be
+
+$$MC(q) = \frac{\partial C(q)}{\partial q} = 30q$$
+
+Average costs would be
+
+$$AC(q) = \frac{C(q)}{q} = \frac{15q^2}{q} = 15q$$
+
+```{r, fig.retina=3, fig.height=5.5}
+mc_ex_2=function(x){30*x}
+ac_ex_2=function(x){15*x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc_ex_2, geom="line", xlim=c(0,20), size=2, color="red")+
+  stat_function(fun=ac_ex_2, geom="line", xlim=c(0,20), size=2, color="orange")+
+  geom_label(aes(x=8,y=mc_ex_2(8)), color = "red", label="MC(q)", size = 5)+
+  geom_label(aes(x=18,y=ac_ex_2(18)), color = "orange", label="AC(q)", size = 5)+
+    scale_x_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,300,50),
+                     limits=c(0,300),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(color = F)+
+  labs(x = "Output (q)",
+       y ="Per Unit Costs",
+       title = "Per Unit Costs")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=16)
+```

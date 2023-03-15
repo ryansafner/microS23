@@ -60,6 +60,10 @@ website:
               href: content/2.2-content.qmd
             - text: "2.3 — Cost Minimization"
               href: content/2.3-content.qmd
+            - text: "2.4 — Costs of Production"
+              href: content/2.4-content.qmd
+            - text: "2.5 — Short Run Profit Maximization"
+              href: content/2.5-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false
@@ -102,6 +106,10 @@ website:
               href: resources/appendices/2.2-appendix.qmd
             - text: "2.3 — Cost Minimization"
               href: resources/appendices/2.3-appendix.qmd
+            - text: "2.4 — Costs of Production"
+              href: resources/appendices/2.4-appendix.qmd
+            - text: "2.5 — Short Run Profit Maximization"
+              href: resources/appendices/2.5-appendix.qmd
         - section: "Math Review Guide"
           contents:
             - text: "Functions"

@@ -1,0 +1,16 @@
+{
+  "hash": "350cf1c504098fd78ef923536b3ed0b5",
+  "result": {
+    "markdown": "---\ntitle: \"2.5 — Short Run Profit Maximization — Appendix\"\nexecute:\n  freeze: auto\npage-layout: full\n---\n\n::: {.cell}\n\n:::\n\n\n## Common Cost Assumptions\n\nEconomists often make simple assumptions about costs to illustrate key concepts without marring the analysis with unnecessary complexity. This also makes graphs quite easy to point to and calculate key areas, such as profits or deadweight losses.\n\nOne common set of cost assumptions is the following:\n\n1. A firm has no fixed costs\n2. A firm has constant marginal costs, $MC(q)=c$ where $c\\geq0$\n\nIf this is the case, then we can show that average costs will be *equal* to marginal costs, i.e. $MC=AC=AVC=c$. \n\nSince marginal cost is the first derivative of the total cost function, integrating a marginal cost function $MC=c$ leaves with with a total cost function of $C(q)=cq$.^[Since we assumed there are no fixed costs, then there is no arbitrary constant from integration.] If this is the case, then we can find the average cost: \n\n\\begin{align*}\nC(q)&=cq\\\\\nAC(q)=\\frac{C(q)}{q}&=\\frac{cq}{q}\\\\\nAC(q)&=c\\\\\n\\end{align*}\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](2.5-appendix_files/figure-html/unnamed-chunk-2-1.png){fig-align='center' width=672}\n:::\n:::\n\n\nAnother common set of cost assumptions is the following:\n\n1. A firm has fixed costs, $f$\n2. A firm has constant marginal costs, $MC(q)=c$ where $c\\geq0$\n\nIf this is the case, then we can show that average costs are strictly decreasing over all output $q\\geq0$.\n\nAgain, we can integrate marginal cost to the total cost function (but here we need the arbitrary constant from integration, which we shall label $f$, for fixed costs): $C(q)=cq+f$. We can then find the average cost: \n\n\\begin{align*}\nC(q)&=cq+f\\\\\nAC(q)=\\frac{C(q)}{q}&=\\frac{cq+f}{q}\\\\\nAC(q)&=c+\\frac{f}{q}\\\\\n\\end{align*}\n\nSince $f>0$, as $q \\rightarrow \\infty$, $AC(q) \\rightarrow c$, that is, average cost is getting asymptotically close to marginal cost, $c$, but will never intersect it. Note, I also included AFC, which again is always decreasing, and asymptotically approaching 0. \n\nThe importance of this type of cost structure is that it creates **economies of scale**, and represents a lot of industries that tend towards **natural monopoly**. \n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](2.5-appendix_files/figure-html/unnamed-chunk-3-1.png){fig-align='center' width=672}\n:::\n:::\n",
+    "supporting": [
+      "2.5-appendix_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

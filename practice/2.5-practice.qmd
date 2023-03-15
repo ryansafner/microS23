@@ -1,0 +1,44 @@
+---
+title: "2.5 — Short Run Profit Maximization — Practice"
+execute:
+  freeze: auto
+---
+
+<p style="text-align:center"><a target="_blank" href="/files/practice/2.5-practice-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span> <a target="_blank" href="/files/practice/2.5-practice-answers.html"><span class="btn btn-primary btn-lg"><i class="far fa-life-ring"></i> Answer Key</a></span></p>
+
+
+
+A firm has short-run costs given by:
+$$\begin{align*}
+C(q)&=q^2+1\\
+MC(q)&=2q\\ \end{align*}$$
+
+## 1. 
+Write an equation for fixed costs, $f$.
+
+## 2.
+Write an equation for variable costs, $VC(q)$.
+
+## 3.
+Write an equation for average fixed costs, $AFC(q)$.
+
+## 4.
+Write an equation for average variable costs, $AVC(q)$.
+
+## 5.
+Write an equation for average (total) costs, $AC(q)$.
+
+## 6.
+Suppose the firm is in a competitive market, and the current market price is $4, how many units of output maximize profits?
+
+## 7.
+How much profit will this firm earn?
+
+## 8.
+Below what market price would the firm shut down in the short run if it were earning losses?
+
+## 9.
+At what market price would the firm break even $(\pi=0)$?
+
+## 10.
+Write out the equation for the firm's short run supply curve.

@@ -1,0 +1,14 @@
+{
+  "hash": "0e84f801f7d90e930b76f6b1521d7e4b",
+  "result": {
+    "markdown": "---\ntitle: \"2.4 — Costs of Production — Class Content\"\nexecute:\n  freeze: auto\n---\n\n::: {.cell}\n\n:::\n\n\n::: {.callout-note appearance=minimal}\n# Meeting Date\n*Monday, March 20, 2023*\n:::\n\n::: callout-warning\n# Upcoming Assignment\n[Problem Set 3](/assignments/03-problem-set) (on classes 2.1-2.3) is due by 11:59 PM Wednesday March 22 on Blackboard Assignments.\n:::\n\n\n## <i class=\"fas fa-info-circle fa-lg\"></i> Overview\n\nToday we cover costs before we put them together next class with revenues to solve the firm’s (first stage) *profit maximization problem*. While it seems we are adding quite a bit, and learning some new math problems with calculating costs, we will practice it more next class, when put together with revenues.\n\n## <i class=\"fas fa-book-reader fa-lg\"></i> Readings\n\n- <i class=\"fas fa-book\"></i> Ch. 7 in Goolsbee, Levitt, and Syverson, 2019\n\n## <i class=\"fas fa-sigma\"></i> Appendix\n\nSee the online appendix for today's content:\n\n- [From Total Product to Total Cost: Output Expansion Paths](/resources/appendices/2.4-appendix.html)\n- [Marginal Cost and Variable Cost](/resources/appendices/2.4-appendix.html#marginal-cost-and-variable-cost)\n- [The Relationship Between Returns to Scale and Costs](/resources/appendices/2.4-appendix.html#the-relationship-between-returns-to-scale-and-costs)\n- [Cobb-Douglas Cost Functions](/resources/appendices/2.4-appendix.html#cobb-douglas-cost-functions)\n\n## <i class=\"fas fa-laptop-code\"></i> Assignments\n\n### Problem Set 3 Due Wednesday March 22\n\n[Problem Set 3](/assignments/03-problem-set) (on classes 2.1-2.3) is due by 11:59 PM Wednesday March 22 on Blackboard Assignments.\n\n## <i class=\"fas fa-chalkboard-teacher\"></i> Slides\n\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides. \n\n::: callout-tip\nYou can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.\n:::\n\nI suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!\n\n\n<p style=\"text-align:center;\"><a target=\"_blank\" href=\"/slides/2.4-slides.html\"><img src =\"/slides/2.4-slides.png\" alt = \"2.4-slides\"></a></p>\n<p style=\"text-align:center;\"><a class=\"btn btn-primary btn-lg\" target=\"_blank\" href=\"/slides/2.4-slides.pdf\"><i class=\"fas fa-file-pdf\"></i> Download as PDF</a></p>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

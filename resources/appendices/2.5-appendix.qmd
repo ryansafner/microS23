@@ -1,0 +1,98 @@
+---
+title: "2.5 — Short Run Profit Maximization — Appendix"
+execute:
+  freeze: auto
+page-layout: full
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+library(tidyverse)
+library(ggrepel)
+knitr::opts_chunk$set(message = F,
+                      warning = F,
+                      echo = F,
+                      fig.retina = 3,
+                      fig.align = "center")
+```
+
+## Common Cost Assumptions
+
+Economists often make simple assumptions about costs to illustrate key concepts without marring the analysis with unnecessary complexity. This also makes graphs quite easy to point to and calculate key areas, such as profits or deadweight losses.
+
+One common set of cost assumptions is the following:
+
+1. A firm has no fixed costs
+2. A firm has constant marginal costs, $MC(q)=c$ where $c\geq0$
+
+If this is the case, then we can show that average costs will be *equal* to marginal costs, i.e. $MC=AC=AVC=c$. 
+
+Since marginal cost is the first derivative of the total cost function, integrating a marginal cost function $MC=c$ leaves with with a total cost function of $C(q)=cq$.^[Since we assumed there are no fixed costs, then there is no arbitrary constant from integration.] If this is the case, then we can find the average cost: 
+
+\begin{align*}
+C(q)&=cq\\
+AC(q)=\frac{C(q)}{q}&=\frac{cq}{q}\\
+AC(q)&=c\\
+\end{align*}
+
+```{r, fig.retina=3}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  #stat_function(fun=mc_c, geom="line", size=2, color="red")+
+  geom_hline(yintercept=2, color="red", size=2)+
+  geom_label(aes(x=8,y=2), color = "red", label="MC(q)=AC(q)=c", size = 4)+
+  scale_x_continuous(breaks=NULL,
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,2),
+                     labels=c(0,"c"),
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output (q)",
+       y = "Per-Unit Costs (C/q)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+```
+
+Another common set of cost assumptions is the following:
+
+1. A firm has fixed costs, $f$
+2. A firm has constant marginal costs, $MC(q)=c$ where $c\geq0$
+
+If this is the case, then we can show that average costs are strictly decreasing over all output $q\geq0$.
+
+Again, we can integrate marginal cost to the total cost function (but here we need the arbitrary constant from integration, which we shall label $f$, for fixed costs): $C(q)=cq+f$. We can then find the average cost: 
+
+\begin{align*}
+C(q)&=cq+f\\
+AC(q)=\frac{C(q)}{q}&=\frac{cq+f}{q}\\
+AC(q)&=c+\frac{f}{q}\\
+\end{align*}
+
+Since $f>0$, as $q \rightarrow \infty$, $AC(q) \rightarrow c$, that is, average cost is getting asymptotically close to marginal cost, $c$, but will never intersect it. Note, I also included AFC, which again is always decreasing, and asymptotically approaching 0. 
+
+The importance of this type of cost structure is that it creates **economies of scale**, and represents a lot of industries that tend towards **natural monopoly**. 
+
+```{r, fig.retina=3}
+cc_f<-function(x){10/x}
+cc_mc<-function(x){2}
+cc_ac<-function(x){2+10/x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=cc_mc, geom="line", size=2, color="red")+
+  geom_label(aes(x=2,y=cc_mc(2)), color = "red", label="MC(q)=AVC(q)=c", size = 4)+
+  stat_function(fun=cc_ac, geom="line", size=2, color="orange")+
+  geom_label(aes(x=8,y=cc_ac(8)), color = "orange", label="AC(q)=c+f/q", size = 4)+
+  stat_function(fun=cc_f, geom="line", size=2, color="purple")+
+  geom_label(aes(x=9,y=cc_f(9)), color = "purple", label="AFC(q)=f/q", size = 4)+
+  scale_x_continuous(breaks=NULL,
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,2),
+                     labels=c(0,"c"),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output (q)",
+       y = "Per-Unit Costs (C/q)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=14)
+```

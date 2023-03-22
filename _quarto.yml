@@ -83,6 +83,8 @@ website:
               href: assignments/02-problem-set.qmd
             - text: "Problem Set 3"
               href: assignments/03-problem-set.qmd
+            - text: "Problem Set 4"
+              href: assignments/04-problem-set.qmd
         - section: "Exams"
           contents:
             - text: "Exam 1"

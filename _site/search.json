@@ -224,6 +224,62 @@
     "text": "Question 8\nDunder Mifflin paper company produces reams of paper each week according to the production function: \\[\\begin{align*}q &=10 l^{0.5} k^{0.5}\\\\\nMP_l& = 5l^{-0.5}k^{0.5}\\\\\nMP_k& = 5l^{0.5}k^{-0.5}\\\\\n\\end{align*}\\]\nThey have determined that they need to ship 1,000 reams of paper this week to Scranton, PA. Using capital costs $20, whereas labor costs $10.\n\nPart A\nWhat is the cost-minimizing combination of labor and capital that will yield 1,000 reams of paper? Round each to the nearest whole number.\n\n\nPart B\nWhat is the total cost of using this combination of inputs?\n\n\nPart C\nNow suppose that they need to double their output this week, and need to produce 2,000 reams of paper. How does their optimal combination of inputs change? [Hint: neither the equation for MRTS nor any prices are changing!]\n\n\nPart D\nWhat is the total cost of this new level of output?\n\n\nPart E\nSuppose management at Dunder Mifflin develops a new program that magically makes everyone at the firm more productive, such that the firm’s new production function becomes:\n\\[\\begin{align*}q &=20 l^{0.5} k^{0.5}\\\\\nMP_l& = 10l^{-0.5}k^{0.5}\\\\\nMP_k& = 10l^{0.5}k^{-0.5}\\\\\n\\end{align*}\\]\nStill needing to supply 2,000 reams of paper this week at the same input prices, what is their new optimal combination of labor and capital?\n\n\nPart F\nHow much does this combination cost? What does this show you about technological improvement (or “total factor productivity”)?"
   },
   {
+    "objectID": "assignments/04-problem-set.html",
+    "href": "assignments/04-problem-set.html",
+    "title": "Problem Set 4",
+    "section": "",
+    "text": "Due by 11:59 PM Wednesday March 29 via by Blackboard Assignments\nPlease read the instructions for completing homeworks.\nDownload as PDF"
+  },
+  {
+    "objectID": "assignments/04-problem-set.html#question-1",
+    "href": "assignments/04-problem-set.html#question-1",
+    "title": "Problem Set 4",
+    "section": "Question 1",
+    "text": "Question 1\nWhat is the difference between accounting profit and economic profit? Is it possible for a firm to be profitable in an accounting sense but not an economic sense? Is it possible for a firm to be profitable in an economic sense but not an accounting sense?"
+  },
+  {
+    "objectID": "assignments/04-problem-set.html#question-2",
+    "href": "assignments/04-problem-set.html#question-2",
+    "title": "Problem Set 4",
+    "section": "Question 2",
+    "text": "Question 2\nIn a competitive industry, with identical firms (e.g. all firms have the same costs), why are profits normal (zero) in the long run?"
+  },
+  {
+    "objectID": "assignments/04-problem-set.html#question-3",
+    "href": "assignments/04-problem-set.html#question-3",
+    "title": "Problem Set 4",
+    "section": "Question 3",
+    "text": "Question 3\nIn a competitive industry, even among firms with significant cost differences (e.g. there are economic rents), why do profits tend to return to normal (0) in the long run?"
+  },
+  {
+    "objectID": "assignments/04-problem-set.html#question-4",
+    "href": "assignments/04-problem-set.html#question-4",
+    "title": "Problem Set 4",
+    "section": "Question 4",
+    "text": "Question 4\nFor each of the following pairs of goods, which do you expect to be more elastically supplied, and why?\n\nToothpicks vs. Scotch whisky\nConstruction workers in Frederick, MD vs. construction workers in the State of Maryland\nSupply of breakfast cereal vs. supply of food\nOriginal Van Gogh paintings vs. reproductions of Van Gogh paintings\nGasolone tomorrow vs. gasoline over the next 10 years"
+  },
+  {
+    "objectID": "assignments/04-problem-set.html#question-5",
+    "href": "assignments/04-problem-set.html#question-5",
+    "title": "Problem Set 4",
+    "section": "Question 5",
+    "text": "Question 5\nMike’s Bikes produces racing bicycles. Consider the following graph, which illustrates the short run average total cost curves corresponding to three possible plant sizes Mike could produce with: a small plant, a medium plant, and a large plant.\n\n\n\n\n\n\nPart A\nIf Mike wanted to produce 125 bikes, what size plant should be used, and why? What about 150 bikes?\n\n\nPart B\nIf Mike wanted to produce 250 bikes, what size plant should be used, and why? What about 275 bikes?\n\n\nPart C\nDraw the long run average cost curve on the graph provided (or sketch one yourself).\n\n\nPart D\nSuppose Mike’s long run total cost function can be roughly expressed as:\n\\[LRC(q)=\\frac{1}{64}q^3-6.25q^2+725q\\] with a long run marginal cost function of\n\\[LRMC(q)=\\frac{3}{64}q^2-12.5q+725\\]\nFind the quantity of bikes where long run average cost is minimized. Plot this point on your graph. At what range of production does Mike experience economies of scale? At what range of production does Mike experience diseconomies of scale?"
+  },
+  {
+    "objectID": "assignments/04-problem-set.html#question-6",
+    "href": "assignments/04-problem-set.html#question-6",
+    "title": "Problem Set 4",
+    "section": "Question 6",
+    "text": "Question 6\nDaniel’s Midland Archers has the following cost structure for producing archery bows:\n\\[\\begin{align*}\nC(q)&=2q^2+3q+50 \\\\\nMC(q)&=4q+3\\\\ \\end{align*}\\]\n\nPart A\nWrite an equation for fixed costs, \\(f\\).\n\n\nPart B\nWrite an equation for variable costs, \\(VC(q)\\).\n\n\nPart C\nWrite an equation for average fixed costs, \\(AFC(q)\\).\n\n\nPart D\nWrite an equation for average variable costs, \\(AVC(q)\\).\n\n\nPart E\nWrite an equation for average (total) costs, \\(AC(q)\\).\n\n\nPart F\nAt what price does Daniel’s Midland Archers break even?\n\n\nPart G\nBelow what price would Daniel’s Midland Archers shut down in the short-run?\n\n\nPart H\nWrite an equation for the firm’s short-run supply curve, and sketch a rough graph.\n\n\nPart I\nWhat differences would there be between Daniel’s Midland Archers supply curve in the short run versus the long run?\n\n\nPart J\nIn the long run, with many identical sellers of archery bows, what would we expect to be the equilibrium price in the market?"
+  },
+  {
+    "objectID": "assignments/04-problem-set.html#question-7",
+    "href": "assignments/04-problem-set.html#question-7",
+    "title": "Problem Set 4",
+    "section": "Question 7",
+    "text": "Question 7\nThe supply of movie tickets in a small town is given by:\n\\[q_s=2p-8\\]\n\nPart A\nWrite the inverse supply function.\n\n\nPart B\nCalculate the price elasticity of supply at a price of $6 per ticket.\n\n\nPart C\nCalculate the price elasticity of supply at a price of $8 per ticket."
+  },
+  {
     "objectID": "assignments/index.html",
     "href": "assignments/index.html",
     "title": "Assignment Details",

@@ -1444,28 +1444,26 @@ q=0 & \text{If } p < AVC\\ \end{cases}$$
 # Choosing the Profit-Maximizing Output $q^*$: Example
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-.smaller[
-.green[**Example**]: Daniel’s Midland Archers has the following cost structure for producing archery bows:
+.smallest[
+.green[**Example**]: Bob’s barbershop gives haircuts in a very competitive market, where barbers cannot differentiate their haircuts. The current market price of a haircut is $15. Bob’s daily short run costs are given by:
 
 
 $$\begin{align*}
-C(q) &= 2q^2+3q+50\\
-MC(q) &=4q+3\\
+C(q) &= 0.5q^2+30\\
+MC(q) &=q\\
 \end{align*}$$
-
-Suppose the market is very competitive and the current market price is $15.
 ]
 
 ]
 
-.smaller[
-1. How many bows should the firm produce?
+.smallest[
+1. How many haircuts per day would maximize Bob’s profits?
 
-2. How much profit will it earn per day?
+2. How much profit will Bob earn per day?
 
-3. At what price would the firm break even?
+3. At what price would Bob break even?
 
-4. At what price should the firm shut down in the short run?
+4. At what price should the Bob shut down in the short run?
 
-5. Write equations for firm’s short-run supply curve and long-run supply curve.
+5. Write equations for Bob’s short-run supply curve and long-run supply curve.
 ]

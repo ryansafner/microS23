@@ -14,8 +14,11 @@ source(here::here("slides", "slide-links.R"))
 :::
 
 ::: callout-warning
-# Upcoming Assignment
+# Upcoming Assignments
 [Problem Set 3](/assignments/03-problem-set) (on classes 2.1-2.3) is due by 11:59 PM Wednesday March 22 on Blackboard Assignments.
+
+[Problem Set 4](/assignments/04-problem-set) (on classes 2.4-2.6) is due by 11:59 PM Wednesday March 29 on Blackboard Assignments.
+
 :::
 
 ## <i class="fas fa-info-circle fa-lg"></i> Overview
@@ -40,9 +43,13 @@ See the online appendix for today's content:
 
 ## <i class="fas fa-laptop-code"></i> Assignments
 
-### Problem Set 4 Due Wednesday March 22
+### Problem Set 3 Due Wednesday March 22
 
 [Problem Set 3](/assignments/03-problem-set) (on classes 2.1-2.3) is due by 11:59 PM Wednesday March 22 on Blackboard Assignments.
+
+### Problem Set 4 Due Wednesday March 29
+
+[Problem Set 4](/assignments/04-problem-set) (on classes 2.4-2.6) is due by 11:59 PM Wednesday March 29 on Blackboard Assignments.
 
 ## <i class="fas fa-chalkboard-teacher"></i> Slides
 

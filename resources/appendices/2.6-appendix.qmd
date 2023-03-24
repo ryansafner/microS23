@@ -1,0 +1,457 @@
+---
+title: "2.6 — Long Run Industry Equilibrium — Appendix"
+execute:
+  freeze: auto
+page-layout: full
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+library(tidyverse)
+library(ggrepel)
+knitr::opts_chunk$set(message = F,
+                      warning = F,
+                      echo = F,
+                      fig.retina = 3,
+                      fig.align = "center")
+```
+
+### Producer Surplus
+
+You may recall from principles of microeconomics the concepts of consumer surplus and producer surplus in markets. While we will study them in our next unit with Supply & Demand, we can talk about the producer surplus to each firm here.
+
+Producer surplus essentially measures the “gains from exchange” to each party — for a producer, it is how much they benefit (on net) from selling their output.
+
+There are three equivalent ways of visualizing and measuring producer surplus for a firm. I will begin with a generalized series of cost curves:
+
+```{r, fig.width=12}
+marginal<-function(x){3*x^2-8*x+8}
+average<-function(x){x^2-4*x+8+10/x}
+averagev<-function(x){x^2-4*x+8}
+price1<-function(x){10}
+
+surplus_1<-tibble(fx=seq(0,2.9,0.1),
+             fymin=marginal(fx),
+             ymax=rep(10, length(fx))
+)
+
+
+s1<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_ribbon(data=surplus_1,aes(x=fx,ymin=fymin,ymax=ymax),fill="red", alpha=0.4)+
+    stat_function(fun=price1, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=5.5,y=price1(5.5)), color = "blue", label=expression(MR(q)), size = 2)+
+  geom_segment(x=2.9,xend=2.9,y=0,yend=10,size=1,linetype="dotted")+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.5,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 2)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=5,y=averagev(5)), color = "brown", label=expression(AVC(q)), size = 2)+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label=expression(AC(q)), size = 2)+
+    scale_x_continuous(breaks=c(2.9),
+                       labels=c("q*"),
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0,10),
+                     labels=c(0,"p"),
+                     limits=c(0,20),
+                     expand=c(0,0))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "",
+       y = "Per-Unit Costs ($)",
+       title = 'Sum of All “Markups” > MC(q)')+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)
+
+s2<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin = 0, xmax = 2.9, ymin = averagev(2.9), ymax = 10, fill = "red", alpha=0.2)+
+    stat_function(fun=price1, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=5.5,y=price1(5.5)), color = "blue", label=expression(MR(q)), size = 2)+
+  geom_segment(x=2.9,xend=2.9,y=0,yend=10,size=1,linetype="dotted")+
+  geom_segment(x=0,xend=2.9,y=averagev(2.9),yend=averagev(2.9),size=1,linetype="dotted")+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.5,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 2)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=5,y=averagev(5)), color = "brown", label=expression(AVC(q)), size = 2)+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label=expression(AC(q)), size = 2)+
+    scale_x_continuous(breaks=c(2.9),
+                       labels=c("q*"),
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0,averagev(2.9), 10),
+                     labels=c(0,"AVC(q*)", "p"),
+                     limits=c(0,20),
+                     expand=c(0,0))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "",
+       title = "R(q) — VC(q)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)
+
+surplus_2<-tibble(fx=seq(2,2.9,0.1),
+             fymin=marginal(fx),
+             ymax=rep(10, length(fx))
+)
+
+s3<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin = 0, xmax = 2, ymin = averagev(2), ymax = 10, fill = "red", alpha=0.2)+
+  geom_ribbon(data=surplus_2,aes(x=fx,ymin=fymin,ymax=ymax),fill="red", alpha=0.4)+
+    stat_function(fun=price1, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=5.5,y=price1(5.5)), color = "blue", label=expression(MR(q)), size = 2)+
+  geom_segment(x=2.9,xend=2.9,y=0,yend=10,size=1,linetype="dotted")+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.5,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 2)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=5,y=averagev(5)), color = "brown", label=expression(AVC(q)), size = 2)+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label=expression(AC(q)), size = 2)+
+  geom_segment(x=0,xend=0,y=0,yend=4, color="red", size=5)+
+  geom_segment(x=0,xend=2,y=4,yend=4, color="red", size=3.5)+
+  stat_function(fun=marginal, xlim=c(2,10), geom="line", size=3.5, color = "red")+
+    geom_label(aes(x=3.25,y=marginal(3.25)), color = "red", label="Supply", size = 4)+
+    scale_x_continuous(breaks=c(2.9),
+                       labels=c("q*"),
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0,4 , 10),
+                     labels=c(0,"Shutdown", "p"),
+                     limits=c(0,20),
+                     expand=c(0,0))+
+  coord_cartesian(clip = "on")+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "",
+       y = "",
+       title = "Area Left of Supply")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)
+
+library("patchwork")
+s1+s2+s3
+```
+
+These often converge, and are also easier to identify when marginal cost is linear (and thus, average variable cost is also linear, and starts at the same point as marginal cost, the shutdown price). Here it producer surplus becomes the familiar “triangle” between the market price and the supply curve. Note we can also calculate it as the rectangle of revenues minus variable costs (right).
+
+```{r, fig.width=12}
+marginal2<-function(x){2*x+2}
+average2<-function(x){x+2+25/x}
+averagev2<-function(x){x+2}
+price2<-function(x){10}
+
+surplus_1<-tibble(fx=seq(0,2.9,0.1),
+             fymin=marginal(fx),
+             ymax=rep(10, length(fx))
+)
+
+s_t<-tribble(
+  ~x, ~y,
+  0, 2,
+  0, 10,
+  4, 10
+)
+
+linear1<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_polygon(data=s_t,aes(x=x,y=y),fill="red", alpha=0.4)+
+    stat_function(fun=price2, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=6,y=price1(6)), color = "blue", label=expression(MR(q)), size = 2)+
+  geom_segment(x=4,xend=4,y=0,yend=10,size=1,linetype="dotted")+
+  stat_function(fun=marginal2, geom="line", size=2, color = "red")+
+    geom_label(aes(x=6,y=marginal2(6)), color = "red", label=expression(MC(q) == Supply), size = 2)+
+  stat_function(fun=averagev2, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=6,y=averagev2(6)), color = "brown", label=expression(AVC(q)), size = 2)+
+  stat_function(fun=average2, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=6,y=average2(6)), color = "orange", label=expression(AC(q)), size = 2)+
+    scale_x_continuous(breaks=c(4),
+                       labels=c("q*"),
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0,10),
+                     labels=c(0,"p"),
+                     limits=c(0,20),
+                     expand=c(0,0))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)",
+       title = 'Sum of All “Markups” & Area Left of Supply')+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)
+
+linear2<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin = 0, xmax = 4, ymin = averagev2(4), ymax = 10,fill="red", alpha=0.4)+
+    stat_function(fun=price2, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=6,y=price1(6)), color = "blue", label=expression(MR(q)), size = 2)+
+  geom_segment(x=4,xend=4,y=0,yend=10,size=1,linetype="dotted")+
+  geom_segment(x=0,xend=4,y=averagev2(4),yend=averagev2(4),size=1,linetype="dotted")+
+  stat_function(fun=marginal2, geom="line", size=2, color = "red")+
+    geom_label(aes(x=6,y=marginal2(6)), color = "red", label=expression(MC(q) == Supply), size = 2)+
+  stat_function(fun=averagev2, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=6,y=averagev2(6)), color = "brown", label=expression(AVC(q)), size = 2)+
+  stat_function(fun=average2, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=6,y=average2(6)), color = "orange", label=expression(AC(q)), size = 2)+
+    scale_x_continuous(breaks=c(4),
+                       labels=c("q*"),
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0, averagev2(4), 10),
+                     labels=c(0,"AVC(q*)", "p"),
+                     limits=c(0,20),
+                     expand=c(0,0))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "",
+       title = 'R(q) — VC(q)')+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)
+
+linear1+linear2
+```
+
+### What’s the Difference Between Producer Surplus and Profit?
+
+Producer surplus (PS) *looks* a lot like profits $(\pi)$, but they are in fact different:
+
+\begin{align*}
+					\color{red}{PS} &= R(q) - VC\\ 	
+					& \\ 
+\color{green}{\pi} & = R(q) - C(q) \\
+\color{green}{\pi} &= R(q) - VC(q)-f\\	
+					& \\ 
+\color{green}{\pi}-\color{red}{PS}&=-f\\
+\color{green}{\pi}&=\color{red}{PS}-f\\
+\end{align*}
+
+Producer surplus does *not* include fixed costs $(f)$, but profit $(\pi)$ *does*.
+
+If there are no fixed costs, then producer surplus and profits are the same thing.
+
+This leads to some other implications connected with the shutdown condition $p<AVC(q)$. A firm will *always* earn producer surplus, but may earn losses (negative profit) so long as the price is above the shutdown price. This is because each unit of output sold generates at least enough revenues as (non-fixed) variable costs, $pq \geq VC(q)$ or (dividing by $q)$ $p \geq AVC(q)$.
+
+A firm will *shut down* production in the short run if it earning *no* producer surplus. This would happen if it earns fewer revenues than (non-fixed) variable costs: $pq < VC(q)$ or (dividing by $q)$ $p < AVC(q)$. 
+
+Thus producer surplus exists $\iff p>AVC(q)$.
+
+```{r, fig.width=12}
+library(ggpattern)
+
+prof<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin = 0, xmax = 2.9, ymin = averagev(2.9), ymax = 10,
+                    fill = "red", alpha=0.5)+
+  geom_rect_pattern(xmin = 0, xmax = 2.9, ymin = average(2.9), ymax = 10,
+                    pattern = "stripe",
+                    pattern_density = 0.5,
+                    pattern_size = 0.25,
+                    pattern_angle = 90,
+                    fill = NA,
+                    #pattern_spacing = 0.05,
+                    #pattern_frequency = 0.1,
+                    pattern_color = NA,
+                    pattern_fill = "green",
+                    alpha=1)+
+    stat_function(fun=price1, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=5.5,y=price1(5.5)), color = "blue", label=expression(MR(q)), size = 2)+
+  geom_segment(x=2.9,xend=2.9,y=0,yend=10,size=1,linetype="dotted")+
+  geom_segment(x=0,xend=2.9,y=averagev(2.9),yend=averagev(2.9),size=1,linetype="dotted")+
+  geom_segment(x=0,xend=2.9,y=average(2.9),yend=average(2.9),size=1,linetype="dotted")+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.5,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 2)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=5,y=averagev(5)), color = "brown", label=expression(AVC(q)), size = 2)+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label=expression(AC(q)), size = 2)+
+  
+  annotate("segment", x = 2.9, xend = 2.9, y = averagev(2.9), yend = average(2.9), colour = "black", size=1, alpha=1, arrow=arrow(length=unit(0.25,"cm"), ends="both", type="closed"))+
+  geom_label(x = 2.9, y = (averagev(2.9)+0.5 * (average(2.9)-averagev(2.9))), label = "AFC(q)", size =2)+
+
+  annotate("segment", x = 2.9, xend = 2.9, y = averagev(2.9), yend = 0, colour = "black", size=1, alpha=1, arrow=arrow(length=unit(0.25,"cm"), ends="both", type="closed"))+
+  
+  geom_label(x = 2.9, y = (0.5 * averagev(2.9)), label = "AVC(q)", size = 2)+
+    scale_x_continuous(breaks=c(2.9),
+                       labels=c("q*"),
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0,averagev(2.9), average(2.9),10),
+                     labels=c(0,"AVC(q*)", "AC(q*)", "p"),
+                     limits=c(0,20),
+                     expand=c(0,0))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "",
+       title = "Producer Surplus & Profits",
+       subtitle = "AC(q*) < p")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)
+
+price2=function(x){7}
+
+loss<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin = 0, xmax = 2.55, ymin = averagev(2.55), ymax = 7,
+                    fill = "red", alpha=0.5)+
+  geom_rect_pattern(xmin = 0, xmax = 2.55, ymin = 7, ymax = average(2.55),
+                    pattern = "stripe",
+                    pattern_density = 0.5,
+                    pattern_size = 0.25,
+                    pattern_angle = 90,
+                    fill = NA,
+                    #pattern_spacing = 0.05,
+                    #pattern_frequency = 0.1,
+                    pattern_color = NA,
+                    pattern_fill = "black",
+                    alpha=1)+
+    stat_function(fun=price2, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=5.5,y=price2(5.5)), color = "blue", label=expression(MR(q)), size = 2)+
+  geom_segment(x=2.55,xend=2.55,y=0,yend=average(2.55),size=1,linetype="dotted")+
+  geom_segment(x=0,xend=2.55,y=averagev(2.55),yend=averagev(2.55),size=1,linetype="dotted")+
+  geom_segment(x=0,xend=2.55,y=average(2.55),yend=average(2.55),size=1,linetype="dotted")+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.5,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 2)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=5,y=averagev(5)), color = "brown", label=expression(AVC(q)), size = 2)+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label=expression(AC(q)), size = 2)+
+  
+  annotate("segment", x = 2.55, xend = 2.55, y = averagev(2.55), yend = average(2.55), colour = "black", size=1, alpha=1, arrow=arrow(length=unit(0.25,"cm"), ends="both", type="closed"))+
+  geom_label(x = 2.55, y = (averagev(2.55)+0.5 * (average(2.55)-averagev(2.55))), label = "AFC(q)", size =2)+
+
+  annotate("segment", x = 2.55, xend = 2.55, y = averagev(2.55), yend = 0, colour = "black", size=1, alpha=1, arrow=arrow(length=unit(0.25,"cm"), ends="both", type="closed"))+
+  
+  geom_label(x = 2.55, y = (0.5 * averagev(2.55)), label = "AVC(q)", size = 2)+
+  
+    scale_x_continuous(breaks=c(2.55),
+                       labels=c("q*"),
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0,averagev(2.55), average(2.55),7),
+                     labels=c(0,"AVC(q*)", "AC(q*)", "p"),
+                     limits=c(0,20),
+                     expand=c(0,0))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "",
+       title = "Producer Surplus & Losses",
+       subtitle = "AVC(q*) < p < AC(q*)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)
+
+prof+loss
+```
+
+### Economic Rents
+
+Economic rents come from factors of production that are fixed in supply (talent, productive land, etc.). Take productive land for a moment, which has a fixed supply. There would be just as much land supplied at a price of zero dollars as at $1000 (its factor supply curve is perfectly inelastic), because (assume for a moment) we can’t produce any more of it. 
+
+For the economy as a whole, it is the price of agricultural products that determines the value of agricultural land (used to grow agricultural products). But for the individual farmer (firm producing food), the value of her land that she rents is a *cost* of production that enters into the pricing of her product.
+
+Below, $AVC(q)$ represents the average cost curve for all variable factors of production, i.e. *excluding* land costs (the fixed factor). If the price of the crop grown on this land is p∗, then the “profits” attributable to the land are measured by the area in orange: these are the economic rents. This is how much the rent (price) of the land would be in a competitive market — whatever it took to drive the profits to zero.
+
+```{r}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin = 0, xmax = 2.7, ymin = averagev(2.7), ymax = average(2.7),
+                    fill = "orange", alpha=0.5)+
+    geom_hline(yintercept=average(2.7), geom="line", size=2, color = "blue")+
+    geom_label(aes(x=5.5,y=average(2.7)), color = "blue", label=expression(MR(q)==p), size = 2)+
+  geom_segment(x=0,xend=2.7,y=averagev(2.7),yend=averagev(2.7),size=1,linetype="dotted")+
+  #geom_segment(x=0,xend=2.7,y=average(2.7),yend=average(2.7),size=1,linetype="dotted")+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.5,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 2)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label="AC(q) includes rents", size = 2)+
+  
+  annotate("segment", x = 2.7, xend = 2.7, y = averagev(2.7), yend = average(2.7), colour = "black", size=1, alpha=1, arrow=arrow(length=unit(0.25,"cm"), ends="both", type="closed"))+
+  geom_label(x = 2.7, y = (averagev(2.7)+0.5 * (average(2.7)-averagev(2.7))), label = "AFC(q)", size =2)+
+
+  annotate("segment", x = 2.7, xend = 2.7, y = averagev(2.7), yend = 0, colour = "black", size=1, alpha=1, arrow=arrow(length=unit(0.25,"cm"), ends="both", type="closed"))+
+  
+  geom_label(x = 2.7, y = (0.5 * averagev(2.7)), label = "AVC(q)", size = 2)+
+      geom_label(aes(x=5,y=averagev(5)), color = "brown", label="AVC(q) excludes rents", size = 2)+
+
+    scale_x_continuous(breaks=c(2.7),
+                       labels=c("q*"),
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0,averagev(2.7),average(2.7)),
+                     labels=c(0,"AVC(q*)", "AC(q*) = p"),
+                     limits=c(0,20),
+                     expand=c(0,0))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "",
+       title = "Economic Rents",
+       subtitle = "AC(q*) - AVC(q*)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)
+```
+
+In long run equilibrium, if there is competition for the productive land, the price of the land will be bid upwards, raising the cost to the farmers who must rent it, and raising the income to the owner of the land. Thus, economic rents increase to push profits to the firms to zero (but higher-than-opportunity-cost returns to the owners of land), since they must pay more to rent it.
+
+The average cost curve *including* the cost of the land is $AC(q)$. Since the equilibrium rent for the land will be whatever it takes to drive firm profits to zero:
+
+\begin{align*}
+\underbrace{R(q^\star) - C(q^\star)}_{\pi} &= 0\\
+p^\star q^\star - VC(q^\star) - rent &= 0\\
+rent &= p^\star q^\star - VC(q^\star)\\
+\end{align*}
+
+In other words, economic rent is the difference between revenues $(p^\star q^\star)$ and variable costs. On the graph below, this is shaded in orange; we can also see it per unit as the difference between price and average variable costs (i.e. $AFC(q))$. 
+
+This shows that rent is also precisely the same thing as producer surplus (discussed above). That means you can also calculate the economic rent as the area to the left of the marginal cost curve, etc.
+
+Given what we said in the equations above, it is now easier to see the truth of what we said earlier: **it is the market equilibrium price that determines economic rents**, not the reverse. The firm supplies along its marginal cost curve — which is independent of the cost of the fixed factors. **Rents will adjust to drive profits to zero.**
+
+# The Shape of the Long Run Industry Supply Curve: External Economies
+
+When all firms produce more/less or firms enter or exit an industry due to profits or losses, this affects the equilibrium market price, and is commonly called the "entry price effect".
+
+The simplest way to see this is to simply consider a series of supply and demand graphs where there are profits or losses that cause a change in supply:
+
+1. **Entry** of new firms into a profitable industry will cause *an increase in supply* (supply curve shifts to the right), and thus a **decrease in market price**
+  - In the graph below, Supply 1 to Supply 2
+
+2. **Exit** of firms out of an industry suffering losses will cause *a decrease in supply* (supply curve shifts to the left), and thus an **increase in market price**
+  - In the graph below, Supply 1 to Supply 3
+
+```{r}
+demand_1=function(x){10-x}
+supply_1=function(x){x}
+
+changes<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand_1(9)), color = "blue", label="Demand 1", size = 5)+
+  stat_function(fun=supply_1, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply_1(9)), color = "red", label="Supply 1", size = 5)+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+supply_up=function(x){-2+x}
+supply_down=function(x){x+2}
+
+changes+
+  stat_function(fun=supply_up, geom="line", size=2, color = "pink")+
+    geom_label(aes(x=9,y=supply_up(9)), color = "pink", label="Supply 2", size = 5)+
+  stat_function(fun=supply_down, geom="line", size=2, color = "darkred")+
+    geom_label(aes(x=7,y=supply_down(7)), color = "darkred", label="Supply 3", size = 5)
+
+```
+
+Exactly *how large* this effect will be depends on the idea of **external economies of scale**^[Often referred to simply as "external economies."]: how the scale of *industry* output affects costs for *all firms* in the industry. 
+
+Recall that [“economies of scale”](https://microf22.classes.ryansafner.com/slides/2.4-slides.html#48) refer to how a firm’s average costs change with its output — and is often referred to as “internal economies of scale” since the economic effect is captured by the individual firm: e.g. under economies of scale, if it produces more, its average costs decrease.
+
+What we are considering now is a form of *externality*: how the size and output of an entire industry “spills over” to all the firms by affecting their costs. An increase in the size of an industry (in terms of firms and total output) might have *no effect* on costs for all the firms in the industry, *raise* costs for all the firms, or *lower* costs for all the firms. As such, these are the three possibilities:
+
+1. Constant Cost Industry (no external economies) — horizontal LR supply curve
+2. Increasing Cost Industry (external *dis*economies) — upward sloping LR supply curve
+3. Decreasing Cost Industry (external economies) — downward sloping LR supply curve (!)
+
+<!--We consider each in turn, and discuss the effects of an increase in demand on the long run equilibrium, in order to derive the long run supply curve for each type of industry.
+
+## Constant Cost Industry (No External Economies)
+
+
+## Increasing Cost Industry
+
+## Decreasing Costs Industry-->

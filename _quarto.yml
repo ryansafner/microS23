@@ -64,6 +64,8 @@ website:
               href: content/2.4-content.qmd
             - text: "2.5 — Short Run Profit Maximization"
               href: content/2.5-content.qmd
+            - text: "2.6 — Long Run Industry Equilibrium"
+              href: content/2.6-content.qmd
     - title: "Assignments"
       style: "docked"
       search: false
@@ -89,6 +91,8 @@ website:
           contents:
             - text: "Exam 1"
               href: assignments/01-exam.qmd
+            - text: "Exam 2"
+              href: assignments/02-exam.qmd
         - text: "Opinion-Editorial"
           href: assignments/op-ed.qmd
 
@@ -112,6 +116,8 @@ website:
               href: resources/appendices/2.4-appendix.qmd
             - text: "2.5 — Short Run Profit Maximization"
               href: resources/appendices/2.5-appendix.qmd
+            - text: "2.6 — Long Run Industry Equilibrium"
+              href: resources/appendices/2.6-appendix.qmd
         - section: "Math Review Guide"
           contents:
             - text: "Functions"

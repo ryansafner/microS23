@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>2.6 — Long Run Industry Equilibrium</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner  Assistant Professor of Economics   safner@hood.edu   ryansafner/microS22   microS22.classes.ryansafner.com " />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: title-slide
+
+# 2.6 — Long Run Industry Equilibrium
+
+## ECON 306 • Microeconomic Analysis • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/microS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/microS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://microS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;microS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+
+---
+
+class: inverse
+
+# Outline
+
+### [Firm's *Long Run* Supply Decisions](#3)
+### [Market Entry and Exit](#14)
+### [Deriving the Industry Supply Curve](#20)
+### [Economic Rents, Profits, &amp; Competition](#29)
+### [Supply Functions](#53)
+### [Price Elasticity of Supply](#59)
+
+---
+
+class: inverse, center, middle
+
+# Firm's *Long Run* Supply Decisions
+
+---
+
+# Firm Decisions in the Long Run I
+
+.pull-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+- .orange[Minimum AC(q)]: market price of $6.00
+  - Firms break even and earn .hi[“normal” economic profits] (of $0)
+
+- At any market price **below** $6.00, firm earns **losses**
+  - Short Run: firm shuts down only if `\(p&lt;\color{brown}{AVC(q)}\)`
+
+- At any market price **above** $6.00, firm earns .hi[“supernormal” profits] (&gt;$0)
+
+]
+
+---
+
+# Firm Supply Decisions in the Short Run vs. Long Run
+
+.pull-left[
+- .hi-purple[Short run]: firms that shut down `\((q^*=0)\)` are **stuck** in market, incur fixed costs `\(\pi=-f\)`
+]
+
+
+.pull-right[
+.center[
+]
+]
+
+---
+
+# Firm Supply Decisions in the Short Run vs. Long Run
+
+.pull-left[
+- .hi-purple[Short run]: firms that shut down `\((q^*=0)\)` are **stuck** in market, incur fixed costs `\(\pi=-f\)`
+
+- .hi-purple[Long run]: firms earning losses `\((\pi &lt; 0)\)` can .hi[exit] the market and earn `\(\pi=0\)`
+  - No more fixed costs, firms can sell/abandon `\(f\)`
+]
+
+
+.pull-right[
+.center[
+![](../images/goingoutofbusiness.jpg)
+]
+]
+
+---
+
+# Firm Supply Decisions in the Short Run vs. Long Run
+
+.pull-left[
+- .hi-purple[Short run]: firms that shut down `\((q^*=0)\)` are **stuck** in market, incur fixed costs `\(\pi=-f\)`
+
+- .hi-purple[Long run]: firms earning losses `\((\pi &lt; 0)\)` can .hi[exit] the market and earn `\(\pi=0\)`
+  - No more fixed costs, firms can sell/abandon `\(f\)`
+
+- Entrepreneurs not *currently* in market can .hi[enter] and produce, if entry would earn them `\(\pi&gt;0\)`
+]
+
+
+.pull-right[
+.center[
+![](../images/goingoutofbusiness.jpg)
+
+![:scale 75%](../images/entry.jpg)
+]
+]
+
+---
+
+# Firm Supply Decisions in the Short Run vs. Long Run
+
+.pull-left[
+.center[
+![:scale 75%](../images/perfectcompetitionentrymeme.jpg)
+]
+
+]
+
+--
+
+.pull-right[
+.center[
+![:scale 55%](../images/perfectcompetitionsnapchat.png)
+]
+]
+
+---
+
+
+# Firm's Long Run Supply: Visualizing
+
+.pull-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+.hi-red[When `\\(p&lt;AVC\\)`]
+
+- Profits are *negative*
+
+- .hi-purple[Short run]: **shut down** production
+  - Firm loses more `\(\pi\)` by producing than by not producing
+
+- .hi-purple[Long run]: firms in industry **exit** the industry
+  - *No* new firms will *enter* this industry
+]
+
+---
+
+# Firm's Long Run Supply: Visualizing
+
+.pull-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+.hi-yellow[When `\\(AVC&lt;p&lt;AC\\)`]
+
+- Profits are *negative*
+
+- .hi-purple[Short run]: **continue** production
+  - Firm loses *less* `\(\pi\)` by producing than by *not* producing
+
+- .hi-purple[Long run]: firms in industry **exit** the industry
+  - *No* new firms will *enter* this industry
+]
+
+---
+
+# Firm's Long Run Supply: Visualizing
+
+.pull-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+.hi-green[When `\\(AC&lt;p\\)`]
+
+- Profits are *positive*
+
+- .hi-purple[Short run]: **continue** production
+  - Firm earning profits
+
+- .hi-purple[Long run]: firms in industry **stay** in industry
+  - **New** firms will **enter** this industry
+]
+
+---
+
+# Production Rules, Updated:
+
+.pull-left[
+.smaller[
+**1. Choose `\(q^*\)` such that `\(MR(q)=MC(q)\)`**
+
+**2. Profit `\(\pi=q[p-AC(q)]\)`**
+
+**3. Shut down in _short run_ if `\(p&lt;AVC(q)\)`**
+
+.slate[**4. Exit in _long run_ if `\\(p&lt;AC(q)\\)`**]
+
+]
+]
+
+.pull-right[
+.center[
+![](../images/management.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Market Entry and Exit
+
+---
+
+# Exit, Entry, and Long Run Industry Equilibrium I
+
+.pull-left[
+
+- Now we must combine .hi-purple[optimizing] *individual* firms with *market-wide* adjustment to .hi-purple[equilibrium]
+
+- Since `\(\pi = [p-AC(q)]q\)`, in the **long run**, profit-seeking firms will:
+]
+
+.pull-right[
+]
+
+---
+
+# Exit, Entry, and Long Run Industry Equilibrium I
+
+.pull-left[
+
+- Now we must combine .hi-purple[optimizing] *individual* firms with *market-wide* adjustment to .hi-purple[equilibrium]
+
+- Since `\(\pi = [p-AC(q)]q\)`, in the **long run**, profit-seeking firms will:
+  - .hi-purple[Enter] markets where `\(p&gt;AC(q)\)`
+]
+
+.pull-right[
+.center[
+![:scale 75%](../images/entry.jpg)
+]
+]
+
+---
+
+# Exit, Entry, and Long Run Industry Equilibrium I
+
+.pull-left[
+
+- Now we must combine .hi-purple[optimizing] *individual* firms with *market-wide* adjustment to .hi-purple[equilibrium]
+
+- Since `\(\pi = [p-AC(q)]q\)`, in the **long run**, profit-seeking firms will:
+  - .hi-purple[Enter] markets where `\(p&gt;AC(q)\)`
+  - .hi-purple[Exit] markets where `\(p&lt;AC(q)\)`
+]
+
+.pull-right[
+.center[
+![:scale 75%](../images/entry.jpg)
+
+![](../images/goingoutofbusiness.jpg)
+]
+]
+
+---
+
+# Exit, Entry, and Long Run Industry Equilibrium II
+
+.pull-left[
+
+- .hi-purple[Long-run equilibrium]: entry and exit ceases when .hi-purple[`\\(p=AC(q)\\)`] for all firms, implying .hi-purple[normal economic profits] of .hi-purple[`\\(\pi=0\\)`]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/breakeven.jpg)
+]
+]
+
+---
+
+# Exit, Entry, and Long Run Industry Equilibrium II
+
+.pull-left[
+
+- .hi-purple[Long-run equilibrium]: entry and exit ceases when .hi-purple[`\\(p=AC(q)\\)`] for all firms, implying .hi-purple[normal economic profits] of .hi-purple[`\\(\pi=0\\)`]
+
+- More generally, .hi[no marginal firm can profitably enter] the industry
+
+- .hi-turquoise[Long run economic profits for all firms in a _competitive_ industry are 0]
+
+- Firms must earn an *accounting* profit to stay in business
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/breakeven.jpg)
+
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Deriving the Industry Supply Curve
+
+---
+
+# The Industry Supply Curve
+
+- .hi[Industry supply curve]: horizontal sum of all individual firms' supply curves
+  - recall: `\((MC(q)\)` curve above `\(AVC_{min})\)` (shut down price)
+
+- To keep it simple on the following slides:
+  - assume no fixed costs, so `\(AC(q)=AVC(q)\)`
+  - then industry supply curve is sum of individual `\(MC(q)\)` curves above `\(AC(q)_{min}\)`
+
+---
+
+# Industry Supply Curves (Identical Firms)
+
+.tri-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-middle[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-right[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+--
+
+.smallest[
+- .red[Industry supply curve] is the horizontal sum of all individual firm's supply curves
+  - Which are each firm's marginal cost curve above its breakeven price
+]
+
+---
+
+# Industry Supply Curves (Identical Firms)
+
+.tri-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-middle[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-right[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.smallest[
+- .blue[Industry demand curve] (where equal to supply) sets market price, demand for firms
+]
+
+---
+
+# Industry Supply Curves (Identical Firms)
+
+.tri-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-middle[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-right[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.smallest[
+
+- **Short Run**: each firm is earning .hi-green[profits] `\(p&gt;AC(q)\)`
+
+]
+---
+
+# Industry Supply Curves (Identical Firms)
+
+.tri-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-middle[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-15-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-right[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.smallest[
+
+- **Short Run**: each firm is earning .hi-green[profits] `\(p&gt;AC(q)\)`
+
+- **Long run**: induces entry by firm 3, firm 4, `\(\cdots\)`, firm `\(n\)`
+]
+--
+.smallest[
+- .hi[Long run industry equilibrium]:
+]
+
+---
+
+# Industry Supply Curves (Identical Firms)
+
+.tri-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-17-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-middle[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-18-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-right[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-19-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.smallest[
+- **Short Run**: each firm is earning .hi-green[profits] `\(p&gt;AC(q)\)`
+
+- **Long run**: induces entry by firm 3, firm 4, `\(\cdots\)`, firm `\(n\)`
+
+- .hi[Long run industry equilibrium]: `\(p=AC(q)_{min}\)`, `\(\pi=0\)` at `\(p=\)` $6; supply becomes more **elastic**
+]
+---
+
+class: inverse, center, middle
+
+# Economic Rents, Profits, &amp; Competition
+
+---
+
+# Back to Zero Economic Profits
+
+.pull-left[
+- Recall, we’ve essentially defined a .hi-purple[firm] as a mere .hi[replicable recipe] (.hi[production function]) of transforming resources
+
+`$$q=f(L,K)$$`
+
+- **“Any idiot”** can enter market, buy required `\((L,K)\)` at prices `\((w,r)\)`, produce `\(q^*\)` at market price `\(p\)` and earn the market rate of `\(\pi\)`
+
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/inputoutput.png)
+]
+]
+
+---
+
+# Back to Zero Economic Profits
+
+.pull-left[
+
+- Zero long run economic profit `\(\neq\)` industry *disappears*, just **stops growing**
+
+- Less attractive to entrepreneurs &amp; start ups to enter than other, more profitable industries
+
+- These are **mature** industries (again, often commodities), the backbone of the economy, just not *sexy*!
+
+]
+
+.pull-right[
+.center[
+![](../images/commodities.png)
+]
+]
+
+---
+
+# Back to Zero Economic Profits
+
+.pull-left[
+
+`$$p=MC$$`
+
+- All factors are paid their market price
+  - i.e. their .hi-purple[opportunity cost] — what they could earn *elsewhere* in economy
+
+`$$p=AC$$`
+
+- Firms earn .hi-purple[normal market rate of return]
+  - No *excess* rewards (economic profits) to attract *new* resources into the industry, nor *losses* to push resources out of industry
+  
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/breakeven.jpg)
+`$$p=MC=AC$$`
+]
+]
+
+---
+
+# Back to Zero Economic Profits
+
+.pull-left[
+
+- But we’ve so far been imagining a market where every firm is **identical**, just a recipe “any idiot” can copy
+
+- What about if firms have **different** technologies or costs?
+  
+]
+
+.pull-right[
+.center[
+![:scale 70%](../images/inputoutput.png)
+]
+]
+
+---
+
+# Industry Supply Curves (*Different* Firms) I
+
+.pull-left[
+.smaller[
+- Firms have **.ul[different] technologies/costs** due to relative differences in:
+  - Managerial talent
+  - Worker talent
+  - Location
+  - First-mover advantage
+  - Technological secrets/IP
+  - License/permit access
+  - Political connections
+  - Lobbying
+
+- Let's derive .hi-red[industry supply curve] again, and see how this may affect profits
+]
+]
+
+.pull-right[
+.center[
+![](../images/competerents.jpg)
+]
+]
+
+---
+
+# Industry Supply Curves (*Different* Firms) II
+
+.tri-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-20-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-middle[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-21-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-right[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-22-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+--
+
+- .red[Industry supply curve] is the horizontal sum of all individual firm's supply curves
+  - Which are each firm's marginal cost curve above its breakeven price
+
+---
+
+# Industry Supply Curves (*Different* Firms) II
+
+.tri-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-23-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-middle[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-24-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-right[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-25-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+--
+
+.smallest[
+- .blue[Industry demand curve] (where equal to supply) sets market price, demand for firms
+]
+--
+
+.smallest[
+- .hi[Long run industry equilibrium]: `\(p=AC(q)_{min}\)`, `\(\pi=0\)` for .hi-purple[marginal (highest cost) firm] (Firm 2)
+]
+
+--
+
+.smallest[
+- Firm 1 (lower cost) appears to be earning .hi-green[profits]...(we’ll come back to this)
+]
+
+---
+
+# Economic Rents and Zero Economic Profits I
+
+.pull-left[
+.center[
+![:scale 80%](../images/rentvictory.jpg)
+]
+]
+
+.pull-right[
+- .hi-purple[**Long-run equilibrium** `\\(p=AC(q)_{min}\\)` of the _marginal (higher-cost)_ firm]
+
+- .hi-purple[A marginal firm cannot profitably enter]
+  - Otherwise, if `\(p&gt;AC(q)\)` for that firm, would induce *more* entry into industry!
+
+]
+
+---
+
+# Economic Rents and Zero Economic Profits I
+
+.pull-left[
+.center[
+![:scale 80%](../images/rentvictory.jpg)
+]
+]
+
+.pull-right[
+- .hi-purple[“Inframarginal” (lower-cost)] firms are using resources that earn .hi[economic rents]
+  - returns **higher** than their opportunity cost (what is needed to bring them into *this* industry)
+
+- Economic rents arise from **relative differences** between resources
+
+]
+
+---
+
+# Economic Rent
+
+.pull-left[
+.center[
+![](../images/moneyontrees.png)
+]
+]
+
+.pull-right[
+- .hi[Economic rent]: a return or payment for a resource above its normal market return (opportunity cost)
+
+- Has no allocative effect on resources, entirely “inframarginal”
+
+- A windfall return that resource owners get for free
+
+]
+
+---
+
+# Sources of Economic Rents 
+
+.pull-left[
+.center[
+![:scale 80%](../images/rentvictory.jpg)
+]
+]
+
+.pull-right[
+- .hi-purple[Some factors are relatively scarce _in the whole economy_]
+  - (talent, location, secrets, IP, licenses, being first, political favoritism)
+
+]
+
+---
+
+# Firms Using Resources with Economic Rents 
+
+.pull-left[
+.center[
+![:scale 80%](../images/rentvictory.jpg)
+]
+]
+
+.pull-right[
+- **Inframarginal** firms that employ these scarce factors gain a .hi-green[short-run profits] from having lower costs/higher productivity
+
+- ...But what will happen to the prices for their scarce factors over time? 
+
+]
+
+---
+
+# Economic Rents Examples
+
+.pull-left[
+.center[
+![:scale 70%](../images/jobsiphone.jpg)
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/starbuckscounter.jpg)
+]
+]
+
+---
+
+# Economic Rents and Zero Economic Profits
+
+.pull-left[
+.center[
+![:scale 80%](../images/rentvictory.jpg)
+]
+]
+
+.pull-right[
+.smallest[
+- In a competitive market, over the long run, **profits are dissipated through competition**
+  - Rival firms willing to pay for the scarce factor to gain an advantage
+
+- Competition over acquiring the scarce factors **pushes up their prices**
+  - i.e. higher costs to firms of using the factor!
+
+- .hi-purple[Rents are included in the opportunity cost (price) for inputs over long run]
+  - Must pay a factor enough to keep it *out of other uses*
+]
+
+]
+
+---
+
+# Economic Rents and Zero Economic Profits
+
+.pull-left[
+.center[
+![:scale 80%](../images/rents.jpg)
+]
+]
+
+.pull-right[
+
+- From the firm’s perspective, over the long-run, .hi-purple[rents are included in the price (opportunity cost) of the scarce factor]
+  - Must pay a factor enough to keep it out of other uses
+
+- Firm .ul[does not earn the rents], it raises firm’s costs and squeezes profits to zero!
+
+]
+
+---
+
+# Economic Rents Reduce Firms’ Profits Over Long Run
+
+.tri-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-26-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-middle[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-27-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-right[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-28-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.smallest[
+
+- **Short Run**: firm that possesses scarce rent-generating factors has lower costs, perhaps .green[short-run profits]
+]
+
+---
+
+# Economic Rents Reduce Firms’ Profits Over Long Run
+
+.tri-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-29-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-middle[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-30-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.tri-right[
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-31-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.smallest[
+- **Short Run**: firm that possesses scarce rent-generating factors has lower costs, perhaps .green[short-run profits]
+
+- **Long run**: competition over those factors pushes up their prices, **raising costs to firm**, until its profits go to zero as well
+  - Increase in *fixed* cost (scarce factor), raising .orange[AC(q)], which now includes rents (more info [in appendix](resources/appendices/2.6-appendix/#economic-rents))
+]
+
+---
+
+# Economic Rents Go To Resource Owners
+
+.pull-left[
+.center[
+![:scale 80%](../images/lebronjames2.jpg)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Owners of scarce factors] (workers, landowners, inventors, etc) .hi-purple[earn the rents as higher income for their services] (wages, land rent, interest, royalties, etc).
+
+- Often induces competition to supply alternative factors, which *may* dissipate the rents (to zero)
+  - More workers invest in becoming talented, try to create new inventions, build new land, etc. 
+
+]
+
+---
+
+# Recall: Accounting vs. Economic Point of View
+
+.pull-left[
+.smallest[
+- Recall .hi-purple[“economic point of view”]:
+
+- Producing *your* product pulls scarce resources *out of other productive uses* in the economy
+
+- .hi-turquoise[Profits attract resources]: pulled out of other (less valuable) uses
+
+- .hi-turquoise[Losses repel resources]: pulled away to other (more valuable) uses
+
+- .hi-turquoise[Zero profits keep resources where they are]
+  - Implies .hi-purple[society is using resources optimally]
+]
+]
+
+.pull-right[
+.center[
+![](../images/costrevenue.jpg)
+
+![](../images/disappear.jpg)
+]
+]
+
+---
+
+class: inverse, center, middle
+
+# Supply Functions
+
+---
+
+# Supply Function
+
+.pull-left[
+
+- .hi[Supply function] relates quantity to price
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: 
+`$$q=2p-4$$`
+]
+- Not graphable (wrong axes)!
+
+]
+
+.pull-right[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-32-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Inverse Supply Function
+
+.pull-left[
+
+- .hi[*Inverse* supply function] relates price to quantity
+    - Take supply function, solve for `\(p\)`
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: 
+`$$p=2+0.5q$$`
+]
+- Graphable (price on vertical axis)!
+
+]
+
+--
+
+.pull-right[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-33-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Inverse Supply Function
+
+.pull-left[
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: 
+`$$p=2+0.5q$$`
+]
+
+- Slope: 0.5
+
+- Vertical intercept called the .hi["Choke price"]: price where `\\(q_S=0\\)` ($2), just low enough to discourage *any* sales
+  - Consider the shut-down price...
+
+]
+
+
+.pull-right[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-34-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Inverse Supply Function
+
+.pull-left[
+
+- Read two ways:
+
+- Horizontally: at any given price, how many units firm wants to sell
+
+- Vertically: at any given quantity, the .hi[minimum willingness to accept (WTA)] for that quantity
+
+]
+
+
+.pull-right[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-35-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# Price Elasiticity of Supply
+
+---
+
+# Price Elasticity of Supply
+
+.pull-left[
+
+- .hi[Price elasticity of supply] measures *how much* (in %) quantity supplied changes in response to a (1%) change in price
+
+`$$\epsilon_{q_S,p} = \frac{\% \Delta q_S}{\% \Delta p}$$`
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/elastic.jpg)
+]
+
+]
+
+---
+
+# Price Elasticity of Supply: Elastic vs. Inelastic
+
+`$$\epsilon_{q_S,p} = \frac{\% \Delta q_S}{\% \Delta p}$$`
+
+.smallest[
+|                 | .hi[“Elastic”] | “Unit Elastic” | .hi[“Inelastic”] |
+|-----------------|-----------|----------------|------------|
+| **Intuitively**:    | **Large** response | Proportionate response | **Little** response |
+| **Mathematically**: | `\(\epsilon_{q_s,p} &gt; 1\)` | `\(\epsilon_{q_s,p} = 1\)` | `\(\epsilon_{q_s,p}  &lt; 1\)` |
+|                 | Numerator `\(&gt;\)` Denominator | Numerator `\(=\)` Denominator | Numerator `\(&lt;\)` Denominator |
+| **1% change in `\(p\)` causes** | **More than 1%** change in `\(q_s\)` | **Exactly 1%** change in `\(q_s\)` | **Less than 1%** change in `\(q_s\)` | 
+
+]
+
+.footnote[Compare to [price elasticity of demand](https://microS23.classes.ryansafner.com/slides/1.7-slides#5)]
+---
+
+# Visualizing Price Elasticity of Supply
+
+.center[
+.smallest[
+An identical 100% price increase on an: 
+]
+]
+
+.pull-left[
+
+.center[
+.smallest[
+“Inelastic” Supply Curve
+]
+]
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-36-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+.center[
+.smallest[
+“Elastic” Supply Curve
+]
+]
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-37-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Price Elasticity of Supply Formula
+
+.pull-left[
+
+`$$\color{red}{\epsilon_{q,p} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}}$$`
+- First term is the inverse of the slope of the inverse supply curve (that we graph)!
+
+- To find the elasticity at any point, we need 3 things:
+    1. The price
+    2. The associated quantity supplied
+    3. The slope of the (inverse) supply curve
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/elastic.jpg)
+]
+
+]
+
+---
+
+# Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: The supply of bicycle rentals in a small town is given by:
+
+`$$q_S=10p-200$$`
+]
+
+1. Find the inverse supply function.
+
+2. What is the price elasticity of supply at a price of $25.00?
+
+3. What is the price elasticity of supply at a price of $50.00?
+
+
+---
+
+# Price Elasticity of Supply Changes Along the Curve
+
+.pull-left[
+
+&lt;img src="2.6-slides_files/figure-html/unnamed-chunk-38-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+`$$\epsilon_{q,p} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}$$`
+
+- Elasticity `\(\neq\)` slope (but they are related)!
+
+- Elasticity changes along the supply curve
+
+- Often gets *less* elastic as `\(\uparrow\)` price `\((\uparrow\)` quantity)
+  - Harder to supply more
+
+]
+
+---
+
+# Determinants of Price Elasticity of Supply I
+
+.pull-left[
+
+.smallest[
+.hi-purple[What determines how responsive your selling behavior is to a price change?]
+
+
+- .hi[The faster (slower) costs increase with output] `\(\implies\)` less (more) elastic supply
+  - Mining for natural resources vs. automated manufacturing
+
+- Smaller (larger) .hi[share of market for inputs] `\(\implies\)` more (less) elastic
+  - Will your suppliers raise the price much if you buy more?
+  - How much competition is there in your input markets?
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/elastic.jpg)
+]
+
+]
+
+---
+
+# Determinants of Price Elasticity of Supply II
+
+.pull-left[
+
+.hi-purple[What determines how responsive your selling behavior is to a price change?]
+
+- More (less) .hi[time to adjust] to price changes `\(\implies\)` more (less) elastic
+  - Supply of oil today vs. oil in 10 years
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/elastic.jpg)
+]
+
+]
+
+---
+
+# Price Elasticity of Supply: Examples
+
+.pull-left[
+.center[
+[![](../images/corona_mask_import.png)](https://reason.com/2020/03/31/america-could-import-countless-more-face-masks-if-federal-regulators-would-get-out-of-the-way/)
+]
+]
+
+.pull-right[
+.quitesmall[
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;A report by &lt;a href="https://twitter.com/PIIE?ref_src=twsrc%5Etfw"&gt;@PIIE&lt;/a&gt; found an N-95 respirator mask still faces a 7% U.S. tariff. &lt;br&gt;&lt;br&gt;Remaining US duties include&lt;br&gt;• 5% on hand sanitizer&lt;br&gt;• 4.5% on protective medical clothing&lt;br&gt;• 2.5% on goggles&lt;br&gt;• 6.4-8.3% on other medical headwear&lt;br&gt;&lt;br&gt;By &lt;a href="https://twitter.com/ABehsudi?ref_src=twsrc%5Etfw"&gt;@ABehsudi&lt;/a&gt; 1/&lt;a href="https://t.co/LcxE0FFlXO"&gt;https://t.co/LcxE0FFlXO&lt;/a&gt;&lt;/p&gt;&amp;mdash; Chad P. Bown (@ChadBown) &lt;a href="https://twitter.com/ChadBown/status/1252602275098492928?ref_src=twsrc%5Etfw"&gt;April 21, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt; 
+]
+]
+
+---
+
+# Price Elasticity of Supply: Examples
+
+.pull-left[
+.center[
+[![](../images/fdahandsanitizer.png)](https://reason.com/2020/04/02/the-fda-is-making-it-much-much-harder-for-distilleries-to-produce-hand-sanitizer/)
+]
+]
+
+.pull-right[
+.center[
+[![](../images/masksshortage.png)](https://www.flexport.com/blog/why-there-arent-enough-masks-and-how-to-get-more/)
+]
+]
+
+---
+
+# Price Elasticity of Supply: Examples
+
+.pull-left[
+.center[
+[![](../images/mrhousingelasticity.png)](https://marginalrevolution.com/marginalrevolution/2019/08/the-supply-of-housing-has-become-less-elastic.html)
+
+]
+]
+
+.pull-right[
+&gt; “[T]he number of new building permits and housing starts has been lower than in the previous boom...if prices have gone up as much as before but quantity has not, it follows that the elasticity of supply has fallen.”
+
+]
+
+
+
+---
+
+# Price Elasticity of Supply: Examples
+
+.center[
+![](../images/supplychainbroken.gif)
+]
+
+.source[Source: Washington Post (Oct 2, 2021): [“Inside America’s Broken Supply Chain”](https://www.washingtonpost.com/business/interactive/2021/supply-chain-issues/)]
+
+---
+
+# Price Elasticity of Supply: Examples
+
+.pull-left[
+.center[
+.smallest[
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Yesterday I rented a boat and took the leader of one of Flexport&amp;#39;s partners in Long Beach on a 3 hour of the port complex. Here&amp;#39;s a thread about what I learned.&lt;/p&gt;&amp;mdash; Ryan Petersen (@typesfast) &lt;a href="https://twitter.com/typesfast/status/1451543776992845834?ref_src=twsrc%5Etfw"&gt;October 22, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt; 
+]
+]
+]
+
+.pull-right[
+.center[
+![](../images/cargocontainerslongbeach.jpg)
+]
+]
+
+---
+
+# Price Elasticity of Supply: Examples
+
+.center[
+![](../images/americacantbuild.png)
+]
+
+.source[Sources: [NY Times](https://www.nytimes.com/2022/05/29/opinion/biden-liberalism-infrastructure-building.html); [Vox](https://www.vox.com/2020/4/22/21228469/marc-andreessen-build-government-coronavirus); [Washington Post](https://www.washingtonpost.com/opinions/2022/06/15/mitch-landrieu-infrastructure-spending-challenge/); [Reason](https://reason.com/2022/03/01/why-cant-we-build-anything/)]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "ocean",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

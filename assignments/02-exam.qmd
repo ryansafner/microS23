@@ -34,7 +34,7 @@ If you have any approved testing accommodations, or know in advance you must be 
 # “Practice” Exam
 
 - [<i class="fas fa-file-pdf"></i> Download Old Exam 2](/files/examprep/Exam2.pdf)
-<!-- [<i class="far fa-life-ring"></i> Answer Key](/files/examprep/Exam2_Answer_Key.pdf)-->
+- [<i class="far fa-life-ring"></i> Answer Key](/files/examprep/Exam2_Answer_Key.pdf)
 
 Above, you have a previous semester's actual exam. Use it to get a sense of what questions are asked, the format, and how many. **The exact number and type of questions on our exam may be different.**
 

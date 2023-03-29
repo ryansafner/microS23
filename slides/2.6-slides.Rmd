@@ -1639,7 +1639,7 @@ class: inverse, center, middle
 
 - .hi[Price elasticity of supply] measures *how much* (in %) quantity supplied changes in response to a (1%) change in price
 
-$$\epsilon_{q_S,p} = \frac{\% \Delta q_S}{\% \Delta p}$$
+$$\varepsilon_{q_S,p} = \frac{\% \Delta q_S}{\% \Delta p}$$
 
 ]
 
@@ -1654,13 +1654,13 @@ $$\epsilon_{q_S,p} = \frac{\% \Delta q_S}{\% \Delta p}$$
 
 # Price Elasticity of Supply: Elastic vs. Inelastic
 
-$$\epsilon_{q_S,p} = \frac{\% \Delta q_S}{\% \Delta p}$$
+$$\varepsilon_{q_S,p} = \frac{\% \Delta q_S}{\% \Delta p}$$
 
 .smallest[
 |                 | .hi[“Elastic”] | “Unit Elastic” | .hi[“Inelastic”] |
 |-----------------|-----------|----------------|------------|
 | **Intuitively**:    | **Large** response | Proportionate response | **Little** response |
-| **Mathematically**: | $\epsilon_{q_s,p} > 1$ | $\epsilon_{q_s,p} = 1$ | $\epsilon_{q_s,p}  < 1$ |
+| **Mathematically**: | $\varepsilon_{q_s,p} > 1$ | $\varepsilon_{q_s,p} = 1$ | $\varepsilon_{q_s,p}  < 1$ |
 |                 | Numerator $>$ Denominator | Numerator $=$ Denominator | Numerator $<$ Denominator |
 | **1% change in $p$ causes** | **More than 1%** change in $q_s$ | **Exactly 1%** change in $q_s$ | **Less than 1%** change in $q_s$ | 
 
@@ -1768,7 +1768,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
-$$\color{red}{\epsilon_{q,p} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}}$$
+$$\color{red}{\varepsilon_{q,p} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}}$$
 - First term is the inverse of the slope of the inverse supply curve (that we graph)!
 
 - To find the elasticity at any point, we need 3 things:
@@ -1845,7 +1845,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-right[
 
-$$\epsilon_{q,p} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}$$
+$$\varepsilon_{q,p} = \mathbf{\frac{1}{slope} \times \frac{p}{q}}$$
 
 - Elasticity $\neq$ slope (but they are related)!
 

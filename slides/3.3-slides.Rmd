@@ -1,0 +1,1868 @@
+---
+title: "3.3 — Welfare"
+author: 'Ryan Safner<br> Associate Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microS22"><i class="fa fa-github fa-fw"></i>ryansafner/microS22</a><br> <a href="https://microS22.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microS22.classes.ryansafner.com</a><br>'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    css: [custom.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: ocean #rainbow #monokai rainbow solarized-light #tomorrow-night -blue -eighties zenburn
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=F,
+                      message=F,
+                      warning=F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("mosaic")
+library("ggrepel")
+library("fontawesome")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_freezeframe()
+
+update_geom_defaults("label", list(family = "Fira Sans Condensed"))
+update_geom_defaults("text", list(family = "Fira Sans Condensed"))
+
+set.seed(256)
+```
+
+
+class: title-slide
+
+# 3.3 — Welfare Economics
+
+## ECON 306 • Microeconomic Analysis • Fall 2022
+
+### Ryan Safner<br> Associate Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i>safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/microF22"><i class="fa fa-github fa-fw"></i>ryansafner/microF22</a><br> <a href="https://microF22.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i>microF22.classes.ryansafner.com</a><br>
+
+---
+
+class: inverse
+
+# Outline
+
+### [When and Why Markets are Great](#4)
+### [Markets & Efficiency](#17)
+### [Collective Action Problems](#33)
+### [Public Goods](#38)
+### [Externalities: When the Price Isn't Right](#47)
+
+---
+
+# A Reminder (and a Reprieve for a Week or Two)
+
+```{r, fig.width=12}
+red_pink <- "#e64173"
+blue <- "#2b59c3"
+
+venn_colors <- c(red_pink, blue)
+venn_lines <- rep("solid", 10)
+# Locations of circles
+venn_df <- tibble(
+  x  = c( 0.0,   2.0),
+  y  = c( 0.0,   0.0),
+  r  = c( 2.0,   2.0),
+  l  = c( "Math \n Modeling", "Thinking Like \n an Economist"),
+  xl = c( -1.0,    3.0),
+  yl = c( 0.0,   0.0))
+# Venn
+ggplot(data = venn_df, aes(x0 = x, y0 = y, r = r, fill = l, color = l)) +
+ggforce::geom_circle(aes(linetype = l), alpha = 0.3, size = 0.75) +
+theme_void() +
+theme(legend.position = "none") +
+scale_fill_manual(values = venn_colors) +
+scale_color_manual(values = venn_colors) +
+scale_linetype_manual(values = venn_lines) +
+  geom_text(aes(x = xl, y = yl, label = l), size = 8, family = "Fira Sans Condensed") +
+coord_equal()
+```
+
+
+---
+
+class: inverse, center, middle
+# When and Why Markets are Great
+
+---
+
+# The Origins of Exchange I
+
+.pull-left[
+- Why do we trade?
+
+- .hi-purple[Resources are in the wrong place!]
+
+- People have *better* uses of resources than they are currently being used! 
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/exchange.png)
+]
+]
+
+---
+
+# The Origins of Exchange II
+
+.pull-left[
+- *Why* are resources in the wrong place?
+
+- .hi-purple[We have the *same* stuff but different preferences]
+
+
+]
+
+.pull-right[
+.center[
+![:scale 65%](../images/boxlunch.jpg)
+
+![:scale 65%](../images/boxlunch.jpg)
+
+]
+]
+
+---
+
+# The Origins of Exchange III
+
+.pull-left[
+- *Why* are resources in the wrong place?
+
+- .hi-purple[We have *different* stuff and different preferences]
+
+]
+
+.pull-right[
+.center[
+![:scale 40%](../images/3apples.jpg)
+
+![:scale 50%](../images/3oranges.jpg)
+
+]
+]
+
+---
+
+# Transaction Costs and Exchange I
+
+.pull-left[
+- But .hi[Transaction costs]!
+  - .hi-purple[Search costs]: cost of finding trading partners
+  - .hi-purple[Bargaining costs]: cost of reaching an agreement
+  - .hi-purple[Enforcement costs]: **trust** between parties, cost of upholding agreement, dealing with unforeseen contingencies, punishing defection, using police and courts 
+]
+
+.pull-right[
+.center[
+![](../images/transactionscosts.JPG)
+]
+]
+
+---
+
+# Transaction Costs and Exchange II
+
+.pull-left[
+- With high transaction costs, resources *cannot* be traded
+
+- Resources *cannot* be switched to higher-valued uses
+
+- If others value goods higher than their current owners, resources are *inefficiently* allocated!
+]
+
+.pull-right[
+.center[
+![](../images/transactionscosts.JPG)
+]
+]
+
+---
+
+# Transaction Costs and Exchange III
+
+.pull-left[
+.center[
+![](../images/markets2.jpg)
+]
+]
+
+.pull-right[
+- .hi[Markets] are institutions that facilitate voluntary exchange **between strangers** and reduce transaction costs
+
+- There's a lot of institutions in the “bundle” we call “markets”: 
+  - Prices, profits & losses, property rights, rule of law, contract enforcement, dispute resolution, protection, trust
+
+]
+
+---
+
+# Transaction Costs and Exchange III
+
+.pull-left[
+.center[
+![](../images/markets2.jpg)
+]
+]
+
+.pull-right[
+- All of those things are *assumed/ignored* when we “draw” markets as neat graphs on the blackboard
+
+- Other courses: how do various *political & social institutions* enable markets to flourish? (some of my courses):
+  - [ECON 315: Economics of the Law](https://laws21.classes.ryansafner.com)
+  - [ECON 317: Economics of Development](https://devf21.classes.ryansafner.com)
+  - [ECON 324: Industrial Organization](https://ios20.classes.ryansafner.com)
+  - [ECON 470: Public Economics](https://publics22.classes.ryansafner.com)
+]
+
+---
+
+# What Does “Efficiency” Mean?
+
+.pull-left[
+
+- Regular sense of the word:
+
+- Achieving a .hi-purple[specified goal] with as .hi-purple[few resources as possible]
+
+- .hi-green[Examples]:
+  - carrying groceries
+  - driving
+  - producing pencils
+]
+
+.pull-right[
+.center[
+![:scale 65%](../images/benaffleckcoffee.jpg)
+]
+]
+
+---
+
+# Problem: What Goal for Society?
+
+.pull-left[
+
+- We will ruminate more in coming lessons
+
+- .hi-purple[Society, government, law, etc. has no single, universally agreed-upon goal]
+
+- “Society” is not a choosing agent — people have their own separate interests, constraints, etc.
+  - Economy $\neq$ a constrained optimization problem!
+
+]
+
+.pull-right[
+.center[
+![](../images/benevolentdespot.jpg)
+]
+]
+
+---
+
+# Social Problems that Markets Solve Well
+
+.pull-left[
+.center[
+![](../images/tugofwar.png)
+]
+]
+
+.pull-right[
+- .hi[Problem 1]: Resources have multiple rival uses
+
+- .hi[Problem 2]: Different people have different subjective valuations for uses of resources
+
+- .hi-purple[It is inefficient (immoral?) to use a resource in a way that prevents someone else who values it more from using it!]
+]
+
+
+---
+
+# Social Problems that Markets Solve Well 
+
+.pull-left[
+.center[
+![](../images/moneysignal.jpg)
+]
+]
+
+.pull-right[
+
+- **Solution**: .hi[Prices] in a functioning market accurately measure .hi[opportunity cost] of using resources in a particular way
+
+- .hi-purple[The price of a resource is the amount someone else is willing to pay to acquire it from its current use/owner]
+]
+
+
+---
+
+
+# Social Problems that Markets Solve Well 
+
+.pull-left[
+.center[
+![](../images/tugofwar.png)
+]
+]
+
+.pull-right[
+
+- .hi[Property rights] provide a pattern of ownership
+
+- .hi[Prices] give us information about how to use scarce resources
+
+- .hi[Profits] incentivize production that creates value and .hi[Losses] discipline waste
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Markets & Efficiency
+
+---
+
+# Economic Efficiency: First Pass
+
+.pull-left[
+
+.hi[Economic efficiency]: degree to which as many people as possible get as much as possible of what they want
+  - degree of .hi-purple[preference satisfaction]
+
+- How do we measure this?
+  - Expanding budget set $\implies$ satisfying more goals
+  - Income is a main constraint $\implies$ maximize incomes
+  - GDP per capita: market value of what is produced $\iff$ incomes
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+points<-tribble(
+  ~letter, ~x, ~y,
+  "A", 10, 5,
+  "B", 12, 6,
+)
+
+IC_1=function(x){50/x}
+IC_2=function(x){72/x}
+BC=function(x){10-0.5*x}
+BC2=function(x){12-0.5*x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=IC_1, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=4,y=IC_1(4)), color = "blue", label=expression(u[1]), size = 4)+
+    stat_function(fun=IC_2, geom="line", size=2, color = "#3CBB75FF")+
+    geom_label(aes(x=4,y=IC_2(4)), color = "#3CBB75FF", label=expression(u[2]), size = 4)+
+  stat_function(fun=BC, geom="line", size=2, color = "red")+
+    geom_label(aes(x=2,y=BC(2)), color = "red", label="BC", size = 6)+
+    stat_function(fun=BC2, geom="line", size=2, linetype="dashed", color = "darkred")+
+    geom_label(aes(x=2,y=BC2(2)), color = "darkred", label="BC 2", size = 6)+
+  geom_point(data = points,
+             mapping=aes(x=x, y=y),
+             size = 3)+
+  geom_segment(aes(x = 0, xend = 10, y = 5, yend=5), linetype="dotted", size=1)+
+  geom_segment(aes(x = 10, xend = 10, y = 5, yend=0), linetype="dotted", size=1)+
+  geom_segment(aes(x = 0, xend = 12, y = 6, yend=6), linetype="dotted", size=1)+
+  geom_segment(aes(x = 12, xend = 12, y = 6, yend=0), linetype="dotted", size=1)+
+  annotate("segment", x = 10.5, xend = 11.5, y = 5, yend = 6, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+    scale_x_continuous(breaks=c(10,12),
+                       labels=c(expression(x[1]),expression(x[2])),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(5,6),
+                       labels=c(expression(y[1]),expression(y[2])),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "x",
+       y = "y")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# The Economic Point of View
+
+.pull-left[
+
+- Preferences are .hi-purple[subjective]
+  - .hi-purple[Egalitarianism]: Nobody's preferences are dismissed
+
+- .hi-turquoise[Higher incomes + freedom of choice = greater preference satisfaction]
+
+- Harder to directly evaluate outcomes, better to look at basic processes/mechanisms (especially exchange)
+]
+
+.pull-right[
+.center[
+![](../images/developmentasfreedom.jpg)
+]
+]
+
+---
+
+# Perfectly Competitive Market
+
+.pull-left[
+```{r, fig.retina=3, fig.height=4.5}
+demand<-function(x){10-x}
+supply<-function(x){x}
+demand_firm<-function(x){10}
+mc_cc<-function(x){3*x^2-8*x+9}
+ac_cc<-function(x){x^2-4*x+10+10/x}
+
+pc<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_firm, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=4.5,y=demand_firm(4.5)), color = "blue", label="Demand", size = 5)+
+    stat_function(fun=mc_cc, geom="line", size=2, color = "red")+
+  geom_label(aes(x=3.5,y=mc_cc(3.5)), color = "red", label="MC(q)", size = 5)+
+    stat_function(fun=ac_cc, geom="line", size=2, color = "orange")+
+  geom_label(aes(x=4.5,y=ac_cc(4.5)), color = "orange", label = "AC(q)", size = 5)+
+  geom_segment(x=2.8, xend=2.8, y=0, yend=10, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=NULL,
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=NULL,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Representative Firm",
+       x = "Quantity",
+       y = "Price")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+pc
+```
+]
+
+.pull-right[
+```{r, fig.retina=3, fig.height=4.5}
+cs_1<-tribble(
+  ~x, ~y,
+  0, 10,
+  0, 5,
+  5, 5
+)
+ps_1<-tribble(
+  ~x, ~y,
+  0, 0,
+  0, 5,
+  5, 5
+)
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_polygon(data=cs_1, aes(x=x,y=y), fill="blue", alpha=0.5)+
+  geom_polygon(data=ps_1, aes(x=x,y=y), fill="red", alpha=0.5)+
+  geom_text(x = 1.5, y = 6.5, color = "white", label = "CS", size = 6)+
+  geom_text(x = 1.5, y = 3.5, color = "white", label = "PS", size = 6)+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=supply, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply(9)), color = "red", label="Supply", size = 5)+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+  
+  # point A
+  geom_point(x = 5, y = 5, size=3)+
+  geom_text(x = 5, y = 5.5, label = "A", size=5)+
+  
+    scale_x_continuous(breaks=NULL,
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=NULL,
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Industry",
+       x = "Quantity",
+       y = "Price")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.smallest[
+- In a .hi[competitive market] in .hi[long run equilibrium]:
+  - .hi-purple[Economic profit] is driven to $0; resources (factors of production) optimally allocated
+  - .hi-purple[Allocatively efficient]: $\color{blue}{p}=\color{red}{MC(q)}$, maximized .blue[CS] $+$ .red[PS]
+  - .hi-purple[Productively efficient]: $\color{blue}{p}=\color{orange}{AC(q)_{min}}$ (otherwise firms would enter/exit)
+]
+
+---
+
+# Allocative Efficiency in Competitive Equilibrium I
+
+.pull-left[
+
+```{r, fig.retina=3}
+Demand=function(x){10-x}
+Supply=function(x){x}
+eq<-tribble(
+  ~letter, ~x, ~y,
+  "A", 5, 5
+)
+
+CS<-tibble(x=c(0,0,5),
+           y=c(5,10,5))
+
+PS<-tibble(x=c(0,0,5),
+           y=c(0,5,5))
+
+p<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=Demand, geom="line", size=2, color = "blue")+
+  stat_function(fun=Supply, geom="line", size=2, color = "red")+
+  geom_label(aes(x=9,y=Demand(9)), color = "blue", label="Demand = MB", size = 6)+
+  geom_label(aes(x=9,y=Supply(9)), color = "red", label="Supply = MC", size = 6)+
+  geom_segment(aes(x=0, xend=5, y=5, yend=5),size=1, linetype="dotted")+
+  geom_segment(aes(x=5, xend=5, y=5, yend=0),size=1, linetype="dotted")+
+  geom_polygon(data=CS, aes(x=x,y=y), fill="blue", alpha=0.5)+ #CS
+  geom_polygon(data=PS, aes(x=x,y=y), fill="red", alpha=0.5)+ #PS
+  geom_text(x = 1.5, y = 6.5, color = "white", label = "CS", size = 6)+
+  geom_text(x = 1.5, y = 3.5, color = "white", label = "PS", size = 6)+
+  geom_point(data = eq,
+             mapping=aes(x=x, y=y),
+             size = 4)+
+  geom_text_repel(data = eq,
+             mapping=aes(x=x, y=y,
+             label = letter),
+             seed = 2,
+             size = 6)+
+    scale_x_continuous(breaks=NULL,
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=NULL,
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(x = "Quantity",
+       y = "Price")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+p
+```
+
+]
+
+.pull-right[
+
+- .hi[Allocative efficiency]: resources are allocated to highest-valued uses
+  - Goods are produced up to the point where .blue[marginal benefit] $=$ .red[marginal costs]
+]
+
+---
+
+# Allocative Efficiency in Competitive Equilibrium II
+
+.pull-left[
+
+```{r, fig.retina=3}
+p
+```
+
+]
+
+.pull-right[
+
+- .purple[Economic surplus] = .blue[Consumer surplus] + .red[Producer surplus]
+
+- Maximized in competitive equilibrium
+
+- Resources flow away from those who value them the lowest (min WTA) to those that value them the highest (max WTP)
+  - creating .red[PS] and .blue[CS]
+
+- .hi-purple[The social value of resources is **maximized** by allocating them to their highest valued uses!]
+
+]
+
+---
+
+# Markets and Pareto Efficiency
+
+.pull-left[
+.smallest[
+- Suppose we start from some initial allocation of resources
+
+]
+]
+
+.pull-right[
+
+]
+
+---
+
+# Markets and Pareto Efficiency
+
+.pull-left[
+.smallest[
+- Suppose we start from some initial allocation of resources
+
+- .hi[Pareto Improvement]: we make a change where at least one party is better off, and no party is worse off
+
+]
+]
+
+.pull-right[
+.center[
+![](../images/Settlement-handshake.jpg)
+]
+]
+
+---
+
+# Markets and Pareto Efficiency
+
+.pull-left[
+.smallest[
+- Suppose we start from some initial allocation of resources
+
+- .hi[Pareto Improvement]: we make a change where at least one party is better off, and no party is worse off
+
+- .hi[Pareto optimal/efficient]: no possible further Pareto improvements
+  - (Might be *many* possible efficient allocations!)
+
+]
+
+.tiny[<sup>.magenta[†]</sup>I’m simplifying...for full details, see [class 1.8 appendix](https://microf20.classes.ryansafner.com/files/CT_Application_2_Exchange.pdf) about applying consumer theory!]
+
+]
+
+.pull-right[
+.center[
+![](../images/Settlement-handshake.jpg)
+]
+]
+
+
+---
+
+# Markets and Pareto Efficiency
+
+.pull-left[
+.smallest[
+- Voluntary exchange is a .hi[Pareto improvement]
+
+- *In equilibrium*, markets are .hi[Pareto efficient]: there are no more possible improvements
+  - all gains from trade exhausted, $\color{red}{q_S}=\color{blue}{q_D}$, no pressure for change
+
+- Note Pareto efficiency contains a normative claim about .hi-purple[equity]:
+  - We may improve the *total* welfare of *society*,
+  - But if it harms *even just 1 person*, it’s not an improvement!
+]
+]
+.pull-right[
+
+.center[
+![](../images/Settlement-handshake.jpg)
+]
+]
+
+---
+
+# Markets and Pareto Efficiency
+
+.pull-left[
+
+- Pareto efficiency is conceptual gold standard: allow all welfare-improving exchanges so long as nobody gets harmed
+
+- In practice: Pareto efficiency is a *first best* solution
+  - only takes one holdout to disapprove to violate Pareto efficiency
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/ukwgvwjmrl15ts0/holdout3.jpg?raw=1)
+]
+]
+
+---
+
+# Markets and Kaldor-Hicks Efficiency
+
+.pull-left[
+.quitesmall[
+- .hi[Kaldor-Hicks Improvement]: an action improves efficiency its generates more social gains than losses
+    - those made better off could **in principle** compensate those made worse off
+
+- .hi[Kaldor-Hicks efficiency]: no potential Kaldor-Hicks improvements exist
+`
+- Keeps intuitive appeal of Pareto but more practical
+    - Every Pareto improvement is a KH-improvement (but not the other way around!)
+    
+- Consider policies where winners' maximum WTP $>$ losers' minimum WTA
+
+- Policies should **maximize social value of resources**
+]
+]
+
+.pull-right[
+
+.center[
+![](../images/costbenefit.jpg)
+
+![](../images/compensate.jpg)
+
+]
+]
+
+---
+
+# Pareto vs. Kaldor-Hicks Efficiency
+
+.pull-left[
+.smallest[
+- .hi-green[Example]: .hi-purple[“eminent domain”]
+
+- The “takings clause” of the 5<sup>th</sup> Amendment to the U.S. Constitution:
+
+> “No person shall...be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.”
+
+- What is a “public use”? What is “just compensation”?
+
+- [*Kelo v. City of New London*](https://en.wikipedia.org/wiki/Kelo_v._City_of_New_London), 545 U.S. 469 (2005
+]
+]
+.pull-right[
+
+.center[
+![:scale 80%](../images/Kilocase.jpg)
+
+]
+]
+
+---
+
+# Welfare Economics
+.pull-left[
+- .hi[1st Fundamental Welfare Theorem]: markets in competitive equilibrium maximize (allocative, Pareto, KH, productive) efficiency
+
+]
+
+.pull-right[
+.center[
+![](../images/wellbeing.jpeg)
+]
+]
+
+---
+
+# Welfare Economics
+
+.pull-left[
+.smallest[
+- **Markets are great when:**
+  1. They are .hi-purple[Competitive]: many buyers and many sellers
+  2. They reach .hi-purple[equilibrium] (.hi-purple[prices are free to adjust]): absence of transactions costs or policies *preventing prices from adjusting* to meet supply and demand
+  3. .hi-purple[There are no externalities]: costs & benefits are fully internalized by the parties to transactions
+]
+]
+
+.pull-right[
+.center[
+![](../images/markets2.jpg)
+]
+]
+
+---
+
+# Welfare Economics
+
+.pull-left[
+.smallest[
+- **Markets are great when:**
+  1. They are .hi-purple[Competitive]: many buyers and many sellers
+  2. They reach .hi-purple[equilibrium] (.hi-purple[prices are free to adjust]): absence of transactions costs or policies *preventing prices from adjusting* to meet supply and demand
+  3. .hi-purple[There are no externalities]<sup>.magenta[†]</sup>: costs & benefits are fully internalized by the parties to transactions
+
+- .hi[Market failure]: if these conditions are not met
+  - May be role for governments, other institutions, or entrepreneurs to fix
+
+]
+
+]
+
+.pull-right[
+.center[
+![](../images/markets2.jpg)
+]
+
+.footnote[<sup>.magenta[†]</sup> Or public goods, or asymmetric information. But I treat these as special cases of more common externalities.]
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Collective Action Problems
+
+---
+
+# Generalizing: Collective Action Problems
+
+.pull-left[
+
+- .hi[Collective action problem]: situation where an individual's interest and a group's interest may conflict
+
+- Benefits (or costs) of outcome flow to *all members* of the group
+
+- Decisions & costs need to be incurred by individuals
+
+- **Individual preferences** need to aggregate into a **single decision/outcome**
+]
+
+.pull-right[
+.center[
+![](../images/individualvsgroup.png)
+]
+]
+
+---
+
+# Collective Action Problem: Examples I
+
+.center[
+![:scale 80%](../images/concert.jpg)
+]
+
+---
+
+# Collective Action Problem: Examples II
+
+.center[
+![:scale 80%](../images/trafficjam.png)
+]
+
+---
+
+# Collective Action Costs I
+
+.pull-left[
+
+- Groups may share a **common interest**
+
+- But **composed of individuals with their own preferences**
+  - Individuals bear the personal cost of contributing
+  - Individuals gain a small share of the benefits of group action
+
+- Additionally, **transaction costs/ bargaining** to get a group to agree on decision
+]
+
+.pull-right[
+.center[
+![](../images/individualvsgroup.png)
+]
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Public Goods
+
+---
+
+# A Classic Economic Problem
+
+.pull-left[
+.center[
+![](../images/openland.jpg)
+]
+]
+
+.pull-right[
+
+- .hi[Public Good]: a good that is .hi-purple[non-rival] and .hi-purple[non-excludable]
+
+- .hi-purple[Rivalry]: one use of a resource removes it from other uses
+
+- .hi-purple[Excludability]: ability or right to prevent others from using it (ownership)
+
+]
+
+---
+
+# The Free Rider Problem
+
+.pull-left[
+- Individual bears a **private cost to contribute**, but only gets a **small fraction of the (dispersed) benefit** of a good
+
+- If individuals can gain **access** to the good (nonexcludable) **without paying**, may lead to...
+
+- .hi[Free riding]: individuals consume the good without paying for it
+]
+
+.pull-right[
+.center[
+![](../images/freeriding.jpg)
+]
+]
+
+---
+
+# Examples?
+
+.pull-left[
+.center[
+![](../images/park2.png)
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/jetfighter.png)
+]
+]
+
+---
+
+# Market Failure from Public Goods
+
+.pull-left[
+
+- No incentive for people to contribute and pay for the good
+
+- If enough people obtain the benefits without incurring the costs...
+
+- **Not profitable** for private market actors to supply it
+
+]
+
+.pull-right[
+.center[
+![](../images/cuttingline.jpg)
+]
+]
+
+---
+
+# Adam Smith on Public Goods
+
+.left-column[
+.center[
+![:scale 80%](../images/smith.png)
+
+.smallest[
+Adam Smith
+
+1723-1790
+]
+]
+]
+.right-column[
+
+> “The third and last duty of the sovereign or commonwealth is that of .hi[erecting and maintaining those public institutions and those public works], which, though they may be in the highest degree advantageous to a great society, are, however, .hi[of such a nature that the profit could never repay the expence to any individual or small number of individuals], and which it therefore .hi[cannot be expected that any individual or small number of individuals should erect or maintain]. The performance of this duty requires, too, very different degrees of expence in the different periods of society,” (Book VI, Ch. 9).
+
+.source[Smith, Adam, 1776, *An Enquiry into the Nature and Causes of the Wealth of Nations*]
+
+]
+
+---
+
+# Public Goods $\neq$ “Good for the Public”
+
+```{r, fig.width=12}
+red_pink <- "#e64173"
+blue <- "#2b59c3"
+
+venn_colors <- c(red_pink, blue)
+venn_lines <- rep("solid", 10)
+# Locations of circles
+venn_df <- tibble(
+  x  = c( 0.0,   2.0),
+  y  = c( 0.0,   0.0),
+  r  = c( 2.0,   2.0),
+  l  = c( "Things Governments \n Provide", "Public Goods"),
+  xl = c( -1.0,    3.0),
+  yl = c( 0.0,   0.0))
+# Venn
+ggplot(data = venn_df, aes(x0 = x, y0 = y, r = r, fill = l, color = l)) +
+ggforce::geom_circle(aes(linetype = l), alpha = 0.3, size = 0.75) +
+theme_void() +
+theme(legend.position = "none") +
+scale_fill_manual(values = venn_colors) +
+scale_color_manual(values = venn_colors) +
+scale_linetype_manual(values = venn_lines) +
+  geom_text(aes(x = xl, y = yl, label = l), size = 8, family = "Fira Sans Condensed") +
+coord_equal()
+```
+
+.source[Safner, 2021, “‘Public Good’ or ‘Good for the Public?’ Political Entrepreneurship and the Public Funding of Scientific Research,” Journal of Private Enterprise 36(1): 17-44]
+
+---
+
+# Implications: Selective Incentives
+
+.pull-left[
+
+- Groups often need .hi[“selective incentives”] to **reward contribution** and to **punish free riding** in groups
+  - Provide secondary private goods (insurance plans, access to trade publications, discounts, perks, etc.) to dues-paying members
+
+- Positive and negative incentives
+
+.source[Olson, Mancur, 1962, *The Logic of Collective Action*]
+]
+
+.pull-right[
+.center[
+![](../images/incentives.jpg)
+]
+
+]
+
+---
+
+# Religions, Clubs, Cults, and Social Groups
+
+.pull-left[
+.smallest[
+- Groups provide immaterial, “social/spiritual goods”, to individuals
+  - e.g. comfort, community, friendship, support system, therapy, good vibes
+  - Ex: religions, clubs, cults, fraternities/sororities, social groups, etc.
+
+- Good members must .hi[contribute] to the group and not drain its resources
+
+- Groups often do some combination of the following to overcome the free rider problem:<sup>.magenta[†]</sup> .hi[Sacrifice] and .hi[Stigma]
+
+]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/crossfit.jpg)
+]
+.tiny[<sup>.magenta[†]</sup> See [today’s readings page](/content/3.3-content) for great podcast and paper on the economics of religion using these tools.]
+
+]
+
+.source[Iannaconne, Lawrence, 1992, “Sacrifice and Stigma: Reducing Free-riding in Cults, Communes, and Other Collectives,” *Journal of Political Economy* 100(2): 271-291]
+
+
+---
+
+class: inverse, center, middle
+
+# Externalities: When the Price Isn’t Right
+
+---
+
+```{r}
+library("mosaic")
+demand_1=function(x){10-x}
+supply_1=function(x){x}
+
+changes<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand_1(9)), color = "blue", label="MSB", size = 8)+
+  stat_function(fun=supply_1, geom="line", size=2, color = "#e64173")+
+    geom_label(aes(x=9,y=supply_1(9)), color = "#e64173", label="MSC", size = 8)+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+# Supply and Demand: Social Costs & Benefits
+
+.pull-left[
+
+```{r, fig.retina=3}
+
+changes
+```
+
+]
+
+.pull-right[
+
+- .hi-blue[Demand: marginal social benefit (MSB)]
+  - value to consumers of consuming output
+
+- .hi-pink[Supply: marginal social cost (MSC)]
+  - opportunity cost of pulling resources out of other uses
+
+- **Equilibrium**: $MSB=MSC$
+  - using resources efficiently, no *better* alternative uses
+]
+
+---
+
+# Supply and Demand: Social Costs & Benefits
+
+.pull-left[
+
+```{r, fig.retina=3}
+
+changes
+```
+
+]
+
+.pull-right[
+
+- **Price system** mitigates costs and benefits of people's actions
+
+- People using scarce resources must **account for consequences**:
+  - Pay to pull scarce resources out of other uses in society
+  - Compensated for producing something valuable for others
+
+]
+
+---
+
+# Externality 
+
+.pull-left[
+
+- .hi[Externality]: an action that incurs a cost or a benefit not compensated via prices
+
+- Often interpreted as an action that affects (benefits or harms) a third party not privy to the action
+
+]
+
+.pull-right[
+
+.center[
+![](../images/pollution.png)
+]
+]
+
+---
+
+# Externality 
+
+.pull-left[
+- The real problem is that it is .hi-purple[external] to the price system!
+  - A missing market!
+
+- People base decisions off of their preferences and opportunity costs of resources for society (captured in prices)
+
+- Prices properly negotiate the opportunity costs and provide information to people 
+
+- But without price, decisions do not .hi-purple[internalize] those effects! 
+]
+
+.pull-right[
+
+.center[
+![](../images/pollution.png)
+]
+]
+
+---
+
+# Negative Externality
+
+.pull-left[
+
+```{r, fig.retina=3}
+supply_up=function(x){x-2}
+
+changes+
+  stat_function(fun=supply_up, geom="line", size=2, color = "#fb6107")+
+    geom_label(aes(x=9,y=supply_up(9)), color = "#fb6107", label="MPC", size = 8)+
+  geom_segment(x=0, xend=6, y=4, yend=4, size=1, linetype="dotted")+
+  geom_segment(x=6, xend=6, y=0, yend=4, size=1, linetype="dotted")+
+  geom_point(aes(x = c(5,6),
+                 y = c(5,4)),
+             size = 4)+
+  geom_text(x=5,y=5.5, label="A", size=8)+
+  geom_text(x=6,y=4.5, label="B", size=8)
+```
+
+]
+
+.pull-right[
+
+.hi-pink[Marginal _Private_ Cost] to producer
+is less than
+.hi-red[Marginal _Social_ Cost] to society
+
+**Market Equilibrium (B)** too much $q$ at too low $p$ compared to **Social Optimum (A)**
+]
+
+---
+
+# Negative Externality
+
+.pull-left[
+
+```{r, fig.retina=3}
+changes+
+  stat_function(fun=supply_up, geom="line", size=2, color = "#fb6107")+
+    geom_label(aes(x=9,y=supply_up(9)), color = "#fb6107", label="MPC", size = 8)+
+  geom_segment(x=0, xend=6, y=4, yend=4, size=1, linetype="dotted")+
+  geom_segment(x=6, xend=6, y=0, yend=4, size=1, linetype="dotted")+
+  geom_point(aes(x = c(5,6),
+                 y = c(5,4)),
+             size = 4)+
+  geom_text(x=5,y=5.5, label="A", size=8)+
+  geom_text(x=6,y=4.5, label="B", size=8)+
+  
+  annotate("segment", x = 6, xend = 6, y = 4, yend = 6, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="both", type="closed"))+
+  geom_label(x=8, y=5, label="External Cost", color = "purple", size =8)+
+    geom_segment(x=0, xend=6, y=6, yend=6, size=1, linetype="dotted")
+
+
+```
+
+]
+
+.pull-right[
+
+.hi-pink[Marginal _Private_ Cost] to producer
+is less than
+.hi-red[Marginal _Social_ Cost] to society
+
+**Market Equilibrium (B)** too much $q$ at too low $p$ compared to **Social Optimum (A)**
+
+- Overproduction due to external cost
+
+]
+
+---
+
+# Negative Externality
+
+.pull-left[
+
+```{r, fig.retina=3}
+dwl_neg<-tribble(
+  ~x, ~y,
+  5, 5,
+  6, 6,
+  6, 4
+)
+
+changes+
+  geom_polygon(data = dwl_neg,
+               aes(x = x,
+                   y = y),
+               fill = "black",
+               alpha = 0.7)+
+  stat_function(fun=supply_up, geom="line", size=2, color = "#fb6107")+
+    geom_label(aes(x=9,y=supply_up(9)), color = "#fb6107", label="MPC", size = 8)+
+  geom_segment(x=0, xend=6, y=4, yend=4, size=1, linetype="dotted")+
+  geom_segment(x=6, xend=6, y=0, yend=4, size=1, linetype="dotted")+
+  geom_point(aes(x = c(5,6),
+                 y = c(5,4)),
+             size = 4)+
+  geom_text(x=5,y=5.5, label="A", size=8)+
+  geom_text(x=6,y=4.5, label="B", size=8)+
+  
+  annotate("segment", x = 6, xend = 6, y = 4, yend = 6, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="both", type="closed"))+
+  geom_label(x=8, y=5, label="External Cost", color = "purple", size =8)+
+    geom_segment(x=0, xend=6, y=6, yend=6, size=1, linetype="dotted")
+```
+
+]
+
+.pull-right[
+
+.hi-pink[Marginal _Private_ Cost] to producer
+is less than
+.hi-red[Marginal _Social_ Cost] to society
+
+**Market Equilibrium (B)** too much $q$ at too low $p$ compared to **Social Optimum (A)**
+
+- Overproduction due to external cost
+
+- A **deadweight loss** from overproduction
+]
+
+---
+
+# Negative Externality: Pigouvian Solution
+
+.left-column[
+.center[
+![:scale 80%](../images/pigou.png)
+
+A.C. Pigou
+
+1877-1959
+]
+]
+
+.right-column[
+
+- Policy solutions to externalities should .hi-purple[focus on the missing price]
+  - Narrowly tailor policy to create or modify price
+
+- “Pigouvian” tax or subsidy
+]
+
+---
+
+# Negative Externality: Pigouvian Solution
+
+.pull-left[
+
+```{r, fig.retina=3}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand_1(9)), color = "blue", label="MSB", size = 8)+
+  stat_function(fun=supply_1, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply_1(9)), color = "red", label="MSC=MPC+t", size = 8)+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+]
+
+.pull-right[
+
+- Set a specific tax 
+$$t = MSC-MPC$$
+
+- Eliminates the DWL
+
+- .hi-purple[Internalizes the externality] into the price system
+
+- Producers (and consumers) now consider the true cost to society
+  - $MPC$ (with tax) $=MSC$
+]
+
+---
+
+# Pigouvian Taxes
+
+.pull-left[
+.center[
+![](../images/veniceban.png)
+]
+]
+
+.pull-right[
+"Sitting is banned in the following places: "in St. Mark’s Square and in Piazzetta dei Leoncini, beneath the arcades and on the steps of the Procuratie Nuove, the Napoleonic Wing, the Sansovino Library, beneath the arcades of the Ducal Palace, in the impressive entranceway to St. Mark’s Square otherwise known as Piazzetta San Marco and its jetty." ($200)
+]
+
+---
+
+# Pigouvian Taxes
+
+.pull-left[
+.center[
+![](../images/carbontax.png)
+]
+]
+
+.pull-right[
+.smallest[
+> "I. A carbon tax offers the most cost-effective lever to reduce carbon emissions at the scale and speed that is necessary. By correcting a well-known market failure, a carbon tax will send a powerful price signal that harnesses the invisible hand of the marketplace to steer economic actors towards a low-carbon future."
+
+Signed by 27 Economics Nobel Laureates, 4 former Federal Reserve chairs, among many other famous economists
+]
+]
+
+---
+
+# Pigouvian Taxes
+
+.pull-left[
+.center[
+![](../images/carbontax.png)
+]
+]
+
+.pull-right[
+.smallest[
+
+> "II. A carbon tax should increase every year until emissions reductions goals are met and be revenue neutral to avoid debates over the size of government. A consistently rising carbon price will encourage technological innovation and large-scale infrastructure development. It will also accelerate the diffusion of carbon-efficient goods and services."
+
+
+Signed by 27 Economics Nobel Laureates, 4 former Federal Reserve chairs, among many other famous economists
+]
+]
+
+---
+
+# Pigouvian Taxes
+
+.pull-left[
+.center[
+![](../images/carbontax.png)
+]
+]
+
+.pull-right[
+.smallest[
+
+> "III. A sufficiently robust and gradually rising carbon tax will replace the need for various carbon regulations that are less efficient. Substituting a price signal for cumbersome regulations will promote economic growth and provide the regulatory certainty companies need for long-term investment in clean-energy alternatives."
+
+Signed by 27 Economics Nobel Laureates, 4 former Federal Reserve chairs, among many other famous economists
+]
+]
+
+---
+
+# But It’s Not That Simple
+
+.left-column[
+.center[
+![](../images/tax-fairness.png)
+]
+]
+
+.right-column[
+
+- How do we know what the right tax is? Will it be borne by the right parties?
+
+- Will it be administered correctly?
+
+- Are there opportunities for corruption?
+]
+
+---
+
+# Another Classic Economic Problem
+
+.pull-left[
+.center[
+![](../images/openland.jpg)
+]
+]
+
+.pull-right[
+
+- .hi[Tragedy of the commons]: multiple people have unrestricted access to the same .hi-purple[rivalrous] resource
+
+- .hi-purple[Rivalry]: one use of a resource removes it from other uses
+
+
+.source[Hardin, Garett, 1968, "The Tragedy of the Commons," *Science* 162(3859):1243-1248]
+
+]
+
+---
+
+# Another Classic Economic Problem
+
+.pull-left[
+.center[
+![:scale 100%](../images/pollutedriver.png)
+]
+]
+
+.pull-right[
+
+- Cannot exclude others
+
+- No responsibility over outcome
+
+- Incentive to **overexploit** and **deplete** resource (before others do)
+
+- A negative externality on others
+]
+
+---
+
+# Importance of Property Rights
+
+.pull-left[
+.smaller[
+> “.hi[Property] is a bundle of legal rights over resources that the owner is free to exercise and whose exercise is protected from interference by others” (Cooter and Ulen, p.73)
+
+- This bundle contains a lot of rights, to:
+
+> possess, use, develop, improve, transform, consume, deplete, destroy, sell, donate, bequeath, transfer, mortgage, lease, loan, or exclude others
+
+]
+
+.source[Coooter, Robert and Douglas Ulen, 2012, *Law and Economics*, 6<sup>th</sup> ed.]
+]
+
+.pull-right[
+.center[
+![](../images/propertybundleofrights.png)
+]
+]
+
+---
+
+# How Should Property Rights Be Allocated? Easy Case
+
+.pull-left[
+.smaller[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[Example]: There is a car which you value at $3,000, and I value at $4,000.
+]
+
+- It is .hi-purple[efficient] for me to end up with the car.
+
+]
+]
+
+.pull-right[
+.center[
+![](../images/car.png)
+]
+]
+
+---
+
+# How Should Property Rights Be Allocated? Easy Case
+
+.pull-left[
+.smaller[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[Example]: There is a car which you value at $3,000, and I value at $4,000.
+]
+
+- It is .hi-purple[efficient] for me to end up with the car.
+
+- Suppose I start out with the car
+
+]
+]
+
+.pull-right[
+.center[
+![](../images/car.png)
+]
+]
+
+---
+# How Should Property Rights Be Allocated? Easy Case
+
+.pull-left[
+.smaller[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[Example]: There is a car which you value at $3,000, and I value at $4,000.
+]
+
+- It is .hi-purple[efficient] for me to end up with the car.
+
+- Suppose I start out with the car
+
+- Suppose instead, *you* own the car
+
+]
+]
+
+.pull-right[
+.center[
+![](../images/car.png)
+]
+]
+
+---
+
+# How Should Property Rights Be Allocated? Easy Case
+
+.pull-left[
+
+.smaller[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.hi-green[Example]: There is a car which you value at $3,000, and I value at $4,000.
+]
+
+- It is .hi-purple[efficient] for me to end up with the car.
+
+- Suppose I start out with the car
+
+- Suppose instead, *you* own the car
+
+- .hi-turquoise[It does not matter who is *initially* assigned a property right, our bargaining will reach the efficient result]!
+]
+]
+
+.pull-right[
+.center[
+![](../images/car.png)
+]
+]
+
+---
+
+# It (Often) Doesn't Matter How We Start
+
+.pull-left[
+- This is the essence of what is called the .hi[Coase theorem]:
+
+> If .hi-purple[transaction costs are low], with .hi-purple[well-defined] and .hi-purple[tradeable property rights], parties can bargain voluntarily to reach the efficient outcome. 
+
+- Note: the starting point *does* matter for distribution!
+
+]
+
+.pull-right[
+.center[
+![](../images/Settlement-handshake.jpg)
+]
+]
+
+.source[Coase, Ronald H, 1960, “The Problem of Social Cost,” *Journal of Law and Economics* 3: 1-44]
+
+---
+
+# More Interesting: Incompatible Uses
+
+.pull-left[
+
+- We don't need to resort to law for mutually-agreeable transactions (like the car)
+
+- What's more interesting are .hi[incompatible uses] of our own property that give rise to conflict
+  - One person's use of their own property imposes an .hi-purple[externality] on another
+
+- Here, we *do* need the law to define the rights...but that's not the end of the story
+]
+
+.pull-right[
+.center[
+![](../images/coasetheoremmeme.png)
+]
+]
+
+---
+
+# Some Examples of Property Disputes
+
+.pull-left[
+.center[
+![:scale 100%](../images/dispute.jpg)
+]
+]
+
+.pull-right[
+.quitesmall[
+- .hi-green[My neighbor likes tall trees]
+  - does she have the right to plant a tree on her property that shades my pool?
+  - do I have a right to an unobstructed view? or an unshaded pool?
+
+- .hi-green[You want to have a party]
+  - do you have the right to make noise in your house/dorm?
+  - does your neighbor have the right to good nights sleep in their house/dorm?
+
+- .hi-green[I own a small plant located on a river]
+  - do I have a right to use the river for cooling?
+  - do I have a right to pollute as much as I want?
+
+]
+]
+
+---
+
+# Externalities Adjudicated at Law
+
+.pull-left[
+.smallest[
+- Most externalities in U.S. mediated through common law
+
+- Courts assess how much harm was caused
+
+- Individuals causing harm to others must pay:
+  - **compensatory damages** (to redress harms)
+  - **punitive damages** (to deter future externalities)
+    
+- Externalities persist if property rights are *not* clear or are *not* enforced
+
+]
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/court1.jpg)
+]
+]
+
+---
+
+# Summarizing Types of Goods
+
+.pull-left[
+.smallest[
+- Can classify into 4 types of goods based on .hi-purple[rivalry] & .hi-purple[excludability]
+]
+]
+
+.pull-right[
+![](../images/typesofgoods.png)
+]
+
+---
+
+# Summarizing Types of Goods
+
+.pull-left[
+.smallest[
+- Can classify into 4 types of goods based on .hi-purple[rivalry] & .hi-purple[excludability]
+
+- Economics mostly focuses on .hi[“private goods”]
+]
+]
+
+.pull-right[
+![](../images/typesofgoods.png)
+]
+
+---
+
+# Summarizing Types of Goods
+
+.pull-left[
+.smallest[
+- Can classify into 4 types of goods based on .hi-purple[rivalry] & .hi-purple[excludability]
+
+- Economics mostly focuses on .hi[“private goods”]
+
+- Largest issues with .hi[“public goods”]
+]
+]
+
+.pull-right[
+![](../images/typesofgoods.png)
+]
+
+---
+
+# Summarizing Types of Goods
+
+.pull-left[
+.smallest[
+- Can classify into 4 types of goods based on .hi-purple[rivalry] & .hi-purple[excludability]
+
+- Economics mostly focuses on .hi[“private goods”]
+
+- Largest issues with .hi[“public goods”]
+
+- Can transform public goods into .hi[“club goods”] by making them *excludable*
+  - Managed by an organization, transformed by technology
+  - Think about selective incentives
+
+]
+]
+.pull-right[
+![](../images/typesofgoods.png)
+]
+
+---
+
+# Club Goods
+
+.center[
+![](../images/clubgoods.png)
+]
+
+---
+
+# Summarizing Types of Goods
+
+.pull-left[
+.smallest[
+- Can classify into 4 types of goods based on .hi-purple[rivalry] & .hi-purple[excludability]
+
+- Economics mostly focuses on .hi[“private goods”]
+
+- Largest issues with .hi[“public goods”]
+
+- Can transform public goods into .hi[“club goods”] by making them *excludable*
+  - Managed by an organization, transformed by technology
+  - Think about selective incentives
+
+- .hi[“Common resources”] can be managed with the right set of rules or property rights (otherwise the .b[tragedy of the commons] results)
+]
+]
+.pull-right[
+![](../images/typesofgoods.png)
+]
+
+---
+
+# Common Resources
+
+.left-column[
+.center[
+![:scale 80%](../images/ostrom.jpg)
+
+.smallest[
+Elinor Ostrom
+
+1933—2012
+
+Economics Nobel 2009
+]
+]
+]
+
+.right-column[
+
+.smallest[
+- A wide variety of solutions are possible for managing common resources efficiently
+  - Government management
+  - Purely private property
+  - Civil society organizations
+
+- So long as they set up **good rules** that solve the free rider problem, remove the incentive to overuse resource, negative externality on others
+]
+
+.center[
+![:scale 25%](../images/governingthecommons.jpg)
+]
+]
+
+---
+
+# An Example, Using Social Norms
+
+.center[
+<iframe width="980" height="550" src="https://www.youtube.com/embed/wugiZzoREPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+
+# An Example: Wikipedia
+
+.pull-left[
+.center[
+![:scale 75%](../images/wikipedia.png)
+]
+]
+
+.pull-right[
+.center[
+![:scale 60%](../images/Wikipedia-paper.png)
+]
+]
+
+.source[Safner, Ryan, 2016, [“Institutional Entrepreneurship, Wikipedia, and the Opportunity of the Commons,”](https://ryansafner.com/publication/institutional-entrepreneurship-wikipedia-and-the-opportunity-of-the-commons/) *Journal of Institutional Economics* 12(4): 743-771]

@@ -1,0 +1,14 @@
+{
+  "hash": "2df34a3c25fcaa7db276eb5f3aa9754f",
+  "result": {
+    "markdown": "---\ntitle: \"3.2 — Market Competition and Surpluses — Class Content\"\nexecute:\n  freeze: auto\n---\n\n::: {.cell}\n\n:::\n\n\n::: {.callout-note appearance=\"minimal\"}\n# Meeting Date\n\n*Monday, April 10, 2023*\n:::\n\n## <i class=\"fas fa-info-circle fa-lg\"></i> Overview\n\nToday we discuss the competition that takes place in markets, and discuss the idea of consumer and producer surplus. We will also do some numerical and algebraic examples of solving for equilibrium and surpluses.\n\n## <i class=\"fas fa-book-reader fa-lg\"></i> Readings\n\n- <i class=\"fas fa-book\"></i> Ch. 2, 3.1 in Goolsbee, Levitt, and Syverson, 2019\n\n# <i class=\"fas fa-dumbbell\"></i> Practice\n\nToday we will be working on [practice problems](/practice/3.2-practice). Answers will be posted later on that page.\n\n## <i class=\"fas fa-chalkboard-teacher\"></i> Slides\n\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n::: callout-tip\nYou can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.\n:::\n\nI suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!\n\n\n<p style=\"text-align:center;\"><a target=\"_blank\" href=\"/slides/3.2-slides.html\"><img src =\"/slides/3.2-slides.png\" alt = \"3.2-slides\"></a></p>\n<p style=\"text-align:center;\"><a class=\"btn btn-primary btn-lg\" target=\"_blank\" href=\"/slides/3.2-slides.pdf\"><i class=\"fas fa-file-pdf\"></i> Download as PDF</a></p>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

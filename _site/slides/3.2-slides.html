@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>3.2 — Market Competition &amp; Surpluses</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner  Assistant Professor of Economics   safner@hood.edu   ryansafner/microS22   microS22.classes.ryansafner.com " />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: title-slide
+
+# 3.2 — Market Competition &amp; Surpluses
+
+## ECON 306 • Microeconomic Analysis • Fall 2022
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/microF22"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/microF22&lt;/a&gt;&lt;br&gt; &lt;a href="https://microF22.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;microF22.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+
+---
+
+class: inverse
+
+# Outline
+
+### [The Algebra of Calculating Equilibrium](#3)
+### [Price Competition in Markets](#7)
+### [Economic Surplus](#22)
+
+---
+
+class: center, middle, inverse
+
+# The Algebra of Calculating Equilibrium
+
+---
+
+# The Algebra of Calculating Equilibrium
+
+.pull-left[
+- Simple algebra to find equilibrium prices and quantities if we know supply and demand functions
+
+- Remember, supply and demand are each mathematical functions relating price to quantity:
+  - Demand: `\(q_D = 10-p\)`
+  - Supply: `\(q_S = 2p-8\)`
+
+- We know at equilibrium: `\(q_D=q_S\)`
+]
+
+.pull-right[
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Calculating Equilibrium: Another Example
+
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Let the supply and demand functions for a market be:
+
+`$$\begin{align*}
+	q_D&amp;=30-0.5p\\
+	q_S&amp;=2p-40\\	
+	\end{align*}$$`
+]
+
+1. Find equilibrium quantity and price `\\((q^\star, p^\star)\\)`.
+
+2. Sketch a rough graph.
+]
+
+--
+
+.pull-right[
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Price Competition in Markets
+
+---
+
+# Price Competition in Markets I
+
+.pull-left[
+
+- Markets allocate resources based on individuals’ .hi[reservation prices]:
+  - .blue[Buyers’ **max. willingness to pay**]
+  - .red[Sellers’ **min. willingness to accept**]
+
+- .hi-purple[Goods flow to those who value them the highest and away from those who value them the lowest]
+]
+
+--
+
+.pull-right[
+.center[
+![](../images/shutupandtakemymoney.gif)
+]
+]
+
+---
+
+# Price Competition in Markets II
+
+.pull-left[
+- It might .ul[look like it], but competition in markets is **NOT** between buyers vs. sellers!
+
+- In markets: 
+  - .hi-purple[buyers compete with other buyers] &amp; 
+  - .hi-purple[sellers compete with other sellers]
+
+]
+
+.pull-right[
+
+.center[
+![](../images/tugofwar.png)
+]
+]
+
+---
+
+# Price Competition Between Buyers
+
+.pull-left[
+- Buyers want to pay the *lowest* price to buy a good
+
+- But they face competition from other buyers over the same scarce goods
+
+- Buyers attempt to *raise their bids above others' reservation prices* to obtain the goods
+
+]
+
+.pull-right[
+
+.center[
+![](../images/tugofwar.png)
+]
+]
+
+---
+
+# Price Competition Between Sellers
+
+.pull-left[
+- Sellers want to get the *highest* price for a good they sell
+
+- But they face competition from other sellers over the same potential customers
+
+- Sellers attempt to *lower their asking prices below others' reservation prices* to sell their goods
+
+]
+
+.pull-right[
+
+.center[
+![](../images/tugofwar.png)
+]
+]
+
+---
+
+# An Example
+
+.pull-left[
+.center[
+![](../images/horsemarket.jpg)
+
+]
+]
+
+.pull-right[
+
+- Imagine a small public horse market
+
+- 3 people, .red[A], .red[B], and .red[C] each own 1 horse
+
+- 3 people, .blue[D], .blue[E], and .blue[F] each are potentially interested in buying a horse
+]
+
+.source[This example is based on Eugen von Bohm-Bawerk’s famous example in *Capital and Interest* (1884)]
+
+---
+
+# An Example
+
+.pull-left[
+| Person | Reservation Price |
+|--------|-------------------|
+| .red[A] | Minimum WTA: $400 |
+| .red[B] | Minimum WTA: $500 |
+| .red[C] | Minimum WTA: $600 |
+| .blue[D] | Maximum WTP: $600 |
+| .blue[E] | Maximum WTP: $500 |
+| .blue[F] | Maximum WTP: $400 |
+]
+
+.pull-right[
+
+- Imagine a small public horse market
+
+- 3 people, .red[A], .red[B], and .red[C] each own 1 horse
+
+- 3 people, .blue[D], .blue[E], and .blue[F] each are potentially interested in buying a horse
+]
+
+---
+
+
+
+# An Example
+
+.pull-left[
+| Person | Reservation Price |
+|--------|-------------------|
+| .red[A] | .red[Minimum WTA: $400] |
+| B | Minimum WTA: $500 |
+| C | Minimum WTA: $600 |
+| .blue[D] | .blue[Maximum WTP: $600] |
+| .blue[E] | .blue[Maximum WTP: $500] |
+| .blue[F] | .blue[Maximum WTP: $400] |
+
+.center[
+**Price: $400**
+]
+]
+
+.pull-right[
+
+- Suppose .blue[Buyer F] announces she will pay **$400** for a horse
+
+- Only .red[Seller A] is willing to sell at $400
+
+- Buyers .blue[D], .blue[E], and .blue[F] are willing to buy at $400
+  - .blue[D] and .blue[E] are willing to pay *more* than .blue[F] to obtain the 1 horse
+  - A **shortage**: .blue[3 buyers] for .red[1 seller]!
+  - They raise their bids *above* $400 to attract sellers
+]
+
+---
+
+# An Example
+
+.pull-left[
+| Person | Reservation Price |
+|--------|-------------------|
+| .red[A] | .red[Minimum WTA: $400] |
+| .red[B] | .red[Minimum WTA: $500] |
+| .red[C] | .red[Minimum WTA: $600] |
+| .blue[D] | .blue[Maximum WTP: $600] |
+| E | Maximum WTP: $500 |
+| F | Maximum WTP: $400 |
+
+.center[
+**Price: $600**
+]
+]
+
+.pull-right[
+
+- Suppose .red[Seller C] announces he will sell his horse for $600
+
+- Only .blue[Buyer D] is willing to buy at $600
+
+- Sellers .red[A], .red[B], and .red[C] are willing to sell at $600
+  - .red[A] and .red[B] are willing to accept *less* than .red[C] to sell their horses
+  - A **surplus**: .red[3 sellers] for .blue[1 buyer]!
+  - They lower their asks *below* $600 to attract buyers
+]
+
+---
+
+# An Example
+
+.pull-left[
+| Person | Reservation Price |
+|--------|-------------------|
+| .red[A] | .red[Minimum WTA: $400] |
+| .red[B] | .red[Minimum WTA: $500] |
+| C | Minimum WTA: $600 |
+| .blue[D] | .blue[Maximum WTP: $600] |
+| .blue[E] | .blue[Maximum WTP: $500] |
+| F | Maximum WTP: $400 |
+
+.center[
+**Price: $500**
+]
+]
+
+.pull-right[
+
+- If the market price reaches $500 (through bids and asks changing):
+
+- Sellers .red[A] and .red[B] sell their horses for $500 each
+- Buyers .blue[D] and .blue[E] buy them at $500 each
+]
+
+---
+
+# An Example
+
+.pull-left[
+| Person | Reservation Price |
+|--------|-------------------|
+| .red[A] | .red[Minimum WTA: $400] |
+| .red[B] | .red[Minimum WTA: $500] |
+| C | Minimum WTA: $600 |
+| .blue[D] | .blue[Maximum WTP: $600] |
+| .blue[E] | .blue[Maximum WTP: $500] |
+| F | Maximum WTP: $400 |
+
+.center[
+**Price: $500**
+]
+]
+
+.pull-right[
+
+- At $500, .red[B] and .blue[E] are the .hi-purple[“marginal”] buyer and seller, the “last” ones that *just* got off the fence to exchange in the market
+  - .red[B] has WTA *just* low enough to sell
+  - .blue[E] has WTP *just* high enough to buy
+
+- The marginal pair actually are the ones that “set” the market price!
+]
+
+---
+
+# An Example
+
+.pull-left[
+| Person | Reservation Price |
+|--------|-------------------|
+| .red[A] | .red[Minimum WTA: $400] |
+| .red[B] | .red[Minimum WTA: $500] |
+| C | Minimum WTA: $600 |
+| .blue[D] | .blue[Maximum WTP: $600] |
+| .blue[E] | .blue[Maximum WTP: $500] |
+| F | Maximum WTP: $400 |
+
+.center[
+**Price: $500**
+]
+]
+
+.pull-right[
+
+- Notice the most possible exchanges take place at a market price of $500
+  - 2 horses get exchanged
+
+- Any price *above* or *below* $500, only 1 horse would get exchanged
+  - Also, at least one other buyer or seller would raise/lower their bid/ask
+  
+]
+
+---
+
+# An Example
+
+.pull-left[
+| Person | Reservation Price |
+|--------|-------------------|
+| .red[A] | .red[Minimum WTA: $400] |
+| .red[B] | .red[Minimum WTA: $500] |
+| C | Minimum WTA: $600 |
+| .blue[D] | .blue[Maximum WTP: $600] |
+| .blue[E] | .blue[Maximum WTP: $500] |
+| F | Maximum WTP: $400 |
+
+.center[
+**Price: $500**
+]
+]
+
+.pull-right[
+
+- At $500, .red[C] and .blue[F] are the .hi-purple["excluded"] buyers and sellers
+  - .red[C] has WTA *too high* to sell
+  - .blue[F] has WTP *too low* to buy
+
+]
+
+---
+
+# An Example
+
+.pull-left[
+| Person | Reservation Price |
+|--------|-------------------|
+| .red[A] | .red[Minimum WTA: $400] |
+| .red[B] | .red[Minimum WTA: $500] |
+| C | Minimum WTA: $600 |
+| .blue[D] | .blue[Maximum WTP: $600] |
+| .blue[E] | .blue[Maximum WTP: $500] |
+| F | Maximum WTP: $400 |
+
+.center[
+**Price: $500**
+]
+]
+
+.pull-right[
+
+- At $500, .red[A] and .blue[D] are the .hi-purple["inframarginal"] buyers and sellers
+  - .red[A] has WTA *lower* than market price, earns extra $100 surplus from exchange
+  - .blue[D] has WTP *higher* than market price, earns extra $100 surplus from exchange
+  
+- These buyers and sellers benefit *the most* from exchange
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Economic Surplus
+
+---
+
+# Market-Clearing Prices
+
+.pull-left[
+
+- Supply and demand set the market-clearing price for all units exchanged (bought and sold)
+
+]
+
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-3-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Consumer Surplus I
+
+.pull-left[
+
+- Demand function measures how much you would *hypothetically* be willing to pay for various quantities
+  - "reservation price"
+
+- You often *actually* pay (the market-clearing price, `\(p^*)\)` a lot less than your reservation price
+
+- The difference is .hi[consumer surplus]
+
+`$$CS=WTP-p^*$$`
+
+]
+
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-4-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Consumer Surplus II
+
+.pull-left[
+
+`$$\begin{align*}
+CS&amp;=\frac{1}{2}bh\\
+CS&amp;=\frac{1}{2}(5-0)(\$10-\$5)\\
+CS&amp;=\$12.50\\
+\end{align*}$$`
+
+]
+
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-5-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Consumer Surplus III
+
+.pull-left[
+
+- An increase in market price *reduces* consumer surplus
+
+`$$\begin{align*}
+CS'&amp;=\frac{1}{2}bh\\
+CS'&amp;=\frac{1}{2}(3-0)(\$10-\$7)\\
+CS'&amp;=\$4.50\\
+\end{align*}$$`
+
+]
+
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-6-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Consumer Surplus IV
+
+.pull-left[
+
+- An decrease in market price *increases* consumer surplus
+
+`$$\begin{align*}
+CS'&amp;=\frac{1}{2}bh\\
+CS'&amp;=\frac{1}{2}(7-0)(\$10-\$3)\\
+CS'&amp;=\$24.50\\
+\end{align*}$$`
+
+]
+
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-7-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Consumer Surplus V
+
+.pull-left[
+.smallest[
+- A relatively .hi-purple[inelastic] demand curve generates *more* consumer surplus
+
+`$$\begin{align*}
+CS&amp;=\frac{1}{2}(5-0)(\$10-\$5)\\
+CS&amp;=\$12.50\\
+\end{align*}$$`
+
+]
+]
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-8-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Consumer Surplus V
+
+.pull-left[
+.smallest[
+- A relatively .hi-purple[inelastic] demand curve generates *more* consumer surplus
+
+`$$\begin{align*}
+CS&amp;=\frac{1}{2}(5-0)(\$10-\$5)\\
+CS&amp;=\$12.50\\
+\end{align*}$$`
+
+- A relatively .hi-purple[elastic] demand curve generates *less* consumer surplus
+
+`$$\begin{align*}
+CS&amp;=\frac{1}{2}(5-0)(\$7-\$5)\\
+CS&amp;=\$5.00\\
+\end{align*}$$`
+]
+]
+
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-9-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Producer Surplus I
+
+.pull-left[
+
+- Supply function measures how much you would *hypothetically* be willing to accept to sell various quantities
+  - "reservation price"
+
+- You often *actually* receive (the market-clearing price, `\(p^*)\)` a lot more than your reservation price
+
+- The difference is .hi[producer surplus]
+
+`$$PS=p^*-WTA$$`
+
+]
+
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-10-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Producer Surplus II
+
+.pull-left[
+
+`$$\begin{align*}
+PS&amp;=\frac{1}{2}bh\\
+PS&amp;=\frac{1}{2}(5-0)(\$5-\$0)\\
+PS&amp;=\$12.50\\
+\end{align*}$$`
+
+]
+
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-11-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Producer Surplus III
+
+.pull-left[
+
+- An increase in market price *increases* producer surplus
+
+`$$\begin{align*}
+PS'&amp;=\frac{1}{2}bh\\
+PS'&amp;=\frac{1}{2}(7-0)(\$7-\$0)\\
+PS'&amp;=\$24.50\\
+\end{align*}$$`
+
+]
+
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-12-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Producer Surplus IV
+
+.pull-left[
+
+- An decrease in market price *decreases* producer surplus
+
+`$$\begin{align*}
+PS'&amp;=\frac{1}{2}bh\\
+PS'&amp;=\frac{1}{2}(3-0)(\$3-\$0)\\
+PS'&amp;=\$4.50\\
+\end{align*}$$`
+
+]
+
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-13-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Producer Surplus V
+
+.pull-left[
+.smallest[
+- A relatively .hi-purple[inelastic] supply curve generates *more* producer surplus
+
+`$$\begin{align*}
+PS&amp;=\frac{1}{2}(5-0)(\$5-\$0)\\
+PS&amp;=\$12.50\\
+\end{align*}$$`
+
+]
+]
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-14-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Producer Surplus V
+
+.pull-left[
+
+.smallest[
+- A relatively .hi-purple[inelastic] supply curve generates *more* producer surplus
+
+`$$\begin{align*}
+PS&amp;=\frac{1}{2}(5-0)(\$5-\$0)\\
+PS&amp;=\$12.50\\
+\end{align*}$$`
+
+- A relatively .hi-purple[elastic] supply curve generates *less* producer surplus
+
+`$$\begin{align*}
+PS&amp;=\frac{1}{2}(5-0)(\$5-\$3)\\
+PS&amp;=\$5.00\\
+\end{align*}$$`
+
+]
+]
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-15-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Elasticities and Surpluses I
+
+.pull-left[
+.smallest[
+- The .hi-purple[more elastic] curve at `\(p^*\)` generates **less** surplus
+  - More options, easier to change choices, less benefit from *any one particular* exchange
+
+- The .hi-purple[less elastic] curve at `\(p^*\)` generates **more** surplus
+  - Fewer options, harder to change choices, more benefit from *any one particular* exchange
+
+- This is important for policies such as price controls, taxes, etc.
+]
+]
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+# Elasticities and Surpluses II
+
+.pull-left[
+
+- A good visual rule of thumb:
+
+- Compare distance between choke price and `\(p^*\)` for each curve
+
+- Bigger distance `\(\implies\)` *less* elastic in equilibrium (and vice versa)
+  - `\(\implies\)` more surplus
+]
+
+.pull-right[
+
+&lt;img src="3.2-slides_files/figure-html/unnamed-chunk-17-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Example
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+.green[**Example**]: Using last class's supply and demand functions:
+
+`$$\begin{align*}
+	q_D&amp;=10-p\\
+	q_S&amp;=2p-8\\	
+	\end{align*}$$`
+]
+
+1. Calculate the price elasticity of demand and the price elasticity of supply in equilibrium.
+
+2. Calculate the consumer surplus and producer surplus. Shade each on the graph.
+
+3. Who gets more surplus, consumers or producers, and why?
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "ocean",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

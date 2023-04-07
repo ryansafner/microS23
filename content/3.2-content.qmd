@@ -1,0 +1,44 @@
+---
+title: "3.2 — Market Competition and Surpluses — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance="minimal"}
+# Meeting Date
+
+*Monday, April 10, 2023*
+:::
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we discuss the competition that takes place in markets, and discuss the idea of consumer and producer surplus. We will also do some numerical and algebraic examples of solving for equilibrium and surpluses.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fa-book"></i> Ch. 2, 3.1 in Goolsbee, Levitt, and Syverson, 2019
+
+# <i class="fas fa-dumbbell"></i> Practice
+
+Today we will be working on [practice problems](/practice/3.2-practice). Answers will be posted later on that page.
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("3.2-slides")
+```

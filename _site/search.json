@@ -882,6 +882,48 @@
     "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
   },
   {
+    "objectID": "content/3.2-content.html#overview",
+    "href": "content/3.2-content.html#overview",
+    "title": "3.2 — Market Competition and Surpluses — Class Content",
+    "section": " Overview",
+    "text": "Overview\nToday we discuss the competition that takes place in markets, and discuss the idea of consumer and producer surplus. We will also do some numerical and algebraic examples of solving for equilibrium and surpluses."
+  },
+  {
+    "objectID": "content/3.2-content.html#readings",
+    "href": "content/3.2-content.html#readings",
+    "title": "3.2 — Market Competition and Surpluses — Class Content",
+    "section": " Readings",
+    "text": "Readings\n\n Ch. 2, 3.1 in Goolsbee, Levitt, and Syverson, 2019"
+  },
+  {
+    "objectID": "content/3.2-content.html#slides",
+    "href": "content/3.2-content.html#slides",
+    "title": "3.2 — Market Competition and Surpluses — Class Content",
+    "section": " Slides",
+    "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
+    "objectID": "content/3.3-content.html#overview",
+    "href": "content/3.3-content.html#overview",
+    "title": "3.3 — The Static Benefits of Markets: Welfare Economics & Market Failure — Class Content",
+    "section": " Overview",
+    "text": "Overview\nToday we consider how markets work and why (and when) they are so efficient at allocating resources and solving social problems. We take a crack at defining efficiency in a few ways: allocative, productive, Pareto, and Kaldor-Hicks efficiency. We then discuss Welfare Economics and I summarize three conditions about when markets are good & efficient: 1. Markets are competitive 2. Markets reach equilibrium 3. Markets do not have externalities\nThis leads us into a discussion of market failure, when markets aren’t efficient because something prevents the price system from working properly. We talk about several types of market failures: collective action problems, public goods, and externalities."
+  },
+  {
+    "objectID": "content/3.3-content.html#readings",
+    "href": "content/3.3-content.html#readings",
+    "title": "3.3 — The Static Benefits of Markets: Welfare Economics & Market Failure — Class Content",
+    "section": " Readings",
+    "text": "Readings\n\n Ch. 14.2-14.7, Ch. 16 in Goolsbee, Levitt, and Syverson, 2019\n\nYour textbook does cover efficiency and welfare economics in Chapter 14, in the context of general equilibrium theory, which is a bit too advanced for us to spend sufficient time to cover. Thus, I would not recommend reading that chapter unless you are prepared to dive into new tools (Edgeworth diagrams, production possibilities frontiers) that I will not cover in this course.\nChapter 16, however, is a pretty accessible discussion of externalities and public goods.\n\nOptional/Recommended Reading\n\n Safner, 2020, “‘Public Good,’ or ‘Good for the Public?’ Political Entrepreneurship and the Public Funding of Scientific Research”\n Safner, 2016, “Institutional Entrepreneurship, Wikipedia, and the Opportunity of the Commons”\n Freakonomics Radio ep. 115: “Parking is Hell”\n MR University: “Trading Pollution: How Pollution Permits Paradoxically Reduce Emissions”\n MR University: “Externalities and Incentives: The Economics of COVID (Vaccines)”\n The Lorax (Dr. Seuss: “How Bad Can I Be?”\n NPR: “The Nobel Laureate Who Figured Out How To Deal With Annoying People”\n MR University: “Women in Economics: Elinor Ostrom” (solving tragedy of the commons)1\n Iannaconne, 1992, “Sacrifice and Stigma: Reducing Free-riding in Cults, Communes, and Other Collectives”\n Econtalk: Iannaconne on the Economics of Religion\n\nThe following Wikipedia entries can also provide more background on today’s concepts (which are well known and standard among economists):\n\n\nOn Efficiency & Welfare:\n\n Allocative efficiency\n Productive efficiency\n Pareto efficiency\n Kaldor-Hicks efficiency\n Eminent domain\n Welfare economics\n\n\n\nOn Market Failures (and their Solutions):\n\n Market Failure\n Public good\n Externality\n Tragedy of the Commons\n The Logic of Collective Action\n Coase Theorem"
+  },
+  {
+    "objectID": "content/3.3-content.html#slides",
+    "href": "content/3.3-content.html#slides",
+    "title": "3.3 — The Static Benefits of Markets: Welfare Economics & Market Failure — Class Content",
+    "section": " Slides",
+    "text": "Slides\nBelow, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.\n\n\n\n\n\n\nTip\n\n\n\nYou can type h to see a special list of viewing options, and type o for an outline view of all the slides.\n\n\nI suggest printing the slides beforehand and using them to take additional notes in class (not everything is in the slides)!\n\n\n\n\n Download as PDF"
+  },
+  {
     "objectID": "content/index.html",
     "href": "content/index.html",
     "title": "Overview",
@@ -1160,6 +1202,55 @@
     "title": "2.5 — Short Run Profit Maximization — Practice",
     "section": "10.",
     "text": "10.\nWrite out the equation for the firm’s short run supply curve."
+  },
+  {
+    "objectID": "practice/3.2-practice.html",
+    "href": "practice/3.2-practice.html",
+    "title": "3.2 — Market Competition and Surpluses — Practice",
+    "section": "",
+    "text": "Download PDF  Answer Key\nThe supply and demand in the market for tomatoes are estimated to be: \\[\\begin{align*}\nq_D&=1000-200p\\\\\nq_S&=200p-200\\\\ \\end{align*}\\]"
+  },
+  {
+    "objectID": "practice/3.2-practice.html#section",
+    "href": "practice/3.2-practice.html#section",
+    "title": "3.2 — Market Competition and Surpluses — Practice",
+    "section": "1.",
+    "text": "1.\nCalculate the market-clearing price and quantity exchanged."
+  },
+  {
+    "objectID": "practice/3.2-practice.html#section-1",
+    "href": "practice/3.2-practice.html#section-1",
+    "title": "3.2 — Market Competition and Surpluses — Practice",
+    "section": "2.",
+    "text": "2.\nFind the inverse demand function and inverse supply function."
+  },
+  {
+    "objectID": "practice/3.2-practice.html#section-2",
+    "href": "practice/3.2-practice.html#section-2",
+    "title": "3.2 — Market Competition and Surpluses — Practice",
+    "section": "3.",
+    "text": "3.\nSketch a graph of this market, labelling key points."
+  },
+  {
+    "objectID": "practice/3.2-practice.html#section-3",
+    "href": "practice/3.2-practice.html#section-3",
+    "title": "3.2 — Market Competition and Surpluses — Practice",
+    "section": "4.",
+    "text": "4.\nCalculate the price elasticty of demand and price elasticity of supply (in equilibrium)."
+  },
+  {
+    "objectID": "practice/3.2-practice.html#section-4",
+    "href": "practice/3.2-practice.html#section-4",
+    "title": "3.2 — Market Competition and Surpluses — Practice",
+    "section": "5.",
+    "text": "5.\nCalculate the consumer surplus and producer surplus, and shade each on the graph."
+  },
+  {
+    "objectID": "practice/3.2-practice.html#section-5",
+    "href": "practice/3.2-practice.html#section-5",
+    "title": "3.2 — Market Competition and Surpluses — Practice",
+    "section": "6.",
+    "text": "6.\nWho gets greater surplus, consumers or producers, and why?"
   },
   {
     "objectID": "resources/appendices/1.2-appendix.html",

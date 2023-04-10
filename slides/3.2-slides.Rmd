@@ -382,7 +382,7 @@ class: inverse, center, middle
 
 ---
 
-# An Example
+# An Example: Price is Determined at the Margin
 
 .pull-left[
 | Person | Reservation Price |
@@ -410,7 +410,7 @@ class: inverse, center, middle
 
 ---
 
-# An Example
+# An Example: Price is Determined at the Margin
 
 .pull-left[
 | Person | Reservation Price |
@@ -439,7 +439,7 @@ class: inverse, center, middle
 
 ---
 
-# An Example
+# An Example: Excluded Parties
 
 .pull-left[
 | Person | Reservation Price |
@@ -458,7 +458,7 @@ class: inverse, center, middle
 
 .pull-right[
 
-- At $500, .red[C] and .blue[F] are the .hi-purple["excluded"] buyers and sellers
+- At $500, .red[C] and .blue[F] are the .hi-purple[“excluded”] buyers and sellers
   - .red[C] has WTA *too high* to sell
   - .blue[F] has WTP *too low* to buy
 
@@ -466,7 +466,7 @@ class: inverse, center, middle
 
 ---
 
-# An Example
+# An Example: Inframarginal Parties
 
 .pull-left[
 | Person | Reservation Price |
@@ -485,7 +485,7 @@ class: inverse, center, middle
 
 .pull-right[
 
-- At $500, .red[A] and .blue[D] are the .hi-purple["inframarginal"] buyers and sellers
+- At $500, .red[A] and .blue[D] are the .hi-purple[“inframarginal”] buyers and sellers
   - .red[A] has WTA *lower* than market price, earns extra $100 surplus from exchange
   - .blue[D] has WTP *higher* than market price, earns extra $100 surplus from exchange
   

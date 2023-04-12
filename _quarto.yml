@@ -72,6 +72,24 @@ website:
               href: content/3.1-content.qmd
             - text: "3.2 — Market Competition and Surpluses"
               href: content/3.2-content.qmd
+    - title: "Practice"
+      style: "docked"
+      search: false
+      contents:
+        - text: "1.2 — Budget Constraint"
+          href: practice/1.2-practice.qmd
+        - text: "1.4 — Utility Maximization"
+          href: practice/1.4-practice.qmd
+        - text: "1.5 — Demand"
+          href: practice/1.5-practice.qmd
+        - text: "1.7 — Price Elasticity of Demand"
+          href: practice/1.7-practice.qmd
+        - text: "2.3 — Cost Minimization"
+          href: practice/2.3-practice.qmd
+        - text: "2.5 — Short Run Profit Maximization"
+          href: practice/2.5-practice.qmd
+        - text: "3.2 — Market Competition and Surpluses"
+          href: practice/3.2-practice.qmd
     - title: "Assignments"
       style: "docked"
       search: false

@@ -33,8 +33,8 @@ Chapter 16, however, is a pretty accessible discussion of externalities and publ
 
 ### Optional/Recommended Reading
 
-- [<i class="fas fa-file-pdf"></i> Safner, 2020, "'Public Good,' or 'Good for the Public?' Political Entrepreneurship and the Public Funding of Scientific Research"](https://ryansafner.com/publication/public-good-or-good-for-the-public/)
-- [<i class="fas fa-file-pdf"></i> Safner, 2016, "Institutional Entrepreneurship, Wikipedia, and the Opportunity of the Commons"](https://ryansafner.com/publication/institutional-entrepreneurship-wikipedia-and-the-opportunity-of-the-commons/)
+- [<i class="fas fa-file-pdf"></i> Safner, 2020, "'Public Good,' or 'Good for the Public?' Political Entrepreneurship and the Public Funding of Scientific Research"](https://ryansafner.com/research/)
+- [<i class="fas fa-file-pdf"></i> Safner, 2016, "Institutional Entrepreneurship, Wikipedia, and the Opportunity of the Commons"](https://ryansafner.com/research/)
 - [<i class="fas fa-podcast"></i> *Freakonomics Radio* ep. 115: "Parking is Hell"](https://freakonomics.com/podcast/parking-is-hell-a-new-freakonomics-radio-podcast/)
 - [<i class="fab fa-youtube"></i> MR University: "Trading Pollution: How Pollution Permits Paradoxically Reduce Emissions"](https://www.youtube.com/watch?v=9tUb3MDrgEc) 
 - [<i class="fab fa-youtube"></i> MR University: "Externalities and Incentives: The Economics of COVID (Vaccines)"](https://www.youtube.com/watch?v=2EFG6dvtQ6M)

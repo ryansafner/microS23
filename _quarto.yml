@@ -74,6 +74,10 @@ website:
               href: content/3.2-content.qmd
             - text: "3.3 — The Static Benefits of Markets: Welfare Economics & Market Failure"
               href: content/3.3-content.qmd
+            - text: "3.4 — The Dynamic Benefits of Markets: Entrepreneurship, Profits, & Prices"
+              href: content/3.4-content.qmd
+            - text: "3.5 — Introduction to Political Economy"
+              href: content/3.5-content.qmd
     - title: "Practice"
       style: "docked"
       search: false
@@ -113,6 +117,8 @@ website:
               href: assignments/03-problem-set.qmd
             - text: "Problem Set 4"
               href: assignments/04-problem-set.qmd
+            - text: "Problem Set 5"
+              href: assignments/05-problem-set.qmd
         - section: "Exams"
           contents:
             - text: "Exam 1"

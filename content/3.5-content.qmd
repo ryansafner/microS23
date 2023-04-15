@@ -1,0 +1,68 @@
+---
+title: "3.5 — Introduction to Political Economy — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance="minimal"}
+# Meeting Date
+
+*Wednesday, April 13, 2023*
+:::
+
+::: callout-warning
+# Upcoming Assignment
+
+[Problem Set 5](/assignments/05-problem-set) (on classes 3.1-3.5) is due by 11:59 PM Wednesday April 26 on Blackboard Assignments.
+:::
+
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+We have seen that markets can fail under a variety of circumstances, and have suggested that government intervention can improve upon the sub-optimal outcome for society. However, just because markets may fail does not mean that government cannot also fail!
+
+We explore some examples of how governments contribute to disequilibrium and harmful outcomes by trying to intervene in markets and creating inefficiencies (through means such as price controls, taxes, and various regulations). For brevity and relevance, we focus on one set of examples: price-gouging laws and supply restrictions & regulations in the era of COVID.
+
+We extend this to a broader discussion of the role of social, political, and economic institutions in determining outcomes. In order to fairly assess outcomes, we must examine the institutions and incentives that people face, leading to various consequences (rather than necessarily blaming the people or some behavioral motivation). We also need to avoid commiting the [“nirvana fallacy”](https://en.wikipedia.org/wiki/Nirvana_fallacy) of comparing an imperfect system we see in reality with a hypothetical perfect system we can envision. This becomes an empirical question of comparing *which systems fail the least* (or are most *robust*) in practice.
+
+Lastly, depending on time, we may briefly explore the field of economics known as [“public choice”](https://en.wikipedia.org/wiki/Public_choice) — applying economic tools to understand politics by modeling it as equilibria determined by the interactions between various optimizing agents. For a full course on this, see my [ECON 410 — Public Economics](https://publics22.classes.ryansafner.com)
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- [<i class="fas fa-file-pdf"></i> Buchanan, 1984, "Politics Without Romance"](/readings/Buchanan-1984.pdf)
+- [<i class="fas fa-file-pdf"></i> Baumol, 1990, "Entrepreneurship: Productive, Unproductive, and Destructive"](/readings/Baumol-1990.pdf)
+- [<i class="fas fa-podcast"></i> *Econtalk* podcast: John Cochrane on the Pandemic](https://www.econtalk.org/john-cochrane-on-the-pandemic/)
+- [<i class="fas fa-podcast"></i> *Econtalk* podcast: Tyler Cowen on the Pandemic, Revisited](https://www.econtalk.org/tyler-cowen-on-the-pandemic-revisited/)
+
+We did not get to cover public choice theory, but Buchanan was the 1986 winner of the Nobel Prize in Economics for his pioneering work in public choice theory. This work by him is a good summary of the economic analysis of politics using basic principles we use to study markets: equilibrium resulting from exchanges and interactions between optimizing individuals pursuing their own interests.
+
+The second paper by William Baumol (who, if he lived longer, might have won the Nobel prize — he definitely earned one) is one of my favorite papers that I love to teach in classes that cover political economy. Everyone tries to better themselves, and entrepreneurship is a fundamental force in human society, the differences in outcome come from the *institutions* that channel entrepreneurship into productive, unproductive, or destructive outcomes.
+
+The last two podcasts are helpful for discussing the failures, largely of government policy, regarding the COVID-19 pandemic.
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Problem Set 5 Due Wednesday April 26
+
+[Problem Set 5](/assignments/05-problem-set) (on classes 3.1-3.5) is due by 11:59 PM Wednesday April 26 on Blackboard Assignments.
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("3.5-slides")
+```

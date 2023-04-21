@@ -1,0 +1,37 @@
+---
+title: "4.1 — Modeling Firms with Market Power — Practice"
+execute:
+  freeze: auto
+---
+
+<p style="text-align:center"><a target="_blank" href="/files/practice/4.1-practice-pdf.pdf"><span class="btn btn-primary btn-lg"><i class="fas fa-file-pdf"></i> Download PDF</a></span> <a target="_blank" href="/files/practice/4.1-practice-answers.html"><span class="btn btn-primary btn-lg"><i class="far fa-life-ring"></i> Answer Key</a></span></p>
+
+Bob's Bats produces baseball bats, and has the following costs:
+$$\begin{align*}
+C(q)&=5q^2+720\\
+MC(q)&=10q\\	
+\end{align*}$$
+
+> and faces a market demand for bats:
+
+$$q = 120-0.4p$$
+
+> where quantity is measured in thousands of bats
+
+## 1. 
+Write Bob's Marginal Revenue function.
+
+## 2.
+Find the profit-maximizing quantity and price.
+
+## 3.
+How much total profit does Bob's Bats earn? Should Bob stay or exit this industry in the long run?
+
+## 4.
+At what price would Bob's Bats break even?
+
+## 5.
+How much of Bob's price is markup (over marginal cost)?
+
+## 6.
+Calculate the price elasticity of demand at Bob's profit-maximizing price.

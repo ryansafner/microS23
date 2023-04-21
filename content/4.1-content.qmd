@@ -1,0 +1,67 @@
+---
+title: "4.1 — Modeling Firms With Market Power — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance="minimal"}
+# Meeting Date
+
+*Monday, April 24, 2023*
+:::
+
+::: callout-warning
+# Upcoming Assignment
+
+[Problem Set 5](/assignments/05-problem-set) (on classes 3.1-3.5) is due by 11:59 PM Wednesday April 26 on Blackboard Assignments.
+:::
+
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we begin our look at “imperfect competition,” where firms have market power, meaning they can charge $p>MC$ and search for the profit-maximizing quantity *and* price. Today is merely about how do change the model to understand how a firm with market power behaves. To assist us, we begin with an extreme case of a single seller, i.e. a **monopoly.** For now we only *assume* that there is a single firm, and see how it behaves differently than if it were in a competitive market. Next class we will begin to explore what could *cause* a market to have only a single seller, and what are some of the social consequences of market power.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fas fa-book"></i> Ch. 9-2-9.5 in Goolsbee, Levitt, and Syverson, 2019
+
+## <i class="fas fa-dumbbell"></i> Practice
+
+Today we will be working on [practice problems](/practice/4.1-practice). Answers will be posted later on that page.
+
+## <i class="fas fa-sigma"></i> Appendix
+
+See the online appendix for today's content:
+
+- [Monopolists Only Produce Where Demand is Elastic: Proof](/resources/appendices/4.1-appendix.html#monopolists-only-produce-where-demand-is-elastic-proof)
+- [Derivation of the Lerner Index](/resources/appendices/4.1-appendix.html#derivation-of-the-lerner-index)
+- [Firms With Market Power vs. Competitive Firms’ Responses to Market Changes](/resources/appendices/4.1-appendix.html#firms-with-market-power-vs.-competitive-firms-responses-to-market-changes)
+
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Problem Set 5 Due Wednesday April 26
+
+[Problem Set 5](/assignments/05-problem-set) (on classes 3.1-3.5) is due by 11:59 PM Wednesday April 26 on Blackboard Assignments.
+
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("4.1-slides")
+```

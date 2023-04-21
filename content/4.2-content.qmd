@@ -1,0 +1,83 @@
+---
+title: "4.2 — Consequences and Sources of Market Power — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance="minimal"}
+# Meeting Date
+
+*Wednesday, April 26, 2023*
+:::
+
+::: callout-warning
+# Upcoming Assignment
+
+[Problem Set 5](/assignments/05-problem-set) (on classes 3.1-3.5) is due by 11:59 PM Wednesday April 26 on Blackboard Assignments.
+:::
+
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+Today we continue our look at market power, by looking at the social consequences of market power: deadweight loss, allocative inefficiency, x-inefficiency, and rent-seeking; as well as the primary causes: barriers to entry of various sorts.
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fas fa-book"></i> Ch. 9.1 in Goolsbee, Levitt, and Syverson, 2019
+
+### On Rents and Rent-seeking
+
+- [<i class="fas fa-external-link-square-alt"></i> Munger, 2006, "Rent Seek and You Will Find"](https://www.econlib.org/library/Columns/y2006/Mungerrentseeking.html)
+- [<i class="fas fa-podcast"></i> *Econtalk* with Mike Munger, 2006, "Giving Away Money: An Economist's Guide to Political Life"](https://www.econtalk.org/giving-away-money-an-economists-guide-to-political-life)
+- [<i class="fas fa-file-pdf"></i> Tullock (1967), "The Welfare Cost of Tariffs, Monopolies, and Theft"](/readings/Tullock-1967.pdf)
+- [<i class="fas fa-file-pdf"></i> Kreuger (1974), "The Political Economy of the Rent-Seeking Society"](/readings/Kreuger-1974.pdf)
+- [<i class="fas fa-file-pdf"></i> Mitchell (2012), "The Pathology of Privilege"](/readings/Mitchell-2012.pdf)
+- [<i class="fas fa-podcast"></i> *NPR Planet Money* 599: "Why its Illegal to Braid Hair without a License"](https://www.npr.org/sections/money/2012/06/22/155596305/episode-381-why-its-illegal-to-braid-hair-without-a-license)
+- [<i class="fas fa-podcast"></i> Freakonomics*: "Apple vs. Samsung: Who Owns the Rectangle?"](http://freakonomics.com/2012/08/03/apple-vs-samsung-who-owns-the-rectangle/))
+
+### On Benefits of Market Power/Creative Destruction
+
+- [<i class="fas fa-file-pdf"></i> Theil (2014), "Competition is for Losers"](/readings/Theil-2014.pdf)
+- [<i class="fas fa-external-link-square-alt"></i> Manne and Stapp, 2019, "This Too Shall Pass: Unassailable Monopolies That Were, in Hindsight, Eminently Assailable"](https://truthonthemarket.com/2019/04/01/this-too-shall-pass-unassailable-monopolies-that-were-in-hindsight-eminently-assailable/)
+
+Tullock (1967) is the famous paper that first describes the idea of "rent-seeking," though he did not come up with the term, that comes from Kreuger (1974). Tullock is very readable, and shows the connections between monopoly, tariffs, and theft in terms of the rents and the rent-seeking they create. Kreuger (1974) considers rent-seeking at a national level in terms of how it harms trade and development.
+
+Mitchell (2012) is a readable collection of many ways that business and special interests rent-seek and convince governments to erect barriers to entry at the expense of competition and consumers, e.g. monopoly status, favorable regulations, subsidies, bailouts, loan guarantees, targeted tax breaks, protection from foreign competition, and noncompetitive contracts.
+
+Theil (2014) is a provocative Op-ed^[Don't let the title fool you. This was written well before the politics of 2016!] in the Wall Street Journal that is actually an excerpt from his excellent book *Zero to One: Notes on Startups, or How to Build the Future*^[Which I often teach with in in Industrial Organization.]. Theil argues that it is a poor business idea to compete in a competitive market, and for a business to be successful, it needs to be the *last*-mover in a market, such that it acts as a monopoly. If the market is still competitive and dynamic, the quest for monopoly power can have benefits to consumers in terms of creativity and innnovation (think Google, etc), since they do not have to worry as much about competition.
+
+Relevant classes from my [Spring 2020 Industrial Organization course](https://ios20.classes.ryansafner.com/):
+
+- [<i class="fas fa-external-link-square-alt"></i> 4.1 Measuring Market Power](https://ios20.classes.ryansafner.com/class/4.1-class.html)
+- [<i class="fas fa-external-link-square-alt"></i> 4.2 Antitrust I: The Law](https://ios20.classes.ryansafner.com/class/4.2-class.html)
+- [<i class="fas fa-external-link-square-alt"></i> 4.3 Antitrust II: The Paradox](https://ios20.classes.ryansafner.com/class/4.3-class.html)
+- [<i class="fas fa-external-link-square-alt"></i> 4.4 Antitrust III: Big Tech & Hipster Antitrust](https://ios20.classes.ryansafner.com/class/4.4-class.html)
+
+
+## <i class="fas fa-laptop-code"></i> Assignments
+
+### Problem Set 5 Due Wednesday April 26
+
+[Problem Set 5](/assignments/05-problem-set) (on classes 3.1-3.5) is due by 11:59 PM Wednesday April 26 on Blackboard Assignments.
+
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("4.2-slides")
+```

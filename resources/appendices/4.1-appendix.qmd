@@ -1,0 +1,338 @@
+---
+title: "4.1 — Modeling Firms With Market Power — Appendix"
+execute:
+  freeze: auto
+page-layout: full
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+library(tidyverse)
+library(ggrepel)
+knitr::opts_chunk$set(message = F,
+                      warning = F,
+                      echo = F,
+                      fig.retina = 3,
+                      fig.align = "center")
+```
+
+### Monopolists Only Produce Where Demand is Elastic: Proof
+
+Let's first show the relationship between $MR(q)$ and price elasticity of demand, $\epsilon_D$. 
+
+\begin{align*}
+MR(q) &= p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q && \text{Definition of } MR(q)\\
+\frac{MR(q)}{p} &= \frac{p}{p}+\bigg(\frac{\Delta p}{\Delta q}\bigg) \frac{q}{p} && \text{Dividing both sides by } p\\
+\frac{MR(q)}{p} &= 1+\underbrace{\bigg(\frac{\Delta p}{\Delta q}\times \frac{q}{p} \bigg)}_{\frac{1}{\epsilon}}  && \text{Simplifying}\\
+\frac{MR(q)}{p} &= 1+\frac{1}{\epsilon_D} && \text{Recognize price elasticity } \epsilon_D=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
+MR(q) &= p\bigg(1+\frac{1}{\epsilon_D}\bigg) && \text{Multiplying both sides by }p\\
+\end{align*}
+
+Remember, we've simplified $\epsilon_D = \frac{1}{slope} \times \frac{p}{q}$, where $\frac{1}{slope} = \frac{\Delta q}{\Delta p}$ because on a demand curve, $slope = \frac{\Delta p}{\Delta q}$.
+
+Now that we have this alternate expression for $MR(q)$, lets assume $MC(q) \geq 0$ and set them equal to one another to maximize profits:
+
+\begin{align*}
+MR(q) &= MC(q)\\
+p(1+\frac{1}{\epsilon_D}) & = MC(q)\\
+p(1-\frac{1}{|\epsilon_D|}) & = MC(q)\\
+\end{align*}
+
+I rearrange the last line only to remind us that $\epsilon_D$ is always negative! 
+
+Now note the following:
+
+- If $|\epsilon_D| < 1$, then $MR(q)$ is *negative*. Since $MC(q)$ is assumed to be positive, it cannot equal a negative $MR(q)$, hence this is not profit-maximizing.
+- If $|\epsilon_D| = 1$, then $MR(q)$ is 0. Only if $MC(q)$ is also 0 is this profit-maximizing.
+- If $|\epsilon_D| > 1$, then $MR(q)$ is *positive*. It can equal a positive $MC(q)$ to be profit-maximizing.
+
+Hence, a monopolist will *never* produce in the inelastic region of the demand curve (where $MR(q)<0)$, and will *only* produce at the unit elastic part of the demand curve (where $MR(q)=0)$ if $MC(q)=0$. Thus, it generally produces in the elastic region where $MR(q)>0$. 
+
+See the graphs on [slide 33](/slides/4.1-slides.html#33).
+
+### Derivation of the Lerner Index
+
+Marginal revenue is strongly related to the **price elasticity of demand**, which is $E_{D}=\frac{\Delta q}{\Delta p} \times \frac{p}{q}$^[I sometimes simplify it as $E_{D}=\frac{1}{slope} \times \frac{p}{q}$, where "slope" is the slope of the inverse demand curve (graph), since the slope is $\frac{\Delta p}{\Delta q} = \frac{rise}{run}$.]
+
+We derived marginal revenue (in the slides) as:
+$$MR(q)=p+\frac{\Delta p}{\Delta q}q$$
+
+Firms will always maximize profits where: 
+
+\begin{align*}
+MR(q)&=MC(q) && \text{Profit-max output condition}\\
+p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q&=MC(q) && \text{Definition of } MR(q)\\
+p+\bigg(\frac{\Delta p}{\Delta q}\bigg) q \times \frac{p}{p}&=MC(q) && \text{Multiplying the left by } \frac{p}{p} \text{ (i.e. 1)}\\
+p+\underbrace{\bigg(\frac{\Delta p}{\Delta q}\times \frac{q}{p} \bigg)}_{\frac{1}{\epsilon}} \times p &=MC(q) && \text{Rearranging the left}\\
+p+\frac{1}{\epsilon} \times p &=MC(q) && \text{Recognize price elasticity } \epsilon=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
+p &=MC(q) - \frac{1}{\epsilon} p && \text{Subtract  }\frac{1}{\epsilon}p \text{ from both sides}\\
+p-MC(q) &= -\frac{1}{\epsilon} p && \text{Subtract  }MC(q) \text{ from both sides}\\
+\frac{p-MC(q)}{p} &= -\frac{1}{\epsilon} && \text{Divide both sides by  }p\\
+		\end{align*}
+
+The left side gives us the fraction of price that is markup $\left(\frac{p-MC(q)}{p}\right)$, and the right side shows this is inversely related to price elasticity of demand.
+
+### Firms With Market Power vs. Competitive Firms’ Responses to Market Changes
+
+Consider a firm in a competitive market (left) and a firm with market power (right):
+
+```{r, fig.height=5}
+demand_1=function(x){10-x}
+mr_1=function(x){10-2*x}
+
+demand_2=function(x){16-x}
+mr_2=function(x){16-2*x}
+
+mc_m=function(x){x+1}
+mc_c=function(x){2*x+1}
+
+pc<-ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=mc_m, geom="line", size=2, color="red")+
+  geom_label(x=8,y=mc_m(8), color="red", label=expression(MC))+
+  geom_hline(yintercept=7, size = 2, color = "blue")+
+  geom_label(x=8,y=7, color="blue", label="Demand")+
+  geom_segment(x=6,xend=6, y=0, yend=7, size=1, linetype="dotted")+
+  scale_x_continuous(breaks = c(0,6),
+                     labels = c(0,expression(q)),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,7),
+                     labels = c(0,expression(p)),
+                     limits = c(0,14),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)+
+  labs(x = "Quantity",
+       y = "Price",
+       title = "Price-Taking Firm in Competitive Market")
+
+mp<-ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color="blue")+
+  stat_function(fun=mr_1, geom="line", size=2, color="purple")+
+  stat_function(fun=mc_m, geom="line", size=2, color="red")+
+  #stat_function(fun=mc_c, geom="line", size=2, color="red")+
+
+  
+  geom_label(x=8,y=demand_1(8), color="blue", label="Demand")+
+  geom_label(x=4,y=mr_1(4), color="purple", label=expression(MR))+
+  geom_label(x=8,y=mc_m(8), color="red", label=expression(MC))+
+  #geom_label(x=4,y=mc_c(4), color="red", label=expression(MC[c]))+
+  
+  geom_segment(x=3,xend=3, y=0, yend=7, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=3, y=7, yend=7, size=1, linetype="dotted")+
+
+  scale_x_continuous(breaks = c(0,3),
+                     labels = c(0,expression(q)),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,7),
+                     labels = c(0,expression(p)),
+                     limits = c(0,14),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)+
+  labs(x = "Quantity",
+       y = "Price",
+       title = "Price-Searching Firm with Market Power")
+
+library(patchwork)
+pc | mp
+```
+
+#### An Increase in Firms’ Marginal Cost
+
+```{r}
+mc_m2=function(x){x+1+2}
+mc_c=function(x){2*x+1}
+
+pc2 <- pc +
+  stat_function(fun=mc_m2, geom="line", size=2, color="darkred")+
+  geom_label(x=8,y=mc_m2(8), color="darkred", label=expression(MC[2]))+
+  geom_hline(yintercept=7, size = 2, color = "blue")+
+  geom_label(x=8,y=7, color="blue", label="Demand")+
+  geom_segment(x=4,xend=4, y=0, yend=7, size=1, linetype="dotted")+
+  
+  annotate("segment", x = 6, xend = 4, y = 2, yend = 2, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+
+  scale_x_continuous(breaks = c(0,4,6),
+                     labels = c(0,expression(q[2]),expression(q[1])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,7),
+                     labels = c(0,expression(p)),
+                     limits = c(0,14),
+                     expand=c(0,0))
+
+mp2<-mp+
+  stat_function(fun=mc_m2, geom="line", size=2, color="darkred")+
+  geom_label(x=8,y=mc_m2(8), color="darkred", label=expression(MC[2]))+
+  geom_segment(x=2.325, xend=2.325, y=0, yend=7.625, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=2.325, y=7.625, yend=7.625, size=1, linetype="dotted")+
+  
+  annotate("segment", x = 3, xend = 2.325, y = 2, yend = 2, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.15,"cm"), ends="last", type="closed"))+
+  annotate("segment", x = 0.5, xend = 0.5, y = 7, yend = 7.625, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.25,"cm"), ends="last", type="closed"))+
+  
+  scale_x_continuous(breaks = c(0,2.325,3),
+                     labels = c(0,expression(q[2]),expression(q[1])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,7,7.625),
+                     labels = c(0,expression(p[1]),expression(p[2])),
+                     limits = c(0,14),
+                     expand=c(0,0))
+
+pc2 | mp2
+```
+
+A competitive firm responds by only changing its output $q^\star$ (since it cannot control price), whereas the firm with market power changes both its $p^\star$ and $q^\star$.
+
+#### A Shift in Market Demand
+
+```{r}
+demand_3=function(x){14-x}
+mr_3=function(x){14-2*x}
+
+l <- ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=mc_m, geom="line", size=2, color="red")+
+  geom_label(x=8,y=mc_m(8), color="red", label=expression(MC))+
+  geom_hline(yintercept=7, size = 2, color = "blue")+
+  geom_label(x=3,y=7, color="blue", label="Demand")+
+  geom_segment(x=6,xend=6, y=0, yend=7, size=1, linetype="dotted")+
+  geom_hline(yintercept = 10, size = 2, color = "darkblue")+
+  geom_label(x=3,y=10, color="darkblue", label=expression(Demand[2]))+
+  geom_segment(x=9,xend=9, y=0, yend=10, size=1, linetype="dotted")+
+  
+  annotate("segment", x = 6, xend = 9, y = 2, yend = 2, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  annotate("segment", x = 1, xend = 1, y = 7, yend = 10, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+
+    scale_x_continuous(breaks = c(0,6,9),
+                     labels = c(0,expression(q[1]),expression(q[2])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,7,10),
+                     labels = c(0,expression(p[1]),expression(p[2])),
+                     limits = c(0,14),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)+
+  labs(x = "Quantity",
+       y = "Price",
+       title = "Price-Taking Firm in Competitive Market")
+
+r <- ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color="blue", alpha = 0.35)+
+  stat_function(fun=mr_1, geom="line", size=2, color="purple", alpha = 0.35)+
+  stat_function(fun=mc_m, geom="line", size=2, color="red")+
+  #stat_function(fun=mc_c, geom="line", size=2, color="red")+
+
+  
+  geom_label(x=8,y=demand_1(8), color="blue", label="Demand")+
+  geom_label(x=4,y=mr_1(4), color="purple", label=expression(MR))+
+  geom_label(x=8,y=mc_m(8), color="red", label=expression(MC))+
+  #geom_label(x=4,y=mc_c(4), color="red", label=expression(MC[c]))+
+  
+  geom_segment(x=3,xend=3, y=0, yend=7, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=3, y=7, yend=7, size=1, linetype="dotted")+
+
+  geom_segment(x=4.333,xend=4.333, y=0, yend=demand_3(4.333), size=1, linetype="dotted")+
+  geom_segment(x=0,xend=4.333, y=demand_3(4.333), yend=demand_3(4.333), size=1, linetype="dotted")+
+
+  stat_function(fun=demand_3, geom="line", size=2, color="darkblue")+
+  geom_label(x=5,y=demand_3(5), color="darkblue", label=expression(Demand[2]))+
+  stat_function(fun=mr_3, geom="line", size=2, color="purple")+
+  geom_label(x=2.5,y=mr_3(2.5), color="purple", label=expression(MR[2]))+
+
+  annotate("segment", x = 3, xend = 4.333, y = 3, yend = 3, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  annotate("segment", x = 0.5, xend = 0.5, y = 7, yend = demand_3(4.333), colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+
+  scale_x_continuous(breaks = c(0,3,4.333),
+                     labels = c(0,expression(q[1]),expression(q[2])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,7,demand_3(4.333)),
+                     labels = c(0,expression(p[1]),expression(p[2])),
+                     limits = c(0,14),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)+
+  labs(x = "Quantity",
+       y = "Price",
+       title = "Price-Searching Firm with Market Power")
+
+l | r 
+```
+
+Both firms change $p^\star$ and $q^\star$, but there is a much smaller change in $q^\star$ for the monopolist.
+
+#### A Change in Price Elasticity of Demand
+
+```{r}
+demand_cr=function(x){7.75-0.5*x}
+
+l2<- ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color="blue", alpha =0.5)+
+    geom_label(x=9,y=demand_1(9), color="blue", label="Demand")+
+    stat_function(fun=mc_m, geom="line", size=2, color="red")+
+    geom_label(x=9,y=mc_m(9), color="red", label="Supply")+
+    stat_function(fun=demand_cr, geom="line", size=2, color="blue")+
+    geom_label(x=9,y=demand_cr(9), color="blue", label=expression(Demand[E]))+
+
+  geom_segment(x=4.5,xend=4.5, y=0, yend=5.5, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=4.5, y=5.5, yend=5.5, size=1, linetype="dotted")+
+  scale_x_continuous(breaks = c(0,4.5),
+                     labels = c(0,expression(q[c])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,5.5),
+                     labels = c(0,expression(p[c])),
+                     limits = c(0,14),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)+
+  labs(x = "Quantity",
+       y = "Price",
+       title = "Competitive Market")
+
+demand_r=function(x){8.5-0.5*x}
+mr_r=function(x){8.5-1*x}
+
+r2<- ggplot(data=tibble(x=1:10), aes(x=x))+
+  stat_function(fun=demand_1, geom="line", size=2, color="blue",alpha=0.3)+
+  stat_function(fun=mr_1, geom="line", size=2, color="purple",alpha=0.3)+
+  stat_function(fun=mc_m, geom="line", size=2, color="red")+
+
+  stat_function(fun=demand_r, geom="line", size=2, color="blue")+
+  stat_function(fun=mr_r, geom="line", size=2, color="purple")+
+
+  
+  geom_label(x=8,y=demand_1(8), color="blue", label=expression(Demand[1]), alpha=0.3)+
+  geom_label(x=4,y=mr_1(4), color="purple", label=expression(MR[1]), alpha=0.3)+
+  geom_label(x=8,y=mc_m(8), color="red", label=expression(MC))+
+
+  geom_label(x=8.5,y=demand_r(8.5), color="blue", label=expression(Demand[E]))+
+  geom_label(x=4.25,y=mr_r(4.25), color="purple", label=expression(MR[E]))+
+
+  
+  geom_segment(x=3,xend=3, y=0, yend=7, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=3, y=7, yend=7, size=1, linetype="dotted")+
+
+  geom_segment(x=3.75,xend=3.75, y=0, yend=6.5, size=1, linetype="dotted")+
+  geom_segment(x=0,xend=3.75, y=6.5, yend=6.5, size=1, linetype="dotted")+
+
+  annotate("segment", x = 3, xend = 3.75, y = 3, yend = 3, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.2,"cm"), ends="last", type="closed"))+
+  annotate("segment", x = 0.5, xend = 0.5, y = 7, yend = 6.5, colour = "black", size=2, alpha=1, arrow=arrow(length=unit(0.2,"cm"), ends="last", type="closed"))+
+
+  scale_x_continuous(breaks = c(0,3,3.75),
+                     labels = c(0,expression(q[1]), expression(q[2])),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,6.5,7),
+                     labels = c(0,expression(p[2]), expression(p[1])),
+                     limits = c(0,14),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=12)+
+  labs(x = "Quantity",
+       y = "Price",
+       title = "Price-Searching Firm with Market Power")
+
+l2 | r2
+```
+
+For the competitive market on the left, there is no change in $q^\star$ or $p^\star$ for the *industry*! On the right, the monopolist will lower (raise) $p^\star$ and raise (lower) $q^\star$ as demand becomes more (less) elastic!

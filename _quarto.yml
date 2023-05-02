@@ -131,6 +131,8 @@ website:
               href: assignments/04-problem-set.qmd
             - text: "Problem Set 5"
               href: assignments/05-problem-set.qmd
+            - text: "Problem Set 6"
+              href: assignments/06-problem-set.qmd
         - section: "Exams"
           contents:
             - text: "Exam 1"

@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>4.5 — Contestable Markets &amp; Wrap Up</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Safner" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: title-slide
+
+# 4.5 — Contestable Markets &amp; Wrap Up
+
+## ECON 306 • Microeconomic Analysis • Spring 2023
+
+### Ryan Safner&lt;br&gt; Associate Professor of Economics &lt;br&gt; &lt;a href="mailto:safner@hood.edu"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;safner@hood.edu&lt;/a&gt; &lt;br&gt; &lt;a href="https://github.com/ryansafner/microS23"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;ryansafner/microS23&lt;/a&gt;&lt;br&gt; &lt;a href="https://microS23.classes.ryansafner.com"&gt; &lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;microS23.classes.ryansafner.com&lt;/a&gt;&lt;br&gt;
+
+---
+
+class: inverse
+
+# Outline
+
+### [Game Theory: Some Generalizations](#3)
+### [Contestable Markets](#17)
+### [Wrapping Up the Semester](#39)
+
+---
+
+class: inverse, center, middle
+
+# Game Theory: Some Generalizations
+
+---
+
+# Game Theory: Some Generalizations
+
+.pull-left[
+.center[
+![:scale 80%](../images/game_hex.png)
+
+.smallest[
+See my [game theory course](https://gamef21.classes.ryansafner.com) for more
+]
+]
+]
+
+.pull-right[
+
+There's a *lot* more to game theory than a one-shot prisoners' dilemma:
+
+- one shot vs. repeated game
+
+- discrete vs. continuous strategies
+
+- perfect vs. imperfect vs. incomplete/asymmetric information
+
+- simultaneous vs. sequential games
+
+]
+
+---
+
+# Solution Concepts
+
+.pull-left[
+.center[
+![:scale 100%](../images/equilibriumbalance.png)
+]
+]
+
+.pull-right[
+
+.smallest[
+- We use various .hi-purple[“solution concepts”] to allow us to predict an .hi-purple[equilibrium] of a game
+
+- .hi[Nash Equilibrium] is the primary solution concept
+  - Note it has *many* variants depending on type of game!
+
+- Recall, .hi[Nash Equilibrium]: no players want to change their strategy given what everyone else is playing
+  - All players are playing a best response to each other
+]
+]
+
+---
+
+# Solution Concepts: Nash Equilibrium
+
+.pull-left[
+.center[
+![:scale 100%](../images/equilibriumbalance.png)
+]
+]
+
+.pull-right[
+
+- Important about Nash equilibrium:
+
+1. N.E. `\(\neq\)` the “*best*” or *optimal* outcome
+  - Recall the Prisoners' Dilemma!
+
+2. Game may have *multiple* N.E.
+
+3. Game may have *no* N.E. (in “pure” strategies)
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game.png)
+]
+]
+
+.pull-right[
+
+- A .hi-purple[Coordination Game]
+  - No dominant strategies
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game_Nashes.png)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Two Nash equilibria]: (.red[A],.blue[A]) and (.red[B],.blue[B])
+  - Either just as good
+  - Coordination is most important
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game_Nashes.png)
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[1) Cell-by-Cell Inspection]: look in each cell, does either player want to deviate?
+  - .hi-purple[If no: a Nash equilibrium]
+  - If yes: *not a Nash equilibrium*
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game.png)
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game_1br.png)
+
+.red[Player 1's] best responses
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game_2br.png)
+
+.blue[Player 2's] best responses
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# Example: Coordination Game
+
+.pull-left[
+.center[
+![:scale 100%](../images/standards_game_brnashes.png)
+
+.hi-purple[N.E.]: each player is playing a best response
+]
+]
+
+.pull-right[
+
+- Two general methods to solve for Nash equilibria:
+
+.hi-purple[2) Best-Response Analysis]: take the perspective of each player. If the other player plays a particular strategy, what is your strategy(s) that gets you the highest payoff?
+  - Ties are allowed
+  - .hi-purple[Any cell where both players are playing a best response is a Nash Equilibrium]
+
+]
+
+---
+
+# A Change in the Game
+
+.pull-left[
+.center[
+![](../images/standards_game_lockin.png)
+]
+]
+
+.pull-right[
+
+- Two Nash equilibria again: (.red[A],.blue[A]) and (.red[B],.blue[B])
+
+- But here (.red[A],.blue[A]) `\(\succ\)` (.red[B],.blue[B])!
+
+]
+
+---
+
+# A Change in the Game
+
+.pull-left[
+.center[
+![](../images/standards_game_lockin.png)
+]
+]
+
+.pull-right[
+- .hi-purple[Path Dependence]: early choices may affect later ability to choose or switch
+
+- .hi-purple[Lock-in]: the switching cost of moving from one equilibrium to another becomes prohibitive
+
+- Suppose we are currently in equilibrium (B,B)
+
+- .hi-purple[Inefficient lock-in]:
+  - Standard A is superior to B
+  - But too costly to switch from B to A
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Contestable Markets
+
+---
+
+# Is Monopoly a Nash Equilibrium?
+
+.pull-left[
+
+- Now that we understand Nash equilibrium...
+
+- Are outcomes of other market structures Nash equilibria?
+
+]
+
+.pull-right[
+
+.center[
+![](../images/goingoutofbusiness.jpg)
+
+![:scale 75%](../images/entry.jpg)
+]
+]
+
+---
+
+# Is Monopoly a Nash Equilibrium?
+
+.pull-left[
+
+- Now that we understand Nash equilibrium...
+
+- Are outcomes of other market structures Nash equilibria?
+
+- **Perfect competition**: no firm wants to raise or lower price given the market price `\(\checkmark\)`
+
+]
+
+.pull-right[
+
+.center[
+![](../images/goingoutofbusiness.jpg)
+
+![:scale 75%](../images/entry.jpg)
+]
+]
+
+---
+
+# Is Monopoly a Nash Equilibrium?
+
+.pull-left[
+
+- **Monopolist** maximizes `\(\pi\)` by setting `\(q^*\)`: `\(MR=MC\)` and `\(p^*=Demand(q^*)\)`
+
+- This is *an* equilibrium, but is it the *only* equilibrium?
+
+- We've assumed just a *single* player in the model
+
+- .hi-purple[What about *potential* competition?]
+
+]
+
+.pull-right[
+
+.center[
+![](../images/goingoutofbusiness.jpg)
+
+![:scale 75%](../images/entry.jpg)
+]
+]
+
+---
+
+# Contestable Markets I
+
+.pull-left[
+
+- Model the market as an .hi-purple[entry game], with two players:
+
+1. .hi-red[**Incumbent**] which sets its price `\(\color{red}{p_I}\)`
+
+2. .hi-blue[**Entrant**] decides to **stay out** or **enter** the market, setting its price `\(\color{blue}{p_E}\)`
+
+- Price competition between 2 firms with similar products `\(\implies\)` .hi-purple[consumers buy only from firm with lower price]
+
+]
+
+.pull-right[
+
+.center[
+![](../images/goingoutofbusiness.jpg)
+
+![:scale 75%](../images/entry.jpg)
+]
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+.smallest[
+- Suppose both firms have identical costs: 
+`$$\begin{align*}
+C(q)&amp;=cq\\
+MC(q)&amp;=c\\ \end{align*}$$`
+
+- If .hi-red[Incumbent] sets `\(\color{red}{p_I}&gt;c\)`
+  - .hi-blue[Entrant] would enter and set `\(\color{blue}{p_E}=\color{red}{p_I}-\epsilon\)`&lt;sup&gt;.magenta[†]&lt;/sup&gt;
+]
+
+]
+
+.pull-right[
+.center[
+![](../images/marketcompetition.jpg)
+]
+]
+
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; For arbitrary `\\(\epsilon&gt;0\\)`, think `\\(\epsilon =\\)` “one penny”]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+.smallest[
+- .hi-green[Case I]: Suppose both firms have identical costs: 
+`$$\begin{align*}
+C(q)&amp;=cq\\
+MC(q)&amp;=c\\ \end{align*}$$`
+
+- If .hi-red[Incumbent] sets `\(\color{red}{p_I}&gt;c\)`
+  - .hi-blue[Entrant] would enter and set `\(\color{blue}{p_E}=\color{red}{p_I}-\epsilon\)`&lt;sup&gt;.magenta[†]&lt;/sup&gt;
+  - .hi-red[Incumbent] foresees this possibility, and wants to lower its price `\(\color{red}{p_I}&lt;\color{blue}{p_E}\)`
+  - This potential undercutting would continue logically until...
+
+]
+
+]
+
+.pull-right[
+.center[
+![](../images/marketcompetition.jpg)
+]
+]
+
+.footnote[&lt;sup&gt;.magenta[†]&lt;/sup&gt; For arbitrary `\\(\epsilon&gt;0\\)`, think `\\(\epsilon =\\)` “one penny”]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- .hi-purple[Nash Equilibrium]: `\(\big(\color{red}{p_I}=c\)`, .blue[Stay Out] `\(\big)\)`
+
+- .hi-purple[A market with a single firm, but the **competitive outcome**!]
+  - `\(p^*=MC\)`, `\(\color{green}{\pi=0}\)`
+  - competitive `\(q^*\)`
+  - max .hi-blue[Consumer Surplus], no DWL
+]
+
+.pull-right[
+
+&lt;img src="4.5-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- .hi-green[Case II]: What if the .hi-blue[Entrant] has *higher costs* than the .hi-red[Incumbent]: `\(\color{blue}{c_E}&gt;\color{red}{c_I}\)`?
+  - Or alternatively, there are **sunk costs** (.red[Incumbent] has already incurred)
+
+]
+
+.pull-right[
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- .hi-green[Case II]: What if the .hi-blue[Entrant] has *higher costs* than the .hi-red[Incumbent]: `\(\color{blue}{c_E}&gt;\color{red}{c_I}\)`?
+  - Or alternatively, there are **sunk costs** (.red[Incumbent] has already incurred)
+
+- .hi-purple[Nash equilibrium]: `\(\big(\color{red}{p_I}=\color{blue}{c_E-\epsilon}\)`, .blue[Stay Out] `\(\big)\)`
+
+- One firm again, with some inefficiency
+  - But not as bad as monopoly!
+]
+
+.pull-right[
+
+&lt;img src="4.5-slides_files/figure-html/unnamed-chunk-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Contestable Markets: Recap
+
+.pull-left[
+- .hi-purple[Markets are **contestable** if]:
+  1. There are no barriers to entry or exit
+  2. Firms have similar technologies (i.e. similar cost structure)
+  3. There are no sunk costs
+  
+- Generalizes "prefect competition" model in more realistic way, also game-theoretic
+]
+
+.pull-right[
+.center[
+![](../images/marketcompetition.jpg)
+]
+]
+
+---
+
+# Contestable Markets: Summary
+
+.left-column[
+
+.center[
+![:scale 80%](../images/baumol1.jpg)
+
+William Baumol
+
+(1922--2017)
+
+]
+]
+
+.right-column[
+
+&gt; "This means that...an incumbent, even if he can threaten retaliation after entry, dare not offer profit-making opportunities to potential entrants because an entering firm can hit and run, gathering in the available profits and departing when the going gets rough." 
+
+]
+
+.source[Baumol, William, J, 1982, "Contestable Markets: An Uprising in the Theory of Industry Structure," *American Economic Review,* 72(1): 1-15]
+
+---
+# Implications for Competition
+
+.pull-left[
+.center[
+![](../images/marketcompetition.jpg)
+]
+]
+
+.pull-right[
+
+- Regulation &amp; antitrust (once) focus(ed) on *number* of firms
+    - “Count the number of firms, if it's 1, it's a monopoly!”microf21
+
+- .hi-turquoise[Perfect competition as “gold standard”, only market arrangement that is socially efficient]:
+  - .hi-purple[Allocatively efficient]: `\(p=MC\)`, `\(DWL=0\)`
+  - .hi-purple[Productively efficient]: `\(p=AC_{min}\)`
+]
+
+---
+
+# Implications for Competition
+
+.pull-left[
+.center[
+![](../images/marketcompetition.jpg)
+]
+]
+
+.pull-right[
+
+- But number of firms is **endogenous** and **can evolve over time**!
+  - Function of how firms mutually interact strategically
+
+- A more **dynamic** situation: firms respond over time
+
+]
+
+---
+
+# Implications for Competition
+
+.pull-left[
+.center[
+![](../images/marketcompetition.jpg)
+]
+]
+
+.pull-right[
+
+- Perfect competition **not** the *only* socially efficient market-structure
+  - Market with number of firms (even 1) may be efficient .hi[if it is contestable]
+
+- .hi-purple[Regulation and antitrust should consider whether a market is *contestable*, not just the *number* of firms]
+  - Free entry
+  - No sunk costs
+]
+
+---
+# Implications for Competition
+
+.pull-left[
+.center[
+![](../images/marketcompetition.jpg)
+]
+]
+
+.pull-right[
+
+- Firms engaging in egregious monopolistic behavior `\((\downarrow q\)`, `\(\uparrow p&gt;MC\)`, `\(\pi&gt;0\)`) largely persist because of .hi-purple[barriers to entry]
+  - Attempts to make market **uncontestable**
+
+- Business activities or political dealings with the goal to raise `\(\color{blue}{c_E}&gt;\color{red}{c_I}\)`
+  - Lower your own costs, or raise your rivals'!
+
+]
+
+---
+
+# Monopoly Or Contestable Market?
+
+.center[
+![](../images/microsoftantitrust.png)
+]
+
+---
+
+# Contestable Markets
+
+.pull-left[
+.center[
+![:scale 100%](../images/browsers.png)
+]
+]
+
+.pull-right[
+
+&gt; "Of far greater concern to Microsoft is the competition from new and emerging technologies, some of which are currently visible and others of which certainly are not. This array of known, emerging, and wholly unknown competitors places enormous pressure on Microsoft to price competitively and innovate aggressively." (Schmalensee 1999)
+
+]
+
+---
+
+# Contestable Markets
+
+.center[
+![](../images/pcsmonopoly.jpg)
+]
+
+---
+
+# Contestable Markets
+
+.center[
+![](../images/amazoncloudcontest3.png)
+]
+
+---
+
+class: inverse, center, middle
+
+# Wrapping Up the Semester
+
+---
+
+# So What's the Point of All Our Models?
+
+.pull-left[
+- In perfect competition (model):
+  - price-taking firms set price equal to marginal cost
+  - long run economic profits are zero
+  - allocative efficiency: consumer and producer surplus maximized
+
+- This is a *tendency* .hi[only because of **free entry and exit**]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](../images/donotenter.png)
+]
+]
+
+---
+
+# So What's the Point of All Our Models?
+
+.pull-left[
+
+- .hi-turquoise[Don't judge real markets by their similarity to the perfect competition model]
+
+- Judge them more on their level of contestability, look for barriers to entry
+
+&gt; “All models are wrong, but some are useful” — George Box
+
+]
+
+.pull-right[
+.center[
+![](../images/citymodel.jpg)
+]
+]
+
+---
+
+# So What's the Point of All Our Models?
+
+.pull-left[
+
+.quitesmall[
+&gt; "...In that Empire, the Art of Cartography attained such Perfection that the map of a single Province occupied the entirety of a City, and the map of the Empire, the entirety of a Province.  In time, those Unconscionable Maps no longer satisfied, and the Cartographers Guilds struck a Map of the Empire whose size was that of the Empire, and which coincided point for point with it. The following Generations, who were not so fond of the Study of Cartography as their Forebears had been, saw that that vast Map was Useless... — Suarez Miranda, *Viajes de varones prudentes*, Libro IV, Cap. XLV, Lerida, 1658"
+
+]
+
+.source[Jorge Luis Borges, 1946, *On Exactitude in Science*]
+]
+
+.pull-right[
+.center[
+![](../images/citymodel.jpg)
+]
+]
+
+---
+
+# The Two Major Models of Economics as a “Science”
+
+.pull-left[
+
+## Optimization
+
+- Agents have .hi[objectives] they value
+
+- Agents face .hi[constraints]
+
+- Make .hi[tradeoffs] to maximize objectives within constraints
+
+.center[
+![](../images/optimize.jpeg)
+]
+]
+
+--
+
+.pull-right[
+
+## Equilibrium
+
+- Agents .hi[compete] with others over **scarce** resources
+
+- Agents .hi[adjust] behaviors based on prices
+
+- .hi[Stable outcomes] when adjustments stop
+
+.center[
+![](../images/equilibriumbalance.png)
+]
+
+]
+
+---
+
+# Why A Little Knowledge Can Be a Bad Thing
+
+.pull-left[
+.bg-washed-red.b--dark-red.ba.bw2.br3.shadow-5.ph4.mt5[
+.red[**Caution**:] Two types of (advanced) mistakes:
+]
+1. Believing the model accurately *describes* reality (100%) and ignoring the model’s flaws
+
+2. Believing the model is ideal, and reality *should* be *corrected* to better match the model
+]
+
+.pull-right[
+.center[
+![](../images/Mountstupid.png)
+]
+.source[Source: [SMBC](https://www.smbc-comics.com/?id=2475)]
+]
+
+---
+
+# I’m Not An Idiot
+
+.pull-left[
+
+- I know you most of you took this class as a business requirement...
+
+- ...and will forget all the advanced tools in under a week
+
+- They were/are meant to familiarize you with how economists model the world
+
+- If you ever need to solve a problem, they are a tool may apply
+]
+
+.pull-right[
+.center[
+![](4.4-slides_files/figure-html/unnamed-chunk-8-1.png)
+]
+]
+
+---
+
+# Economics Uses, but Is Not Limited to, Math
+
+&lt;img src="4.5-slides_files/figure-html/unnamed-chunk-3-1.png" width="864" style="display: block; margin: auto;" /&gt;
+
+---
+# But Remembering the Takeaways Will Serve You
+
+.pull-left[
+
+.quitesmall[
+Even if you aren’t going to be an economist, remember:
+
+1. People respond to incentives
+
+2. We all have to face tradeoffs (including in politics)
+
+3. Everyone makes choices on the margin
+
+4. People *tend* to adjust to each other towards a (predictable) equilibrium
+
+5. Incentives and institutions matter (beware the nirvana fallacy)
+
+6. Role of (potential) competition (over time) &amp; free entry
+
+7. Markets are a discovery process via prices, profit &amp; loss 
+
+8. Beware, rent-seeking is everywhere and cleverly hidden
+]
+]
+
+.pull-right[
+.center[
+![](../images/leo_point.PNG)
+]
+]
+
+---
+
+# Economics Is Broader Than You Think
+
+.center[
+![:scale 82%](../images/cooleconbooks.png)
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "ocean",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

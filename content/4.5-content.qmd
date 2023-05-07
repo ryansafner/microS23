@@ -1,0 +1,46 @@
+---
+title: "4.5 — Game Theory, Contestable Markets & Wrap Up — Class Content"
+execute:
+  freeze: auto
+---
+
+```{r, echo = F}
+source(here::here("slides", "slide-links.R"))
+```
+
+::: {.callout-note appearance="minimal"}
+# Meeting Date
+
+*Monday, May 8, 2023*
+:::
+
+## <i class="fas fa-info-circle fa-lg"></i> Overview
+
+We wrap up today by discussing some more about game theory (beyond mere prisoners' dilemmas), and apply these insights in general to market competition by considering one final model of a **contestable market**. Then we will wrap up and summarize the semester before reviewing for the final exam. 
+
+## <i class="fas fa-book-reader fa-lg"></i> Readings
+
+- <i class="fas fas fa-book"></i> Ch. 11 in Goolsbee, Levitt, and Syverson, 2019
+
+### Recommended Reading
+
+- [<i class="fas fa-file-pdf"></i> Baumol, William, 1982, [“Contestable Markets: An Uprising in the Theory of Industry Structure”](/files/readings/Baumol-1982.pdf)
+- <i class="fas fa-file-pdf"></i> Hayek, Friedrich A, 1948, [“The Meaning of Competition”](https://mises.org/library/meaning-competition), Chapter V in *Individualism and Economic Order*
+- <i class="fas fas fa-book"></i> Kirzner, Israel M, 1973, [*Competition and Entrepreneurship*](http://www.sjsu.edu/people/john.estill/courses/158-s15/Israel%20Kirzner%20-%20Competition%20And%20Entrepreneurship.pdf)
+
+## <i class="fas fa-chalkboard-teacher"></i> Slides
+
+Below, you can find the slides in two formats. Clicking the image will bring you to the html version of the slides in a new tab. The lower button will allow you to download a PDF version of the slides.
+
+::: callout-tip
+You can type <kbd>h</kbd> to see a special list of viewing options, and type <kbd>o</kbd> for an outline view of all the slides.
+:::
+
+I suggest printing the slides beforehand and using them to take additional notes in class (*not everything* is in the slides)!
+
+```{r}
+#| echo: false
+#| output: asis
+
+slide_links("4.5-slides")
+```

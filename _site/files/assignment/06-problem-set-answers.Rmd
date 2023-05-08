@@ -1,6 +1,6 @@
 ---
 title: "Problem Set 6 (Solutions)"
-author: "ECON 306 — Fall 2022"
+author: "ECON 306 — Spring 2023"
 date: ""
 output:
   html_document:
@@ -138,7 +138,7 @@ Show all work for calculations. You may lose points, even if correct, for missin
 
 #### Consider the following *Entry game* in normal form. Suppose there are two firms, each of whom can choose to Enter a market, or Stay Out. If both firms enter, they split the market, each earning $50. If both stay out, each firm earns $0. If one enters and the other stays out, the entrant can act as a monopolist and earns $100, with the other firm earning $0.
 
-![](../images/entrygame1.png)
+![](../../images/entrygame1.png)
 
 #### What is the Nash Equilibrium of this game?
 

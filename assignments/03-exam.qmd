@@ -1,0 +1,68 @@
+---
+title: "Final Exam"
+execute: 
+  freeze: auto
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+```
+
+::: {.callout-warning appearance="minimal"}
+The final exam will be held during the College-determined date and time: 
+
+Friday, May 12 (11:30 AM-2:00 PM)
+:::
+
+# Exam Information
+
+**You may not have anything with you** for the exam (no notes, etc) **except a calculator.** I write questions such that you can get a perfect score *without* a calculator, and answers should typically be simple whole numbers. However, I understand that if nothing else, calculators are moral support and you can use them. I will provide simple calculators if you need to borrow one, as well as extra paper.
+
+I write the exam so that most students can complete it in less than the required time, but you will have the whole class period, plus a few minutes between classes. Questions draw from concepts in the slides and whatever we discuss in class, **no other outside knowledge is needed.**
+
+You may need to draw graphs — I will grade you based on labeling important points, not on drawing ability or perfect accuracy.
+
+**You must show your work for all problems.** On all exam questions, **I give points for partial credit.** The more of your thought process you show (if you are unsure), the more points I am able to give. **Both correct answers with no work shown, or blank answers will not receive full points.**
+
+Please plan to come in and leave a seat between you and your neighbor.
+
+If you have any approved testing accommodations, or know in advance you must be absent, please confirm with me ASAP and we will make arrangements.
+
+# Concepts Study Guide
+
+- [<i class="fas fa-file-pdf"></i> Download PDF](/files/examprep/exam_3_study_guide.pdf)
+
+# “Practice” Exam
+
+- [<i class="fas fa-file-pdf"></i> Download Old Final Exam](/files/examprep/Exam3.pdf)
+<!-- [<i class="far fa-life-ring"></i> Answer Key](/files/examprep/Exam3_Answer_Key.pdf)-->
+
+Above, you have a previous semester's actual exam. Use it to get a sense of what questions are asked, the format, and how many. **The exact number and type of questions on our exam may be different.**
+
+Questions draw from topics in Units III and IV and just because topics or questions were not in the practice exam does NOT mean they may not show up on your exam.**^[I hope that this is obvious. I write this to ensure there is no misunderstanding.] Aside from minor extensions, no mathematical problem on any exam should be something you have not seen in some form before. 
+
+Look at the practice exam *before* our Review day. I will post the answer key during the weekend. I am happy to discuss other individual answers and strategies during Office Hours.
+
+# My Advice
+
+Make sure you do all of the homework problems and learn from the answer keys to the homeworks, as well as the in-class practice problems. All of the math problems are largely in the same style as the in-class & homework questions. While some of the questions should be novel applications, conceptual questions on homeworks will get you in the right headspace to think about answering a question on an exam.^[The point of exams is to *apply* what you've learned, not to literally regurgitate it! Or, at least, it should be.]
+
+The number one cause of problems for students is overthinking the question. **I am almost never trying to trick you!** I am usually looking for a straightforward answer that can be explained in a simple sentence.
+
+I also suggest *not* trying to memorize relationships (i.e. whether cross-price elasticity of demand is positive or negative for complements; price and revenue move together when demand is inelastic, etc.)! You have an equal chance of remembering it correctly or incorrectly. I would rather recommend you use your intuition and think through a real life example that makes sense, which will then match the math.
+
+## Things that are worth memorizing:
+
+- How to find inverse demand and inverse supply equations from demand and supply equations
+- How to calculate the equilibrium price and quantity from supply and demand
+- What a surplus and a shortage is, what causes them, and how they resolve in markets
+- What consumer surplus & producer surplus means, how to find it on a graph, measure it $(area=\frac{1}{2}bh)$, and how price elasticity affects it
+- Different types of efficiency: allocative, productive, Pareto, Kaldor-Hicks
+- Conditions for when markets are efficient
+- Various market failures: public goods, externalities
+- Dynamic benefits of markets: entrepreneurship, markets as a discovery process, how prices provide information and incentives to use resources, how profits and losses guide production
+- Sources of market power, barriers to entry
+- Consequences of market power: deadweight loss, rent-seeking
+- Price discrimination
+- Oligopoly
+- Monopolistic competition

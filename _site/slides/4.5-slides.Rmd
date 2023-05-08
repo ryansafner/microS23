@@ -752,7 +752,6 @@ William Baumol
 .pull-right[
 
 - Regulation & antitrust (once) focus(ed) on *number* of firms
-    - “Count the number of firms, if it's 1, it's a monopoly!”microf21
 
 - .hi-turquoise[Perfect competition as “gold standard”, only market arrangement that is socially efficient]:
   - .hi-purple[Allocatively efficient]: $p=MC$, $DWL=0$
@@ -847,14 +846,6 @@ William Baumol
 
 .center[
 ![](../images/pcsmonopoly.jpg)
-]
-
----
-
-# Contestable Markets
-
-.center[
-![](../images/amazoncloudcontest3.png)
 ]
 
 ---
